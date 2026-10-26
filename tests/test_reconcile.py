@@ -14,8 +14,11 @@ from src import reconcile as R
 
 def _pred(match_num: str, home: str, away: str, div: str = "E0",
           had: dict | None = None, value_bets: list | None = None,
-          goal_line: float | None = None, score: str = "1:0") -> dict:
-    return {
+          goal_line: float | None = None, score: str = "1:0",
+          score_top: list | None = None, hhad: dict | None = None,
+          ttg: dict | None = None, hafu: list | None = None,
+          layers: dict | None = None) -> dict:
+    data = {
         "match_num": match_num, "match_date": "2026-10-18",
         "league": "英超", "div": div, "home_cn": home, "away_cn": away,
         "home_matched": home, "away_matched": away,
@@ -24,6 +27,17 @@ def _pred(match_num: str, home: str, away: str, div: str = "E0",
         "hhad_goal_line": goal_line,
         "value_bets": value_bets or [],
     }
+    if score_top is not None:
+        data["score_top"] = score_top
+    if hhad is not None:
+        data["hhad"] = hhad
+    if ttg is not None:
+        data["ttg"] = ttg
+    if hafu is not None:
+        data["hafu_top"] = hafu
+    if layers:
+        data.update(layers)
+    return data
 
 
 def test_had_and_score() -> None:
@@ -95,12 +109,93 @@ def test_ledger_dedup(tmp=None) -> None:
     print("  ✓ 台账行展开正确")
 
 
+def test_all_markets() -> None:
+    """五种玩法 + 模型分层一次结算。"""
+    index = {("E0", "2026-10-18", R._norm("A"), R._norm("B")): {
+        "ft_home": 3, "ft_away": 1, "ht_home": 1, "ht_away": 1,
+    }}
+    pred = _pred(
+        "T010", "A", "B",
+        had={"胜": 0.6, "平": 0.25, "负": 0.15},
+        score="3:1",
+        score_top=[{"score": "3:1", "prob": 0.2},
+                   {"score": "2:1", "prob": 0.15},
+                   {"score": "2:0", "prob": 0.1}],
+        goal_line=-1.0,
+        hhad={"胜": 0.5, "平": 0.3, "负": 0.2},
+        ttg={"0": 0.05, "1": 0.1, "2": 0.15, "3": 0.2,
+             "4": 0.3, "5": 0.15, "6": 0.05, "7+": 0.0},
+        hafu=[["平/胜", 0.2], ["胜/胜", 0.15]],
+        layers={
+            "had_dc": {"胜": 0.55, "平": 0.3, "负": 0.15},
+            "elo_had": {"胜": 0.45, "平": 0.3, "负": 0.25},
+            "ml_had": {"胜": 0.7, "平": 0.2, "负": 0.1},
+        },
+    )
+    r = R.reconcile_predictions([pred], index)[0]
+    assert r["resolved"], r
+    assert r["actual"] == "胜" and r["had_hit"] is True, r
+    assert r["hhad_actual"] == "胜" and r["hhad_hit"] is True, r
+    assert r["score_hit"] is True and r["score_top3_hit"] is True, r
+    assert r["ttg_actual"] == "4" and r["ttg_hit"] is True, r
+    assert r["half_full_actual"] == "平/胜" and r["half_full_hit"] is True, r
+    assert r["layer_hits"] == {"HAD_DC": True, "HAD_ELO": True, "HAD_ML": True}, r
+
+    stats = R.summarize([r])
+    for market in ("HAD", "HHAD", "SCORE_TOP1", "SCORE_TOP3",
+                   "TOTAL_GOALS", "HALF_FULL", "HAD_DC", "HAD_ELO", "HAD_ML"):
+        assert stats["markets"][market]["n"] == 1, (market, stats["markets"])
+        assert stats["markets"][market]["accuracy"] == 1.0, (market, stats["markets"])
+    print("  ✓ 五种玩法与模型分层结算正确")
+
+
+def test_manual_csv_with_ht_and_date() -> None:
+    """手动 CSV 支持半场比分，并按 date+match_num 区分不同日期。"""
+    import tempfile
+
+    with tempfile.TemporaryDirectory() as d:
+        path = Path(d) / "results.csv"
+        path.write_text(
+            "date,match_num,ft_home,ft_away,ht_home,ht_away\n"
+            "2026-10-18,T001,2,1,1,1\n"
+            "2026-10-19,T001,0,0,0,0\n",
+            encoding="utf-8",
+        )
+        manual = R.load_manual_results(path)
+        assert manual[("2026-10-18", "T001")]["ft_home"] == 2
+        assert manual[("2026-10-19", "T001")]["ft_home"] == 0
+        assert manual[("2026-10-18", "T001")]["ht_home"] == 1
+
+        rows = R.reconcile_predictions([_pred("T001", "A", "B",
+                                              hafu=[["平/胜", 0.2]])], {}, manual)
+        assert rows[0]["ft_home"] == 2 and rows[0]["ft_away"] == 1, rows[0]
+        assert rows[0]["half_full_actual"] == "平/胜", rows[0]
+        assert rows[0]["half_full_hit"] is True, rows[0]
+    print("  ✓ 手动 CSV 的半场比分与跨日期匹配正确")
+
+
+def test_missing_ht_marks_pending_half_full() -> None:
+    """没有半场比分时，半全场应标记为无法结算，而不是判负。"""
+    index = {("E0", "2026-10-18", R._norm("A"), R._norm("B")): (1, 0)}
+    r = R.reconcile_predictions(
+        [_pred("T011", "A", "B", hafu=[["胜/胜", 0.3]])], index)[0]
+    assert r["half_full_actual"] is None, r
+    assert r["half_full_hit"] is None, r
+    stats = R.summarize([r])
+    assert stats["markets"]["HALF_FULL"]["n"] == 0, stats
+    print("  ✓ 缺半场比分时半全场不参与统计")
+
+
 def main() -> int:
     print("== 测试：对账 HAD/比分 ==")
     test_had_and_score()
     print("== 测试：价值选项盈亏 ==")
     test_value_bet_pnl()
     test_hhad_pnl()
+    print("== 测试：五种玩法/手动赛果 ==")
+    test_all_markets()
+    test_manual_csv_with_ht_and_date()
+    test_missing_ht_marks_pending_half_full()
     print("== 测试：无赛果/台账 ==")
     test_unresolved()
     test_ledger_dedup()

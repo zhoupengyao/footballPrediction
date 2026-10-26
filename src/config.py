@@ -8,8 +8,28 @@ from typing import Any
 import yaml
 
 # 项目根目录（本文件所在目录的上一级）
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+# 可用 FOOTBALL_HOME 覆盖，便于在 CI / 容器 / 其他机器上运行。
+_ENV_ROOT = os.environ.get("FOOTBALL_HOME", "").strip()
+PROJECT_ROOT = (Path(_ENV_ROOT).expanduser().resolve()
+                if _ENV_ROOT else Path(__file__).resolve().parent.parent)
 CONFIG_DIR = PROJECT_ROOT / "config"
+
+
+def _resolve_path(value: str | Path) -> Path:
+    """把配置里的路径解析成绝对路径。
+
+    相对路径按项目根目录解析，支持 ``~`` 与 ``${FOOTBALL_HOME}`` 形式的写法。
+    这样 settings.yaml 可以在 Windows / Linux / GitHub Actions 共用。
+    """
+    text = str(value).strip()
+    for prefix in ("${FOOTBALL_HOME}", "$FOOTBALL_HOME"):
+        if text.startswith(prefix):
+            text = str(PROJECT_ROOT) + text[len(prefix):]
+            break
+    p = Path(text).expanduser()
+    if not p.is_absolute():
+        p = PROJECT_ROOT / p
+    return p.resolve()
 
 
 def _load_dotenv(path: Path | None = None) -> None:
@@ -53,27 +73,27 @@ class Settings:
 
     @property
     def raw_dir(self) -> Path:
-        return Path(self._d["paths"]["raw"])
+        return _resolve_path(self._d["paths"]["raw"])
 
     @property
     def processed_dir(self) -> Path:
-        return Path(self._d["paths"]["processed"])
+        return _resolve_path(self._d["paths"]["processed"])
 
     @property
     def odds_dir(self) -> Path:
-        return Path(self._d["paths"]["odds"])
+        return _resolve_path(self._d["paths"]["odds"])
 
     @property
     def cache_dir(self) -> Path:
-        return Path(self._d["paths"]["cache"])
+        return _resolve_path(self._d["paths"]["cache"])
 
     @property
     def models_dir(self) -> Path:
-        return Path(self._d["paths"]["models"])
+        return _resolve_path(self._d["paths"]["models"])
 
     @property
     def reports_dir(self) -> Path:
-        return Path(self._d["paths"]["reports"])
+        return _resolve_path(self._d["paths"]["reports"])
 
     @property
     def apifootball_key(self) -> str:
@@ -163,8 +183,9 @@ class Settings:
         return int(self._d["backtest"]["refit_interval"])
 
     def ensure_dirs(self) -> None:
-        for key in ("raw", "processed", "odds", "cache", "models", "reports"):
-            Path(self._d["paths"][key]).mkdir(parents=True, exist_ok=True)
+        for path in (self.raw_dir, self.processed_dir, self.odds_dir,
+                     self.cache_dir, self.models_dir, self.reports_dir):
+            path.mkdir(parents=True, exist_ok=True)
 
 
 class Leagues:

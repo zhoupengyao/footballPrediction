@@ -1,12 +1,14 @@
 # 全局设置
+# 路径支持相对路径（相对项目根目录）或绝对路径；可用 FOOTBALL_HOME 覆盖根目录。
+# 这样 Windows 本地、GitHub Actions、Linux 容器可以共用同一份配置。
 paths:
-  base: "D:/python_学习区/football"
-  raw: "D:/python_学习区/football/data/raw"
-  processed: "D:/python_学习区/football/data/processed"
-  odds: "D:/python_学习区/football/data/odds"
-  cache: "D:/python_学习区/football/data/cache"
-  models: "D:/python_学习区/football/data/models"
-  reports: "D:/python_学习区/football/reports"
+  base: "."
+  raw: "data/raw"
+  processed: "data/processed"
+  odds: "data/odds"
+  cache: "data/cache"
+  models: "data/models"
+  reports: "reports"
 
 # API-Football 免费额度：每日 100 请求
 apifootball:

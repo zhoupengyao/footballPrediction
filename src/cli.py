@@ -387,8 +387,8 @@ def cmd_predict(args: argparse.Namespace) -> int:
     """加载模型 + 赔率快照，产出预测与价值报告。"""
     from src.ingest.jingcai_scraper import (filter_matches, latest_snapshot,
                                             load_matches, select_round)
-    from src.pipeline import (build_matcher, load_models, predict_matches,
-                              summarize, write_report)
+    from src.pipeline import (archive_report, build_matcher, load_models,
+                              predict_matches, summarize, write_report)
 
     settings = get_settings()
     settings.ensure_dirs()
@@ -453,7 +453,14 @@ def cmd_predict(args: argparse.Namespace) -> int:
                            min_odds=min_odds,
                            max_edge=max_edge)
     stats = summarize(rows)
-    md_path, json_path = write_report(rows, edge_threshold=args.edge)
+    report_dates = sorted({
+        str(getattr(m, "business_date", "") or getattr(m, "match_date", ""))[:10]
+        for m in matches
+    } - {""})
+    date_tag = report_dates[0].replace("-", "") if report_dates else None
+    md_path, json_path = write_report(rows, edge_threshold=args.edge,
+                                      generated_at=date_tag)
+    archive_path = archive_report(json_path)
 
     if stats["predicted"] == 0:
         started = sum(1 for r in rows
@@ -480,7 +487,7 @@ def cmd_predict(args: argparse.Namespace) -> int:
             print(f"      ★ {b['market']} {b['option']} "
                   f"edge={b['edge']:.3f} EV={b['ev']:.3f} "
                   f"仓位={b['stake_pct'] * 100:.2f}%")
-    print(f"\n报告已写入:\n  {md_path}\n  {json_path}")
+    print(f"\n报告已写入:\n  {md_path}\n  {json_path}\n归档: {archive_path}")
     return 0
 
 
@@ -740,7 +747,9 @@ def cmd_reconcile(args: argparse.Namespace) -> int:
         return 1
 
     try:
-        res = run_reconcile(json_path, manual_path=args.manual)
+        date_tag = (json_path.stem.replace("predict_", "")
+                    if json_path.stem.startswith("predict_") else None)
+        res = run_reconcile(json_path, manual_path=args.manual, date_tag=date_tag)
     except RuntimeError as e:
         print(f"对账失败: {e}")
         return 1
@@ -956,7 +965,8 @@ def build_parser() -> argparse.ArgumentParser:
     p_rec.add_argument("--json", default=None, help="预测报告 JSON；默认取最新一份")
     p_rec.add_argument("--date", default=None, help="按日期取 reports/predict_YYYYMMDD.json")
     p_rec.add_argument("--manual", default=None,
-                       help="手动补录赛果 CSV（列：match_num, ft_home, ft_away）")
+                       help="手动赛果 CSV（必须：match_num, ft_home, ft_away；"
+                            "建议：date, ht_home, ht_away）")
     p_rec.set_defaults(func=cmd_reconcile)
 
     p_doc = sub.add_parser("doctor", help="诊断队名匹配，列出未匹配球队与候选")

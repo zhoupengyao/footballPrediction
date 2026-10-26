@@ -11,6 +11,7 @@
 from __future__ import annotations
 
 import json
+import shutil
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -856,3 +857,22 @@ def write_report(rows: list[dict[str, Any]], edge_threshold: float,
     json_path.write_text(json.dumps(payload, ensure_ascii=False, indent=1,
                                     default=str), encoding="utf-8")
     return md_path, json_path
+
+
+def archive_report(json_path: str | Path,
+                   archive_dir: Path | None = None) -> Path:
+    """把一次预测报告复制到 reports/archive/，形成不可覆盖的历史版本。
+
+    ``reports/predict_YYYYMMDD.json`` 同一天重跑会被覆盖；历史页必须使用
+    **开赛前的最后一次存档**，否则赛后重跑会变成“用赛后信息预测过去”。
+
+    归档文件名：``predict_YYYYMMDD_HHMMSS.json``，保留原始 ``generated_at``。
+    """
+    src = Path(json_path)
+    settings = get_settings()
+    target_dir = archive_dir or (settings.reports_dir / "archive")
+    target_dir.mkdir(parents=True, exist_ok=True)
+    stamp = datetime.now().strftime("%H%M%S")
+    dst = target_dir / f"{src.stem}_{stamp}.json"
+    shutil.copy2(src, dst)
+    return dst
