@@ -1,0 +1,121 @@
+{
+ "kind": "elo",
+ "k": 20.0,
+ "home_adv": 65.0,
+ "initial_rating": 1500.0,
+ "is_national": false,
+ "teams": {
+  "HJK Helsinki": {
+   "name": "HJK Helsinki",
+   "rating": 1644.434798972917,
+   "rd": 20.0,
+   "played": 81,
+   "last_update": "2024-10-19"
+  },
+  "Honka": {
+   "name": "Honka",
+   "rating": 1561.2454849989986,
+   "rd": 20.0,
+   "played": 58,
+   "last_update": "2023-11-05"
+  },
+  "VPS": {
+   "name": "VPS",
+   "rating": 1564.4328786016854,
+   "rd": 20.0,
+   "played": 88,
+   "last_update": "2024-10-23"
+  },
+  "AC Oulu": {
+   "name": "AC Oulu",
+   "rating": 1445.4689832538927,
+   "rd": 20.0,
+   "played": 85,
+   "last_update": "2024-10-19"
+  },
+  "SJK": {
+   "name": "SJK",
+   "rating": 1532.5874812056775,
+   "rd": 20.0,
+   "played": 85,
+   "last_update": "2024-11-02"
+  },
+  "HIFK Helsinki": {
+   "name": "HIFK Helsinki",
+   "rating": 1288.1473962698444,
+   "rd": 20.0,
+   "played": 27,
+   "last_update": "2022-10-16"
+  },
+  "KuPS": {
+   "name": "KuPS",
+   "rating": 1696.7164507163009,
+   "rd": 20.0,
+   "played": 81,
+   "last_update": "2024-10-19"
+  },
+  "Inter Turku": {
+   "name": "Inter Turku",
+   "rating": 1539.850922440887,
+   "rd": 20.0,
+   "played": 84,
+   "last_update": "2024-10-23"
+  },
+  "Haka": {
+   "name": "Haka",
+   "rating": 1508.3024233591914,
+   "rd": 20.0,
+   "played": 87,
+   "last_update": "2024-11-02"
+  },
+  "Ilves": {
+   "name": "Ilves",
+   "rating": 1658.895037573816,
+   "rd": 20.0,
+   "played": 81,
+   "last_update": "2024-10-19"
+  },
+  "Mariehamn": {
+   "name": "Mariehamn",
+   "rating": 1411.0971786355612,
+   "rd": 20.0,
+   "played": 83,
+   "last_update": "2024-10-19"
+  },
+  "Lahti": {
+   "name": "Lahti",
+   "rating": 1393.4258989208695,
+   "rd": 20.0,
+   "played": 83,
+   "last_update": "2024-10-27"
+  },
+  "Kooteepee": {
+   "name": "Kooteepee",
+   "rating": 1362.6785699988238,
+   "rd": 20.0,
+   "played": 27,
+   "last_update": "2023-10-21"
+  },
+  "Gnistan": {
+   "name": "Gnistan",
+   "rating": 1508.6934978491126,
+   "rd": 20.0,
+   "played": 31,
+   "last_update": "2024-10-26"
+  },
+  "EIF": {
+   "name": "EIF",
+   "rating": 1387.0895159322336,
+   "rd": 20.0,
+   "played": 27,
+   "last_update": "2024-10-19"
+  },
+  "FF Jaro": {
+   "name": "FF Jaro",
+   "rating": 1496.9334812701886,
+   "rd": 70.68799999999999,
+   "played": 2,
+   "last_update": "2024-10-27"
+  }
+ }
+}

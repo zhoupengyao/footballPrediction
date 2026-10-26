@@ -1,0 +1,170 @@
+{
+ "kind": "elo",
+ "k": 20.0,
+ "home_adv": 65.0,
+ "initial_rating": 1500.0,
+ "is_national": false,
+ "teams": {
+  "Hammarby FF": {
+   "name": "Hammarby FF",
+   "rating": 1665.9103058263,
+   "rd": 20.0,
+   "played": 90,
+   "last_update": "2024-11-10"
+  },
+  "Helsingborg": {
+   "name": "Helsingborg",
+   "rating": 1351.566966795172,
+   "rd": 20.0,
+   "played": 30,
+   "last_update": "2022-11-06"
+  },
+  "BK Hacken": {
+   "name": "BK Hacken",
+   "rating": 1591.147985296202,
+   "rd": 20.0,
+   "played": 90,
+   "last_update": "2024-11-10"
+  },
+  "AIK Stockholm": {
+   "name": "AIK Stockholm",
+   "rating": 1594.6676944201415,
+   "rd": 20.0,
+   "played": 90,
+   "last_update": "2024-11-10"
+  },
+  "IFK Goteborg": {
+   "name": "IFK Goteborg",
+   "rating": 1486.3773973701286,
+   "rd": 20.0,
+   "played": 90,
+   "last_update": "2024-11-10"
+  },
+  "IFK Varnamo": {
+   "name": "IFK Varnamo",
+   "rating": 1500.9013786614112,
+   "rd": 20.0,
+   "played": 92,
+   "last_update": "2024-11-24"
+  },
+  "Sirius": {
+   "name": "Sirius",
+   "rating": 1537.2888376162116,
+   "rd": 20.0,
+   "played": 90,
+   "last_update": "2024-11-10"
+  },
+  "GIF Sundsvall": {
+   "name": "GIF Sundsvall",
+   "rating": 1297.079705431037,
+   "rd": 20.0,
+   "played": 30,
+   "last_update": "2022-11-06"
+  },
+  "Kalmar FF": {
+   "name": "Kalmar FF",
+   "rating": 1463.3010665470108,
+   "rd": 20.0,
+   "played": 90,
+   "last_update": "2024-11-10"
+  },
+  "Malmo FF": {
+   "name": "Malmo FF",
+   "rating": 1725.5998163989202,
+   "rd": 20.0,
+   "played": 90,
+   "last_update": "2024-11-10"
+  },
+  "IFK Norrkoping": {
+   "name": "IFK Norrkoping",
+   "rating": 1453.8568159266065,
+   "rd": 20.0,
+   "played": 90,
+   "last_update": "2024-11-10"
+  },
+  "Varbergs BoIS FC": {
+   "name": "Varbergs BoIS FC",
+   "rating": 1323.583669506743,
+   "rd": 20.0,
+   "played": 62,
+   "last_update": "2023-11-12"
+  },
+  "IF Elfsborg": {
+   "name": "IF Elfsborg",
+   "rating": 1607.4486749265602,
+   "rd": 20.0,
+   "played": 90,
+   "last_update": "2024-11-10"
+  },
+  "Mjallby AIF": {
+   "name": "Mjallby AIF",
+   "rating": 1578.5287770459126,
+   "rd": 20.0,
+   "played": 90,
+   "last_update": "2024-11-10"
+  },
+  "Djurgardens IF": {
+   "name": "Djurgardens IF",
+   "rating": 1585.736212103785,
+   "rd": 20.0,
+   "played": 90,
+   "last_update": "2024-11-10"
+  },
+  "Degerfors IF": {
+   "name": "Degerfors IF",
+   "rating": 1389.0411069047973,
+   "rd": 20.0,
+   "played": 60,
+   "last_update": "2023-11-12"
+  },
+  "Osters IF": {
+   "name": "Osters IF",
+   "rating": 1475.9484852108144,
+   "rd": 70.68799999999999,
+   "played": 2,
+   "last_update": "2022-11-13"
+  },
+  "IF Brommapojkarna": {
+   "name": "IF Brommapojkarna",
+   "rating": 1474.3384239642041,
+   "rd": 20.0,
+   "played": 62,
+   "last_update": "2024-11-10"
+  },
+  "Halmstad": {
+   "name": "Halmstad",
+   "rating": 1455.4733287598672,
+   "rd": 20.0,
+   "played": 60,
+   "last_update": "2024-11-10"
+  },
+  "Utsikten": {
+   "name": "Utsikten",
+   "rating": 1472.992166697924,
+   "rd": 70.68799999999999,
+   "played": 2,
+   "last_update": "2023-11-27"
+  },
+  "Gais": {
+   "name": "Gais",
+   "rating": 1550.0717296766354,
+   "rd": 20.0,
+   "played": 30,
+   "last_update": "2024-11-10"
+  },
+  "Vasteras SK FK": {
+   "name": "Vasteras SK FK",
+   "rating": 1429.5496818276138,
+   "rd": 20.0,
+   "played": 30,
+   "last_update": "2024-11-10"
+  },
+  "Landskrona BoIS": {
+   "name": "Landskrona BoIS",
+   "rating": 1489.5897730860015,
+   "rd": 70.68799999999999,
+   "played": 2,
+   "last_update": "2024-11-24"
+  }
+ }
+}

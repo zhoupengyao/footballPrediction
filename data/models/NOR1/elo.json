@@ -1,0 +1,163 @@
+{
+ "kind": "elo",
+ "k": 20.0,
+ "home_adv": 65.0,
+ "initial_rating": 1500.0,
+ "is_national": false,
+ "teams": {
+  "Ham-Kam": {
+   "name": "Ham-Kam",
+   "rating": 1436.4870936792581,
+   "rd": 20.0,
+   "played": 90,
+   "last_update": "2024-12-01"
+  },
+  "Lillestrom": {
+   "name": "Lillestrom",
+   "rating": 1386.8885649316937,
+   "rd": 20.0,
+   "played": 90,
+   "last_update": "2024-12-01"
+  },
+  "Molde": {
+   "name": "Molde",
+   "rating": 1662.7345111499471,
+   "rd": 20.0,
+   "played": 90,
+   "last_update": "2024-12-01"
+  },
+  "Valerenga": {
+   "name": "Valerenga",
+   "rating": 1457.3903426309655,
+   "rd": 20.0,
+   "played": 62,
+   "last_update": "2023-12-10"
+  },
+  "Haugesund": {
+   "name": "Haugesund",
+   "rating": 1466.2344872873155,
+   "rd": 20.0,
+   "played": 92,
+   "last_update": "2024-12-08"
+  },
+  "Sandefjord": {
+   "name": "Sandefjord",
+   "rating": 1470.252825451467,
+   "rd": 20.0,
+   "played": 92,
+   "last_update": "2024-12-01"
+  },
+  "ODD Ballklubb": {
+   "name": "ODD Ballklubb",
+   "rating": 1381.2651752793358,
+   "rd": 20.0,
+   "played": 90,
+   "last_update": "2024-12-01"
+  },
+  "Tromso": {
+   "name": "Tromso",
+   "rating": 1519.1277759483723,
+   "rd": 20.0,
+   "played": 90,
+   "last_update": "2024-12-01"
+  },
+  "Sarpsborg 08 FF": {
+   "name": "Sarpsborg 08 FF",
+   "rating": 1508.8236896489934,
+   "rd": 20.0,
+   "played": 90,
+   "last_update": "2024-12-01"
+  },
+  "Viking": {
+   "name": "Viking",
+   "rating": 1633.4854075608891,
+   "rd": 20.0,
+   "played": 90,
+   "last_update": "2024-12-01"
+  },
+  "Aalesund": {
+   "name": "Aalesund",
+   "rating": 1311.9895463839512,
+   "rd": 20.0,
+   "played": 60,
+   "last_update": "2023-12-03"
+  },
+  "Kristiansund BK": {
+   "name": "Kristiansund BK",
+   "rating": 1446.0177605472297,
+   "rd": 20.0,
+   "played": 62,
+   "last_update": "2024-12-01"
+  },
+  "jerv": {
+   "name": "jerv",
+   "rating": 1356.579896012477,
+   "rd": 20.0,
+   "played": 30,
+   "last_update": "2022-11-13"
+  },
+  "Stromsgodset": {
+   "name": "Stromsgodset",
+   "rating": 1500.8775583866231,
+   "rd": 20.0,
+   "played": 90,
+   "last_update": "2024-12-01"
+  },
+  "Bodo/Glimt": {
+   "name": "Bodo/Glimt",
+   "rating": 1723.965360388822,
+   "rd": 20.0,
+   "played": 90,
+   "last_update": "2024-12-01"
+  },
+  "Rosenborg": {
+   "name": "Rosenborg",
+   "rating": 1609.2952009313574,
+   "rd": 20.0,
+   "played": 90,
+   "last_update": "2024-12-01"
+  },
+  "Kongsvinger": {
+   "name": "Kongsvinger",
+   "rating": 1479.4397707053422,
+   "rd": 70.68799999999999,
+   "played": 2,
+   "last_update": "2022-11-19"
+  },
+  "Stabaek": {
+   "name": "Stabaek",
+   "rating": 1435.035917644203,
+   "rd": 20.0,
+   "played": 30,
+   "last_update": "2023-12-03"
+  },
+  "Brann": {
+   "name": "Brann",
+   "rating": 1675.5203042489998,
+   "rd": 20.0,
+   "played": 60,
+   "last_update": "2024-12-01"
+  },
+  "Fredrikstad": {
+   "name": "Fredrikstad",
+   "rating": 1554.0346264897405,
+   "rd": 20.0,
+   "played": 30,
+   "last_update": "2024-12-01"
+  },
+  "KFUM Oslo": {
+   "name": "KFUM Oslo",
+   "rating": 1503.1537654109325,
+   "rd": 20.0,
+   "played": 30,
+   "last_update": "2024-12-01"
+  },
+  "Moss": {
+   "name": "Moss",
+   "rating": 1481.400419282083,
+   "rd": 70.68799999999999,
+   "played": 2,
+   "last_update": "2024-12-08"
+  }
+ }
+}

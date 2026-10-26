@@ -1,0 +1,212 @@
+{
+ "kind": "elo",
+ "k": 20.0,
+ "home_adv": 65.0,
+ "initial_rating": 1500.0,
+ "is_national": false,
+ "teams": {
+  "Watford": {
+   "name": "Watford",
+   "rating": 1312.025953166934,
+   "rd": 20.0,
+   "played": 31,
+   "last_update": "2022-05-22"
+  },
+  "Liverpool": {
+   "name": "Liverpool",
+   "rating": 1652.0188964857111,
+   "rd": 20.0,
+   "played": 189,
+   "last_update": "2026-10-11"
+  },
+  "Aston Villa": {
+   "name": "Aston Villa",
+   "rating": 1585.9164464447372,
+   "rd": 20.0,
+   "played": 189,
+   "last_update": "2026-10-10"
+  },
+  "Wolves": {
+   "name": "Wolves",
+   "rating": 1378.2222801897608,
+   "rd": 20.0,
+   "played": 183,
+   "last_update": "2026-05-24"
+  },
+  "Leicester": {
+   "name": "Leicester",
+   "rating": 1330.645578494292,
+   "rd": 20.0,
+   "played": 107,
+   "last_update": "2025-05-25"
+  },
+  "Man United": {
+   "name": "Man United",
+   "rating": 1627.301872536396,
+   "rd": 20.0,
+   "played": 189,
+   "last_update": "2026-10-10"
+  },
+  "Man City": {
+   "name": "Man City",
+   "rating": 1818.6604019806089,
+   "rd": 20.0,
+   "played": 189,
+   "last_update": "2026-10-11"
+  },
+  "Burnley": {
+   "name": "Burnley",
+   "rating": 1326.95922724533,
+   "rd": 20.0,
+   "played": 107,
+   "last_update": "2026-05-24"
+  },
+  "Norwich": {
+   "name": "Norwich",
+   "rating": 1327.4430414301992,
+   "rd": 20.0,
+   "played": 31,
+   "last_update": "2022-05-22"
+  },
+  "Brighton": {
+   "name": "Brighton",
+   "rating": 1648.249090173317,
+   "rd": 20.0,
+   "played": 189,
+   "last_update": "2026-10-10"
+  },
+  "Southampton": {
+   "name": "Southampton",
+   "rating": 1234.9844285780707,
+   "rd": 20.0,
+   "played": 107,
+   "last_update": "2025-05-25"
+  },
+  "Leeds": {
+   "name": "Leeds",
+   "rating": 1527.6587050320484,
+   "rd": 20.0,
+   "played": 113,
+   "last_update": "2026-10-10"
+  },
+  "Brentford": {
+   "name": "Brentford",
+   "rating": 1599.8698420494195,
+   "rd": 20.0,
+   "played": 189,
+   "last_update": "2026-10-10"
+  },
+  "Chelsea": {
+   "name": "Chelsea",
+   "rating": 1585.0154116924539,
+   "rd": 20.0,
+   "played": 189,
+   "last_update": "2026-10-10"
+  },
+  "Everton": {
+   "name": "Everton",
+   "rating": 1551.6418871886522,
+   "rd": 20.0,
+   "played": 189,
+   "last_update": "2026-10-11"
+  },
+  "West Ham": {
+   "name": "West Ham",
+   "rating": 1489.4348230678956,
+   "rd": 20.0,
+   "played": 183,
+   "last_update": "2026-05-24"
+  },
+  "Newcastle": {
+   "name": "Newcastle",
+   "rating": 1546.7001442135918,
+   "rd": 20.0,
+   "played": 189,
+   "last_update": "2026-10-12"
+  },
+  "Tottenham": {
+   "name": "Tottenham",
+   "rating": 1449.8878262486353,
+   "rd": 20.0,
+   "played": 189,
+   "last_update": "2026-10-10"
+  },
+  "Arsenal": {
+   "name": "Arsenal",
+   "rating": 1794.4453487811736,
+   "rd": 20.0,
+   "played": 189,
+   "last_update": "2026-10-10"
+  },
+  "Crystal Palace": {
+   "name": "Crystal Palace",
+   "rating": 1516.7010323381708,
+   "rd": 20.0,
+   "played": 189,
+   "last_update": "2026-10-11"
+  },
+  "Nott'm Forest": {
+   "name": "Nott'm Forest",
+   "rating": 1534.864798208056,
+   "rd": 20.0,
+   "played": 158,
+   "last_update": "2026-10-11"
+  },
+  "Fulham": {
+   "name": "Fulham",
+   "rating": 1509.0837565834436,
+   "rd": 20.0,
+   "played": 158,
+   "last_update": "2026-10-10"
+  },
+  "Bournemouth": {
+   "name": "Bournemouth",
+   "rating": 1579.372947010455,
+   "rd": 20.0,
+   "played": 158,
+   "last_update": "2026-10-10"
+  },
+  "Luton": {
+   "name": "Luton",
+   "rating": 1372.981082613938,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2024-05-19"
+  },
+  "Sheffield United": {
+   "name": "Sheffield United",
+   "rating": 1297.9909565473934,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2024-05-19"
+  },
+  "Ipswich": {
+   "name": "Ipswich",
+   "rating": 1374.5098261237065,
+   "rd": 20.0,
+   "played": 44,
+   "last_update": "2026-10-10"
+  },
+  "Sunderland": {
+   "name": "Sunderland",
+   "rating": 1502.5533048752193,
+   "rd": 20.0,
+   "played": 44,
+   "last_update": "2026-10-10"
+  },
+  "Coventry": {
+   "name": "Coventry",
+   "rating": 1498.688461727961,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2026-10-12"
+  },
+  "Hull": {
+   "name": "Hull",
+   "rating": 1526.1726289724293,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2026-10-11"
+  }
+ }
+}

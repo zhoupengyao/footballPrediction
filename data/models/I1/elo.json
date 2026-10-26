@@ -1,0 +1,198 @@
+{
+ "kind": "elo",
+ "k": 20.0,
+ "home_adv": 65.0,
+ "initial_rating": 1500.0,
+ "is_national": false,
+ "teams": {
+  "Spezia": {
+   "name": "Spezia",
+   "rating": 1365.8843231631356,
+   "rd": 20.0,
+   "played": 69,
+   "last_update": "2023-06-04"
+  },
+  "Salernitana": {
+   "name": "Salernitana",
+   "rating": 1302.5337393030993,
+   "rd": 20.0,
+   "played": 107,
+   "last_update": "2024-05-25"
+  },
+  "Lazio": {
+   "name": "Lazio",
+   "rating": 1620.0772978980172,
+   "rd": 20.0,
+   "played": 189,
+   "last_update": "2026-10-11"
+  },
+  "Inter": {
+   "name": "Inter",
+   "rating": 1842.9428613925836,
+   "rd": 20.0,
+   "played": 189,
+   "last_update": "2026-10-10"
+  },
+  "Milan": {
+   "name": "Milan",
+   "rating": 1657.7886765842393,
+   "rd": 20.0,
+   "played": 189,
+   "last_update": "2026-10-11"
+  },
+  "Verona": {
+   "name": "Verona",
+   "rating": 1335.918742960899,
+   "rd": 20.0,
+   "played": 183,
+   "last_update": "2026-05-24"
+  },
+  "Cagliari": {
+   "name": "Cagliari",
+   "rating": 1499.320056598609,
+   "rd": 20.0,
+   "played": 152,
+   "last_update": "2026-10-11"
+  },
+  "Sampdoria": {
+   "name": "Sampdoria",
+   "rating": 1309.4206735005894,
+   "rd": 20.0,
+   "played": 69,
+   "last_update": "2023-06-04"
+  },
+  "Empoli": {
+   "name": "Empoli",
+   "rating": 1394.3941928246413,
+   "rd": 20.0,
+   "played": 145,
+   "last_update": "2025-05-25"
+  },
+  "Atalanta": {
+   "name": "Atalanta",
+   "rating": 1633.200569930504,
+   "rd": 20.0,
+   "played": 190,
+   "last_update": "2026-10-12"
+  },
+  "Genoa": {
+   "name": "Genoa",
+   "rating": 1454.2470058933732,
+   "rd": 20.0,
+   "played": 152,
+   "last_update": "2026-10-10"
+  },
+  "Sassuolo": {
+   "name": "Sassuolo",
+   "rating": 1492.5236245611381,
+   "rd": 20.0,
+   "played": 151,
+   "last_update": "2026-10-11"
+  },
+  "Udinese": {
+   "name": "Udinese",
+   "rating": 1501.5981575695405,
+   "rd": 20.0,
+   "played": 190,
+   "last_update": "2026-10-12"
+  },
+  "Bologna": {
+   "name": "Bologna",
+   "rating": 1547.3509829451918,
+   "rd": 20.0,
+   "played": 189,
+   "last_update": "2026-10-11"
+  },
+  "Napoli": {
+   "name": "Napoli",
+   "rating": 1699.289653961279,
+   "rd": 20.0,
+   "played": 189,
+   "last_update": "2026-10-10"
+  },
+  "Torino": {
+   "name": "Torino",
+   "rating": 1492.8743830149183,
+   "rd": 20.0,
+   "played": 189,
+   "last_update": "2026-10-12"
+  },
+  "Juventus": {
+   "name": "Juventus",
+   "rating": 1680.3327709654527,
+   "rd": 20.0,
+   "played": 189,
+   "last_update": "2026-10-11"
+  },
+  "Roma": {
+   "name": "Roma",
+   "rating": 1743.6433182740016,
+   "rd": 20.0,
+   "played": 190,
+   "last_update": "2026-10-11"
+  },
+  "Venezia": {
+   "name": "Venezia",
+   "rating": 1321.7811548323316,
+   "rd": 20.0,
+   "played": 75,
+   "last_update": "2026-10-12"
+  },
+  "Fiorentina": {
+   "name": "Fiorentina",
+   "rating": 1512.3679243107772,
+   "rd": 20.0,
+   "played": 190,
+   "last_update": "2026-10-10"
+  },
+  "Monza": {
+   "name": "Monza",
+   "rating": 1321.6369602180837,
+   "rd": 20.0,
+   "played": 120,
+   "last_update": "2026-10-11"
+  },
+  "Lecce": {
+   "name": "Lecce",
+   "rating": 1416.1470470940965,
+   "rd": 20.0,
+   "played": 158,
+   "last_update": "2026-10-11"
+  },
+  "Cremonese": {
+   "name": "Cremonese",
+   "rating": 1400.70366860911,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2026-05-24"
+  },
+  "Frosinone": {
+   "name": "Frosinone",
+   "rating": 1477.8972159023429,
+   "rd": 20.0,
+   "played": 44,
+   "last_update": "2026-10-10"
+  },
+  "Parma": {
+   "name": "Parma",
+   "rating": 1451.8954007993846,
+   "rd": 20.0,
+   "played": 82,
+   "last_update": "2026-10-10"
+  },
+  "Como": {
+   "name": "Como",
+   "rating": 1682.9338813429927,
+   "rd": 20.0,
+   "played": 82,
+   "last_update": "2026-10-11"
+  },
+  "Pisa": {
+   "name": "Pisa",
+   "rating": 1341.2957155496676,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2026-05-23"
+  }
+ }
+}

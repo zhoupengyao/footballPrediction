@@ -1,0 +1,681 @@
+{
+ "kind": "elo",
+ "k": 20.0,
+ "home_adv": 65.0,
+ "initial_rating": 1500.0,
+ "is_national": false,
+ "teams": {
+  "Brondby": {
+   "name": "Brondby",
+   "rating": 1440.6170793932042,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2021-12-09"
+  },
+  "Sparta Prague": {
+   "name": "Sparta Prague",
+   "rating": 1484.5499186343038,
+   "rd": 29.72594326672805,
+   "played": 16,
+   "last_update": "2025-12-14"
+  },
+  "Olympiakos": {
+   "name": "Olympiakos",
+   "rating": 1478.4798325293204,
+   "rd": 20.0,
+   "played": 30,
+   "last_update": "2025-03-13"
+  },
+  "Royal Antwerp": {
+   "name": "Royal Antwerp",
+   "rating": 1471.6315218400712,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2021-12-09"
+  },
+  "Ein Frankfurt": {
+   "name": "Ein Frankfurt",
+   "rating": 1585.3844731508943,
+   "rd": 20.0,
+   "played": 25,
+   "last_update": "2025-04-17"
+  },
+  "Fenerbahce": {
+   "name": "Fenerbahce",
+   "rating": 1542.9167536061666,
+   "rd": 20.0,
+   "played": 26,
+   "last_update": "2025-03-13"
+  },
+  "Betis": {
+   "name": "Betis",
+   "rating": 1547.2800803219793,
+   "rd": 20.0,
+   "played": 24,
+   "last_update": "2025-12-14"
+  },
+  "Celtic": {
+   "name": "Celtic",
+   "rating": 1494.147246199413,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2021-12-09"
+  },
+  "Leverkusen": {
+   "name": "Leverkusen",
+   "rating": 1647.3735062143573,
+   "rd": 20.0,
+   "played": 29,
+   "last_update": "2024-12-14"
+  },
+  "Ferencvaros": {
+   "name": "Ferencvaros",
+   "rating": 1451.9698372763844,
+   "rd": 20.0,
+   "played": 24,
+   "last_update": "2025-02-20"
+  },
+  "Rangers": {
+   "name": "Rangers",
+   "rating": 1549.6631779097786,
+   "rd": 20.0,
+   "played": 35,
+   "last_update": "2025-12-14"
+  },
+  "Lyon": {
+   "name": "Lyon",
+   "rating": 1616.049049242559,
+   "rd": 20.507029973100746,
+   "played": 22,
+   "last_update": "2025-04-17"
+  },
+  "Dortmund": {
+   "name": "Dortmund",
+   "rating": 1484.0030004254304,
+   "rd": 70.68799999999999,
+   "played": 2,
+   "last_update": "2022-02-24"
+  },
+  "Sheriff Tiraspol": {
+   "name": "Sheriff Tiraspol",
+   "rating": 1415.039359765568,
+   "rd": 33.64185521358992,
+   "played": 14,
+   "last_update": "2023-12-14"
+  },
+  "Braga": {
+   "name": "Braga",
+   "rating": 1513.1446569431948,
+   "rd": 20.0,
+   "played": 28,
+   "last_update": "2025-01-30"
+  },
+  "RB Leipzig": {
+   "name": "RB Leipzig",
+   "rating": 1530.872128603027,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2022-05-05"
+  },
+  "Sociedad": {
+   "name": "Sociedad",
+   "rating": 1560.9264286789155,
+   "rd": 20.0,
+   "played": 28,
+   "last_update": "2025-03-13"
+  },
+  "Sevilla": {
+   "name": "Sevilla",
+   "rating": 1531.7541050144032,
+   "rd": 35.78920767403183,
+   "played": 13,
+   "last_update": "2023-05-31"
+  },
+  "Dinamo Zagreb": {
+   "name": "Dinamo Zagreb",
+   "rating": 1517.3226456514842,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2022-12-09"
+  },
+  "Porto": {
+   "name": "Porto",
+   "rating": 1508.2635487637624,
+   "rd": 33.64185521358992,
+   "played": 14,
+   "last_update": "2025-02-20"
+  },
+  "Lazio": {
+   "name": "Lazio",
+   "rating": 1573.5775528664249,
+   "rd": 20.0,
+   "played": 26,
+   "last_update": "2025-04-17"
+  },
+  "Zenit": {
+   "name": "Zenit",
+   "rating": 1491.1414051572096,
+   "rd": 70.68799999999999,
+   "played": 2,
+   "last_update": "2022-02-24"
+  },
+  "Atalanta": {
+   "name": "Atalanta",
+   "rating": 1620.6282458602832,
+   "rd": 24.689892862252044,
+   "played": 19,
+   "last_update": "2024-05-22"
+  },
+  "Barcelona": {
+   "name": "Barcelona",
+   "rating": 1506.0447791985862,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2023-02-23"
+  },
+  "Napoli": {
+   "name": "Napoli",
+   "rating": 1515.3195868594928,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2023-12-09"
+  },
+  "Monaco": {
+   "name": "Monaco",
+   "rating": 1521.8869475102554,
+   "rd": 29.72594326672805,
+   "played": 16,
+   "last_update": "2023-11-03"
+  },
+  "Galatasaray": {
+   "name": "Galatasaray",
+   "rating": 1505.0325714183064,
+   "rd": 23.20849929051692,
+   "played": 20,
+   "last_update": "2025-02-20"
+  },
+  "West Ham": {
+   "name": "West Ham",
+   "rating": 1581.1190808314554,
+   "rd": 20.507029973100746,
+   "played": 22,
+   "last_update": "2024-04-18"
+  },
+  "Red Star Belgrade": {
+   "name": "Red Star Belgrade",
+   "rating": 1491.5610484195468,
+   "rd": 33.64185521358992,
+   "played": 14,
+   "last_update": "2023-12-09"
+  },
+  "PSV Eindhoven": {
+   "name": "PSV Eindhoven",
+   "rating": 1540.6117316307334,
+   "rd": 33.64185521358992,
+   "played": 14,
+   "last_update": "2023-02-23"
+  },
+  "Bodo/Glimt": {
+   "name": "Bodo/Glimt",
+   "rating": 1479.2489195328187,
+   "rd": 20.507029973100746,
+   "played": 22,
+   "last_update": "2025-05-08"
+  },
+  "Nantes": {
+   "name": "Nantes",
+   "rating": 1463.7676677468162,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2023-02-23"
+  },
+  "Freiburg": {
+   "name": "Freiburg",
+   "rating": 1544.5767099513887,
+   "rd": 26.2658434704809,
+   "played": 18,
+   "last_update": "2024-03-14"
+  },
+  "Qarabag": {
+   "name": "Qarabag",
+   "rating": 1428.1557538821648,
+   "rd": 20.0,
+   "played": 24,
+   "last_update": "2025-01-30"
+  },
+  "FC Zurich": {
+   "name": "FC Zurich",
+   "rating": 1446.9435480724183,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2022-11-03"
+  },
+  "Arsenal": {
+   "name": "Arsenal",
+   "rating": 1538.711822378827,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2023-03-16"
+  },
+  "Malmo": {
+   "name": "Malmo",
+   "rating": 1396.9838857771856,
+   "rd": 33.64185521358992,
+   "played": 14,
+   "last_update": "2025-01-30"
+  },
+  "Union Berlin": {
+   "name": "Union Berlin",
+   "rating": 1517.3511137038406,
+   "rd": 43.08920912759195,
+   "played": 10,
+   "last_update": "2023-03-16"
+  },
+  "Union SG": {
+   "name": "Union SG",
+   "rating": 1515.6568130539777,
+   "rd": 20.0,
+   "played": 26,
+   "last_update": "2025-02-20"
+  },
+  "Rapid Wien": {
+   "name": "Rapid Wien",
+   "rating": 1469.5327796987892,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2022-12-09"
+  },
+  "Genk": {
+   "name": "Genk",
+   "rating": 1463.8575126433934,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2022-12-09"
+  },
+  "Lokomotiv Moscow": {
+   "name": "Lokomotiv Moscow",
+   "rating": 1446.0933001694323,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2022-12-09"
+  },
+  "Marseille": {
+   "name": "Marseille",
+   "rating": 1530.1266481121331,
+   "rd": 23.20849929051692,
+   "played": 20,
+   "last_update": "2024-12-14"
+  },
+  "Sturm Graz": {
+   "name": "Sturm Graz",
+   "rating": 1429.5583133886219,
+   "rd": 26.2658434704809,
+   "played": 18,
+   "last_update": "2024-11-03"
+  },
+  "Sporting Lisbon": {
+   "name": "Sporting Lisbon",
+   "rating": 1543.1299263962314,
+   "rd": 29.72594326672805,
+   "played": 16,
+   "last_update": "2024-03-14"
+  },
+  "Midtjylland": {
+   "name": "Midtjylland",
+   "rating": 1481.3374632458506,
+   "rd": 20.0,
+   "played": 24,
+   "last_update": "2025-02-20"
+  },
+  "Juventus": {
+   "name": "Juventus",
+   "rating": 1556.9137599069668,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2023-05-18"
+  },
+  "Man United": {
+   "name": "Man United",
+   "rating": 1648.8003442931442,
+   "rd": 20.0,
+   "played": 27,
+   "last_update": "2025-05-21"
+  },
+  "Salzburg": {
+   "name": "Salzburg",
+   "rating": 1494.1736221119634,
+   "rd": 70.68799999999999,
+   "played": 2,
+   "last_update": "2023-02-23"
+  },
+  "Roma": {
+   "name": "Roma",
+   "rating": 1583.1078536966556,
+   "rd": 20.0,
+   "played": 41,
+   "last_update": "2025-03-13"
+  },
+  "Shakhtar Donetsk": {
+   "name": "Shakhtar Donetsk",
+   "rating": 1466.0929311402213,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2024-02-22"
+  },
+  "Rennes": {
+   "name": "Rennes",
+   "rating": 1552.2656486602464,
+   "rd": 29.72594326672805,
+   "played": 16,
+   "last_update": "2025-12-14"
+  },
+  "Ajax": {
+   "name": "Ajax",
+   "rating": 1468.8170132017503,
+   "rd": 23.20849929051692,
+   "played": 20,
+   "last_update": "2025-03-13"
+  },
+  "Feyenoord": {
+   "name": "Feyenoord",
+   "rating": 1520.345424522107,
+   "rd": 38.073625185140244,
+   "played": 12,
+   "last_update": "2024-11-03"
+  },
+  "Trabzonspor": {
+   "name": "Trabzonspor",
+   "rating": 1504.0950508960361,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2023-11-03"
+  },
+  "Omonia Nicosia": {
+   "name": "Omonia Nicosia",
+   "rating": 1429.174264498689,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2023-11-03"
+  },
+  "Dynamo Kyiv": {
+   "name": "Dynamo Kyiv",
+   "rating": 1387.177511455836,
+   "rd": 33.64185521358992,
+   "played": 14,
+   "last_update": "2025-01-30"
+  },
+  "AEK Larnaca": {
+   "name": "AEK Larnaca",
+   "rating": 1476.842243476169,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2023-11-03"
+  },
+  "Spartak Moscow": {
+   "name": "Spartak Moscow",
+   "rating": 1509.7802763021932,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2023-12-09"
+  },
+  "Legia Warsaw": {
+   "name": "Legia Warsaw",
+   "rating": 1453.631464569543,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2023-12-09"
+  },
+  "Ludogorets": {
+   "name": "Ludogorets",
+   "rating": 1422.2092405633482,
+   "rd": 23.20849929051692,
+   "played": 20,
+   "last_update": "2025-01-30"
+  },
+  "Leicester": {
+   "name": "Leicester",
+   "rating": 1503.7100590718235,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2023-12-09"
+  },
+  "Servette": {
+   "name": "Servette",
+   "rating": 1462.002996458965,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2023-12-14"
+  },
+  "Slavia Prague": {
+   "name": "Slavia Prague",
+   "rating": 1482.889734761267,
+   "rd": 29.72594326672805,
+   "played": 16,
+   "last_update": "2025-01-30"
+  },
+  "TSC Backa Topola": {
+   "name": "TSC Backa Topola",
+   "rating": 1427.4621119751237,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2023-12-14"
+  },
+  "Rakow Czestochowa": {
+   "name": "Rakow Czestochowa",
+   "rating": 1457.4766391013895,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2023-12-14"
+  },
+  "Milan": {
+   "name": "Milan",
+   "rating": 1526.8843506755518,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2024-04-18"
+  },
+  "Benfica": {
+   "name": "Benfica",
+   "rating": 1520.00318749188,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2024-04-18"
+  },
+  "Toulouse": {
+   "name": "Toulouse",
+   "rating": 1506.9209144621313,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2024-12-14"
+  },
+  "Lens": {
+   "name": "Lens",
+   "rating": 1503.058698970954,
+   "rd": 70.68799999999999,
+   "played": 2,
+   "last_update": "2024-02-22"
+  },
+  "Young Boys": {
+   "name": "Young Boys",
+   "rating": 1486.2700511745497,
+   "rd": 70.68799999999999,
+   "played": 2,
+   "last_update": "2024-02-22"
+  },
+  "Liverpool": {
+   "name": "Liverpool",
+   "rating": 1569.5308176474111,
+   "rd": 43.08920912759195,
+   "played": 10,
+   "last_update": "2024-12-14"
+  },
+  "Brighton": {
+   "name": "Brighton",
+   "rating": 1541.7434452404852,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2024-12-14"
+  },
+  "Villarreal": {
+   "name": "Villarreal",
+   "rating": 1523.2972134203908,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2025-12-14"
+  },
+  "HJK Helsinki": {
+   "name": "HJK Helsinki",
+   "rating": 1431.6544370288575,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2024-11-03"
+  },
+  "Molde FK": {
+   "name": "Molde FK",
+   "rating": 1503.0383341220656,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2024-12-14"
+  },
+  "Hacken": {
+   "name": "Hacken",
+   "rating": 1421.7528136841436,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2024-12-14"
+  },
+  "LASK": {
+   "name": "LASK",
+   "rating": 1460.7138391499293,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2024-12-14"
+  },
+  "AEK Athens": {
+   "name": "AEK Athens",
+   "rating": 1454.1097865408576,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2024-12-14"
+  },
+  "Nice": {
+   "name": "Nice",
+   "rating": 1438.916424443674,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2025-01-30"
+  },
+  "Hoffenheim": {
+   "name": "Hoffenheim",
+   "rating": 1484.1999934766875,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2025-01-30"
+  },
+  "PAOK": {
+   "name": "PAOK",
+   "rating": 1480.1128503541165,
+   "rd": 43.08920912759195,
+   "played": 10,
+   "last_update": "2025-02-20"
+  },
+  "Anderlecht": {
+   "name": "Anderlecht",
+   "rating": 1495.3384558641221,
+   "rd": 43.08920912759195,
+   "played": 10,
+   "last_update": "2025-02-20"
+  },
+  "Twente": {
+   "name": "Twente",
+   "rating": 1493.5131999024907,
+   "rd": 43.08920912759195,
+   "played": 10,
+   "last_update": "2025-02-20"
+  },
+  "AZ Alkmaar": {
+   "name": "AZ Alkmaar",
+   "rating": 1517.9613481156068,
+   "rd": 38.073625185140244,
+   "played": 12,
+   "last_update": "2025-03-13"
+  },
+  "IF Elfsborg": {
+   "name": "IF Elfsborg",
+   "rating": 1479.8146128067515,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2025-01-30"
+  },
+  "Besiktas": {
+   "name": "Besiktas",
+   "rating": 1472.149268016679,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2025-01-30"
+  },
+  "Ath Bilbao": {
+   "name": "Ath Bilbao",
+   "rating": 1547.208109399406,
+   "rd": 33.64185521358992,
+   "played": 14,
+   "last_update": "2025-05-08"
+  },
+  "Viktoria Plzen": {
+   "name": "Viktoria Plzen",
+   "rating": 1509.3623892514358,
+   "rd": 38.073625185140244,
+   "played": 12,
+   "last_update": "2025-03-13"
+  },
+  "FCSB": {
+   "name": "FCSB",
+   "rating": 1506.6966578790996,
+   "rd": 38.073625185140244,
+   "played": 12,
+   "last_update": "2025-03-13"
+  },
+  "FK RFS": {
+   "name": "FK RFS",
+   "rating": 1448.053679186794,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2025-01-30"
+  },
+  "Tottenham": {
+   "name": "Tottenham",
+   "rating": 1603.834657513846,
+   "rd": 31.623343900774522,
+   "played": 15,
+   "last_update": "2025-05-21"
+  },
+  "Maccabi Tel Aviv": {
+   "name": "Maccabi Tel Aviv",
+   "rating": 1453.5414618215416,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2025-01-30"
+  },
+  "Panathinaikos": {
+   "name": "Panathinaikos",
+   "rating": 1470.4278622165004,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2025-12-14"
+  },
+  "Maccabi Haifa": {
+   "name": "Maccabi Haifa",
+   "rating": 1468.8002868393498,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2025-12-14"
+  },
+  "Aris Limassol": {
+   "name": "Aris Limassol",
+   "rating": 1460.7791849688513,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2025-12-14"
+  }
+ }
+}

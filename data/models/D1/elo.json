@@ -1,0 +1,198 @@
+{
+ "kind": "elo",
+ "k": 20.0,
+ "home_adv": 65.0,
+ "initial_rating": 1500.0,
+ "is_national": false,
+ "teams": {
+  "Hoffenheim": {
+   "name": "Hoffenheim",
+   "rating": 1537.0101183624388,
+   "rd": 20.0,
+   "played": 168,
+   "last_update": "2026-10-10"
+  },
+  "FC Koln": {
+   "name": "FC Koln",
+   "rating": 1420.662848341008,
+   "rd": 20.0,
+   "played": 134,
+   "last_update": "2026-10-11"
+  },
+  "Dortmund": {
+   "name": "Dortmund",
+   "rating": 1755.582345978544,
+   "rd": 20.0,
+   "played": 168,
+   "last_update": "2026-10-09"
+  },
+  "Mainz": {
+   "name": "Mainz",
+   "rating": 1543.3350907053452,
+   "rd": 20.0,
+   "played": 168,
+   "last_update": "2026-10-10"
+  },
+  "Ein Frankfurt": {
+   "name": "Ein Frankfurt",
+   "rating": 1528.669053084961,
+   "rd": 20.0,
+   "played": 168,
+   "last_update": "2026-10-10"
+  },
+  "Hertha": {
+   "name": "Hertha",
+   "rating": 1367.699094712786,
+   "rd": 20.0,
+   "played": 61,
+   "last_update": "2023-05-27"
+  },
+  "Freiburg": {
+   "name": "Freiburg",
+   "rating": 1583.1188344841232,
+   "rd": 20.0,
+   "played": 168,
+   "last_update": "2026-10-11"
+  },
+  "RB Leipzig": {
+   "name": "RB Leipzig",
+   "rating": 1634.876914791048,
+   "rd": 20.0,
+   "played": 168,
+   "last_update": "2026-10-10"
+  },
+  "Greuther Furth": {
+   "name": "Greuther Furth",
+   "rating": 1358.0948244098622,
+   "rd": 20.0,
+   "played": 27,
+   "last_update": "2022-05-14"
+  },
+  "Bochum": {
+   "name": "Bochum",
+   "rating": 1377.1717246547835,
+   "rd": 20.0,
+   "played": 129,
+   "last_update": "2025-05-17"
+  },
+  "Union Berlin": {
+   "name": "Union Berlin",
+   "rating": 1442.1831359904158,
+   "rd": 20.0,
+   "played": 168,
+   "last_update": "2026-10-10"
+  },
+  "Wolfsburg": {
+   "name": "Wolfsburg",
+   "rating": 1443.4234330022562,
+   "rd": 20.0,
+   "played": 163,
+   "last_update": "2026-05-16"
+  },
+  "M'gladbach": {
+   "name": "M'gladbach",
+   "rating": 1444.1255032288327,
+   "rd": 20.0,
+   "played": 168,
+   "last_update": "2026-10-11"
+  },
+  "Stuttgart": {
+   "name": "Stuttgart",
+   "rating": 1661.9901931411832,
+   "rd": 20.0,
+   "played": 168,
+   "last_update": "2026-10-10"
+  },
+  "Leverkusen": {
+   "name": "Leverkusen",
+   "rating": 1697.6571167210202,
+   "rd": 20.0,
+   "played": 168,
+   "last_update": "2026-10-10"
+  },
+  "Bayern Munich": {
+   "name": "Bayern Munich",
+   "rating": 1888.848703578012,
+   "rd": 20.0,
+   "played": 168,
+   "last_update": "2026-10-10"
+  },
+  "Augsburg": {
+   "name": "Augsburg",
+   "rating": 1529.4236634652323,
+   "rd": 20.0,
+   "played": 168,
+   "last_update": "2026-10-10"
+  },
+  "Bielefeld": {
+   "name": "Bielefeld",
+   "rating": 1411.7072863122426,
+   "rd": 20.0,
+   "played": 27,
+   "last_update": "2022-05-14"
+  },
+  "Werder Bremen": {
+   "name": "Werder Bremen",
+   "rating": 1477.672159401022,
+   "rd": 20.0,
+   "played": 141,
+   "last_update": "2026-10-09"
+  },
+  "Schalke 04": {
+   "name": "Schalke 04",
+   "rating": 1435.7339690380222,
+   "rd": 20.0,
+   "played": 39,
+   "last_update": "2026-10-11"
+  },
+  "Heidenheim": {
+   "name": "Heidenheim",
+   "rating": 1392.5260900947264,
+   "rd": 20.0,
+   "played": 102,
+   "last_update": "2026-05-16"
+  },
+  "Darmstadt": {
+   "name": "Darmstadt",
+   "rating": 1326.7888183755051,
+   "rd": 20.0,
+   "played": 34,
+   "last_update": "2024-05-18"
+  },
+  "Holstein Kiel": {
+   "name": "Holstein Kiel",
+   "rating": 1400.28737995089,
+   "rd": 20.0,
+   "played": 35,
+   "last_update": "2025-05-17"
+  },
+  "St Pauli": {
+   "name": "St Pauli",
+   "rating": 1368.6735371436505,
+   "rd": 20.0,
+   "played": 69,
+   "last_update": "2026-05-16"
+  },
+  "Hamburg": {
+   "name": "Hamburg",
+   "rating": 1470.785010204613,
+   "rd": 20.0,
+   "played": 39,
+   "last_update": "2026-10-10"
+  },
+  "Paderborn": {
+   "name": "Paderborn",
+   "rating": 1491.6512118634498,
+   "rd": 58.712321791999976,
+   "played": 5,
+   "last_update": "2026-10-10"
+  },
+  "Elversberg": {
+   "name": "Elversberg",
+   "rating": 1510.3019389640258,
+   "rd": 58.712321791999976,
+   "played": 5,
+   "last_update": "2026-10-10"
+  }
+ }
+}

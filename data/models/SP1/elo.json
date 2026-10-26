@@ -1,0 +1,212 @@
+{
+ "kind": "elo",
+ "k": 20.0,
+ "home_adv": 65.0,
+ "initial_rating": 1500.0,
+ "is_national": false,
+ "teams": {
+  "Levante": {
+   "name": "Levante",
+   "rating": 1484.6618921026347,
+   "rd": 20.0,
+   "played": 75,
+   "last_update": "2026-10-12"
+  },
+  "Getafe": {
+   "name": "Getafe",
+   "rating": 1485.845256473854,
+   "rd": 20.0,
+   "played": 190,
+   "last_update": "2026-10-10"
+  },
+  "Sociedad": {
+   "name": "Sociedad",
+   "rating": 1518.1272843805182,
+   "rd": 20.0,
+   "played": 190,
+   "last_update": "2026-10-11"
+  },
+  "Mallorca": {
+   "name": "Mallorca",
+   "rating": 1479.0415351080112,
+   "rd": 20.0,
+   "played": 182,
+   "last_update": "2026-05-23"
+  },
+  "Vallecano": {
+   "name": "Vallecano",
+   "rating": 1531.4988767192021,
+   "rd": 20.0,
+   "played": 189,
+   "last_update": "2026-09-19"
+  },
+  "Elche": {
+   "name": "Elche",
+   "rating": 1451.5923922957877,
+   "rd": 20.0,
+   "played": 114,
+   "last_update": "2026-10-11"
+  },
+  "Celta": {
+   "name": "Celta",
+   "rating": 1528.0869712361982,
+   "rd": 20.0,
+   "played": 190,
+   "last_update": "2026-10-11"
+  },
+  "Sevilla": {
+   "name": "Sevilla",
+   "rating": 1489.275380883579,
+   "rd": 20.0,
+   "played": 191,
+   "last_update": "2026-10-12"
+  },
+  "Villarreal": {
+   "name": "Villarreal",
+   "rating": 1627.6087518698616,
+   "rd": 20.0,
+   "played": 191,
+   "last_update": "2026-10-10"
+  },
+  "Osasuna": {
+   "name": "Osasuna",
+   "rating": 1449.202231460603,
+   "rd": 20.0,
+   "played": 190,
+   "last_update": "2026-10-11"
+  },
+  "Barcelona": {
+   "name": "Barcelona",
+   "rating": 1872.6603085963404,
+   "rd": 20.0,
+   "played": 191,
+   "last_update": "2026-10-10"
+  },
+  "Valencia": {
+   "name": "Valencia",
+   "rating": 1498.767347909613,
+   "rd": 20.0,
+   "played": 192,
+   "last_update": "2026-10-11"
+  },
+  "Alaves": {
+   "name": "Alaves",
+   "rating": 1488.7845454868057,
+   "rd": 20.0,
+   "played": 153,
+   "last_update": "2026-10-10"
+  },
+  "Betis": {
+   "name": "Betis",
+   "rating": 1633.2935379889682,
+   "rd": 20.0,
+   "played": 190,
+   "last_update": "2026-10-11"
+  },
+  "Espanol": {
+   "name": "Espanol",
+   "rating": 1459.5987642291677,
+   "rd": 20.0,
+   "played": 153,
+   "last_update": "2026-10-09"
+  },
+  "Cadiz": {
+   "name": "Cadiz",
+   "rating": 1389.7588113945578,
+   "rd": 20.0,
+   "played": 106,
+   "last_update": "2024-05-25"
+  },
+  "Granada": {
+   "name": "Granada",
+   "rating": 1337.4865703246098,
+   "rd": 20.0,
+   "played": 69,
+   "last_update": "2024-05-24"
+  },
+  "Ath Bilbao": {
+   "name": "Ath Bilbao",
+   "rating": 1524.2594047649627,
+   "rd": 20.0,
+   "played": 189,
+   "last_update": "2026-09-19"
+  },
+  "Ath Madrid": {
+   "name": "Ath Madrid",
+   "rating": 1682.12316288512,
+   "rd": 20.0,
+   "played": 190,
+   "last_update": "2026-10-10"
+  },
+  "Real Madrid": {
+   "name": "Real Madrid",
+   "rating": 1782.9648689006976,
+   "rd": 20.0,
+   "played": 190,
+   "last_update": "2026-10-10"
+  },
+  "Valladolid": {
+   "name": "Valladolid",
+   "rating": 1263.1519636449332,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2025-05-24"
+  },
+  "Girona": {
+   "name": "Girona",
+   "rating": 1470.403593375873,
+   "rd": 20.0,
+   "played": 152,
+   "last_update": "2026-05-23"
+  },
+  "Almeria": {
+   "name": "Almeria",
+   "rating": 1356.2970303773955,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2024-05-25"
+  },
+  "Las Palmas": {
+   "name": "Las Palmas",
+   "rating": 1384.168809918245,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2025-05-24"
+  },
+  "Leganes": {
+   "name": "Leganes",
+   "rating": 1452.9506907151215,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2025-05-24"
+  },
+  "Oviedo": {
+   "name": "Oviedo",
+   "rating": 1406.4050026240152,
+   "rd": 20.0,
+   "played": 39,
+   "last_update": "2026-05-23"
+  },
+  "Santander": {
+   "name": "Santander",
+   "rating": 1479.812740689222,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2026-10-11"
+  },
+  "La Coruna": {
+   "name": "La Coruna",
+   "rating": 1508.5358375515302,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2026-10-11"
+  },
+  "Malaga": {
+   "name": "Malaga",
+   "rating": 1463.6364360925706,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2026-10-09"
+  }
+ }
+}

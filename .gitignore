@@ -1,0 +1,29 @@
+# Python
+data/raw/
+data/processed/
+data/odds/
+data/cache/
+reports/*.html
+# 大型回测 JSON 保留在本地，站点只提交导出后的汇总
+reports/backtest_*.json
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.parquet
+.env
+*.joblib
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.log
+
+# Web
+node_modules/
+web/node_modules/
+web/dist/
+web/.vite/
+web/.cache/
+
+# OS
+.DS_Store
+Thumbs.db

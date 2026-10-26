@@ -1,0 +1,147 @@
+# 联赛分档与数据源映射
+# tier1: football-data.co.uk，22 赛区，免费 CSV，含收盘赔率
+# tier2: API-Football 免费额度，覆盖竞彩其余俱乐部赛事
+# tier3: eloratings.net，仅国家队
+
+tier1_footballdata:
+  # key = football-data.co.uk 的 div 代码
+  # jc = 竞彩常见开售标记（用于对照，非官方编码）
+  E0: { name: "英超",       country: "英格兰", tier: 1, jc_common: true }
+  E1: { name: "英冠",       country: "英格兰", tier: 1, jc_common: true }
+  E2: { name: "英甲",       country: "英格兰", tier: 1, jc_common: false }
+  E3: { name: "英乙",       country: "英格兰", tier: 1, jc_common: false }
+  SC0: { name: "苏超",      country: "苏格兰", tier: 1, jc_common: true }
+  SC1: { name: "苏冠",      country: "苏格兰", tier: 1, jc_common: false }
+  SC2: { name: "苏甲",      country: "苏格兰", tier: 1, jc_common: false }
+  SC3: { name: "苏乙",      country: "苏格兰", tier: 1, jc_common: false }
+  D1: { name: "德甲",       country: "德国",   tier: 1, jc_common: true }
+  D2: { name: "德乙",       country: "德国",   tier: 1, jc_common: true }
+  I1: { name: "意甲",       country: "意大利", tier: 1, jc_common: true }
+  I2: { name: "意乙",       country: "意大利", tier: 1, jc_common: false }
+  SP1: { name: "西甲",      country: "西班牙", tier: 1, jc_common: true }
+  SP2: { name: "西乙",      country: "西班牙", tier: 1, jc_common: false }
+  F1: { name: "法甲",       country: "法国",   tier: 1, jc_common: true }
+  F2: { name: "法乙",       country: "法国",   tier: 1, jc_common: true }
+  N1: { name: "荷甲",       country: "荷兰",   tier: 1, jc_common: true }
+  B1: { name: "比甲",       country: "比利时", tier: 1, jc_common: true }
+  P1: { name: "葡超",       country: "葡萄牙", tier: 1, jc_common: true }
+  T1: { name: "土超",       country: "土耳其", tier: 1, jc_common: false }
+  G1: { name: "希超",       country: "希腊",   tier: 1, jc_common: false }
+  EC: { name: "欧洲杯",      country: "欧足联", tier: 1, jc_common: true, is_cup: true }
+  WC: { name: "世界杯",      country: "国际",   tier: 1, jc_common: true, is_cup: true }
+
+# football-data.co.uk 下载地址模板
+tier1_source:
+  base_url: "https://www.football-data.co.uk/mmz4281/{season}/{div}.csv"
+  # season 格式：2425 表示 2024/25 赛季
+  earliest_season: "9394"
+
+# tier2: API-Football 联赛 ID 映射（免费额度，需谨慎使用配额）
+tier2_apifootball:
+  # key = API-Football league id
+  # 这些联赛 football-data.co.uk 没有，必须走 API
+  98:  { name: "日职联 J1",   country: "日本",   tier: 2, jc_common: true }
+  99:  { name: "日职乙 J2",   country: "日本",   tier: 2, jc_common: true }
+  292: { name: "韩K联",       country: "韩国",   tier: 2, jc_common: true }
+  188: { name: "澳超",        country: "澳大利亚", tier: 2, jc_common: true }
+  169: { name: "中超",        country: "中国",   tier: 2, jc_common: true }
+  113: { name: "瑞超",        country: "瑞典",   tier: 2, jc_common: true, div: "SWE1" }
+  103: { name: "挪超",        country: "挪威",   tier: 2, jc_common: true, div: "NOR1" }
+  244: { name: "芬超",        country: "芬兰",   tier: 2, jc_common: true, div: "FIN1" }
+  119: { name: "丹超",        country: "丹麦",   tier: 2, jc_common: true }
+  207: { name: "瑞士超",      country: "瑞士",   tier: 2, jc_common: true }
+  221: { name: "奥甲",        country: "奥地利", tier: 2, jc_common: false }
+  71:  { name: "巴西甲",      country: "巴西",   tier: 2, jc_common: true, div: "BRA1" }
+  265: { name: "美职联 MLS",  country: "美国",   tier: 2, jc_common: true }
+  262: { name: "墨西哥超",    country: "墨西哥", tier: 2, jc_common: false }
+  128: { name: "阿甲",        country: "阿根廷", tier: 2, jc_common: false }
+
+# 额外赛事：数据源不在 football-data 镜像里（走 openfootball）
+extra_competitions:
+  UCL: { name: "欧冠", country: "欧足联", source: "openfootball", is_cup: true }
+  UEL: { name: "欧罗巴", country: "欧足联", source: "openfootball", is_cup: true }
+  CONF: { name: "欧协联", country: "欧足联", source: "openfootball", is_cup: true }
+
+# 跨联赛合并模型：members 的历史数据合并训练成**一个**模型，
+# covers 列出的 div 在预测时改用该组模型（欧战场次必须跨联赛比较强弱）。
+# 训练参数走 settings.yaml 的 training.overrides（如 EUR）。
+# members 含全部 tier1 俱乐部联赛（国家队 EC/WC 不参与）+ 三项欧战；
+# 数据里没有的联赛代码不影响训练，日后 fetch-tier1 扩容即自动纳入。
+model_groups:
+  EUR:
+    name: "欧战(合并)"
+    members: [E0, E1, E2, E3, SC0, SC1, SC2, SC3, D1, D2, I1, I2,
+              SP1, SP2, F1, F2, N1, B1, P1, T1, G1, UCL, UEL, CONF]
+    covers: [UCL, UEL, CONF]
+
+# tier3: 国家队，eloratings.net
+tier3_nationalteams:
+  source: "https://www.eloratings.net"
+  events:
+    - { name: "世界杯",       tier: 3, jc_common: true }
+    - { name: "欧国联",       tier: 3, jc_common: true }
+    - { name: "世预赛",       tier: 3, jc_common: true }
+    - { name: "欧洲杯预选",   tier: 3, jc_common: true }
+  # 注意：国家队 Elo 与俱乐部完全独立，不可混用
+
+# 竞彩中文联赛名 -> 我们的 div 代码
+# 注意：竞彩接口的 leagueCode（如 GSL/ISA/SFL）与 football-data 的 div 代码
+# 完全不同源，无法直接映射，只能按中文联赛名对照。
+jingcai_league_map:
+  英超: E0
+  英冠: E1
+  英甲: E2
+  英乙: E3
+  苏超: SC0
+  苏冠: SC1
+  苏甲: SC2
+  苏乙: SC3
+  德甲: D1
+  德乙: D2
+  意甲: I1
+  意乙: I2
+  西甲: SP1
+  西乙: SP2
+  法甲: F1
+  法乙: F2
+  荷甲: N1
+  比甲: B1
+  葡超: P1
+  土超: T1
+  希超: G1
+  挪超: NOR1
+  瑞超: SWE1
+  芬超: FIN1
+  巴甲: BRA1
+  世界杯: WC
+  欧洲杯: EC
+  欧冠: UCL
+  欧罗巴: UEL
+  欧协联: CONF
+
+# 竞彩玩法定义
+jingcai_markets:
+  HAD:
+    name: "胜平负"
+    options: ["胜", "平", "负"]
+    has_handicap: false
+  HHAD:
+    name: "让球胜平负"
+    options: ["胜", "平", "负"]
+    has_handicap: true
+    # 让球数由竞彩官方指定，模型读取不自定
+  CORRECT_SCORE:
+    name: "比分"
+    # 竞彩比分玩法含 9+ 桶
+    has_9plus_bucket: true
+  TOTAL_GOALS:
+    name: "总进球"
+    options: ["0", "1", "2", "3", "4", "5", "6", "7+"]
+    has_7plus_bucket: true
+  HALF_FULL:
+    name: "半全场"
+    options: ["胜/胜", "胜/平", "胜/负", "平/胜", "平/平", "平/负", "负/胜", "负/平", "负/负"]
+  PARLAY:
+    name: "混合过关"
+    # 由各单场概率连乘，需加相关性折扣
+    correlation_discount: 0.03

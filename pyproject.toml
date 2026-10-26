@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jingcai-predict"
+version = "0.1.0"
+description = "基于 Dixon-Coles + Elo + LightGBM 的竞彩足球价值投注预测管线"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.26",
+    "scipy>=1.13",
+    "scikit-learn>=1.5",
+    "lightgbm>=4.0",
+    "xgboost>=2.0",
+    "requests>=2.31",
+    "pyyaml>=6.0",
+    "streamlit>=1.37",
+    "plotly>=5.24",
+    "pyarrow>=15.0",
+]
+
+# 本项目以 `python -m src.cli` 方式运行，src 本身即为包
+[tool.setuptools]
+packages = ["src", "src.ingest", "src.models", "src.features",
+            "src.jingcai", "src.backtest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_backtest.py", "test_cli.py", "test_europa.py",
+                "test_jingcai_snapshot.py", "test_ml.py", "test_model_enhance.py",
+                "test_reconcile.py", "test_ucl.py", "test_value_filter.py"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]

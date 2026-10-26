@@ -1,0 +1,113 @@
+# 全局设置
+paths:
+  base: "D:/python_学习区/football"
+  raw: "D:/python_学习区/football/data/raw"
+  processed: "D:/python_学习区/football/data/processed"
+  odds: "D:/python_学习区/football/data/odds"
+  cache: "D:/python_学习区/football/data/cache"
+  models: "D:/python_学习区/football/data/models"
+  reports: "D:/python_学习区/football/reports"
+
+# API-Football 免费额度：每日 100 请求
+apifootball:
+  base_url: "https://v3.football.api-sports.io"
+  # 留空则从环境变量 API_SPORTS_KEY 读取
+  api_key: ""
+  daily_quota: 100
+
+# 竞彩官网爬取
+jingcai:
+  base_url: "https://www.sporttery.cn"
+  # 请求间隔秒数，避免触发风控
+  request_interval: 3.0
+  timeout: 15
+
+# 历史赔率来源
+# 本机直连 football-data.co.uk 被墙，datasets 镜像又删了赔率列，
+# 故改从 GitHub 原始 dump 镜像取（含 B365/PS/Avg 赔率）。
+odds:
+  source_repo: "jokecamp/FootballData"
+  subdir: "football-data.co.uk"
+  # 备用直连模板（本机被墙时不可用，仅作记录）
+  direct_url_template: "https://www.football-data.co.uk/mmz4281/{season}/{div}.csv"
+
+# 模型训练
+training:
+  # Dixon-Coles 时间衰减半衰期（天），越大则历史数据权重保留越多
+  dc_half_life_days: 180
+  # 小样本收缩先验（场数）：每队攻防强度向联赛均值收缩，
+  # 收缩系数 = 出场数 / (出场数 + 先验)。0 表示不收缩。
+  # 用于缓解样本少的球队（欧战新军、升班马）参数偏乐观。
+  shrinkage_prior: 8
+  # Elo 与 Dixon-Coles 混合时 DC 的权重（0~1），如 0.8 = DC 占 8 成、Elo 占 2 成。
+  elo_blend_weight: 0.8
+  # LightGBM 与 DC+Elo 混合时 DC+Elo 的权重（0~1），0.8 = DC+Elo 占 8 成、ML 占 2 成。
+  ml_blend_weight: 0.8
+  # 按联赛覆盖默认训练参数（未指定 --years / --half-life 时生效）
+  overrides:
+    # 欧冠每队每季只有 8-13 场，窗口拉长、衰减放慢
+    UCL: { years: 10, half_life: 540, min_matches: 100 }
+    # EUR = 五大联赛+欧冠+欧罗巴+欧协联合并模型（欧战场次专用）。
+    # years: null 表示窗口跟数据走（不限年限），欧罗巴仅 4 季数据不设上限
+    EUR: { years: null, half_life: 540, min_matches: 500 }
+  # 随机种子，保证可复现
+  random_seed: 42
+  # LightGBM 参数
+  lgbm:
+    n_estimators: 1500
+    learning_rate: 0.03
+    num_leaves: 63
+    min_child_samples: 30
+    subsample: 0.8
+    colsample_bytree: 0.8
+    early_stopping_rounds: 100
+
+# 价值判断
+value:
+  # 竞彩综合返奖率约 73%，edge 阈值需设高
+  edge_threshold: 0.05
+  # Kelly 分数（1/4 Kelly）
+  kelly_fraction: 0.25
+  # 单场仓位上限（占总资金比例）
+  max_stake_pct: 0.02
+  # 市场混合权重：模型概率 p 与去水市场概率 m 按
+  #   p_final = blend_weight * p + (1 - blend_weight) * m
+  # 收缩（0.6 表示模型占 6 成）。目的：缓解模型过度自信、压制虚假 edge。
+  blend_weight: 0.6
+  # 价值投注的最低赔率（过滤超低赔率，低赔率即使 edge 高也几乎无肉）
+  min_odds: 1.30
+  # 价值投注的 edge 上限（过滤异常高 edge，多为队名/数据错误所致）
+  max_edge: 0.50
+
+backtest:
+  # walk-forward 扩展窗口：最少用多少场作为初始训练集
+  min_train_size: 380
+  # 每次滚动预测多少场后再重新拟合
+  refit_interval: 50
+
+# 候选筛选（recommend 命令）——注意：历史回测 ROI 为负，**不构成盈利建议**。
+# 定位是「风险筛选 / 纸面跟踪」，不是「稳赚推荐」。
+recommend:
+  # 风险档位：conservative / balanced / aggressive
+  risk: conservative
+  # 基本过滤（被 profiles 覆盖）
+  min_edge: 0.05
+  min_odds: 1.50
+  max_odds: 6.00
+  min_model_prob: 0.30
+  max_model_prob: 0.70
+  # 单注仓位上限（占总资金比例）
+  single_stake_pct: 0.02
+  # 每日总仓位上限（超出按比例缩放）
+  daily_stake_pct: 0.06
+  # 最多推荐几注
+  max_bets: 5
+  # 历史回测里唯一「微正」的是 E0 英超；其余联赛一律只「观察」
+  reliable_leagues: [E0]
+  # 只筛胜平负（HAD）；HHAD 历史无让球赔率、未验证，一律只「观察」
+  markets: [HAD]
+  # 三档风险覆盖
+  profiles:
+    conservative: { min_edge: 0.06, max_bets: 3, daily_stake_pct: 0.05 }
+    balanced:     { min_edge: 0.05, max_bets: 5, daily_stake_pct: 0.08 }
+    aggressive:   { min_edge: 0.04, max_bets: 8, daily_stake_pct: 0.12 }

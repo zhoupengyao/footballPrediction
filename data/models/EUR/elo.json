@@ -1,0 +1,2620 @@
+{
+ "kind": "elo",
+ "k": 20.0,
+ "home_adv": 65.0,
+ "initial_rating": 1500.0,
+ "is_national": false,
+ "teams": {
+  "Nantes": {
+   "name": "Nantes",
+   "rating": 1465.7621006205825,
+   "rd": 20.0,
+   "played": 1035,
+   "last_update": "2026-05-17"
+  },
+  "Monaco": {
+   "name": "Monaco",
+   "rating": 1694.9211356240908,
+   "rd": 20.0,
+   "played": 1218,
+   "last_update": "2026-10-10"
+  },
+  "Toulouse": {
+   "name": "Toulouse",
+   "rating": 1572.5886308912984,
+   "rd": 20.0,
+   "played": 931,
+   "last_update": "2026-10-10"
+  },
+  "Le Havre": {
+   "name": "Le Havre",
+   "rating": 1463.6384184439717,
+   "rd": 20.0,
+   "played": 438,
+   "last_update": "2026-10-10"
+  },
+  "Strasbourg": {
+   "name": "Strasbourg",
+   "rating": 1624.7896843645633,
+   "rd": 20.0,
+   "played": 804,
+   "last_update": "2026-10-11"
+  },
+  "Auxerre": {
+   "name": "Auxerre",
+   "rating": 1517.0166784399853,
+   "rd": 20.0,
+   "played": 814,
+   "last_update": "2026-10-11"
+  },
+  "St Etienne": {
+   "name": "St Etienne",
+   "rating": 1437.474052057819,
+   "rd": 20.0,
+   "played": 898,
+   "last_update": "2025-05-17"
+  },
+  "Cannes": {
+   "name": "Cannes",
+   "rating": 1392.5545017892412,
+   "rd": 20.0,
+   "played": 186,
+   "last_update": "1998-05-09"
+  },
+  "Sochaux": {
+   "name": "Sochaux",
+   "rating": 1507.6154225652865,
+   "rd": 20.0,
+   "played": 600,
+   "last_update": "2014-05-17"
+  },
+  "Angers": {
+   "name": "Angers",
+   "rating": 1451.769566208325,
+   "rd": 20.0,
+   "played": 407,
+   "last_update": "2026-10-10"
+  },
+  "Montpellier": {
+   "name": "Montpellier",
+   "rating": 1346.6477284915286,
+   "rd": 20.0,
+   "played": 961,
+   "last_update": "2025-05-17"
+  },
+  "Lyon": {
+   "name": "Lyon",
+   "rating": 1698.6267580620158,
+   "rd": 20.0,
+   "played": 1291,
+   "last_update": "2026-10-09"
+  },
+  "Marseille": {
+   "name": "Marseille",
+   "rating": 1607.2984360989562,
+   "rd": 20.0,
+   "played": 1220,
+   "last_update": "2026-10-11"
+  },
+  "Lens": {
+   "name": "Lens",
+   "rating": 1695.7903173002037,
+   "rd": 20.0,
+   "played": 897,
+   "last_update": "2026-10-09"
+  },
+  "Lille": {
+   "name": "Lille",
+   "rating": 1700.1000812039001,
+   "rd": 20.0,
+   "played": 1166,
+   "last_update": "2026-10-10"
+  },
+  "Martigues": {
+   "name": "Martigues",
+   "rating": 1421.0983275583274,
+   "rd": 20.0,
+   "played": 114,
+   "last_update": "1996-05-18"
+  },
+  "Caen": {
+   "name": "Caen",
+   "rating": 1409.1833865574804,
+   "rd": 20.0,
+   "played": 495,
+   "last_update": "2019-05-24"
+  },
+  "Metz": {
+   "name": "Metz",
+   "rating": 1355.5359754951367,
+   "rd": 20.0,
+   "played": 762,
+   "last_update": "2026-05-17"
+  },
+  "Bordeaux": {
+   "name": "Bordeaux",
+   "rating": 1425.7288800083522,
+   "rd": 20.0,
+   "played": 1074,
+   "last_update": "2022-05-21"
+  },
+  "Paris SG": {
+   "name": "Paris SG",
+   "rating": 1901.927575452796,
+   "rd": 20.0,
+   "played": 1375,
+   "last_update": "2026-10-10"
+  },
+  "Bayern Munich": {
+   "name": "Bayern Munich",
+   "rating": 1999.7970089745306,
+   "rd": 20.0,
+   "played": 1300,
+   "last_update": "2026-10-10"
+  },
+  "Freiburg": {
+   "name": "Freiburg",
+   "rating": 1640.5502473018898,
+   "rd": 20.0,
+   "played": 907,
+   "last_update": "2026-10-11"
+  },
+  "Hamburg": {
+   "name": "Hamburg",
+   "rating": 1511.6421705706214,
+   "rd": 20.0,
+   "played": 889,
+   "last_update": "2026-10-10"
+  },
+  "Nurnberg": {
+   "name": "Nurnberg",
+   "rating": 1371.8663498113376,
+   "rd": 20.0,
+   "played": 476,
+   "last_update": "2019-05-18"
+  },
+  "Werder Bremen": {
+   "name": "Werder Bremen",
+   "rating": 1539.6307821740074,
+   "rd": 20.0,
+   "played": 1093,
+   "last_update": "2026-10-09"
+  },
+  "Stuttgart": {
+   "name": "Stuttgart",
+   "rating": 1716.330017390862,
+   "rd": 20.0,
+   "played": 1068,
+   "last_update": "2026-10-10"
+  },
+  "Wattenscheid": {
+   "name": "Wattenscheid",
+   "rating": 1419.363076420746,
+   "rd": 20.0,
+   "played": 34,
+   "last_update": "1994-05-07"
+  },
+  "Schalke 04": {
+   "name": "Schalke 04",
+   "rating": 1463.548217019855,
+   "rd": 20.0,
+   "played": 1023,
+   "last_update": "2026-10-11"
+  },
+  "M'gladbach": {
+   "name": "M'gladbach",
+   "rating": 1503.68909193651,
+   "rd": 20.0,
+   "played": 1045,
+   "last_update": "2026-10-11"
+  },
+  "Ein Frankfurt": {
+   "name": "Ein Frankfurt",
+   "rating": 1562.8377183007815,
+   "rd": 20.0,
+   "played": 972,
+   "last_update": "2026-10-10"
+  },
+  "Leipzig": {
+   "name": "Leipzig",
+   "rating": 1336.5567443043308,
+   "rd": 20.0,
+   "played": 34,
+   "last_update": "1994-05-07"
+  },
+  "Dresden": {
+   "name": "Dresden",
+   "rating": 1341.0246197834404,
+   "rd": 20.0,
+   "played": 68,
+   "last_update": "1995-06-17"
+  },
+  "Dortmund": {
+   "name": "Dortmund",
+   "rating": 1809.4931412674266,
+   "rd": 20.0,
+   "played": 1259,
+   "last_update": "2026-10-09"
+  },
+  "Karlsruhe": {
+   "name": "Karlsruhe",
+   "rating": 1464.5327887715237,
+   "rd": 20.0,
+   "played": 238,
+   "last_update": "2009-05-23"
+  },
+  "FC Koln": {
+   "name": "FC Koln",
+   "rating": 1485.5254535365966,
+   "rd": 20.0,
+   "played": 793,
+   "last_update": "2026-10-11"
+  },
+  "Kaiserslautern": {
+   "name": "Kaiserslautern",
+   "rating": 1418.2630848625897,
+   "rd": 20.0,
+   "played": 476,
+   "last_update": "2012-05-05"
+  },
+  "Duisburg": {
+   "name": "Duisburg",
+   "rating": 1411.1535050905784,
+   "rd": 20.0,
+   "played": 272,
+   "last_update": "2008-05-17"
+  },
+  "Leverkusen": {
+   "name": "Leverkusen",
+   "rating": 1756.6624625640195,
+   "rd": 20.0,
+   "played": 1228,
+   "last_update": "2026-10-10"
+  },
+  "Aston Villa": {
+   "name": "Aston Villa",
+   "rating": 1705.275773448406,
+   "rd": 20.0,
+   "played": 1181,
+   "last_update": "2026-10-10"
+  },
+  "QPR": {
+   "name": "QPR",
+   "rating": 1419.8757530907376,
+   "rd": 20.0,
+   "played": 236,
+   "last_update": "2015-05-24"
+  },
+  "Southampton": {
+   "name": "Southampton",
+   "rating": 1330.4919704847962,
+   "rd": 20.0,
+   "played": 923,
+   "last_update": "2025-05-25"
+  },
+  "Everton": {
+   "name": "Everton",
+   "rating": 1656.2588779621253,
+   "rd": 20.0,
+   "played": 1272,
+   "last_update": "2026-10-11"
+  },
+  "Chelsea": {
+   "name": "Chelsea",
+   "rating": 1696.410104882829,
+   "rd": 20.0,
+   "played": 1391,
+   "last_update": "2026-10-10"
+  },
+  "Blackburn": {
+   "name": "Blackburn",
+   "rating": 1456.0020186488828,
+   "rd": 20.0,
+   "played": 656,
+   "last_update": "2012-05-13"
+  },
+  "Liverpool": {
+   "name": "Liverpool",
+   "rating": 1754.1226580329762,
+   "rd": 20.0,
+   "played": 1375,
+   "last_update": "2026-10-11"
+  },
+  "Sheffield Weds": {
+   "name": "Sheffield Weds",
+   "rating": 1451.7479322809706,
+   "rd": 20.0,
+   "played": 274,
+   "last_update": "2000-05-14"
+  },
+  "Man City": {
+   "name": "Man City",
+   "rating": 1899.8870740175907,
+   "rd": 20.0,
+   "played": 1227,
+   "last_update": "2026-10-11"
+  },
+  "Leeds": {
+   "name": "Leeds",
+   "rating": 1637.5566949767747,
+   "rd": 20.0,
+   "played": 586,
+   "last_update": "2026-10-10"
+  },
+  "Newcastle": {
+   "name": "Newcastle",
+   "rating": 1668.9202709497652,
+   "rd": 20.0,
+   "played": 1212,
+   "last_update": "2026-10-12"
+  },
+  "Tottenham": {
+   "name": "Tottenham",
+   "rating": 1600.1786116237809,
+   "rd": 20.0,
+   "played": 1348,
+   "last_update": "2026-10-10"
+  },
+  "Oldham": {
+   "name": "Oldham",
+   "rating": 1418.5685820254155,
+   "rd": 20.0,
+   "played": 42,
+   "last_update": "1994-05-07"
+  },
+  "Ipswich": {
+   "name": "Ipswich",
+   "rating": 1443.0878988481763,
+   "rd": 20.0,
+   "played": 204,
+   "last_update": "2026-10-10"
+  },
+  "Sheffield United": {
+   "name": "Sheffield United",
+   "rating": 1333.924104817681,
+   "rd": 20.0,
+   "played": 194,
+   "last_update": "2024-05-19"
+  },
+  "Swindon": {
+   "name": "Swindon",
+   "rating": 1364.8839168527095,
+   "rd": 20.0,
+   "played": 42,
+   "last_update": "1994-05-07"
+  },
+  "West Ham": {
+   "name": "West Ham",
+   "rating": 1598.1444284899935,
+   "rd": 20.0,
+   "played": 1184,
+   "last_update": "2026-05-24"
+  },
+  "Wimbledon": {
+   "name": "Wimbledon",
+   "rating": 1377.5452808193343,
+   "rd": 20.0,
+   "played": 274,
+   "last_update": "2000-05-14"
+  },
+  "Arsenal": {
+   "name": "Arsenal",
+   "rating": 1946.3993301107525,
+   "rd": 20.0,
+   "played": 1366,
+   "last_update": "2026-10-10"
+  },
+  "Coventry": {
+   "name": "Coventry",
+   "rating": 1460.7137970534106,
+   "rd": 20.0,
+   "played": 318,
+   "last_update": "2026-10-12"
+  },
+  "Norwich": {
+   "name": "Norwich",
+   "rating": 1331.549636298466,
+   "rd": 20.0,
+   "played": 350,
+   "last_update": "2022-05-22"
+  },
+  "Man United": {
+   "name": "Man United",
+   "rating": 1747.663099219084,
+   "rd": 20.0,
+   "played": 1368,
+   "last_update": "2026-10-10"
+  },
+  "Inter": {
+   "name": "Inter",
+   "rating": 1886.3108244454543,
+   "rd": 20.0,
+   "played": 1298,
+   "last_update": "2026-10-10"
+  },
+  "Reggiana": {
+   "name": "Reggiana",
+   "rating": 1313.0066294703593,
+   "rd": 20.0,
+   "played": 102,
+   "last_update": "1997-06-01"
+  },
+  "Genoa": {
+   "name": "Genoa",
+   "rating": 1519.245684435055,
+   "rd": 20.0,
+   "played": 759,
+   "last_update": "2026-10-10"
+  },
+  "Roma": {
+   "name": "Roma",
+   "rating": 1813.1778617372534,
+   "rd": 20.0,
+   "played": 1306,
+   "last_update": "2026-10-11"
+  },
+  "Udinese": {
+   "name": "Udinese",
+   "rating": 1569.1732437713213,
+   "rd": 20.0,
+   "played": 1184,
+   "last_update": "2026-10-12"
+  },
+  "Parma": {
+   "name": "Parma",
+   "rating": 1500.8898887825708,
+   "rd": 20.0,
+   "played": 950,
+   "last_update": "2026-10-10"
+  },
+  "Piacenza": {
+   "name": "Piacenza",
+   "rating": 1478.7249052154336,
+   "rd": 20.0,
+   "played": 272,
+   "last_update": "2003-05-24"
+  },
+  "Torino": {
+   "name": "Torino",
+   "rating": 1561.7401324475268,
+   "rd": 20.0,
+   "played": 856,
+   "last_update": "2026-10-12"
+  },
+  "Lecce": {
+   "name": "Lecce",
+   "rating": 1481.1410447880478,
+   "rd": 20.0,
+   "played": 590,
+   "last_update": "2026-10-11"
+  },
+  "Milan": {
+   "name": "Milan",
+   "rating": 1724.2422815624657,
+   "rd": 20.0,
+   "played": 1284,
+   "last_update": "2026-10-11"
+  },
+  "Lazio": {
+   "name": "Lazio",
+   "rating": 1685.5037753621327,
+   "rd": 20.0,
+   "played": 1262,
+   "last_update": "2026-10-11"
+  },
+  "Foggia": {
+   "name": "Foggia",
+   "rating": 1432.19185856781,
+   "rd": 20.0,
+   "played": 68,
+   "last_update": "1995-06-04"
+  },
+  "Atalanta": {
+   "name": "Atalanta",
+   "rating": 1694.4798173888312,
+   "rd": 20.0,
+   "played": 1070,
+   "last_update": "2026-10-12"
+  },
+  "Cagliari": {
+   "name": "Cagliari",
+   "rating": 1565.0889006969546,
+   "rd": 20.0,
+   "played": 972,
+   "last_update": "2026-10-11"
+  },
+  "Juventus": {
+   "name": "Juventus",
+   "rating": 1737.7306738238287,
+   "rd": 20.0,
+   "played": 1307,
+   "last_update": "2026-10-11"
+  },
+  "Cremonese": {
+   "name": "Cremonese",
+   "rating": 1458.1871829555082,
+   "rd": 20.0,
+   "played": 178,
+   "last_update": "2026-05-24"
+  },
+  "Napoli": {
+   "name": "Napoli",
+   "rating": 1740.4548233095866,
+   "rd": 20.0,
+   "played": 1011,
+   "last_update": "2026-10-10"
+  },
+  "Sampdoria": {
+   "name": "Sampdoria",
+   "rating": 1408.6681019251491,
+   "rd": 20.0,
+   "played": 922,
+   "last_update": "2023-06-04"
+  },
+  "Oviedo": {
+   "name": "Oviedo",
+   "rating": 1445.3185642715953,
+   "rd": 20.0,
+   "played": 351,
+   "last_update": "2026-05-23"
+  },
+  "Valencia": {
+   "name": "Valencia",
+   "rating": 1554.4612691795446,
+   "rd": 20.0,
+   "played": 1311,
+   "last_update": "2026-10-11"
+  },
+  "Ath Madrid": {
+   "name": "Ath Madrid",
+   "rating": 1759.709051424522,
+   "rd": 20.0,
+   "played": 1330,
+   "last_update": "2026-10-10"
+  },
+  "Logrones": {
+   "name": "Logrones",
+   "rating": 1289.0099620695376,
+   "rd": 20.0,
+   "played": 118,
+   "last_update": "1997-06-22"
+  },
+  "Zaragoza": {
+   "name": "Zaragoza",
+   "rating": 1444.9519210096132,
+   "rd": 20.0,
+   "played": 692,
+   "last_update": "2013-06-01"
+  },
+  "Sevilla": {
+   "name": "Sevilla",
+   "rating": 1551.0989814853017,
+   "rd": 20.0,
+   "played": 1225,
+   "last_update": "2026-10-12"
+  },
+  "Valladolid": {
+   "name": "Valladolid",
+   "rating": 1328.3267444346423,
+   "rd": 20.0,
+   "played": 806,
+   "last_update": "2025-05-24"
+  },
+  "Sp Gijon": {
+   "name": "Sp Gijon",
+   "rating": 1457.7351027061152,
+   "rd": 20.0,
+   "played": 428,
+   "last_update": "2017-05-20"
+  },
+  "Tenerife": {
+   "name": "Tenerife",
+   "rating": 1439.5019214303136,
+   "rd": 20.0,
+   "played": 312,
+   "last_update": "2010-05-16"
+  },
+  "Lerida": {
+   "name": "Lerida",
+   "rating": 1439.29658953792,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "1994-05-15"
+  },
+  "Barcelona": {
+   "name": "Barcelona",
+   "rating": 1924.5546282660969,
+   "rd": 20.0,
+   "played": 1435,
+   "last_update": "2026-10-10"
+  },
+  "Sociedad": {
+   "name": "Sociedad",
+   "rating": 1582.4928158627088,
+   "rd": 20.0,
+   "played": 1208,
+   "last_update": "2026-10-11"
+  },
+  "La Coruna": {
+   "name": "La Coruna",
+   "rating": 1471.4924561050827,
+   "rd": 20.0,
+   "played": 903,
+   "last_update": "2026-10-11"
+  },
+  "Celta": {
+   "name": "Celta",
+   "rating": 1581.9641377087437,
+   "rd": 20.0,
+   "played": 1055,
+   "last_update": "2026-10-11"
+  },
+  "Osasuna": {
+   "name": "Osasuna",
+   "rating": 1514.4766770143717,
+   "rd": 20.0,
+   "played": 882,
+   "last_update": "2026-10-11"
+  },
+  "Real Madrid": {
+   "name": "Real Madrid",
+   "rating": 1852.7867051787491,
+   "rd": 20.0,
+   "played": 1455,
+   "last_update": "2026-10-10"
+  },
+  "Santander": {
+   "name": "Santander",
+   "rating": 1398.7217389614648,
+   "rd": 20.0,
+   "played": 700,
+   "last_update": "2026-10-11"
+  },
+  "Vallecano": {
+   "name": "Vallecano",
+   "rating": 1591.1210971033365,
+   "rd": 20.0,
+   "played": 705,
+   "last_update": "2026-09-19"
+  },
+  "Ath Bilbao": {
+   "name": "Ath Bilbao",
+   "rating": 1582.038837253732,
+   "rd": 20.0,
+   "played": 1298,
+   "last_update": "2026-09-19"
+  },
+  "Albacete": {
+   "name": "Albacete",
+   "rating": 1425.1900966096266,
+   "rd": 20.0,
+   "played": 194,
+   "last_update": "2005-05-29"
+  },
+  "Nice": {
+   "name": "Nice",
+   "rating": 1523.1434092488107,
+   "rd": 20.0,
+   "played": 1031,
+   "last_update": "2026-10-11"
+  },
+  "Rennes": {
+   "name": "Rennes",
+   "rating": 1679.3546204540928,
+   "rd": 20.0,
+   "played": 1215,
+   "last_update": "2026-10-11"
+  },
+  "Bastia": {
+   "name": "Bastia",
+   "rating": 1461.0630971916298,
+   "rd": 20.0,
+   "played": 588,
+   "last_update": "2017-05-20"
+  },
+  "Bochum": {
+   "name": "Bochum",
+   "rating": 1446.0783595909297,
+   "rd": 20.0,
+   "played": 544,
+   "last_update": "2025-05-17"
+  },
+  "Munich 1860": {
+   "name": "Munich 1860",
+   "rating": 1439.265618879044,
+   "rd": 20.0,
+   "played": 340,
+   "last_update": "2004-05-22"
+  },
+  "Nott'm Forest": {
+   "name": "Nott'm Forest",
+   "rating": 1641.3159566942802,
+   "rd": 20.0,
+   "played": 314,
+   "last_update": "2026-10-11"
+  },
+  "Crystal Palace": {
+   "name": "Crystal Palace",
+   "rating": 1625.0609980977008,
+   "rd": 20.0,
+   "played": 623,
+   "last_update": "2026-10-11"
+  },
+  "Uerdingen": {
+   "name": "Uerdingen",
+   "rating": 1414.3201347996887,
+   "rd": 20.0,
+   "played": 68,
+   "last_update": "1996-05-18"
+  },
+  "Leicester": {
+   "name": "Leicester",
+   "rating": 1435.742381844366,
+   "rd": 20.0,
+   "played": 714,
+   "last_update": "2025-05-25"
+  },
+  "Fiorentina": {
+   "name": "Fiorentina",
+   "rating": 1581.5665044869204,
+   "rd": 20.0,
+   "played": 1157,
+   "last_update": "2026-10-10"
+  },
+  "Brescia": {
+   "name": "Brescia",
+   "rating": 1394.6206348035887,
+   "rd": 20.0,
+   "played": 318,
+   "last_update": "2020-08-01"
+  },
+  "Bari": {
+   "name": "Bari",
+   "rating": 1415.2376714081026,
+   "rd": 20.0,
+   "played": 280,
+   "last_update": "2011-05-22"
+  },
+  "Padova": {
+   "name": "Padova",
+   "rating": 1356.5509282114158,
+   "rd": 20.0,
+   "played": 68,
+   "last_update": "1996-05-12"
+  },
+  "Compostela": {
+   "name": "Compostela",
+   "rating": 1513.4446718423662,
+   "rd": 20.0,
+   "played": 160,
+   "last_update": "1998-05-15"
+  },
+  "Espanol": {
+   "name": "Espanol",
+   "rating": 1518.6585120141215,
+   "rd": 20.0,
+   "played": 1161,
+   "last_update": "2026-10-09"
+  },
+  "Betis": {
+   "name": "Betis",
+   "rating": 1689.0142745650462,
+   "rd": 20.0,
+   "played": 1135,
+   "last_update": "2026-10-11"
+  },
+  "Guingamp": {
+   "name": "Guingamp",
+   "rating": 1422.0066281877284,
+   "rd": 20.0,
+   "played": 485,
+   "last_update": "2019-05-24"
+  },
+  "Gueugnon": {
+   "name": "Gueugnon",
+   "rating": 1459.2679427922935,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "1996-05-18"
+  },
+  "Dusseldorf": {
+   "name": "Dusseldorf",
+   "rating": 1415.0188900704602,
+   "rd": 20.0,
+   "played": 68,
+   "last_update": "1997-05-31"
+  },
+  "Hansa Rostock": {
+   "name": "Hansa Rostock",
+   "rating": 1434.1274346927282,
+   "rd": 20.0,
+   "played": 374,
+   "last_update": "2008-05-17"
+  },
+  "St Pauli": {
+   "name": "St Pauli",
+   "rating": 1405.2964464508284,
+   "rd": 20.0,
+   "played": 205,
+   "last_update": "2026-05-16"
+  },
+  "Bolton": {
+   "name": "Bolton",
+   "rating": 1462.5701741423954,
+   "rd": 20.0,
+   "played": 496,
+   "last_update": "2012-05-13"
+  },
+  "Middlesbrough": {
+   "name": "Middlesbrough",
+   "rating": 1411.9669206150502,
+   "rd": 20.0,
+   "played": 533,
+   "last_update": "2017-05-21"
+  },
+  "Vicenza": {
+   "name": "Vicenza",
+   "rating": 1464.3612708740363,
+   "rd": 20.0,
+   "played": 170,
+   "last_update": "2001-06-17"
+  },
+  "Salamanca": {
+   "name": "Salamanca",
+   "rating": 1370.27469407991,
+   "rd": 20.0,
+   "played": 118,
+   "last_update": "1999-06-19"
+  },
+  "Merida": {
+   "name": "Merida",
+   "rating": 1431.5631812639433,
+   "rd": 20.0,
+   "played": 80,
+   "last_update": "1998-05-15"
+  },
+  "Nancy": {
+   "name": "Nancy",
+   "rating": 1456.6165301948881,
+   "rd": 20.0,
+   "played": 448,
+   "last_update": "2017-05-20"
+  },
+  "Bielefeld": {
+   "name": "Bielefeld",
+   "rating": 1459.5296119297125,
+   "rd": 20.0,
+   "played": 374,
+   "last_update": "2022-05-14"
+  },
+  "Derby": {
+   "name": "Derby",
+   "rating": 1271.3855162314437,
+   "rd": 20.0,
+   "played": 266,
+   "last_update": "2008-05-11"
+  },
+  "Sunderland": {
+   "name": "Sunderland",
+   "rating": 1563.5411204493207,
+   "rd": 20.0,
+   "played": 654,
+   "last_update": "2026-10-10"
+  },
+  "Hercules": {
+   "name": "Hercules",
+   "rating": 1410.316229782634,
+   "rd": 20.0,
+   "played": 80,
+   "last_update": "2011-05-21"
+  },
+  "Extremadura": {
+   "name": "Extremadura",
+   "rating": 1448.4502677578319,
+   "rd": 20.0,
+   "played": 80,
+   "last_update": "1999-06-20"
+  },
+  "Perugia": {
+   "name": "Perugia",
+   "rating": 1514.776808288774,
+   "rd": 20.0,
+   "played": 238,
+   "last_update": "2004-05-16"
+  },
+  "Bologna": {
+   "name": "Bologna",
+   "rating": 1612.2360752428262,
+   "rd": 20.0,
+   "played": 971,
+   "last_update": "2026-10-11"
+  },
+  "Verona": {
+   "name": "Verona",
+   "rating": 1405.8955932717106,
+   "rd": 20.0,
+   "played": 554,
+   "last_update": "2026-05-24"
+  },
+  "Wolfsburg": {
+   "name": "Wolfsburg",
+   "rating": 1506.537648490668,
+   "rd": 20.0,
+   "played": 1003,
+   "last_update": "2026-05-16"
+  },
+  "Chateauroux": {
+   "name": "Chateauroux",
+   "rating": 1421.9495490852623,
+   "rd": 20.0,
+   "played": 34,
+   "last_update": "1998-05-09"
+  },
+  "Hertha": {
+   "name": "Hertha",
+   "rating": 1450.1848033906153,
+   "rd": 20.0,
+   "played": 816,
+   "last_update": "2023-05-27"
+  },
+  "Barnsley": {
+   "name": "Barnsley",
+   "rating": 1411.7557193341725,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "1998-05-10"
+  },
+  "Mallorca": {
+   "name": "Mallorca",
+   "rating": 1543.0487606060235,
+   "rd": 20.0,
+   "played": 836,
+   "last_update": "2026-05-23"
+  },
+  "Empoli": {
+   "name": "Empoli",
+   "rating": 1472.226312119681,
+   "rd": 20.0,
+   "played": 555,
+   "last_update": "2025-05-25"
+  },
+  "Lorient": {
+   "name": "Lorient",
+   "rating": 1551.4458996828832,
+   "rd": 20.0,
+   "played": 677,
+   "last_update": "2026-10-10"
+  },
+  "Charlton": {
+   "name": "Charlton",
+   "rating": 1459.4067163552686,
+   "rd": 20.0,
+   "played": 306,
+   "last_update": "2007-05-13"
+  },
+  "Alaves": {
+   "name": "Alaves",
+   "rating": 1546.8218397562944,
+   "rd": 20.0,
+   "played": 580,
+   "last_update": "2026-10-10"
+  },
+  "Villarreal": {
+   "name": "Villarreal",
+   "rating": 1650.922313296542,
+   "rd": 20.0,
+   "played": 1042,
+   "last_update": "2026-10-10"
+  },
+  "Salernitana": {
+   "name": "Salernitana",
+   "rating": 1390.191666931911,
+   "rd": 20.0,
+   "played": 148,
+   "last_update": "2024-05-25"
+  },
+  "Venezia": {
+   "name": "Venezia",
+   "rating": 1371.892012597468,
+   "rd": 20.0,
+   "played": 184,
+   "last_update": "2026-10-12"
+  },
+  "Troyes": {
+   "name": "Troyes",
+   "rating": 1352.304668742316,
+   "rd": 20.0,
+   "played": 412,
+   "last_update": "2026-10-11"
+  },
+  "Sedan": {
+   "name": "Sedan",
+   "rating": 1466.5841584651498,
+   "rd": 20.0,
+   "played": 178,
+   "last_update": "2007-05-26"
+  },
+  "Bradford": {
+   "name": "Bradford",
+   "rating": 1386.0726136039673,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2001-05-19"
+  },
+  "Watford": {
+   "name": "Watford",
+   "rating": 1380.6985610044396,
+   "rd": 20.0,
+   "played": 308,
+   "last_update": "2022-05-22"
+  },
+  "Unterhaching": {
+   "name": "Unterhaching",
+   "rating": 1469.5846202005744,
+   "rd": 20.0,
+   "played": 68,
+   "last_update": "2001-05-19"
+  },
+  "Ulm": {
+   "name": "Ulm",
+   "rating": 1455.3680586355372,
+   "rd": 20.0,
+   "played": 34,
+   "last_update": "2000-05-20"
+  },
+  "Numancia": {
+   "name": "Numancia",
+   "rating": 1404.6115392020793,
+   "rd": 20.0,
+   "played": 152,
+   "last_update": "2009-05-31"
+  },
+  "Malaga": {
+   "name": "Malaga",
+   "rating": 1407.4949264858121,
+   "rd": 20.0,
+   "played": 674,
+   "last_update": "2026-10-09"
+  },
+  "Reggina": {
+   "name": "Reggina",
+   "rating": 1456.8465993204852,
+   "rd": 20.0,
+   "played": 326,
+   "last_update": "2009-05-31"
+  },
+  "Cottbus": {
+   "name": "Cottbus",
+   "rating": 1461.0046739145494,
+   "rd": 20.0,
+   "played": 204,
+   "last_update": "2009-05-23"
+  },
+  "Las Palmas": {
+   "name": "Las Palmas",
+   "rating": 1434.571316869746,
+   "rd": 20.0,
+   "played": 277,
+   "last_update": "2025-05-24"
+  },
+  "Fulham": {
+   "name": "Fulham",
+   "rating": 1613.6884187648652,
+   "rd": 20.0,
+   "played": 730,
+   "last_update": "2026-10-10"
+  },
+  "Chievo": {
+   "name": "Chievo",
+   "rating": 1377.8071299326555,
+   "rd": 20.0,
+   "played": 635,
+   "last_update": "2019-05-25"
+  },
+  "Ajaccio": {
+   "name": "Ajaccio",
+   "rating": 1333.813751078242,
+   "rd": 20.0,
+   "played": 304,
+   "last_update": "2023-06-03"
+  },
+  "Hannover": {
+   "name": "Hannover",
+   "rating": 1404.0887546026875,
+   "rd": 20.0,
+   "played": 544,
+   "last_update": "2019-05-18"
+  },
+  "Middlesboro": {
+   "name": "Middlesboro",
+   "rating": 1551.4743763737235,
+   "rd": 20.0,
+   "played": 31,
+   "last_update": "2003-05-11"
+  },
+  "West Brom": {
+   "name": "West Brom",
+   "rating": 1424.7095383342494,
+   "rd": 20.0,
+   "played": 499,
+   "last_update": "2021-05-23"
+  },
+  "Birmingham": {
+   "name": "Birmingham",
+   "rating": 1476.1783704859267,
+   "rd": 20.0,
+   "played": 267,
+   "last_update": "2011-05-22"
+  },
+  "Recreativo": {
+   "name": "Recreativo",
+   "rating": 1432.8001015072,
+   "rd": 20.0,
+   "played": 152,
+   "last_update": "2009-05-31"
+  },
+  "Modena": {
+   "name": "Modena",
+   "rating": 1442.9908143790126,
+   "rd": 20.0,
+   "played": 68,
+   "last_update": "2004-05-16"
+  },
+  "Como": {
+   "name": "Como",
+   "rating": 1737.4265798664896,
+   "rd": 20.0,
+   "played": 116,
+   "last_update": "2026-10-11"
+  },
+  "Le Mans": {
+   "name": "Le Mans",
+   "rating": 1453.2451855090715,
+   "rd": 20.0,
+   "played": 234,
+   "last_update": "2026-10-10"
+  },
+  "Portsmouth": {
+   "name": "Portsmouth",
+   "rating": 1445.8641790387135,
+   "rd": 20.0,
+   "played": 266,
+   "last_update": "2010-05-09"
+  },
+  "Wolves": {
+   "name": "Wolves",
+   "rating": 1483.7344048919258,
+   "rd": 20.0,
+   "played": 456,
+   "last_update": "2026-05-24"
+  },
+  "Murcia": {
+   "name": "Murcia",
+   "rating": 1384.3648391103825,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2008-05-17"
+  },
+  "Siena": {
+   "name": "Siena",
+   "rating": 1473.4441017208342,
+   "rd": 20.0,
+   "played": 338,
+   "last_update": "2013-05-19"
+  },
+  "Ancona": {
+   "name": "Ancona",
+   "rating": 1343.756087442853,
+   "rd": 20.0,
+   "played": 34,
+   "last_update": "2004-05-16"
+  },
+  "Istres": {
+   "name": "Istres",
+   "rating": 1433.6645470626647,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2005-05-28"
+  },
+  "Mainz": {
+   "name": "Mainz",
+   "rating": 1600.2180800073209,
+   "rd": 20.0,
+   "played": 685,
+   "last_update": "2026-10-10"
+  },
+  "Levante": {
+   "name": "Levante",
+   "rating": 1539.114732856919,
+   "rd": 20.0,
+   "played": 582,
+   "last_update": "2026-10-12"
+  },
+  "Getafe": {
+   "name": "Getafe",
+   "rating": 1538.710347754722,
+   "rd": 20.0,
+   "played": 808,
+   "last_update": "2026-10-10"
+  },
+  "Livorno": {
+   "name": "Livorno",
+   "rating": 1352.2970749518,
+   "rd": 20.0,
+   "played": 228,
+   "last_update": "2014-05-18"
+  },
+  "Messina": {
+   "name": "Messina",
+   "rating": 1360.775434233757,
+   "rd": 20.0,
+   "played": 114,
+   "last_update": "2007-05-27"
+  },
+  "Palermo": {
+   "name": "Palermo",
+   "rating": 1398.7970887526224,
+   "rd": 20.0,
+   "played": 458,
+   "last_update": "2017-05-28"
+  },
+  "Wigan": {
+   "name": "Wigan",
+   "rating": 1495.7537375826807,
+   "rd": 20.0,
+   "played": 304,
+   "last_update": "2013-05-19"
+  },
+  "Cadiz": {
+   "name": "Cadiz",
+   "rating": 1464.4005854615953,
+   "rd": 20.0,
+   "played": 190,
+   "last_update": "2024-05-25"
+  },
+  "Treviso": {
+   "name": "Treviso",
+   "rating": 1398.8619348166383,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2006-05-14"
+  },
+  "Ascoli": {
+   "name": "Ascoli",
+   "rating": 1417.6037613678163,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2007-05-27"
+  },
+  "Valenciennes": {
+   "name": "Valenciennes",
+   "rating": 1423.002289301924,
+   "rd": 20.0,
+   "played": 304,
+   "last_update": "2014-05-17"
+  },
+  "Aachen": {
+   "name": "Aachen",
+   "rating": 1434.4784949423229,
+   "rd": 20.0,
+   "played": 34,
+   "last_update": "2007-05-19"
+  },
+  "Reading": {
+   "name": "Reading",
+   "rating": 1412.4115537523185,
+   "rd": 20.0,
+   "played": 114,
+   "last_update": "2013-05-19"
+  },
+  "Gimnastic": {
+   "name": "Gimnastic",
+   "rating": 1415.4345401191424,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2007-06-17"
+  },
+  "Catania": {
+   "name": "Catania",
+   "rating": 1491.952599951509,
+   "rd": 20.0,
+   "played": 304,
+   "last_update": "2014-05-18"
+  },
+  "Almeria": {
+   "name": "Almeria",
+   "rating": 1416.6491521407645,
+   "rd": 20.0,
+   "played": 304,
+   "last_update": "2024-05-25"
+  },
+  "Grenoble": {
+   "name": "Grenoble",
+   "rating": 1433.8286260570678,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2010-05-15"
+  },
+  "Hoffenheim": {
+   "name": "Hoffenheim",
+   "rating": 1590.875626079204,
+   "rd": 20.0,
+   "played": 631,
+   "last_update": "2026-10-10"
+  },
+  "Stoke": {
+   "name": "Stoke",
+   "rating": 1488.9386551508735,
+   "rd": 20.0,
+   "played": 384,
+   "last_update": "2018-05-13"
+  },
+  "Hull": {
+   "name": "Hull",
+   "rating": 1480.737452760645,
+   "rd": 20.0,
+   "played": 199,
+   "last_update": "2026-10-11"
+  },
+  "Boulogne": {
+   "name": "Boulogne",
+   "rating": 1430.919855656223,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2010-05-15"
+  },
+  "Burnley": {
+   "name": "Burnley",
+   "rating": 1422.3548884325894,
+   "rd": 20.0,
+   "played": 381,
+   "last_update": "2026-05-24"
+  },
+  "Xerez": {
+   "name": "Xerez",
+   "rating": 1475.9718955021667,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2010-05-16"
+  },
+  "Brest": {
+   "name": "Brest",
+   "rating": 1549.1709914088988,
+   "rd": 20.0,
+   "played": 376,
+   "last_update": "2026-10-10"
+  },
+  "Arles": {
+   "name": "Arles",
+   "rating": 1384.0367142843045,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2011-05-29"
+  },
+  "Blackpool": {
+   "name": "Blackpool",
+   "rating": 1468.445630548326,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2011-05-22"
+  },
+  "Cesena": {
+   "name": "Cesena",
+   "rating": 1369.0725613890254,
+   "rd": 20.0,
+   "played": 114,
+   "last_update": "2015-05-31"
+  },
+  "Evian Thonon Gaillard": {
+   "name": "Evian Thonon Gaillard",
+   "rating": 1463.2197455741232,
+   "rd": 20.0,
+   "played": 152,
+   "last_update": "2015-05-23"
+  },
+  "Augsburg": {
+   "name": "Augsburg",
+   "rating": 1588.2130278122154,
+   "rd": 20.0,
+   "played": 515,
+   "last_update": "2026-10-10"
+  },
+  "Dijon": {
+   "name": "Dijon",
+   "rating": 1351.91894825159,
+   "rd": 20.0,
+   "played": 219,
+   "last_update": "2021-05-23"
+  },
+  "Swansea": {
+   "name": "Swansea",
+   "rating": 1482.1209142771,
+   "rd": 20.0,
+   "played": 271,
+   "last_update": "2018-05-13"
+  },
+  "Granada": {
+   "name": "Granada",
+   "rating": 1406.3754949060242,
+   "rd": 20.0,
+   "played": 386,
+   "last_update": "2024-05-24"
+  },
+  "Novara": {
+   "name": "Novara",
+   "rating": 1460.8615631041123,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2012-05-13"
+  },
+  "Porto": {
+   "name": "Porto",
+   "rating": 1724.5915002105833,
+   "rd": 20.0,
+   "played": 108,
+   "last_update": "2025-02-20"
+  },
+  "Shakhtar Donetsk": {
+   "name": "Shakhtar Donetsk",
+   "rating": 1579.5040637088994,
+   "rd": 20.0,
+   "played": 92,
+   "last_update": "2025-01-29"
+  },
+  "APOEL": {
+   "name": "APOEL",
+   "rating": 1490.594151099367,
+   "rd": 20.0,
+   "played": 30,
+   "last_update": "2025-02-20"
+  },
+  "Zenit": {
+   "name": "Zenit",
+   "rating": 1513.235852386067,
+   "rd": 20.0,
+   "played": 56,
+   "last_update": "2022-12-08"
+  },
+  "Ajax": {
+   "name": "Ajax",
+   "rating": 1567.3393371728116,
+   "rd": 20.0,
+   "played": 94,
+   "last_update": "2026-01-28"
+  },
+  "Dinamo Zagreb": {
+   "name": "Dinamo Zagreb",
+   "rating": 1534.2397874270655,
+   "rd": 20.0,
+   "played": 62,
+   "last_update": "2025-12-14"
+  },
+  "Benfica": {
+   "name": "Benfica",
+   "rating": 1684.667690255126,
+   "rd": 20.0,
+   "played": 118,
+   "last_update": "2026-02-25"
+  },
+  "CSKA Moscow": {
+   "name": "CSKA Moscow",
+   "rating": 1547.564371232575,
+   "rd": 20.0,
+   "played": 44,
+   "last_update": "2018-12-12"
+  },
+  "Basel": {
+   "name": "Basel",
+   "rating": 1606.9004146858108,
+   "rd": 20.0,
+   "played": 58,
+   "last_update": "2023-11-03"
+  },
+  "Reims": {
+   "name": "Reims",
+   "rating": 1480.050380370953,
+   "rd": 20.0,
+   "played": 400,
+   "last_update": "2025-05-17"
+  },
+  "Fortuna Dusseldorf": {
+   "name": "Fortuna Dusseldorf",
+   "rating": 1484.557566823087,
+   "rd": 20.0,
+   "played": 102,
+   "last_update": "2020-06-27"
+  },
+  "Greuther Furth": {
+   "name": "Greuther Furth",
+   "rating": 1368.7535355108896,
+   "rd": 20.0,
+   "played": 68,
+   "last_update": "2022-05-14"
+  },
+  "Pescara": {
+   "name": "Pescara",
+   "rating": 1328.8264820397737,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2017-05-28"
+  },
+  "Viktoria Plzen": {
+   "name": "Viktoria Plzen",
+   "rating": 1568.2408349045356,
+   "rd": 20.0,
+   "played": 46,
+   "last_update": "2025-12-14"
+  },
+  "BATE Borisov": {
+   "name": "BATE Borisov",
+   "rating": 1460.643226105555,
+   "rd": 20.0,
+   "played": 24,
+   "last_update": "2016-12-09"
+  },
+  "Genk": {
+   "name": "Genk",
+   "rating": 1458.4745193962353,
+   "rd": 20.0,
+   "played": 24,
+   "last_update": "2025-12-14"
+  },
+  "Trabzonspor": {
+   "name": "Trabzonspor",
+   "rating": 1528.220723389452,
+   "rd": 33.64185521358992,
+   "played": 14,
+   "last_update": "2023-11-03"
+  },
+  "Dynamo Kyiv": {
+   "name": "Dynamo Kyiv",
+   "rating": 1408.3842733367926,
+   "rd": 20.0,
+   "played": 46,
+   "last_update": "2025-01-30"
+  },
+  "Spartak Moscow": {
+   "name": "Spartak Moscow",
+   "rating": 1527.3560232883237,
+   "rd": 26.2658434704809,
+   "played": 18,
+   "last_update": "2023-12-09"
+  },
+  "Celtic": {
+   "name": "Celtic",
+   "rating": 1516.8103239789164,
+   "rd": 20.0,
+   "played": 56,
+   "last_update": "2025-02-18"
+  },
+  "Galatasaray": {
+   "name": "Galatasaray",
+   "rating": 1585.1602124663432,
+   "rd": 20.0,
+   "played": 80,
+   "last_update": "2026-03-18"
+  },
+  "Braunschweig": {
+   "name": "Braunschweig",
+   "rating": 1436.5930645775732,
+   "rd": 20.0,
+   "played": 34,
+   "last_update": "2014-05-10"
+  },
+  "Cardiff": {
+   "name": "Cardiff",
+   "rating": 1423.4462606225434,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2019-05-12"
+  },
+  "Elche": {
+   "name": "Elche",
+   "rating": 1509.324982308105,
+   "rd": 20.0,
+   "played": 236,
+   "last_update": "2026-10-11"
+  },
+  "Sassuolo": {
+   "name": "Sassuolo",
+   "rating": 1565.7200342609422,
+   "rd": 20.0,
+   "played": 463,
+   "last_update": "2026-10-11"
+  },
+  "Olympiakos": {
+   "name": "Olympiakos",
+   "rating": 1611.0203008309309,
+   "rd": 20.0,
+   "played": 99,
+   "last_update": "2026-02-24"
+  },
+  "Otelul Galati": {
+   "name": "Otelul Galati",
+   "rating": 1455.9295479016946,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2013-12-07"
+  },
+  "Austria Vienna": {
+   "name": "Austria Vienna",
+   "rating": 1453.9500413343353,
+   "rd": 38.073625185140244,
+   "played": 12,
+   "last_update": "2024-11-03"
+  },
+  "Nordsjaelland": {
+   "name": "Nordsjaelland",
+   "rating": 1495.859155764925,
+   "rd": 38.073625185140244,
+   "played": 12,
+   "last_update": "2024-12-14"
+  },
+  "Braga": {
+   "name": "Braga",
+   "rating": 1517.1224700979399,
+   "rd": 20.0,
+   "played": 42,
+   "last_update": "2025-01-30"
+  },
+  "CFR Cluj": {
+   "name": "CFR Cluj",
+   "rating": 1507.3907223056399,
+   "rd": 23.20849929051692,
+   "played": 20,
+   "last_update": "2023-02-23"
+  },
+  "Paderborn": {
+   "name": "Paderborn",
+   "rating": 1395.6174147319,
+   "rd": 20.0,
+   "played": 73,
+   "last_update": "2026-10-10"
+  },
+  "Eibar": {
+   "name": "Eibar",
+   "rating": 1477.4720984132625,
+   "rd": 20.0,
+   "played": 274,
+   "last_update": "2021-05-22"
+  },
+  "Cordoba": {
+   "name": "Cordoba",
+   "rating": 1361.805801244097,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2015-05-23"
+  },
+  "Anderlecht": {
+   "name": "Anderlecht",
+   "rating": 1499.583593010733,
+   "rd": 20.0,
+   "played": 46,
+   "last_update": "2025-02-20"
+  },
+  "Malmo": {
+   "name": "Malmo",
+   "rating": 1375.9695034308893,
+   "rd": 20.0,
+   "played": 32,
+   "last_update": "2025-01-30"
+  },
+  "FC Copenhagen": {
+   "name": "FC Copenhagen",
+   "rating": 1547.0561719511354,
+   "rd": 20.0,
+   "played": 52,
+   "last_update": "2026-01-28"
+  },
+  "Maribor": {
+   "name": "Maribor",
+   "rating": 1475.9840324802647,
+   "rd": 38.073625185140244,
+   "played": 12,
+   "last_update": "2018-12-06"
+  },
+  "Sporting Lisbon": {
+   "name": "Sporting Lisbon",
+   "rating": 1698.8468803040248,
+   "rd": 20.0,
+   "played": 70,
+   "last_update": "2026-04-15"
+  },
+  "Steaua Bucharest": {
+   "name": "Steaua Bucharest",
+   "rating": 1488.8014990100087,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2014-12-11"
+  },
+  "Bournemouth": {
+   "name": "Bournemouth",
+   "rating": 1686.9667623551127,
+   "rd": 20.0,
+   "played": 349,
+   "last_update": "2026-10-10"
+  },
+  "Ajaccio GFCO": {
+   "name": "Ajaccio GFCO",
+   "rating": 1462.2087219657,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2016-05-14"
+  },
+  "Ingolstadt": {
+   "name": "Ingolstadt",
+   "rating": 1487.993328445871,
+   "rd": 20.0,
+   "played": 68,
+   "last_update": "2017-05-20"
+  },
+  "Darmstadt": {
+   "name": "Darmstadt",
+   "rating": 1360.8567235039632,
+   "rd": 20.0,
+   "played": 102,
+   "last_update": "2024-05-18"
+  },
+  "Frosinone": {
+   "name": "Frosinone",
+   "rating": 1513.7035200296598,
+   "rd": 20.0,
+   "played": 120,
+   "last_update": "2026-10-10"
+  },
+  "Carpi": {
+   "name": "Carpi",
+   "rating": 1507.510494773356,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2016-05-15"
+  },
+  "Ludogorets": {
+   "name": "Ludogorets",
+   "rating": 1456.9013337890146,
+   "rd": 20.0,
+   "played": 42,
+   "last_update": "2025-01-30"
+  },
+  "Maccabi Tel Aviv": {
+   "name": "Maccabi Tel Aviv",
+   "rating": 1511.4185968315016,
+   "rd": 20.0,
+   "played": 30,
+   "last_update": "2025-01-30"
+  },
+  "Gent": {
+   "name": "Gent",
+   "rating": 1542.0354616440984,
+   "rd": 20.0,
+   "played": 44,
+   "last_update": "2025-02-20"
+  },
+  "PSV Eindhoven": {
+   "name": "PSV Eindhoven",
+   "rating": 1685.2143472010102,
+   "rd": 20.0,
+   "played": 68,
+   "last_update": "2026-01-28"
+  },
+  "Crotone": {
+   "name": "Crotone",
+   "rating": 1415.4029777105495,
+   "rd": 20.0,
+   "played": 114,
+   "last_update": "2021-05-22"
+  },
+  "Leganes": {
+   "name": "Leganes",
+   "rating": 1514.505154602056,
+   "rd": 20.0,
+   "played": 192,
+   "last_update": "2025-05-24"
+  },
+  "RB Leipzig": {
+   "name": "RB Leipzig",
+   "rating": 1690.5572413802547,
+   "rd": 20.0,
+   "played": 405,
+   "last_update": "2026-10-10"
+  },
+  "Rostov": {
+   "name": "Rostov",
+   "rating": 1512.2042558667886,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2016-12-06"
+  },
+  "Club Brugge": {
+   "name": "Club Brugge",
+   "rating": 1655.1607208305334,
+   "rd": 20.0,
+   "played": 72,
+   "last_update": "2026-02-24"
+  },
+  "Amiens": {
+   "name": "Amiens",
+   "rating": 1434.252303726638,
+   "rd": 20.0,
+   "played": 104,
+   "last_update": "2020-03-06"
+  },
+  "Huddersfield": {
+   "name": "Huddersfield",
+   "rating": 1346.189819741278,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2019-05-12"
+  },
+  "Brighton": {
+   "name": "Brighton",
+   "rating": 1754.7986317270763,
+   "rd": 20.0,
+   "played": 356,
+   "last_update": "2026-10-10"
+  },
+  "Girona": {
+   "name": "Girona",
+   "rating": 1529.311172120735,
+   "rd": 20.0,
+   "played": 236,
+   "last_update": "2026-05-23"
+  },
+  "Spal": {
+   "name": "Spal",
+   "rating": 1359.1328088521673,
+   "rd": 20.0,
+   "played": 114,
+   "last_update": "2020-08-02"
+  },
+  "Benevento": {
+   "name": "Benevento",
+   "rating": 1403.6339805751022,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2021-05-23"
+  },
+  "Besiktas": {
+   "name": "Besiktas",
+   "rating": 1482.003492380332,
+   "rd": 20.0,
+   "played": 34,
+   "last_update": "2025-01-30"
+  },
+  "Astana": {
+   "name": "Astana",
+   "rating": 1434.6518995520908,
+   "rd": 26.2658434704809,
+   "played": 18,
+   "last_update": "2025-12-14"
+  },
+  "Nimes": {
+   "name": "Nimes",
+   "rating": 1455.0925432268969,
+   "rd": 20.0,
+   "played": 104,
+   "last_update": "2021-05-23"
+  },
+  "Huesca": {
+   "name": "Huesca",
+   "rating": 1495.0632237650784,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2021-05-22"
+  },
+  "Legia Warsaw": {
+   "name": "Legia Warsaw",
+   "rating": 1537.3541109571788,
+   "rd": 20.0,
+   "played": 30,
+   "last_update": "2025-04-17"
+  },
+  "Lokomotiv Moscow": {
+   "name": "Lokomotiv Moscow",
+   "rating": 1441.7984532874723,
+   "rd": 20.0,
+   "played": 24,
+   "last_update": "2022-12-09"
+  },
+  "Union Berlin": {
+   "name": "Union Berlin",
+   "rating": 1500.8161327215537,
+   "rd": 20.0,
+   "played": 265,
+   "last_update": "2026-10-10"
+  },
+  "Qarabag": {
+   "name": "Qarabag",
+   "rating": 1480.2391535677627,
+   "rd": 20.0,
+   "played": 50,
+   "last_update": "2026-02-24"
+  },
+  "Feyenoord": {
+   "name": "Feyenoord",
+   "rating": 1650.0908366717456,
+   "rd": 20.0,
+   "played": 49,
+   "last_update": "2025-03-11"
+  },
+  "Young Boys": {
+   "name": "Young Boys",
+   "rating": 1435.0259714171118,
+   "rd": 20.0,
+   "played": 28,
+   "last_update": "2025-01-29"
+  },
+  "AEK Athens": {
+   "name": "AEK Athens",
+   "rating": 1449.216206733979,
+   "rd": 38.073625185140244,
+   "played": 12,
+   "last_update": "2024-12-14"
+  },
+  "Salzburg": {
+   "name": "Salzburg",
+   "rating": 1499.9574343363258,
+   "rd": 20.0,
+   "played": 42,
+   "last_update": "2025-01-29"
+  },
+  "Red Star Belgrade": {
+   "name": "Red Star Belgrade",
+   "rating": 1491.6790522613403,
+   "rd": 20.0,
+   "played": 40,
+   "last_update": "2025-01-29"
+  },
+  "Spezia": {
+   "name": "Spezia",
+   "rating": 1452.343472066527,
+   "rd": 20.0,
+   "played": 114,
+   "last_update": "2023-06-04"
+  },
+  "Ferencvaros": {
+   "name": "Ferencvaros",
+   "rating": 1492.7614265438565,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2025-12-14"
+  },
+  "Midtjylland": {
+   "name": "Midtjylland",
+   "rating": 1510.7943513445493,
+   "rd": 20.0,
+   "played": 32,
+   "last_update": "2025-02-20"
+  },
+  "Clermont": {
+   "name": "Clermont",
+   "rating": 1438.9142953972373,
+   "rd": 20.0,
+   "played": 110,
+   "last_update": "2024-05-19"
+  },
+  "Brentford": {
+   "name": "Brentford",
+   "rating": 1709.1866239459132,
+   "rd": 20.0,
+   "played": 196,
+   "last_update": "2026-10-10"
+  },
+  "FC Alashkert": {
+   "name": "FC Alashkert",
+   "rating": 1424.0188086261605,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2021-12-09"
+  },
+  "Sheriff Tiraspol": {
+   "name": "Sheriff Tiraspol",
+   "rating": 1459.6770774151448,
+   "rd": 20.0,
+   "played": 24,
+   "last_update": "2023-12-14"
+  },
+  "NS Mura": {
+   "name": "NS Mura",
+   "rating": 1462.7594917613114,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2021-12-09"
+  },
+  "Vitesse": {
+   "name": "Vitesse",
+   "rating": 1535.779036339396,
+   "rd": 43.08920912759195,
+   "played": 10,
+   "last_update": "2022-03-17"
+  },
+  "Rangers": {
+   "name": "Rangers",
+   "rating": 1579.47364219331,
+   "rd": 20.0,
+   "played": 41,
+   "last_update": "2025-12-14"
+  },
+  "Fenerbahce": {
+   "name": "Fenerbahce",
+   "rating": 1565.8599627320218,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2025-03-13"
+  },
+  "Royal Antwerp": {
+   "name": "Royal Antwerp",
+   "rating": 1467.1616786131883,
+   "rd": 38.073625185140244,
+   "played": 12,
+   "last_update": "2023-12-13"
+  },
+  "Brondby": {
+   "name": "Brondby",
+   "rating": 1455.273461477233,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2021-12-09"
+  },
+  "Sparta Prague": {
+   "name": "Sparta Prague",
+   "rating": 1509.2856767383078,
+   "rd": 20.0,
+   "played": 26,
+   "last_update": "2025-12-14"
+  },
+  "Randers FC": {
+   "name": "Randers FC",
+   "rating": 1477.3509458405927,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2022-02-24"
+  },
+  "AZ Alkmaar": {
+   "name": "AZ Alkmaar",
+   "rating": 1571.1235617412774,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2025-03-13"
+  },
+  "HJK Helsinki": {
+   "name": "HJK Helsinki",
+   "rating": 1363.8258094231646,
+   "rd": 20.0,
+   "played": 24,
+   "last_update": "2024-12-19"
+  },
+  "LASK": {
+   "name": "LASK",
+   "rating": 1499.2505148373336,
+   "rd": 23.20849929051692,
+   "played": 20,
+   "last_update": "2024-12-19"
+  },
+  "FK Jablonec": {
+   "name": "FK Jablonec",
+   "rating": 1485.8393166470719,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2021-12-09"
+  },
+  "Slavia Prague": {
+   "name": "Slavia Prague",
+   "rating": 1502.4441175748318,
+   "rd": 20.0,
+   "played": 48,
+   "last_update": "2026-01-28"
+  },
+  "Istanbul Basaksehir": {
+   "name": "Istanbul Basaksehir",
+   "rating": 1513.9859329569222,
+   "rd": 23.20849929051692,
+   "played": 20,
+   "last_update": "2024-12-19"
+  },
+  "Krasnodar": {
+   "name": "Krasnodar",
+   "rating": 1510.272379921673,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2021-12-08"
+  },
+  "Bodo/Glimt": {
+   "name": "Bodo/Glimt",
+   "rating": 1650.5355940982956,
+   "rd": 20.0,
+   "played": 56,
+   "last_update": "2026-03-17"
+  },
+  "Rapid Wien": {
+   "name": "Rapid Wien",
+   "rating": 1512.992708326352,
+   "rd": 26.2658434704809,
+   "played": 18,
+   "last_update": "2025-04-17"
+  },
+  "PAOK": {
+   "name": "PAOK",
+   "rating": 1518.7391040400548,
+   "rd": 20.0,
+   "played": 32,
+   "last_update": "2025-02-20"
+  },
+  "Partizan": {
+   "name": "Partizan",
+   "rating": 1507.225158762387,
+   "rd": 26.2658434704809,
+   "played": 18,
+   "last_update": "2023-02-23"
+  },
+  "Monza": {
+   "name": "Monza",
+   "rating": 1394.9045672104621,
+   "rd": 20.0,
+   "played": 120,
+   "last_update": "2026-10-11"
+  },
+  "Hearts": {
+   "name": "Hearts",
+   "rating": 1449.5365682025044,
+   "rd": 38.073625185140244,
+   "played": 12,
+   "last_update": "2024-12-19"
+  },
+  "Slovacko": {
+   "name": "Slovacko",
+   "rating": 1487.843475273982,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2022-11-03"
+  },
+  "KF Ballkani": {
+   "name": "KF Ballkani",
+   "rating": 1447.5984451096285,
+   "rd": 38.073625185140244,
+   "played": 12,
+   "last_update": "2025-12-14"
+  },
+  "FK RFS": {
+   "name": "FK RFS",
+   "rating": 1414.216582279863,
+   "rd": 33.64185521358992,
+   "played": 14,
+   "last_update": "2025-01-30"
+  },
+  "Sivasspor": {
+   "name": "Sivasspor",
+   "rating": 1507.6670796240633,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2023-03-16"
+  },
+  "Union SG": {
+   "name": "Union SG",
+   "rating": 1582.5350004572117,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2026-01-28"
+  },
+  "FC Zurich": {
+   "name": "FC Zurich",
+   "rating": 1463.9045113227498,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2022-11-03"
+  },
+  "Maccabi Haifa": {
+   "name": "Maccabi Haifa",
+   "rating": 1472.4105076295987,
+   "rd": 20.507029973100746,
+   "played": 22,
+   "last_update": "2025-12-14"
+  },
+  "Sturm Graz": {
+   "name": "Sturm Graz",
+   "rating": 1492.0911794669764,
+   "rd": 20.0,
+   "played": 30,
+   "last_update": "2025-01-29"
+  },
+  "Kairat": {
+   "name": "Kairat",
+   "rating": 1423.2036142607474,
+   "rd": 33.64185521358992,
+   "played": 14,
+   "last_update": "2026-01-28"
+  },
+  "Omonia Nicosia": {
+   "name": "Omonia Nicosia",
+   "rating": 1429.600409450814,
+   "rd": 23.20849929051692,
+   "played": 20,
+   "last_update": "2025-02-20"
+  },
+  "Anorthosis": {
+   "name": "Anorthosis",
+   "rating": 1481.329908416374,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2022-12-09"
+  },
+  "FC Flora": {
+   "name": "FC Flora",
+   "rating": 1477.4543791376907,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2022-12-09"
+  },
+  "AEK Larnaca": {
+   "name": "AEK Larnaca",
+   "rating": 1467.9435504132352,
+   "rd": 43.08920912759195,
+   "played": 10,
+   "last_update": "2023-11-03"
+  },
+  "SK Dnipro-1": {
+   "name": "SK Dnipro-1",
+   "rating": 1510.6072723231503,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2023-11-03"
+  },
+  "Lech Poznan": {
+   "name": "Lech Poznan",
+   "rating": 1575.5280955176243,
+   "rd": 38.073625185140244,
+   "played": 12,
+   "last_update": "2024-11-03"
+  },
+  "Djurgarden": {
+   "name": "Djurgarden",
+   "rating": 1549.9530880965854,
+   "rd": 23.20849929051692,
+   "played": 20,
+   "last_update": "2025-05-08"
+  },
+  "Slovan Bratislava": {
+   "name": "Slovan Bratislava",
+   "rating": 1442.3700224184374,
+   "rd": 20.0,
+   "played": 30,
+   "last_update": "2025-01-29"
+  },
+  "Luton": {
+   "name": "Luton",
+   "rating": 1436.9249760075572,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2024-05-19"
+  },
+  "Heidenheim": {
+   "name": "Heidenheim",
+   "rating": 1452.8561837882248,
+   "rd": 20.0,
+   "played": 110,
+   "last_update": "2026-05-16"
+  },
+  "FC Vaduz": {
+   "name": "FC Vaduz",
+   "rating": 1458.7189618937277,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2023-11-03"
+  },
+  "Apollon Limassol": {
+   "name": "Apollon Limassol",
+   "rating": 1487.0975294258928,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2023-11-03"
+  },
+  "Pyunik FC": {
+   "name": "Pyunik FC",
+   "rating": 1491.9171336073566,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2023-11-03"
+  },
+  "Zalgiris": {
+   "name": "Zalgiris",
+   "rating": 1483.9764022444897,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2023-11-03"
+  },
+  "Silkeborg IF": {
+   "name": "Silkeborg IF",
+   "rating": 1500.9661049066399,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2023-11-03"
+  },
+  "FCSB": {
+   "name": "FCSB",
+   "rating": 1487.5011357022056,
+   "rd": 26.2658434704809,
+   "played": 18,
+   "last_update": "2025-03-13"
+  },
+  "Lincoln Red Imps": {
+   "name": "Lincoln Red Imps",
+   "rating": 1413.6653088386206,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2023-12-09"
+  },
+  "Zorya Lugansk": {
+   "name": "Zorya Lugansk",
+   "rating": 1476.934053947627,
+   "rd": 38.073625185140244,
+   "played": 12,
+   "last_update": "2024-12-14"
+  },
+  "CSKA Sofia": {
+   "name": "CSKA Sofia",
+   "rating": 1450.3550083956798,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2023-12-09"
+  },
+  "Olimpija Ljubljana": {
+   "name": "Olimpija Ljubljana",
+   "rating": 1485.4125206994293,
+   "rd": 33.64185521358992,
+   "played": 14,
+   "last_update": "2025-02-20"
+  },
+  "TSC Backa Topola": {
+   "name": "TSC Backa Topola",
+   "rating": 1417.7049886211666,
+   "rd": 33.64185521358992,
+   "played": 14,
+   "last_update": "2025-02-20"
+  },
+  "Rakow Czestochowa": {
+   "name": "Rakow Czestochowa",
+   "rating": 1474.9372664520574,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2023-12-14"
+  },
+  "KI Klaksvik": {
+   "name": "KI Klaksvik",
+   "rating": 1478.2535760800777,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2023-12-14"
+  },
+  "FC Lugano": {
+   "name": "FC Lugano",
+   "rating": 1493.3067603025763,
+   "rd": 33.64185521358992,
+   "played": 14,
+   "last_update": "2025-03-13"
+  },
+  "Aberdeen": {
+   "name": "Aberdeen",
+   "rating": 1506.9539498849467,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2023-12-14"
+  },
+  "Servette": {
+   "name": "Servette",
+   "rating": 1485.1160033709157,
+   "rd": 43.08920912759195,
+   "played": 10,
+   "last_update": "2024-03-14"
+  },
+  "Molde FK": {
+   "name": "Molde FK",
+   "rating": 1512.6371788649983,
+   "rd": 20.0,
+   "played": 26,
+   "last_update": "2025-03-13"
+  },
+  "Holstein Kiel": {
+   "name": "Holstein Kiel",
+   "rating": 1441.5640346973655,
+   "rd": 20.0,
+   "played": 35,
+   "last_update": "2025-05-17"
+  },
+  "Shamrock Rovers": {
+   "name": "Shamrock Rovers",
+   "rating": 1494.1532168801386,
+   "rd": 33.64185521358992,
+   "played": 14,
+   "last_update": "2025-02-20"
+  },
+  "Hapoel Beer Sheva": {
+   "name": "Hapoel Beer Sheva",
+   "rating": 1520.6049484565003,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2024-11-03"
+  },
+  "Zrinjski Mostar": {
+   "name": "Zrinjski Mostar",
+   "rating": 1480.7360340739742,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2024-12-14"
+  },
+  "Hacken": {
+   "name": "Hacken",
+   "rating": 1441.702689033432,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2024-12-14"
+  },
+  "Breidablik": {
+   "name": "Breidablik",
+   "rating": 1427.6511540735405,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2024-12-14"
+  },
+  "Spartak Trnava": {
+   "name": "Spartak Trnava",
+   "rating": 1428.1498268396763,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2024-12-14"
+  },
+  "Twente": {
+   "name": "Twente",
+   "rating": 1514.6444823505099,
+   "rd": 43.08920912759195,
+   "played": 10,
+   "last_update": "2025-02-20"
+  },
+  "IF Elfsborg": {
+   "name": "IF Elfsborg",
+   "rating": 1501.5392043256177,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2025-01-30"
+  },
+  "Vitoria Guimaraes": {
+   "name": "Vitoria Guimaraes",
+   "rating": 1539.6823783415475,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2025-03-13"
+  },
+  "NK Celje": {
+   "name": "NK Celje",
+   "rating": 1513.193347120949,
+   "rd": 38.073625185140244,
+   "played": 12,
+   "last_update": "2025-04-17"
+  },
+  "Cercle Brugge": {
+   "name": "Cercle Brugge",
+   "rating": 1537.6545687376158,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2025-03-13"
+  },
+  "St Gallen": {
+   "name": "St Gallen",
+   "rating": 1463.3579235157574,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2024-12-19"
+  },
+  "Jagiellonia Bialystok": {
+   "name": "Jagiellonia Bialystok",
+   "rating": 1547.2704136621405,
+   "rd": 38.073625185140244,
+   "played": 12,
+   "last_update": "2025-04-17"
+  },
+  "FC Noah": {
+   "name": "FC Noah",
+   "rating": 1467.877413847574,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2024-12-19"
+  },
+  "Mlada Boleslav": {
+   "name": "Mlada Boleslav",
+   "rating": 1482.5663579855768,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2024-12-19"
+  },
+  "Dinamo Minsk": {
+   "name": "Dinamo Minsk",
+   "rating": 1448.5898448641562,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2024-12-19"
+  },
+  "Larne FC": {
+   "name": "Larne FC",
+   "rating": 1439.9916990135519,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2024-12-19"
+  },
+  "Vikingur Reykjavik": {
+   "name": "Vikingur Reykjavik",
+   "rating": 1495.0277510302878,
+   "rd": 48.7655150832865,
+   "played": 8,
+   "last_update": "2025-02-20"
+  },
+  "CS Petrocub": {
+   "name": "CS Petrocub",
+   "rating": 1441.0249171776898,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2024-12-19"
+  },
+  "Paphos": {
+   "name": "Paphos",
+   "rating": 1546.861188030758,
+   "rd": 26.2658434704809,
+   "played": 18,
+   "last_update": "2026-01-28"
+  },
+  "Borac Banja Luka": {
+   "name": "Borac Banja Luka",
+   "rating": 1494.8341227356152,
+   "rd": 43.08920912759195,
+   "played": 10,
+   "last_update": "2025-03-13"
+  },
+  "Panathinaikos": {
+   "name": "Panathinaikos",
+   "rating": 1514.3816228556705,
+   "rd": 29.72594326672805,
+   "played": 16,
+   "last_update": "2025-12-14"
+  },
+  "The New Saints": {
+   "name": "The New Saints",
+   "rating": 1460.160495229997,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2024-12-19"
+  },
+  "Paris FC": {
+   "name": "Paris FC",
+   "rating": 1600.2989514610827,
+   "rd": 20.0,
+   "played": 40,
+   "last_update": "2026-10-10"
+  },
+  "Pisa": {
+   "name": "Pisa",
+   "rating": 1385.0816169636018,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2026-05-23"
+  },
+  "Cukaricki": {
+   "name": "Cukaricki",
+   "rating": 1423.770548493138,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2025-12-14"
+  },
+  "Aris Limassol": {
+   "name": "Aris Limassol",
+   "rating": 1471.6309551658676,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2025-12-14"
+  },
+  "Elversberg": {
+   "name": "Elversberg",
+   "rating": 1516.9469827248447,
+   "rd": 58.712321791999976,
+   "played": 5,
+   "last_update": "2026-10-10"
+  }
+ }
+}

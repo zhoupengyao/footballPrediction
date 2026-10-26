@@ -1,0 +1,191 @@
+{
+ "kind": "elo",
+ "k": 20.0,
+ "home_adv": 65.0,
+ "initial_rating": 1500.0,
+ "is_national": false,
+ "teams": {
+  "Fluminense": {
+   "name": "Fluminense",
+   "rating": 1536.1430792398655,
+   "rd": 20.0,
+   "played": 114,
+   "last_update": "2024-12-08"
+  },
+  "Santos": {
+   "name": "Santos",
+   "rating": 1425.1722777650234,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2023-12-07"
+  },
+  "Atletico Goianiense": {
+   "name": "Atletico Goianiense",
+   "rating": 1379.9895232093268,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2024-12-08"
+  },
+  "Flamengo": {
+   "name": "Flamengo",
+   "rating": 1635.2988801074166,
+   "rd": 20.0,
+   "played": 114,
+   "last_update": "2024-12-08"
+  },
+  "Palmeiras": {
+   "name": "Palmeiras",
+   "rating": 1653.547075876995,
+   "rd": 20.0,
+   "played": 114,
+   "last_update": "2024-12-08"
+  },
+  "Ceara": {
+   "name": "Ceara",
+   "rating": 1429.1575833387355,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2022-11-13"
+  },
+  "Coritiba": {
+   "name": "Coritiba",
+   "rating": 1377.9168299652717,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2023-12-07"
+  },
+  "Goias": {
+   "name": "Goias",
+   "rating": 1418.220110818173,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2023-12-06"
+  },
+  "Botafogo": {
+   "name": "Botafogo",
+   "rating": 1687.4339928717295,
+   "rd": 20.0,
+   "played": 114,
+   "last_update": "2024-12-08"
+  },
+  "Corinthians": {
+   "name": "Corinthians",
+   "rating": 1612.0016685537098,
+   "rd": 20.0,
+   "played": 114,
+   "last_update": "2024-12-08"
+  },
+  "Atletico-MG": {
+   "name": "Atletico-MG",
+   "rating": 1511.1002722135959,
+   "rd": 20.0,
+   "played": 114,
+   "last_update": "2024-12-08"
+  },
+  "Internacional": {
+   "name": "Internacional",
+   "rating": 1624.6627564298801,
+   "rd": 20.0,
+   "played": 114,
+   "last_update": "2024-12-08"
+  },
+  "Fortaleza EC": {
+   "name": "Fortaleza EC",
+   "rating": 1594.063876754783,
+   "rd": 20.0,
+   "played": 114,
+   "last_update": "2024-12-08"
+  },
+  "Cuiaba": {
+   "name": "Cuiaba",
+   "rating": 1426.605803253201,
+   "rd": 20.0,
+   "played": 114,
+   "last_update": "2024-12-08"
+  },
+  "Sao Paulo": {
+   "name": "Sao Paulo",
+   "rating": 1558.43332779603,
+   "rd": 20.0,
+   "played": 114,
+   "last_update": "2024-12-08"
+  },
+  "Atletico Paranaense": {
+   "name": "Atletico Paranaense",
+   "rating": 1466.750183941772,
+   "rd": 20.0,
+   "played": 114,
+   "last_update": "2024-12-08"
+  },
+  "Avai": {
+   "name": "Avai",
+   "rating": 1391.6509280708767,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2022-11-12"
+  },
+  "America Mineiro": {
+   "name": "America Mineiro",
+   "rating": 1358.9518908215282,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2023-12-06"
+  },
+  "Juventude": {
+   "name": "Juventude",
+   "rating": 1426.1070166106658,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2024-12-08"
+  },
+  "RB Bragantino": {
+   "name": "RB Bragantino",
+   "rating": 1509.4200219124082,
+   "rd": 20.0,
+   "played": 114,
+   "last_update": "2024-12-08"
+  },
+  "Bahia": {
+   "name": "Bahia",
+   "rating": 1500.153290199432,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2024-12-08"
+  },
+  "Vasco DA Gama": {
+   "name": "Vasco DA Gama",
+   "rating": 1497.463057882286,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2024-12-08"
+  },
+  "Cruzeiro": {
+   "name": "Cruzeiro",
+   "rating": 1514.4772386374818,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2024-12-08"
+  },
+  "Gremio": {
+   "name": "Gremio",
+   "rating": 1514.4272306803205,
+   "rd": 20.0,
+   "played": 76,
+   "last_update": "2024-12-08"
+  },
+  "Criciuma": {
+   "name": "Criciuma",
+   "rating": 1426.4506636741191,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2024-12-08"
+  },
+  "Vitoria": {
+   "name": "Vitoria",
+   "rating": 1524.4014193753724,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2024-12-08"
+  }
+ }
+}

@@ -1,0 +1,191 @@
+{
+ "kind": "elo",
+ "k": 20.0,
+ "home_adv": 65.0,
+ "initial_rating": 1500.0,
+ "is_national": false,
+ "teams": {
+  "Paris SG": {
+   "name": "Paris SG",
+   "rating": 1793.823827648778,
+   "rd": 20.0,
+   "played": 176,
+   "last_update": "2026-10-10"
+  },
+  "Angers": {
+   "name": "Angers",
+   "rating": 1411.5542107843326,
+   "rd": 20.0,
+   "played": 141,
+   "last_update": "2026-10-10"
+  },
+  "Clermont": {
+   "name": "Clermont",
+   "rating": 1399.1697352013523,
+   "rd": 20.0,
+   "played": 101,
+   "last_update": "2024-05-19"
+  },
+  "Lille": {
+   "name": "Lille",
+   "rating": 1652.3457011624057,
+   "rd": 20.0,
+   "played": 177,
+   "last_update": "2026-10-10"
+  },
+  "Lyon": {
+   "name": "Lyon",
+   "rating": 1652.7392544737688,
+   "rd": 20.0,
+   "played": 178,
+   "last_update": "2026-10-09"
+  },
+  "Monaco": {
+   "name": "Monaco",
+   "rating": 1654.4284192585228,
+   "rd": 20.0,
+   "played": 176,
+   "last_update": "2026-10-10"
+  },
+  "Troyes": {
+   "name": "Troyes",
+   "rating": 1323.752492415614,
+   "rd": 20.0,
+   "played": 73,
+   "last_update": "2026-10-11"
+  },
+  "Nice": {
+   "name": "Nice",
+   "rating": 1493.7668662412416,
+   "rd": 20.0,
+   "played": 178,
+   "last_update": "2026-10-11"
+  },
+  "Bordeaux": {
+   "name": "Bordeaux",
+   "rating": 1394.924878562396,
+   "rd": 20.0,
+   "played": 29,
+   "last_update": "2022-05-21"
+  },
+  "Nantes": {
+   "name": "Nantes",
+   "rating": 1428.6808210908227,
+   "rd": 20.0,
+   "played": 171,
+   "last_update": "2026-05-17"
+  },
+  "Brest": {
+   "name": "Brest",
+   "rating": 1512.284431605172,
+   "rd": 20.0,
+   "played": 177,
+   "last_update": "2026-10-10"
+  },
+  "Reims": {
+   "name": "Reims",
+   "rating": 1441.4139628836515,
+   "rd": 20.0,
+   "played": 135,
+   "last_update": "2025-05-17"
+  },
+  "Metz": {
+   "name": "Metz",
+   "rating": 1318.8684628673434,
+   "rd": 20.0,
+   "played": 99,
+   "last_update": "2026-05-17"
+  },
+  "Rennes": {
+   "name": "Rennes",
+   "rating": 1631.0888369065824,
+   "rd": 20.0,
+   "played": 176,
+   "last_update": "2026-10-11"
+  },
+  "Strasbourg": {
+   "name": "Strasbourg",
+   "rating": 1586.1552574945358,
+   "rd": 20.0,
+   "played": 176,
+   "last_update": "2026-10-11"
+  },
+  "St Etienne": {
+   "name": "St Etienne",
+   "rating": 1400.5928878155778,
+   "rd": 20.0,
+   "played": 63,
+   "last_update": "2025-05-17"
+  },
+  "Montpellier": {
+   "name": "Montpellier",
+   "rating": 1306.5429192328759,
+   "rd": 20.0,
+   "played": 135,
+   "last_update": "2025-05-17"
+  },
+  "Lens": {
+   "name": "Lens",
+   "rating": 1655.6585122767594,
+   "rd": 20.0,
+   "played": 178,
+   "last_update": "2026-10-09"
+  },
+  "Marseille": {
+   "name": "Marseille",
+   "rating": 1580.9771668929475,
+   "rd": 20.0,
+   "played": 178,
+   "last_update": "2026-10-11"
+  },
+  "Lorient": {
+   "name": "Lorient",
+   "rating": 1515.535166720473,
+   "rd": 20.0,
+   "played": 143,
+   "last_update": "2026-10-10"
+  },
+  "Ajaccio": {
+   "name": "Ajaccio",
+   "rating": 1330.4772249797984,
+   "rd": 20.0,
+   "played": 38,
+   "last_update": "2023-06-03"
+  },
+  "Toulouse": {
+   "name": "Toulouse",
+   "rating": 1531.1403280010852,
+   "rd": 20.0,
+   "played": 146,
+   "last_update": "2026-10-10"
+  },
+  "Auxerre": {
+   "name": "Auxerre",
+   "rating": 1477.7623557428963,
+   "rd": 20.0,
+   "played": 112,
+   "last_update": "2026-10-11"
+  },
+  "Le Havre": {
+   "name": "Le Havre",
+   "rating": 1431.8894440431031,
+   "rd": 20.0,
+   "played": 108,
+   "last_update": "2026-10-10"
+  },
+  "Paris FC": {
+   "name": "Paris FC",
+   "rating": 1572.327261833723,
+   "rd": 20.0,
+   "played": 40,
+   "last_update": "2026-10-10"
+  },
+  "Le Mans": {
+   "name": "Le Mans",
+   "rating": 1502.0995738642423,
+   "rd": 55.18958248447998,
+   "played": 6,
+   "last_update": "2026-10-10"
+  }
+ }
+}
