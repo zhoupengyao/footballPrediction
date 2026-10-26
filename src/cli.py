@@ -542,8 +542,15 @@ def cmd_recommend(args: argparse.Namespace) -> int:
 
     cfg = settings.recommend_for(args.risk)
     result = run_recommend(rows, cfg, bankroll=args.bankroll)
-    md, js = write_report(result)
-    log_recommendations(result["recommendations"])
+    report_dates = sorted({
+        str(getattr(m, "business_date", "") or getattr(m, "match_date", ""))[:10]
+        for m in matches
+    } - {""})
+    date_tag = report_dates[0] if report_dates else None
+    base = (settings.reports_dir / f"recommend_{date_tag.replace('-', '')}"
+            if date_tag else None)
+    md, js = write_report(result, path_base=base)
+    log_recommendations(result["recommendations"], date_tag=date_tag)
 
     recs = result["recommendations"]
     print("\n⚠️  本清单是风险筛选（纸面），不构成盈利建议；历史回测 ROI 为负。")

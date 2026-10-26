@@ -256,11 +256,12 @@ def write_report(result: dict[str, Any],
 
 
 def log_recommendations(recs: list[dict[str, Any]],
-                        path: Path | None = None) -> Path:
+                        path: Path | None = None,
+                        date_tag: str | None = None) -> Path:
     """追加推荐到 data/processed/recommendations.parquet（纸面跟踪，按主键去重）。"""
     settings = get_settings()
     path = path or (settings.processed_dir / "recommendations.parquet")
-    today = datetime.now().strftime("%Y-%m-%d")
+    today = date_tag or datetime.now().strftime("%Y-%m-%d")
     rows = [{**it, "date": today} for it in recs]
     new = pd.DataFrame(rows, columns=LOG_COLS)
     if new.empty:
