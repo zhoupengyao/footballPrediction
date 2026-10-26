@@ -493,6 +493,55 @@ def match_kickoff(date_str: Any, time_str: Any) -> datetime | None:
     return None
 
 
+def select_prediction_report(date_tag: str) -> Path | None:
+    """为某个销售日选择「赛前最后一次」预测报告。
+
+    优先从 reports/archive/ 与主报告里挑：
+        1. 生成时间早于本场最早开赛时间的报告，取最新一份；
+        2. 若没有赛前报告，取最早的一份赛后报告（仅展示，不应计入命中率）。
+
+    这样即使赛后重跑 predict 覆盖了主报告，对账仍能使用赛前版本。
+    """
+    settings = get_settings()
+    candidates = [settings.reports_dir / f"predict_{date_tag}.json"]
+    archive = settings.reports_dir / "archive"
+    if archive.exists():
+        candidates += sorted(archive.glob(f"predict_{date_tag}_*.json"))
+
+    best: Path | None = None
+    best_score: tuple[float, float] | None = None
+    for path in candidates:
+        if not path.exists():
+            continue
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        preds = [p for p in data.get("predictions", []) if not p.get("skipped")]
+        if not preds:
+            continue
+        generated = data.get("generated_at")
+        try:
+            gen_dt = (datetime.fromisoformat(str(generated).replace("Z", "+00:00"))
+                      .replace(tzinfo=None))
+        except (TypeError, ValueError):
+            gen_dt = datetime.fromtimestamp(path.stat().st_mtime)
+        kickoffs = [k for k in (match_kickoff(p.get("match_date"),
+                                              p.get("match_time")) for p in preds)
+                    if k is not None]
+        earliest = min(kickoffs) if kickoffs else None
+        if earliest is None:
+            score = (1.5, gen_dt.timestamp())
+        elif gen_dt <= earliest:
+            score = (2.0, gen_dt.timestamp())
+        else:
+            score = (0.0, -gen_dt.timestamp())
+        if best_score is None or score > best_score:
+            best, best_score = path, score
+    return best
+
+
+
 
 
 def predict_matches(matches: list, models: dict[str, dict[str, Any]],

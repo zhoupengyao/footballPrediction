@@ -1,8 +1,26 @@
 import { useEffect, useMemo, useRef } from 'react'
-import * as echarts from 'echarts'
+import * as echarts from 'echarts/core'
+import { BarChart, LineChart } from 'echarts/charts'
+import {
+  AxisPointerComponent,
+  GridComponent,
+  LegendComponent,
+  TooltipComponent,
+} from 'echarts/components'
+import { CanvasRenderer } from 'echarts/renderers'
 import type { EChartsOption } from 'echarts'
 import type { CalibrationPoint, EquityPoint, Probs } from '../data/types'
 import { pct } from '../lib/format'
+
+echarts.use([
+  BarChart,
+  LineChart,
+  GridComponent,
+  TooltipComponent,
+  LegendComponent,
+  AxisPointerComponent,
+  CanvasRenderer,
+])
 
 const AXIS = {
   axisLine: { lineStyle: { color: '#22304A' } },

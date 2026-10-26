@@ -14,6 +14,7 @@
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 from pathlib import Path
 
@@ -733,22 +734,27 @@ def cmd_reconcile(args: argparse.Namespace) -> int:
     if args.json:
         json_path = Path(args.json)
     else:
+        from src.pipeline import select_prediction_report
         settings = get_settings()
         if args.date:
-            json_path = settings.reports_dir / f"predict_{args.date}.json"
+            json_path = (select_prediction_report(args.date)
+                         or settings.reports_dir / f"predict_{args.date}.json")
         else:
             snaps = sorted(settings.reports_dir.glob("predict_*.json"))
             if not snaps:
                 print("没有预测报告，请先运行 python -m src.cli predict")
                 return 1
-            json_path = snaps[-1]
+            latest = snaps[-1]
+            match = re.search(r"predict_(\d{8})", latest.stem)
+            json_path = (select_prediction_report(match.group(1))
+                         if match else None) or latest
     if not json_path.exists():
         print(f"预测报告不存在: {json_path}")
         return 1
 
     try:
-        date_tag = (json_path.stem.replace("predict_", "")
-                    if json_path.stem.startswith("predict_") else None)
+        match = re.search(r"predict_(\d{8})", json_path.stem)
+        date_tag = match.group(1) if match else None
         res = run_reconcile(json_path, manual_path=args.manual, date_tag=date_tag)
     except RuntimeError as e:
         print(f"对账失败: {e}")

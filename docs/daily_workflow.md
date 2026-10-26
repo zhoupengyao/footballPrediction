@@ -16,6 +16,9 @@
 4. 长期是否有效，用 `reconcile` 命令积累的投注台账（`data/processed/bet_ledger.parquet`）
    对账，别凭感觉。
 
+> **Web 面板**：预测/对账完成后运行 `python scripts/export_web.py --check`，
+> 再 `git push` 即可更新 GitHub Pages。完整说明见 [`web.md`](web.md)。
+
 ---
 
 ## 0. 每次打开终端先做这一步

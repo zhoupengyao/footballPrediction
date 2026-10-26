@@ -8,6 +8,32 @@
 > 说明模型在真实赔率口径下尚未稳定跑赢市场。本系统定位是**决策辅助 / 研究学习**，
 > 不保证盈利。请用 `reconcile` 命令积累投注台账、用数据说话。
 
+## Web 面板（静态站）
+
+仓库里包含一个 React + TypeScript + ECharts 的静态数据面板：
+
+- 今日/历史比赛：HAD、让球、比分、总进球、半全场预测 + 实际结果 + 命中
+- 纸面候选与台账：三档风险、Kelly 仓位、累计 ROI
+- 回测与模型：校准曲线、资金曲线、分联赛指标
+- 早盘/临场赔率对比
+
+本地生成数据并预览：
+
+```powershell
+python scripts/export_web.py --check
+cd web
+npm install
+npm run dev
+```
+
+部署与每日更新见 [`docs/web.md`](docs/web.md)。核心流程：
+
+```text
+本地 fetch/predict/reconcile → export_web.py → git push → GitHub Pages
+```
+
+> GitHub Pages 只托管静态文件；Python 模型和竞彩抓取仍在本机运行。
+
 ## 环境
 
 - Windows + PowerShell
@@ -103,6 +129,7 @@ scripts/         探索/诊断脚本（probe_*、diag_*、validate_*）
 python tests/test_backtest.py
 python tests/test_cli.py
 python tests/test_europa.py
+python tests/test_export_web.py
 python tests/test_jingcai_snapshot.py
 python tests/test_ml.py
 python tests/test_model_enhance.py

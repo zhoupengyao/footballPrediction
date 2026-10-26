@@ -39,10 +39,7 @@ jobs:
 
       - name: Check committed site JSON
         run: |
-          python - <<'PY'
-          from src.web_export import check_output
-          print('JSON files:', check_output('web/public/data'))
-          PY
+          python -c "from src.web_export import check_output; print('JSON files:', check_output('web/public/data'))"
 
   web:
     runs-on: ubuntu-latest
