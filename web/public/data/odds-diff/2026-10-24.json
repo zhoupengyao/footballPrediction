@@ -1,0 +1,2275 @@
+{
+  "date": "2026-10-24",
+  "snapshots": [
+    {
+      "file": "jc_odds_20261024.json",
+      "fetched_at": "2026-10-24T17:38:37"
+    },
+    {
+      "file": "jc_odds_20261024_1802.json",
+      "fetched_at": "2026-10-24T18:02:02"
+    },
+    {
+      "file": "jc_odds_20261024_2146.json",
+      "fetched_at": "2026-10-24T21:46:56"
+    }
+  ],
+  "matches": [
+    {
+      "match_num": "周六016",
+      "match_id": 2042198,
+      "home_cn": "阿森纳",
+      "away_cn": "埃弗顿",
+      "had": {
+        "home": {
+          "from": 1.27,
+          "to": 1.21,
+          "delta": -0.06,
+          "delta_pct": -4.72
+        },
+        "draw": {
+          "from": 4.55,
+          "to": 5.15,
+          "delta": 0.6,
+          "delta_pct": 13.19
+        },
+        "away": {
+          "from": 8.15,
+          "to": 9.2,
+          "delta": 1.05,
+          "delta_pct": 12.88
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 2.0,
+          "to": 1.87,
+          "delta": -0.13,
+          "delta_pct": -6.5
+        },
+        "draw": {
+          "from": 3.4,
+          "to": 3.35,
+          "delta": -0.05,
+          "delta_pct": -1.47
+        },
+        "away": {
+          "from": 2.98,
+          "to": 3.38,
+          "delta": 0.4,
+          "delta_pct": 13.42
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周六017",
+      "match_id": 2042199,
+      "home_cn": "考文垂",
+      "away_cn": "富勒姆",
+      "had": {
+        "home": {
+          "from": 2.9,
+          "to": 2.81,
+          "delta": -0.09,
+          "delta_pct": -3.1
+        },
+        "draw": {
+          "from": 3.3,
+          "to": 3.2,
+          "delta": -0.1,
+          "delta_pct": -3.03
+        },
+        "away": {
+          "from": 2.08,
+          "to": 2.17,
+          "delta": 0.09,
+          "delta_pct": 4.33
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 1.57,
+          "to": 1.51,
+          "delta": -0.06,
+          "delta_pct": -3.82
+        },
+        "draw": {
+          "from": 3.9,
+          "to": 4.05,
+          "delta": 0.15,
+          "delta_pct": 3.85
+        },
+        "away": {
+          "from": 4.25,
+          "to": 4.55,
+          "delta": 0.3,
+          "delta_pct": 7.06
+        }
+      },
+      "line": 1.0
+    },
+    {
+      "match_num": "周六018",
+      "match_id": 2042200,
+      "home_cn": "博德闪耀",
+      "away_cn": "瓦勒伦加",
+      "had": {
+        "home": {
+          "from": 0.0,
+          "to": 0.0,
+          "delta": 0.0,
+          "delta_pct": null
+        },
+        "draw": {
+          "from": 0.0,
+          "to": 0.0,
+          "delta": 0.0,
+          "delta_pct": null
+        },
+        "away": {
+          "from": 0.0,
+          "to": 0.0,
+          "delta": 0.0,
+          "delta_pct": null
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 1.75,
+          "to": 1.61,
+          "delta": -0.14,
+          "delta_pct": -8.0
+        },
+        "draw": {
+          "from": 4.55,
+          "to": 4.85,
+          "delta": 0.3,
+          "delta_pct": 6.59
+        },
+        "away": {
+          "from": 2.96,
+          "to": 3.31,
+          "delta": 0.35,
+          "delta_pct": 11.82
+        }
+      },
+      "line": -2.0
+    },
+    {
+      "match_num": "周六019",
+      "match_id": 2042201,
+      "home_cn": "桑坦德",
+      "away_cn": "西班牙人",
+      "had": {
+        "home": {
+          "from": 2.28,
+          "to": 2.28,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.25,
+          "to": 3.15,
+          "delta": -0.1,
+          "delta_pct": -3.08
+        },
+        "away": {
+          "from": 2.61,
+          "to": 2.68,
+          "delta": 0.07,
+          "delta_pct": 2.68
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 4.85,
+          "to": 4.85,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 4.05,
+          "to": 4.2,
+          "delta": 0.15,
+          "delta_pct": 3.7
+        },
+        "away": {
+          "from": 1.48,
+          "to": 1.46,
+          "delta": -0.02,
+          "delta_pct": -1.35
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周六020",
+      "match_id": 2042202,
+      "home_cn": "乌德勒支",
+      "away_cn": "兹沃勒",
+      "had": {
+        "home": {
+          "from": 1.47,
+          "to": 1.42,
+          "delta": -0.05,
+          "delta_pct": -3.4
+        },
+        "draw": {
+          "from": 4.27,
+          "to": 4.45,
+          "delta": 0.18,
+          "delta_pct": 4.22
+        },
+        "away": {
+          "from": 4.65,
+          "to": 5.0,
+          "delta": 0.35,
+          "delta_pct": 7.53
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 2.41,
+          "to": 2.36,
+          "delta": -0.05,
+          "delta_pct": -2.07
+        },
+        "draw": {
+          "from": 3.65,
+          "to": 3.5,
+          "delta": -0.15,
+          "delta_pct": -4.11
+        },
+        "away": {
+          "from": 2.27,
+          "to": 2.38,
+          "delta": 0.11,
+          "delta_pct": 4.85
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周六021",
+      "match_id": 2042203,
+      "home_cn": "阿马多拉",
+      "away_cn": "卡萨皮亚",
+      "had": {
+        "home": {
+          "from": 1.6,
+          "to": 1.58,
+          "delta": -0.02,
+          "delta_pct": -1.25
+        },
+        "draw": {
+          "from": 3.55,
+          "to": 3.55,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 4.5,
+          "to": 4.65,
+          "delta": 0.15,
+          "delta_pct": 3.33
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 3.06,
+          "to": 3.06,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.18,
+          "to": 3.11,
+          "delta": -0.07,
+          "delta_pct": -2.2
+        },
+        "away": {
+          "from": 2.05,
+          "to": 2.08,
+          "delta": 0.03,
+          "delta_pct": 1.46
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周六022",
+      "match_id": 2042204,
+      "home_cn": "那不勒斯",
+      "away_cn": "罗马",
+      "had": {
+        "home": {
+          "from": 2.75,
+          "to": 2.78,
+          "delta": 0.03,
+          "delta_pct": 1.09
+        },
+        "draw": {
+          "from": 2.87,
+          "to": 2.95,
+          "delta": 0.08,
+          "delta_pct": 2.79
+        },
+        "away": {
+          "from": 2.4,
+          "to": 2.32,
+          "delta": -0.08,
+          "delta_pct": -3.33
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 1.44,
+          "to": 1.45,
+          "delta": 0.01,
+          "delta_pct": 0.69
+        },
+        "draw": {
+          "from": 3.8,
+          "to": 3.8,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 5.85,
+          "to": 5.65,
+          "delta": -0.2,
+          "delta_pct": -3.42
+        }
+      },
+      "line": 1.0
+    },
+    {
+      "match_num": "周六023",
+      "match_id": 2042205,
+      "home_cn": "切尔西",
+      "away_cn": "热刺",
+      "had": {
+        "home": {
+          "from": 1.71,
+          "to": 1.68,
+          "delta": -0.03,
+          "delta_pct": -1.75
+        },
+        "draw": {
+          "from": 3.75,
+          "to": 3.8,
+          "delta": 0.05,
+          "delta_pct": 1.33
+        },
+        "away": {
+          "from": 3.6,
+          "to": 3.7,
+          "delta": 0.1,
+          "delta_pct": 2.78
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 2.88,
+          "to": 2.88,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.95,
+          "to": 3.78,
+          "delta": -0.17,
+          "delta_pct": -4.3
+        },
+        "away": {
+          "from": 1.89,
+          "to": 1.93,
+          "delta": 0.04,
+          "delta_pct": 2.12
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周六024",
+      "match_id": 2042206,
+      "home_cn": "多特蒙德",
+      "away_cn": "法兰克福",
+      "had": {
+        "home": {
+          "from": 1.33,
+          "to": 1.32,
+          "delta": -0.01,
+          "delta_pct": -0.75
+        },
+        "draw": {
+          "from": 4.95,
+          "to": 5.05,
+          "delta": 0.1,
+          "delta_pct": 2.02
+        },
+        "away": {
+          "from": 5.7,
+          "to": 5.75,
+          "delta": 0.05,
+          "delta_pct": 0.88
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 1.99,
+          "to": 1.94,
+          "delta": -0.05,
+          "delta_pct": -2.51
+        },
+        "draw": {
+          "from": 3.9,
+          "to": 4.0,
+          "delta": 0.1,
+          "delta_pct": 2.56
+        },
+        "away": {
+          "from": 2.7,
+          "to": 2.75,
+          "delta": 0.05,
+          "delta_pct": 1.85
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周六025",
+      "match_id": 2042207,
+      "home_cn": "巴伦西亚",
+      "away_cn": "比利亚雷",
+      "had": {
+        "home": {
+          "from": 3.22,
+          "to": 3.52,
+          "delta": 0.3,
+          "delta_pct": 9.32
+        },
+        "draw": {
+          "from": 3.5,
+          "to": 3.7,
+          "delta": 0.2,
+          "delta_pct": 5.71
+        },
+        "away": {
+          "from": 1.88,
+          "to": 1.74,
+          "delta": -0.14,
+          "delta_pct": -7.45
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 1.71,
+          "to": 1.82,
+          "delta": 0.11,
+          "delta_pct": 6.43
+        },
+        "draw": {
+          "from": 3.6,
+          "to": 3.4,
+          "delta": -0.2,
+          "delta_pct": -5.56
+        },
+        "away": {
+          "from": 3.75,
+          "to": 3.5,
+          "delta": -0.25,
+          "delta_pct": -6.67
+        }
+      },
+      "line": 1.0
+    },
+    {
+      "match_num": "周六026",
+      "match_id": 2042208,
+      "home_cn": "拉齐奥",
+      "away_cn": "帕尔马",
+      "had": {
+        "home": {
+          "from": 1.29,
+          "to": 1.29,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 4.45,
+          "to": 4.45,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 7.7,
+          "to": 7.7,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 2.01,
+          "to": 2.01,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.55,
+          "to": 3.55,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 2.86,
+          "to": 2.86,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周六027",
+      "match_id": 2042209,
+      "home_cn": "朗斯",
+      "away_cn": "巴黎FC",
+      "had": {
+        "home": {
+          "from": 2.23,
+          "to": 2.36,
+          "delta": 0.13,
+          "delta_pct": 5.83
+        },
+        "draw": {
+          "from": 3.3,
+          "to": 3.25,
+          "delta": -0.05,
+          "delta_pct": -1.52
+        },
+        "away": {
+          "from": 2.65,
+          "to": 2.51,
+          "delta": -0.14,
+          "delta_pct": -5.28
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 4.6,
+          "to": 4.95,
+          "delta": 0.35,
+          "delta_pct": 7.61
+        },
+        "draw": {
+          "from": 4.25,
+          "to": 4.4,
+          "delta": 0.15,
+          "delta_pct": 3.53
+        },
+        "away": {
+          "from": 1.48,
+          "to": 1.43,
+          "delta": -0.05,
+          "delta_pct": -3.38
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周六028",
+      "match_id": 2042210,
+      "home_cn": "马竞",
+      "away_cn": "拉科",
+      "had": {
+        "home": {
+          "from": 1.16,
+          "to": 1.15,
+          "delta": -0.01,
+          "delta_pct": -0.86
+        },
+        "draw": {
+          "from": 5.7,
+          "to": 5.8,
+          "delta": 0.1,
+          "delta_pct": 1.75
+        },
+        "away": {
+          "from": 11.0,
+          "to": 11.5,
+          "delta": 0.5,
+          "delta_pct": 4.55
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 2.76,
+          "to": 2.76,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.75,
+          "to": 3.75,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 2.0,
+          "to": 2.0,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -2.0
+    },
+    {
+      "match_num": "周六029",
+      "match_id": 2042211,
+      "home_cn": "吉维森特",
+      "away_cn": "波尔图",
+      "had": {
+        "home": {
+          "from": 8.25,
+          "to": 8.25,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 4.55,
+          "to": 4.55,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 1.27,
+          "to": 1.27,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 3.0,
+          "to": 3.0,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.45,
+          "to": 3.45,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 1.98,
+          "to": 1.98,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": 1.0
+    },
+    {
+      "match_num": "周六030",
+      "match_id": 2042212,
+      "home_cn": "桑托斯",
+      "away_cn": "巴伊亚",
+      "had": {
+        "home": {
+          "from": 1.75,
+          "to": 1.75,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.5,
+          "to": 3.4,
+          "delta": -0.1,
+          "delta_pct": -2.86
+        },
+        "away": {
+          "from": 3.67,
+          "to": 3.8,
+          "delta": 0.13,
+          "delta_pct": 3.54
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 3.3,
+          "to": 3.4,
+          "delta": 0.1,
+          "delta_pct": 3.03
+        },
+        "draw": {
+          "from": 3.5,
+          "to": 3.4,
+          "delta": -0.1,
+          "delta_pct": -2.86
+        },
+        "away": {
+          "from": 1.85,
+          "to": 1.85,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周日001",
+      "match_id": 2042213,
+      "home_cn": "悉尼FC",
+      "away_cn": "阿德莱德",
+      "had": {
+        "home": {
+          "from": 2.03,
+          "to": 2.03,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.4,
+          "to": 3.4,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 2.92,
+          "to": 2.92,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 4.1,
+          "to": 4.1,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.85,
+          "to": 3.85,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 1.6,
+          "to": 1.6,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周日002",
+      "match_id": 2042214,
+      "home_cn": "新潟天鹅",
+      "away_cn": "仙台七夕",
+      "had": {
+        "home": {
+          "from": 4.0,
+          "to": 4.0,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.66,
+          "to": 3.66,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 1.65,
+          "to": 1.65,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 1.95,
+          "to": 1.95,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.4,
+          "to": 3.4,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 3.1,
+          "to": 3.1,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": 1.0
+    },
+    {
+      "match_num": "周日003",
+      "match_id": 2042215,
+      "home_cn": "东京FC",
+      "away_cn": "水户蜀葵",
+      "had": {
+        "home": {
+          "from": 1.24,
+          "to": 1.24,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 4.75,
+          "to": 4.75,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 9.0,
+          "to": 9.0,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 1.92,
+          "to": 1.92,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.35,
+          "to": 3.35,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 3.22,
+          "to": 3.22,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周日004",
+      "match_id": 2042216,
+      "home_cn": "川崎前锋",
+      "away_cn": "冈山绿雉",
+      "had": {
+        "home": {
+          "from": 1.96,
+          "to": 1.96,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.45,
+          "to": 3.45,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 3.05,
+          "to": 3.05,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 3.9,
+          "to": 3.9,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.75,
+          "to": 3.75,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 1.65,
+          "to": 1.65,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周日005",
+      "match_id": 2042217,
+      "home_cn": "福图纳",
+      "away_cn": "SBV精英",
+      "had": {
+        "home": {
+          "from": 2.08,
+          "to": 2.08,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.55,
+          "to": 3.55,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 2.73,
+          "to": 2.73,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 4.02,
+          "to": 4.02,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 4.1,
+          "to": 4.1,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 1.57,
+          "to": 1.57,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周日006",
+      "match_id": 2042218,
+      "home_cn": "国际米兰",
+      "away_cn": "佛罗伦萨",
+      "had": {
+        "home": {
+          "from": 1.24,
+          "to": 1.24,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 5.25,
+          "to": 5.25,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 7.55,
+          "to": 7.55,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 1.76,
+          "to": 1.76,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.95,
+          "to": 3.95,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 3.25,
+          "to": 3.25,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周日007",
+      "match_id": 2042219,
+      "home_cn": "毕尔巴鄂",
+      "away_cn": "赫塔费",
+      "had": {
+        "home": {
+          "from": 1.48,
+          "to": 1.48,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.4,
+          "to": 3.4,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 6.25,
+          "to": 6.25,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 2.79,
+          "to": 2.79,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.05,
+          "to": 3.05,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 2.26,
+          "to": 2.26,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周日008",
+      "match_id": 2042220,
+      "home_cn": "盖斯",
+      "away_cn": "哥德堡",
+      "had": {
+        "home": {
+          "from": 2.38,
+          "to": 2.38,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.35,
+          "to": 3.35,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 2.44,
+          "to": 2.44,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 5.3,
+          "to": 5.3,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 4.15,
+          "to": 4.15,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 1.43,
+          "to": 1.43,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周日009",
+      "match_id": 2042221,
+      "home_cn": "赫尔辛基",
+      "away_cn": "库奥皮奥",
+      "had": {
+        "home": {
+          "from": 1.83,
+          "to": 1.83,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.6,
+          "to": 3.6,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 3.28,
+          "to": 3.28,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 3.5,
+          "to": 3.5,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.6,
+          "to": 3.6,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 1.77,
+          "to": 1.77,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周日010",
+      "match_id": 2042222,
+      "home_cn": "埃因霍温",
+      "away_cn": "费耶诺德",
+      "had": {
+        "home": {
+          "from": 1.82,
+          "to": 1.82,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 4.05,
+          "to": 4.05,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 3.0,
+          "to": 3.0,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 3.13,
+          "to": 3.13,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 4.2,
+          "to": 4.2,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 1.75,
+          "to": 1.75,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周日011",
+      "match_id": 2042223,
+      "home_cn": "维京",
+      "away_cn": "特罗姆瑟",
+      "had": {
+        "home": {
+          "from": 1.39,
+          "to": 1.39,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 4.55,
+          "to": 4.55,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 5.25,
+          "to": 5.25,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 2.15,
+          "to": 2.15,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.8,
+          "to": 3.8,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 2.5,
+          "to": 2.5,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周日012",
+      "match_id": 2042224,
+      "home_cn": "赫尔城",
+      "away_cn": "布伦特",
+      "had": {
+        "home": {
+          "from": 4.35,
+          "to": 4.35,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.75,
+          "to": 3.75,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 1.58,
+          "to": 1.58,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 2.05,
+          "to": 2.05,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.5,
+          "to": 3.5,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 2.82,
+          "to": 2.82,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": 1.0
+    },
+    {
+      "match_num": "周日013",
+      "match_id": 2042225,
+      "home_cn": "水晶宫",
+      "away_cn": "纽卡斯尔",
+      "had": {
+        "home": {
+          "from": 2.7,
+          "to": 2.7,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.45,
+          "to": 3.45,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 2.13,
+          "to": 2.13,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 1.56,
+          "to": 1.56,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 4.05,
+          "to": 4.05,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 4.15,
+          "to": 4.15,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": 1.0
+    },
+    {
+      "match_num": "周日014",
+      "match_id": 2042226,
+      "home_cn": "曼联",
+      "away_cn": "伯恩茅斯",
+      "had": {
+        "home": {
+          "from": 1.89,
+          "to": 1.89,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.5,
+          "to": 3.5,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 3.18,
+          "to": 3.18,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 3.7,
+          "to": 3.7,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.75,
+          "to": 3.75,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 1.69,
+          "to": 1.69,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周日015",
+      "match_id": 2042227,
+      "home_cn": "热那亚",
+      "away_cn": "威尼斯",
+      "had": {
+        "home": {
+          "from": 1.98,
+          "to": 1.98,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.1,
+          "to": 3.1,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 3.32,
+          "to": 3.32,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 4.2,
+          "to": 4.2,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.6,
+          "to": 3.6,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 1.63,
+          "to": 1.63,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周日016",
+      "match_id": 2042228,
+      "home_cn": "亚特兰大",
+      "away_cn": "弗洛西诺",
+      "had": {
+        "home": {
+          "from": 1.62,
+          "to": 1.62,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 4.0,
+          "to": 4.0,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 3.82,
+          "to": 3.82,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 2.82,
+          "to": 2.82,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.75,
+          "to": 3.75,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 1.97,
+          "to": 1.97,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周日017",
+      "match_id": 2042229,
+      "home_cn": "摩纳哥",
+      "away_cn": "里尔",
+      "had": {
+        "home": {
+          "from": 1.76,
+          "to": 1.76,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.45,
+          "to": 3.45,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 3.7,
+          "to": 3.7,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 3.4,
+          "to": 3.4,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.58,
+          "to": 3.58,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 1.8,
+          "to": 1.8,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周日018",
+      "match_id": 2042230,
+      "home_cn": "霍芬海姆",
+      "away_cn": "勒沃库森",
+      "had": {
+        "home": {
+          "from": 2.52,
+          "to": 2.52,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.86,
+          "to": 3.86,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 2.11,
+          "to": 2.11,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 1.54,
+          "to": 1.54,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 4.28,
+          "to": 4.28,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 4.05,
+          "to": 4.05,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": 1.0
+    },
+    {
+      "match_num": "周日019",
+      "match_id": 2042231,
+      "home_cn": "塞尔塔",
+      "away_cn": "贝蒂斯",
+      "had": {
+        "home": {
+          "from": 2.75,
+          "to": 2.75,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.3,
+          "to": 3.3,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 2.16,
+          "to": 2.16,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 1.53,
+          "to": 1.53,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.9,
+          "to": 3.9,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 4.55,
+          "to": 4.55,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": 1.0
+    },
+    {
+      "match_num": "周日020",
+      "match_id": 2042232,
+      "home_cn": "雷恩",
+      "away_cn": "斯特拉斯",
+      "had": {
+        "home": {
+          "from": 1.57,
+          "to": 1.57,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 4.12,
+          "to": 4.12,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 4.0,
+          "to": 4.0,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 2.65,
+          "to": 2.65,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.78,
+          "to": 3.78,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 2.05,
+          "to": 2.05,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周日021",
+      "match_id": 2042233,
+      "home_cn": "桑德兰",
+      "away_cn": "利兹联",
+      "had": {
+        "home": {
+          "from": 2.65,
+          "to": 2.65,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 2.87,
+          "to": 2.87,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 2.48,
+          "to": 2.48,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 1.4,
+          "to": 1.4,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.98,
+          "to": 3.98,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 6.1,
+          "to": 6.1,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": 1.0
+    },
+    {
+      "match_num": "周日022",
+      "match_id": 2042234,
+      "home_cn": "弗赖堡",
+      "away_cn": "拜仁",
+      "had": {
+        "home": {
+          "from": 6.9,
+          "to": 6.9,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 5.82,
+          "to": 5.82,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 1.23,
+          "to": 1.23,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 1.88,
+          "to": 1.88,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 4.4,
+          "to": 4.4,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 2.7,
+          "to": 2.7,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": 2.0
+    },
+    {
+      "match_num": "周日023",
+      "match_id": 2042235,
+      "home_cn": "莱切",
+      "away_cn": "尤文图斯",
+      "had": {
+        "home": {
+          "from": 7.25,
+          "to": 7.25,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 4.27,
+          "to": 4.27,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 1.32,
+          "to": 1.32,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 2.75,
+          "to": 2.75,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.4,
+          "to": 3.4,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 2.12,
+          "to": 2.12,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": 1.0
+    },
+    {
+      "match_num": "周日024",
+      "match_id": 2042236,
+      "home_cn": "皇家社会",
+      "away_cn": "莱万特",
+      "had": {
+        "home": {
+          "from": 1.53,
+          "to": 1.53,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 4.0,
+          "to": 4.0,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 4.42,
+          "to": 4.42,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 2.62,
+          "to": 2.62,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.55,
+          "to": 3.55,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 2.15,
+          "to": 2.15,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周日025",
+      "match_id": 2042237,
+      "home_cn": "阿尔克马",
+      "away_cn": "特温特",
+      "had": {
+        "home": {
+          "from": 2.06,
+          "to": 2.06,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.6,
+          "to": 3.6,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 2.74,
+          "to": 2.74,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 3.9,
+          "to": 3.9,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 4.2,
+          "to": 4.2,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 1.58,
+          "to": 1.58,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周日026",
+      "match_id": 2042238,
+      "home_cn": "乌迪内斯",
+      "away_cn": "AC米兰",
+      "had": {
+        "home": {
+          "from": 4.6,
+          "to": 4.6,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.75,
+          "to": 3.75,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 1.55,
+          "to": 1.55,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 2.11,
+          "to": 2.11,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.4,
+          "to": 3.4,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 2.77,
+          "to": 2.77,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": 1.0
+    },
+    {
+      "match_num": "周日027",
+      "match_id": 2042239,
+      "home_cn": "巴萨",
+      "away_cn": "皇马",
+      "had": {
+        "home": {
+          "from": 1.49,
+          "to": 1.49,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 5.0,
+          "to": 5.0,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 3.88,
+          "to": 3.88,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 2.26,
+          "to": 2.26,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 4.2,
+          "to": 4.2,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 2.23,
+          "to": 2.23,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周日028",
+      "match_id": 2042240,
+      "home_cn": "里斯本",
+      "away_cn": "维塞乌",
+      "had": {
+        "home": {
+          "from": 0.0,
+          "to": 0.0,
+          "delta": 0.0,
+          "delta_pct": null
+        },
+        "draw": {
+          "from": 0.0,
+          "to": 0.0,
+          "delta": 0.0,
+          "delta_pct": null
+        },
+        "away": {
+          "from": 0.0,
+          "to": 0.0,
+          "delta": 0.0,
+          "delta_pct": null
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 2.42,
+          "to": 2.42,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 4.1,
+          "to": 4.1,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 2.13,
+          "to": 2.13,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -2.0
+    },
+    {
+      "match_num": "周日029",
+      "match_id": 2042241,
+      "home_cn": "洛杉矶FC",
+      "away_cn": "洛城银河",
+      "had": {
+        "home": {
+          "from": 1.46,
+          "to": 1.46,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 4.3,
+          "to": 4.3,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 4.72,
+          "to": 4.72,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 2.34,
+          "to": 2.34,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.65,
+          "to": 3.65,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 2.34,
+          "to": 2.34,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周一001",
+      "match_id": 2042242,
+      "home_cn": "圣克拉拉",
+      "away_cn": "本菲卡",
+      "had": {
+        "home": {
+          "from": 9.35,
+          "to": 9.35,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 4.95,
+          "to": 4.95,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 1.22,
+          "to": 1.22,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 3.3,
+          "to": 3.3,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.55,
+          "to": 3.55,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 1.84,
+          "to": 1.84,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": 1.0
+    },
+    {
+      "match_num": "周一002",
+      "match_id": 2042243,
+      "home_cn": "布洛涅",
+      "away_cn": "兰斯",
+      "had": {
+        "home": {
+          "from": 3.2,
+          "to": 3.2,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.05,
+          "to": 3.05,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 2.05,
+          "to": 2.05,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 1.59,
+          "to": 1.59,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.6,
+          "to": 3.6,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 4.5,
+          "to": 4.5,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": 1.0
+    },
+    {
+      "match_num": "周一003",
+      "match_id": 2042244,
+      "home_cn": "塞维利亚",
+      "away_cn": "奥萨苏纳",
+      "had": {
+        "home": {
+          "from": 1.8,
+          "to": 1.8,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.22,
+          "to": 3.22,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 3.8,
+          "to": 3.8,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 3.65,
+          "to": 3.65,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.4,
+          "to": 3.4,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 1.78,
+          "to": 1.78,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    },
+    {
+      "match_num": "周一004",
+      "match_id": 2042245,
+      "home_cn": "弗拉门戈",
+      "away_cn": "米竞技",
+      "had": {
+        "home": {
+          "from": 1.23,
+          "to": 1.23,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 5.1,
+          "to": 5.1,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 8.35,
+          "to": 8.35,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "hhad": {
+        "home": {
+          "from": 1.82,
+          "to": 1.82,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "draw": {
+          "from": 3.55,
+          "to": 3.55,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        "away": {
+          "from": 3.35,
+          "to": 3.35,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        }
+      },
+      "line": -1.0
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "EUR_20261023",
+    "label": "EUR",
+    "generated_at": "2026-10-23T10:31:06",
+    "n": 400,
+    "accuracy": 0.4925,
+    "log_loss": 1.0109,
+    "brier": 0.6043,
+    "has_odds": false,
+    "roi": null,
+    "file": "backtests/EUR_20261023.json"
+  },
+  {
+    "id": "UCL_20261021",
+    "label": "UCL",
+    "generated_at": "2026-10-21T20:40:16",
+    "n": 1617,
+    "accuracy": 0.5671,
+    "log_loss": 1.0931,
+    "brier": 0.5897,
+    "has_odds": false,
+    "roi": null,
+    "file": "backtests/UCL_20261021.json"
+  },
+  {
+    "id": "20261020",
+    "label": "全部联赛",
+    "generated_at": "2026-10-20T23:51:36",
+    "n": 57179,
+    "accuracy": 0.5088,
+    "log_loss": 1.0139,
+    "brier": 0.6018,
+    "has_odds": true,
+    "roi": -0.0829,
+    "file": "backtests/20261020.json"
+  },
+  {
+    "id": "20261018",
+    "label": "全部联赛",
+    "generated_at": "2026-10-18T20:58:08",
+    "n": 16680,
+    "accuracy": 0.5033,
+    "log_loss": 1.0176,
+    "brier": 0.6038,
+    "has_odds": true,
+    "roi": -0.0762,
+    "file": "backtests/20261018.json"
+  }
+]

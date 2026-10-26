@@ -1,0 +1,779 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-26T20:32:29+08:00",
+  "site": {
+    "name": "竞彩预测实验室",
+    "tagline": "用数据看球 · 研究用途 · 不构成投注建议"
+  },
+  "latest_match_date": "2026-10-25",
+  "latest_prediction_date": "2026-10-25",
+  "counts": {
+    "matches": 133,
+    "predicted": 69,
+    "settled": 0,
+    "pending": 69,
+    "skipped": 64,
+    "value_bets": 85,
+    "dates": 8
+  },
+  "dates": [
+    {
+      "date": "2026-10-18",
+      "total": 20,
+      "predicted": 12,
+      "settled": 0,
+      "pending": 12,
+      "skipped": 8,
+      "post_kickoff": 0,
+      "value_bets": 19,
+      "markets": {
+        "HAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HHAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP1": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP3": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "TOTAL_GOALS": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HALF_FULL": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_DC": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ELO": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ML": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        }
+      },
+      "value": {
+        "n": 0,
+        "hits": 0,
+        "hit_rate": null,
+        "pnl_unit": 0,
+        "pnl_pct": 0,
+        "staked_pct": 0,
+        "roi": null
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "total": 20,
+      "predicted": 12,
+      "settled": 0,
+      "pending": 12,
+      "skipped": 8,
+      "post_kickoff": 9,
+      "value_bets": 19,
+      "markets": {
+        "HAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HHAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP1": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP3": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "TOTAL_GOALS": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HALF_FULL": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_DC": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ELO": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ML": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        }
+      },
+      "value": {
+        "n": 0,
+        "hits": 0,
+        "hit_rate": null,
+        "pnl_unit": 0,
+        "pnl_pct": 0,
+        "staked_pct": 0,
+        "roi": null
+      }
+    },
+    {
+      "date": "2026-10-20",
+      "total": 20,
+      "predicted": 12,
+      "settled": 0,
+      "pending": 12,
+      "skipped": 8,
+      "post_kickoff": 12,
+      "value_bets": 19,
+      "markets": {
+        "HAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HHAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP1": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP3": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "TOTAL_GOALS": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HALF_FULL": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_DC": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ELO": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ML": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        }
+      },
+      "value": {
+        "n": 0,
+        "hits": 0,
+        "hit_rate": null,
+        "pnl_unit": 0,
+        "pnl_pct": 0,
+        "staked_pct": 0,
+        "roi": null
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "total": 10,
+      "predicted": 5,
+      "settled": 0,
+      "pending": 5,
+      "skipped": 5,
+      "post_kickoff": 0,
+      "value_bets": 7,
+      "markets": {
+        "HAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HHAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP1": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP3": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "TOTAL_GOALS": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HALF_FULL": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_DC": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ELO": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ML": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        }
+      },
+      "value": {
+        "n": 0,
+        "hits": 0,
+        "hit_rate": null,
+        "pnl_unit": 0,
+        "pnl_pct": 0,
+        "staked_pct": 0,
+        "roi": null
+      }
+    },
+    {
+      "date": "2026-10-22",
+      "total": 13,
+      "predicted": 0,
+      "settled": 0,
+      "pending": 0,
+      "skipped": 13,
+      "post_kickoff": 0,
+      "value_bets": 0,
+      "markets": {
+        "HAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HHAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP1": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP3": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "TOTAL_GOALS": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HALF_FULL": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_DC": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ELO": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ML": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        }
+      },
+      "value": {
+        "n": 0,
+        "hits": 0,
+        "hit_rate": null,
+        "pnl_unit": 0,
+        "pnl_pct": 0,
+        "staked_pct": 0,
+        "roi": null
+      }
+    },
+    {
+      "date": "2026-10-23",
+      "total": 12,
+      "predicted": 4,
+      "settled": 0,
+      "pending": 4,
+      "skipped": 8,
+      "post_kickoff": 0,
+      "value_bets": 5,
+      "markets": {
+        "HAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HHAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP1": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP3": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "TOTAL_GOALS": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HALF_FULL": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_DC": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ELO": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ML": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        }
+      },
+      "value": {
+        "n": 0,
+        "hits": 0,
+        "hit_rate": null,
+        "pnl_unit": 0,
+        "pnl_pct": 0,
+        "staked_pct": 0,
+        "roi": null
+      }
+    },
+    {
+      "date": "2026-10-24",
+      "total": 15,
+      "predicted": 5,
+      "settled": 0,
+      "pending": 5,
+      "skipped": 10,
+      "post_kickoff": 0,
+      "value_bets": 4,
+      "markets": {
+        "HAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HHAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP1": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP3": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "TOTAL_GOALS": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HALF_FULL": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_DC": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ELO": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ML": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        }
+      },
+      "value": {
+        "n": 0,
+        "hits": 0,
+        "hit_rate": null,
+        "pnl_unit": 0,
+        "pnl_pct": 0,
+        "staked_pct": 0,
+        "roi": null
+      }
+    },
+    {
+      "date": "2026-10-25",
+      "total": 23,
+      "predicted": 19,
+      "settled": 0,
+      "pending": 19,
+      "skipped": 4,
+      "post_kickoff": 0,
+      "value_bets": 12,
+      "markets": {
+        "HAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HHAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP1": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP3": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "TOTAL_GOALS": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HALF_FULL": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_DC": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ELO": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ML": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        }
+      },
+      "value": {
+        "n": 0,
+        "hits": 0,
+        "hit_rate": null,
+        "pnl_unit": 0,
+        "pnl_pct": 0,
+        "staked_pct": 0,
+        "roi": null
+      }
+    }
+  ],
+  "leagues": [
+    {
+      "div": "WC",
+      "name": "世界杯",
+      "country": "国际",
+      "tier": 1,
+      "has_model": false
+    },
+    {
+      "div": "T1",
+      "name": "土超",
+      "country": "土耳其",
+      "tier": 1,
+      "has_model": false
+    },
+    {
+      "div": "BRA1",
+      "name": "巴西甲",
+      "country": "巴西",
+      "tier": 2,
+      "has_model": true
+    },
+    {
+      "div": "G1",
+      "name": "希超",
+      "country": "希腊",
+      "tier": 1,
+      "has_model": false
+    },
+    {
+      "div": "D2",
+      "name": "德乙",
+      "country": "德国",
+      "tier": 1,
+      "has_model": false
+    },
+    {
+      "div": "D1",
+      "name": "德甲",
+      "country": "德国",
+      "tier": 1,
+      "has_model": true
+    },
+    {
+      "div": "I2",
+      "name": "意乙",
+      "country": "意大利",
+      "tier": 1,
+      "has_model": false
+    },
+    {
+      "div": "I1",
+      "name": "意甲",
+      "country": "意大利",
+      "tier": 1,
+      "has_model": true
+    },
+    {
+      "div": "NOR1",
+      "name": "挪超",
+      "country": "挪威",
+      "tier": 2,
+      "has_model": true
+    },
+    {
+      "div": "UCL",
+      "name": "欧冠",
+      "country": "欧足联",
+      "tier": 1,
+      "has_model": true
+    },
+    {
+      "div": "CONF",
+      "name": "欧协联",
+      "country": "欧足联",
+      "tier": 1,
+      "has_model": true
+    },
+    {
+      "div": "EUR",
+      "name": "欧战(合并)",
+      "country": "欧足联",
+      "tier": 1,
+      "has_model": true
+    },
+    {
+      "div": "EC",
+      "name": "欧洲杯",
+      "country": "欧足联",
+      "tier": 1,
+      "has_model": false
+    },
+    {
+      "div": "UEL",
+      "name": "欧罗巴",
+      "country": "欧足联",
+      "tier": 1,
+      "has_model": true
+    },
+    {
+      "div": "B1",
+      "name": "比甲",
+      "country": "比利时",
+      "tier": 1,
+      "has_model": false
+    },
+    {
+      "div": "F2",
+      "name": "法乙",
+      "country": "法国",
+      "tier": 1,
+      "has_model": false
+    },
+    {
+      "div": "F1",
+      "name": "法甲",
+      "country": "法国",
+      "tier": 1,
+      "has_model": true
+    },
+    {
+      "div": "SWE1",
+      "name": "瑞超",
+      "country": "瑞典",
+      "tier": 2,
+      "has_model": true
+    },
+    {
+      "div": "FIN1",
+      "name": "芬超",
+      "country": "芬兰",
+      "tier": 2,
+      "has_model": true
+    },
+    {
+      "div": "SC3",
+      "name": "苏乙",
+      "country": "苏格兰",
+      "tier": 1,
+      "has_model": false
+    },
+    {
+      "div": "SC1",
+      "name": "苏冠",
+      "country": "苏格兰",
+      "tier": 1,
+      "has_model": false
+    },
+    {
+      "div": "SC2",
+      "name": "苏甲",
+      "country": "苏格兰",
+      "tier": 1,
+      "has_model": false
+    },
+    {
+      "div": "SC0",
+      "name": "苏超",
+      "country": "苏格兰",
+      "tier": 1,
+      "has_model": false
+    },
+    {
+      "div": "E3",
+      "name": "英乙",
+      "country": "英格兰",
+      "tier": 1,
+      "has_model": false
+    },
+    {
+      "div": "E1",
+      "name": "英冠",
+      "country": "英格兰",
+      "tier": 1,
+      "has_model": false
+    },
+    {
+      "div": "E2",
+      "name": "英甲",
+      "country": "英格兰",
+      "tier": 1,
+      "has_model": false
+    },
+    {
+      "div": "E0",
+      "name": "英超",
+      "country": "英格兰",
+      "tier": 1,
+      "has_model": true
+    },
+    {
+      "div": "N1",
+      "name": "荷甲",
+      "country": "荷兰",
+      "tier": 1,
+      "has_model": false
+    },
+    {
+      "div": "P1",
+      "name": "葡超",
+      "country": "葡萄牙",
+      "tier": 1,
+      "has_model": false
+    },
+    {
+      "div": "SP2",
+      "name": "西乙",
+      "country": "西班牙",
+      "tier": 1,
+      "has_model": false
+    },
+    {
+      "div": "SP1",
+      "name": "西甲",
+      "country": "西班牙",
+      "tier": 1,
+      "has_model": true
+    }
+  ],
+  "sources": [
+    "reports/predict_20261018.json",
+    "reports/predict_20261019.json",
+    "reports/predict_20261020.json",
+    "reports/predict_20261021.json",
+    "reports/predict_20261022.json",
+    "reports/predict_20261023.json",
+    "reports/predict_20261024.json",
+    "reports/predict_20261025.json"
+  ],
+  "disclaimer": "本页面仅用于统计研究与学习，不构成任何投注建议。竞彩返奖率约 73%，历史回测 ROI 为负，请勿据此重仓真钱。"
+}

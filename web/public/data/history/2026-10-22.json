@@ -1,0 +1,327 @@
+[
+  {
+    "id": "2042119",
+    "match_num": "周四001",
+    "date": "2026-10-23",
+    "time": "00:45:00",
+    "kickoff": "2026-10-23T00:45:00+08:00",
+    "league": {
+      "div": null,
+      "name": "欧罗巴",
+      "code": "UEC"
+    },
+    "home": {
+      "cn": "格风暴",
+      "matched": null
+    },
+    "away": {
+      "cn": "马赛",
+      "matched": null
+    },
+    "status": "skipped",
+    "skip_reason": "未收录联赛: 欧罗巴",
+    "prediction_timing": "skipped",
+    "prediction": null,
+    "result": null
+  },
+  {
+    "id": "2042120",
+    "match_num": "周四002",
+    "date": "2026-10-23",
+    "time": "00:45:00",
+    "kickoff": "2026-10-23T00:45:00+08:00",
+    "league": {
+      "div": null,
+      "name": "欧罗巴",
+      "code": "UEC"
+    },
+    "home": {
+      "cn": "波兹南",
+      "matched": null
+    },
+    "away": {
+      "cn": "桑德兰",
+      "matched": null
+    },
+    "status": "skipped",
+    "skip_reason": "未收录联赛: 欧罗巴",
+    "prediction_timing": "skipped",
+    "prediction": null,
+    "result": null
+  },
+  {
+    "id": "2042121",
+    "match_num": "周四003",
+    "date": "2026-10-23",
+    "time": "00:45:00",
+    "kickoff": "2026-10-23T00:45:00+08:00",
+    "league": {
+      "div": null,
+      "name": "欧罗巴",
+      "code": "UEC"
+    },
+    "home": {
+      "cn": "萨迪纳摩",
+      "matched": null
+    },
+    "away": {
+      "cn": "奈梅亨",
+      "matched": null
+    },
+    "status": "skipped",
+    "skip_reason": "未收录联赛: 欧罗巴",
+    "prediction_timing": "skipped",
+    "prediction": null,
+    "result": null
+  },
+  {
+    "id": "2042122",
+    "match_num": "周四004",
+    "date": "2026-10-23",
+    "time": "00:45:00",
+    "kickoff": "2026-10-23T00:45:00+08:00",
+    "league": {
+      "div": null,
+      "name": "欧罗巴",
+      "code": "UEC"
+    },
+    "home": {
+      "cn": "尤文图斯",
+      "matched": null
+    },
+    "away": {
+      "cn": "雷恩",
+      "matched": null
+    },
+    "status": "skipped",
+    "skip_reason": "未收录联赛: 欧罗巴",
+    "prediction_timing": "skipped",
+    "prediction": null,
+    "result": null
+  },
+  {
+    "id": "2042123",
+    "match_num": "周四005",
+    "date": "2026-10-23",
+    "time": "00:45:00",
+    "kickoff": "2026-10-23T00:45:00+08:00",
+    "league": {
+      "div": null,
+      "name": "欧罗巴",
+      "code": "UEC"
+    },
+    "home": {
+      "cn": "克里特",
+      "matched": null
+    },
+    "away": {
+      "cn": "勒沃库森",
+      "matched": null
+    },
+    "status": "skipped",
+    "skip_reason": "未收录联赛: 欧罗巴",
+    "prediction_timing": "skipped",
+    "prediction": null,
+    "result": null
+  },
+  {
+    "id": "2042124",
+    "match_num": "周四006",
+    "date": "2026-10-23",
+    "time": "03:00:00",
+    "kickoff": "2026-10-23T03:00:00+08:00",
+    "league": {
+      "div": null,
+      "name": "欧罗巴",
+      "code": "UEC"
+    },
+    "home": {
+      "cn": "伯恩茅斯",
+      "matched": null
+    },
+    "away": {
+      "cn": "AC米兰",
+      "matched": null
+    },
+    "status": "skipped",
+    "skip_reason": "未收录联赛: 欧罗巴",
+    "prediction_timing": "skipped",
+    "prediction": null,
+    "result": null
+  },
+  {
+    "id": "2042125",
+    "match_num": "周四007",
+    "date": "2026-10-23",
+    "time": "03:00:00",
+    "kickoff": "2026-10-23T03:00:00+08:00",
+    "league": {
+      "div": null,
+      "name": "欧罗巴",
+      "code": "UEC"
+    },
+    "home": {
+      "cn": "凯尔特人",
+      "matched": null
+    },
+    "away": {
+      "cn": "塞尔塔",
+      "matched": null
+    },
+    "status": "skipped",
+    "skip_reason": "未收录联赛: 欧罗巴",
+    "prediction_timing": "skipped",
+    "prediction": null,
+    "result": null
+  },
+  {
+    "id": "2042126",
+    "match_num": "周四008",
+    "date": "2026-10-23",
+    "time": "03:00:00",
+    "kickoff": "2026-10-23T03:00:00+08:00",
+    "league": {
+      "div": null,
+      "name": "欧罗巴",
+      "code": "UEC"
+    },
+    "home": {
+      "cn": "贝西克塔",
+      "matched": null
+    },
+    "away": {
+      "cn": "水晶宫",
+      "matched": null
+    },
+    "status": "skipped",
+    "skip_reason": "未收录联赛: 欧罗巴",
+    "prediction_timing": "skipped",
+    "prediction": null,
+    "result": null
+  },
+  {
+    "id": "2042127",
+    "match_num": "周四009",
+    "date": "2026-10-23",
+    "time": "03:00:00",
+    "kickoff": "2026-10-23T03:00:00+08:00",
+    "league": {
+      "div": null,
+      "name": "欧罗巴",
+      "code": "UEC"
+    },
+    "home": {
+      "cn": "霍芬海姆",
+      "matched": null
+    },
+    "away": {
+      "cn": "里昂",
+      "matched": null
+    },
+    "status": "skipped",
+    "skip_reason": "未收录联赛: 欧罗巴",
+    "prediction_timing": "skipped",
+    "prediction": null,
+    "result": null
+  },
+  {
+    "id": "2042128",
+    "match_num": "周四010",
+    "date": "2026-10-23",
+    "time": "03:00:00",
+    "kickoff": "2026-10-23T03:00:00+08:00",
+    "league": {
+      "div": null,
+      "name": "欧罗巴",
+      "code": "UEC"
+    },
+    "home": {
+      "cn": "利勒斯特",
+      "matched": null
+    },
+    "away": {
+      "cn": "皇家社会",
+      "matched": null
+    },
+    "status": "skipped",
+    "skip_reason": "未收录联赛: 欧罗巴",
+    "prediction_timing": "skipped",
+    "prediction": null,
+    "result": null
+  },
+  {
+    "id": "2042130",
+    "match_num": "周四011",
+    "date": "2026-10-23",
+    "time": "03:00:00",
+    "kickoff": "2026-10-23T03:00:00+08:00",
+    "league": {
+      "div": null,
+      "name": "欧协联",
+      "code": "UEF"
+    },
+    "home": {
+      "cn": "阿贾克斯",
+      "matched": null
+    },
+    "away": {
+      "cn": "亚特兰大",
+      "matched": null
+    },
+    "status": "skipped",
+    "skip_reason": "未收录联赛: 欧协联",
+    "prediction_timing": "skipped",
+    "prediction": null,
+    "result": null
+  },
+  {
+    "id": "2042131",
+    "match_num": "周四012",
+    "date": "2026-10-23",
+    "time": "03:00:00",
+    "kickoff": "2026-10-23T03:00:00+08:00",
+    "league": {
+      "div": null,
+      "name": "欧协联",
+      "code": "UEF"
+    },
+    "home": {
+      "cn": "摩纳哥",
+      "matched": null
+    },
+    "away": {
+      "cn": "弗赖堡",
+      "matched": null
+    },
+    "status": "skipped",
+    "skip_reason": "未收录联赛: 欧协联",
+    "prediction_timing": "skipped",
+    "prediction": null,
+    "result": null
+  },
+  {
+    "id": "2042129",
+    "match_num": "周四013",
+    "date": "2026-10-23",
+    "time": "08:30:00",
+    "kickoff": "2026-10-23T08:30:00+08:00",
+    "league": {
+      "div": null,
+      "name": "解放者杯",
+      "code": "LBC"
+    },
+    "home": {
+      "cn": "弗拉门戈",
+      "matched": null
+    },
+    "away": {
+      "cn": "拉普大学",
+      "matched": null
+    },
+    "status": "skipped",
+    "skip_reason": "未收录联赛: 解放者杯",
+    "prediction_timing": "skipped",
+    "prediction": null,
+    "result": null
+  }
+]

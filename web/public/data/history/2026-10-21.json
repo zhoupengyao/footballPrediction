@@ -1,0 +1,929 @@
+[
+  {
+    "id": "2042109",
+    "match_num": "周三004",
+    "date": "2026-10-22",
+    "time": "00:45:00",
+    "kickoff": "2026-10-22T00:45:00+08:00",
+    "league": {
+      "div": "UCL",
+      "name": "欧冠",
+      "code": "UCL"
+    },
+    "home": {
+      "cn": "科莫",
+      "matched": "Como"
+    },
+    "away": {
+      "cn": "曼联",
+      "matched": "Man United"
+    },
+    "status": "skipped",
+    "skip_reason": "球队无历史数据: Como",
+    "prediction_timing": "skipped",
+    "prediction": null,
+    "result": null
+  },
+  {
+    "id": "2042110",
+    "match_num": "周三005",
+    "date": "2026-10-22",
+    "time": "00:45:00",
+    "kickoff": "2026-10-22T00:45:00+08:00",
+    "league": {
+      "div": "UCL",
+      "name": "欧冠",
+      "code": "UCL"
+    },
+    "home": {
+      "cn": "里尔",
+      "matched": "Lille"
+    },
+    "away": {
+      "cn": "加拉塔萨",
+      "matched": "Galatasaray"
+    },
+    "status": "pending",
+    "skip_reason": null,
+    "prediction_timing": "pre_match",
+    "prediction": {
+      "model": null,
+      "generated_at": "2026-10-21T20:41:30",
+      "timing": "pre_match",
+      "source": "reports/predict_20261021.json",
+      "xg": {
+        "home": 2.0615,
+        "away": 1.0329
+      },
+      "confidence": {
+        "home": "alias",
+        "away": "alias"
+      },
+      "markets": {
+        "HAD": {
+          "available": true,
+          "probs": {
+            "home": 0.6262,
+            "draw": 0.1878,
+            "away": 0.1859
+          },
+          "odds": {
+            "home": 1.81,
+            "draw": 3.65,
+            "away": 3.3
+          },
+          "implied": {
+            "home": 0.4891,
+            "draw": 0.2426,
+            "away": 0.2683
+          },
+          "blended": null,
+          "predicted": "home",
+          "actual": null,
+          "hit": null
+        },
+        "HHAD": {
+          "available": true,
+          "line": -1.0,
+          "probs": {
+            "home": 0.374,
+            "draw": 0.2522,
+            "away": 0.3738
+          },
+          "odds": {
+            "home": 3.48,
+            "draw": 3.7,
+            "away": 1.75
+          },
+          "implied": null,
+          "blended": null,
+          "predicted": "home",
+          "actual": null,
+          "hit": null
+        },
+        "SCORE": {
+          "available": true,
+          "top": [
+            {
+              "score": "1:0",
+              "prob": 0.1112
+            },
+            {
+              "score": "2:1",
+              "prob": 0.099
+            },
+            {
+              "score": "2:0",
+              "prob": 0.0958
+            }
+          ],
+          "predicted": "1:0",
+          "actual": null,
+          "top1_hit": null,
+          "top3_hit": null
+        },
+        "TOTAL_GOALS": {
+          "available": true,
+          "probs": {
+            "0": 0.036,
+            "1": 0.1623,
+            "2": 0.2068,
+            "3": 0.2227,
+            "4": 0.1723,
+            "5": 0.1066,
+            "6": 0.055,
+            "7+": 0.0383
+          },
+          "predicted": "3",
+          "actual": null,
+          "hit": null
+        },
+        "HALF_FULL": {
+          "available": true,
+          "top": [
+            {
+              "label": "胜/胜",
+              "prob": 0.5358
+            },
+            {
+              "label": "负/负",
+              "prob": 0.1243
+            },
+            {
+              "label": "胜/平",
+              "prob": 0.0736
+            }
+          ],
+          "predicted": "胜/胜",
+          "actual": null,
+          "hit": null
+        }
+      },
+      "model_layers": {},
+      "value_bets": [
+        {
+          "market": "HAD",
+          "option": "home",
+          "option_cn": "胜",
+          "odds": 1.81,
+          "model_prob": 0.6262,
+          "implied_prob": 0.4891,
+          "edge": 0.1371,
+          "ev": 0.1334,
+          "stake_pct": 0.02,
+          "hit": null,
+          "pnl_unit": null,
+          "pnl_pct": null
+        },
+        {
+          "market": "HHAD",
+          "option": "home",
+          "option_cn": "胜",
+          "odds": 3.48,
+          "model_prob": 0.374,
+          "implied_prob": 0.2545,
+          "edge": 0.1195,
+          "ev": 0.3015,
+          "stake_pct": 0.02,
+          "hit": null,
+          "pnl_unit": null,
+          "pnl_pct": null
+        }
+      ]
+    },
+    "result": null
+  },
+  {
+    "id": "2042111",
+    "match_num": "周三006",
+    "date": "2026-10-22",
+    "time": "02:00:00",
+    "kickoff": "2026-10-22T02:00:00+08:00",
+    "league": {
+      "div": "SP1",
+      "name": "西甲",
+      "code": "SFL"
+    },
+    "home": {
+      "cn": "莱万特",
+      "matched": "Levante"
+    },
+    "away": {
+      "cn": "毕尔巴鄂",
+      "matched": "Ath Bilbao"
+    },
+    "status": "pending",
+    "skip_reason": null,
+    "prediction_timing": "pre_match",
+    "prediction": {
+      "model": null,
+      "generated_at": "2026-10-21T20:41:30",
+      "timing": "pre_match",
+      "source": "reports/predict_20261021.json",
+      "xg": {
+        "home": 1.5284,
+        "away": 1.1795
+      },
+      "confidence": {
+        "home": "alias",
+        "away": "alias"
+      },
+      "markets": {
+        "HAD": {
+          "available": true,
+          "probs": {
+            "home": 0.4689,
+            "draw": 0.2282,
+            "away": 0.3028
+          },
+          "odds": {
+            "home": 3.8,
+            "draw": 3.25,
+            "away": 1.79
+          },
+          "implied": {
+            "home": 0.233,
+            "draw": 0.2724,
+            "away": 0.4946
+          },
+          "blended": null,
+          "predicted": "home",
+          "actual": null,
+          "hit": null
+        },
+        "HHAD": {
+          "available": true,
+          "line": 1.0,
+          "probs": {
+            "home": 0.6972,
+            "draw": 0.1838,
+            "away": 0.1191
+          },
+          "odds": {
+            "home": 1.78,
+            "draw": 3.3,
+            "away": 3.78
+          },
+          "implied": null,
+          "blended": null,
+          "predicted": "home",
+          "actual": null,
+          "hit": null
+        },
+        "SCORE": {
+          "available": true,
+          "top": [
+            {
+              "score": "1:0",
+              "prob": 0.1179
+            },
+            {
+              "score": "1:1",
+              "prob": 0.1077
+            },
+            {
+              "score": "2:1",
+              "prob": 0.0918
+            }
+          ],
+          "predicted": "1:0",
+          "actual": null,
+          "top1_hit": null,
+          "top3_hit": null
+        },
+        "TOTAL_GOALS": {
+          "available": true,
+          "probs": {
+            "0": 0.0542,
+            "1": 0.206,
+            "2": 0.2319,
+            "3": 0.2205,
+            "4": 0.1493,
+            "5": 0.0808,
+            "6": 0.0365,
+            "7+": 0.0208
+          },
+          "predicted": "2",
+          "actual": null,
+          "hit": null
+        },
+        "HALF_FULL": {
+          "available": true,
+          "top": [
+            {
+              "label": "胜/胜",
+              "prob": 0.365
+            },
+            {
+              "label": "负/负",
+              "prob": 0.1848
+            },
+            {
+              "label": "平/胜",
+              "prob": 0.0905
+            }
+          ],
+          "predicted": "胜/胜",
+          "actual": null,
+          "hit": null
+        }
+      },
+      "model_layers": {},
+      "value_bets": [
+        {
+          "market": "HAD",
+          "option": "home",
+          "option_cn": "胜",
+          "odds": 3.8,
+          "model_prob": 0.4689,
+          "implied_prob": 0.233,
+          "edge": 0.236,
+          "ev": 0.782,
+          "stake_pct": 0.02,
+          "hit": null,
+          "pnl_unit": null,
+          "pnl_pct": null
+        },
+        {
+          "market": "HHAD",
+          "option": "home",
+          "option_cn": "胜",
+          "odds": 1.78,
+          "model_prob": 0.6972,
+          "implied_prob": 0.4974,
+          "edge": 0.1997,
+          "ev": 0.241,
+          "stake_pct": 0.02,
+          "hit": null,
+          "pnl_unit": null,
+          "pnl_pct": null
+        }
+      ]
+    },
+    "result": null
+  },
+  {
+    "id": "2042112",
+    "match_num": "周三007",
+    "date": "2026-10-22",
+    "time": "03:00:00",
+    "kickoff": "2026-10-22T03:00:00+08:00",
+    "league": {
+      "div": "UCL",
+      "name": "欧冠",
+      "code": "UCL"
+    },
+    "home": {
+      "cn": "皇马",
+      "matched": "Real Madrid"
+    },
+    "away": {
+      "cn": "莱红牛",
+      "matched": "RB Leipzig"
+    },
+    "status": "pending",
+    "skip_reason": null,
+    "prediction_timing": "pre_match",
+    "prediction": {
+      "model": null,
+      "generated_at": "2026-10-21T20:41:30",
+      "timing": "pre_match",
+      "source": "reports/predict_20261021.json",
+      "xg": {
+        "home": 3.0527,
+        "away": 1.1065
+      },
+      "confidence": {
+        "home": "alias",
+        "away": "alias"
+      },
+      "markets": {
+        "HAD": {
+          "available": true,
+          "probs": {
+            "home": 0.7712,
+            "draw": 0.123,
+            "away": 0.1057
+          },
+          "odds": {
+            "home": 1.13,
+            "draw": 7.0,
+            "away": 9.8
+          },
+          "implied": {
+            "home": 0.7832,
+            "draw": 0.1264,
+            "away": 0.0903
+          },
+          "blended": null,
+          "predicted": "home",
+          "actual": null,
+          "hit": null
+        },
+        "HHAD": {
+          "available": true,
+          "line": -2.0,
+          "probs": {
+            "home": 0.3724,
+            "draw": 0.1973,
+            "away": 0.4303
+          },
+          "odds": {
+            "home": 2.02,
+            "draw": 4.45,
+            "away": 2.44
+          },
+          "implied": null,
+          "blended": null,
+          "predicted": "away",
+          "actual": null,
+          "hit": null
+        },
+        "SCORE": {
+          "available": true,
+          "top": [
+            {
+              "score": "3:1",
+              "prob": 0.0815
+            },
+            {
+              "score": "2:1",
+              "prob": 0.0801
+            },
+            {
+              "score": "3:0",
+              "prob": 0.0737
+            }
+          ],
+          "predicted": "3:1",
+          "actual": null,
+          "top1_hit": null,
+          "top3_hit": null
+        },
+        "TOTAL_GOALS": {
+          "available": true,
+          "probs": {
+            "0": 0.0106,
+            "1": 0.0802,
+            "2": 0.1294,
+            "3": 0.1863,
+            "4": 0.1937,
+            "5": 0.1612,
+            "6": 0.1117,
+            "7+": 0.1269
+          },
+          "predicted": "4",
+          "actual": null,
+          "hit": null
+        },
+        "HALF_FULL": {
+          "available": true,
+          "top": [
+            {
+              "label": "胜/胜",
+              "prob": 0.6473
+            },
+            {
+              "label": "胜/平",
+              "prob": 0.0889
+            },
+            {
+              "label": "负/负",
+              "prob": 0.0684
+            }
+          ],
+          "predicted": "胜/胜",
+          "actual": null,
+          "hit": null
+        }
+      },
+      "model_layers": {},
+      "value_bets": [
+        {
+          "market": "HHAD",
+          "option": "away",
+          "option_cn": "负",
+          "odds": 2.44,
+          "model_prob": 0.4303,
+          "implied_prob": 0.3628,
+          "edge": 0.0675,
+          "ev": 0.0499,
+          "stake_pct": 0.0087,
+          "hit": null,
+          "pnl_unit": null,
+          "pnl_pct": null
+        }
+      ]
+    },
+    "result": null
+  },
+  {
+    "id": "2042113",
+    "match_num": "周三008",
+    "date": "2026-10-22",
+    "time": "03:00:00",
+    "kickoff": "2026-10-22T03:00:00+08:00",
+    "league": {
+      "div": "UCL",
+      "name": "欧冠",
+      "code": "UCL"
+    },
+    "home": {
+      "cn": "维拉",
+      "matched": "Aston Villa"
+    },
+    "away": {
+      "cn": "维京",
+      "matched": "Viking"
+    },
+    "status": "skipped",
+    "skip_reason": "球队无历史数据: Viking",
+    "prediction_timing": "skipped",
+    "prediction": null,
+    "result": null
+  },
+  {
+    "id": "2042114",
+    "match_num": "周三009",
+    "date": "2026-10-22",
+    "time": "03:00:00",
+    "kickoff": "2026-10-22T03:00:00+08:00",
+    "league": {
+      "div": "UCL",
+      "name": "欧冠",
+      "code": "UCL"
+    },
+    "home": {
+      "cn": "贝蒂斯",
+      "matched": "Betis"
+    },
+    "away": {
+      "cn": "费耶诺德",
+      "matched": "Feyenoord"
+    },
+    "status": "skipped",
+    "skip_reason": "球队无历史数据: Betis",
+    "prediction_timing": "skipped",
+    "prediction": null,
+    "result": null
+  },
+  {
+    "id": "2042115",
+    "match_num": "周三010",
+    "date": "2026-10-22",
+    "time": "03:00:00",
+    "kickoff": "2026-10-22T03:00:00+08:00",
+    "league": {
+      "div": "UCL",
+      "name": "欧冠",
+      "code": "UCL"
+    },
+    "home": {
+      "cn": "拜仁",
+      "matched": "Bayern Munich"
+    },
+    "away": {
+      "cn": "阿森纳",
+      "matched": "Arsenal"
+    },
+    "status": "pending",
+    "skip_reason": null,
+    "prediction_timing": "pre_match",
+    "prediction": {
+      "model": null,
+      "generated_at": "2026-10-21T20:41:30",
+      "timing": "pre_match",
+      "source": "reports/predict_20261021.json",
+      "xg": {
+        "home": 1.0839,
+        "away": 1.2553
+      },
+      "confidence": {
+        "home": "alias",
+        "away": "alias"
+      },
+      "markets": {
+        "HAD": {
+          "available": true,
+          "probs": {
+            "home": 0.3289,
+            "draw": 0.2545,
+            "away": 0.4165
+          },
+          "odds": {
+            "home": 2.03,
+            "draw": 3.4,
+            "away": 2.92
+          },
+          "implied": {
+            "home": 0.4362,
+            "draw": 0.2605,
+            "away": 0.3033
+          },
+          "blended": null,
+          "predicted": "away",
+          "actual": null,
+          "hit": null
+        },
+        "HHAD": {
+          "available": true,
+          "line": -1.0,
+          "probs": {
+            "home": 0.1246,
+            "draw": 0.2044,
+            "away": 0.6711
+          },
+          "odds": {
+            "home": 4.2,
+            "draw": 3.75,
+            "away": 1.6
+          },
+          "implied": null,
+          "blended": null,
+          "predicted": "away",
+          "actual": null,
+          "hit": null
+        },
+        "SCORE": {
+          "available": true,
+          "top": [
+            {
+              "score": "0:1",
+              "prob": 0.1354
+            },
+            {
+              "score": "1:1",
+              "prob": 0.1187
+            },
+            {
+              "score": "1:0",
+              "prob": 0.1152
+            }
+          ],
+          "predicted": "0:1",
+          "actual": null,
+          "top1_hit": null,
+          "top3_hit": null
+        },
+        "TOTAL_GOALS": {
+          "available": true,
+          "probs": {
+            "0": 0.0839,
+            "1": 0.2506,
+            "2": 0.2512,
+            "3": 0.2056,
+            "4": 0.1202,
+            "5": 0.0563,
+            "6": 0.0219,
+            "7+": 0.0102
+          },
+          "predicted": "2",
+          "actual": null,
+          "hit": null
+        },
+        "HALF_FULL": {
+          "available": true,
+          "top": [
+            {
+              "label": "负/负",
+              "prob": 0.3085
+            },
+            {
+              "label": "胜/胜",
+              "prob": 0.2734
+            },
+            {
+              "label": "平/胜",
+              "prob": 0.1021
+            }
+          ],
+          "predicted": "负/负",
+          "actual": null,
+          "hit": null
+        }
+      },
+      "model_layers": {},
+      "value_bets": [
+        {
+          "market": "HHAD",
+          "option": "away",
+          "option_cn": "负",
+          "odds": 1.6,
+          "model_prob": 0.6711,
+          "implied_prob": 0.5532,
+          "edge": 0.1179,
+          "ev": 0.0737,
+          "stake_pct": 0.02,
+          "hit": null,
+          "pnl_unit": null,
+          "pnl_pct": null
+        },
+        {
+          "market": "HAD",
+          "option": "away",
+          "option_cn": "负",
+          "odds": 2.92,
+          "model_prob": 0.4165,
+          "implied_prob": 0.3033,
+          "edge": 0.1133,
+          "ev": 0.2163,
+          "stake_pct": 0.02,
+          "hit": null,
+          "pnl_unit": null,
+          "pnl_pct": null
+        }
+      ]
+    },
+    "result": null
+  },
+  {
+    "id": "2042116",
+    "match_num": "周三011",
+    "date": "2026-10-22",
+    "time": "03:00:00",
+    "kickoff": "2026-10-22T03:00:00+08:00",
+    "league": {
+      "div": "UCL",
+      "name": "欧冠",
+      "code": "UCL"
+    },
+    "home": {
+      "cn": "里斯本",
+      "matched": "Sporting Lisbon"
+    },
+    "away": {
+      "cn": "LASK林茨",
+      "matched": "LASK"
+    },
+    "status": "skipped",
+    "skip_reason": "球队无历史数据: LASK",
+    "prediction_timing": "skipped",
+    "prediction": null,
+    "result": null
+  },
+  {
+    "id": "2042117",
+    "match_num": "周三012",
+    "date": "2026-10-22",
+    "time": "03:00:00",
+    "kickoff": "2026-10-22T03:00:00+08:00",
+    "league": {
+      "div": "UCL",
+      "name": "欧冠",
+      "code": "UCL"
+    },
+    "home": {
+      "cn": "布鲁日",
+      "matched": "Club Brugge"
+    },
+    "away": {
+      "cn": "朗斯",
+      "matched": "Lens"
+    },
+    "status": "pending",
+    "skip_reason": null,
+    "prediction_timing": "pre_match",
+    "prediction": {
+      "model": null,
+      "generated_at": "2026-10-21T20:41:30",
+      "timing": "pre_match",
+      "source": "reports/predict_20261021.json",
+      "xg": {
+        "home": 1.8896,
+        "away": 1.1196
+      },
+      "confidence": {
+        "home": "alias",
+        "away": "alias"
+      },
+      "markets": {
+        "HAD": {
+          "available": true,
+          "probs": {
+            "home": 0.5686,
+            "draw": 0.2033,
+            "away": 0.2281
+          },
+          "odds": {
+            "home": 1.58,
+            "draw": 4.44,
+            "away": 3.68
+          },
+          "implied": {
+            "home": 0.5602,
+            "draw": 0.1993,
+            "away": 0.2405
+          },
+          "blended": null,
+          "predicted": "home",
+          "actual": null,
+          "hit": null
+        },
+        "HHAD": {
+          "available": true,
+          "line": -1.0,
+          "probs": {
+            "home": 0.3191,
+            "draw": 0.2495,
+            "away": 0.4314
+          },
+          "odds": {
+            "home": 2.7,
+            "draw": 3.72,
+            "away": 2.04
+          },
+          "implied": null,
+          "blended": null,
+          "predicted": "away",
+          "actual": null,
+          "hit": null
+        },
+        "SCORE": {
+          "available": true,
+          "top": [
+            {
+              "score": "1:0",
+              "prob": 0.1097
+            },
+            {
+              "score": "2:1",
+              "prob": 0.0983
+            },
+            {
+              "score": "1:1",
+              "prob": 0.0942
+            }
+          ],
+          "predicted": "1:0",
+          "actual": null,
+          "top1_hit": null,
+          "top3_hit": null
+        },
+        "TOTAL_GOALS": {
+          "available": true,
+          "probs": {
+            "0": 0.0393,
+            "1": 0.1706,
+            "2": 0.2129,
+            "3": 0.2234,
+            "4": 0.1681,
+            "5": 0.1012,
+            "6": 0.0507,
+            "7+": 0.0339
+          },
+          "predicted": "3",
+          "actual": null,
+          "hit": null
+        },
+        "HALF_FULL": {
+          "available": true,
+          "top": [
+            {
+              "label": "胜/胜",
+              "prob": 0.4857
+            },
+            {
+              "label": "负/负",
+              "prob": 0.1564
+            },
+            {
+              "label": "平/胜",
+              "prob": 0.0802
+            }
+          ],
+          "predicted": "胜/胜",
+          "actual": null,
+          "hit": null
+        }
+      },
+      "model_layers": {},
+      "value_bets": []
+    },
+    "result": null
+  },
+  {
+    "id": "2042118",
+    "match_num": "周三013",
+    "date": "2026-10-22",
+    "time": "08:30:00",
+    "kickoff": "2026-10-22T08:30:00+08:00",
+    "league": {
+      "div": null,
+      "name": "解放者杯",
+      "code": "LBC"
+    },
+    "home": {
+      "cn": "帕梅拉斯",
+      "matched": null
+    },
+    "away": {
+      "cn": "弗鲁米嫩",
+      "matched": null
+    },
+    "status": "skipped",
+    "skip_reason": "未收录联赛: 解放者杯",
+    "prediction_timing": "skipped",
+    "prediction": null,
+    "result": null
+  }
+]

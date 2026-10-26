@@ -1,0 +1,530 @@
+[
+  {
+    "date": "2026-10-18",
+    "total": 20,
+    "predicted": 12,
+    "settled": 0,
+    "pending": 12,
+    "skipped": 8,
+    "post_kickoff": 0,
+    "value_bets": 19,
+    "markets": {
+      "HAD": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HHAD": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "SCORE_TOP1": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "SCORE_TOP3": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "TOTAL_GOALS": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HALF_FULL": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_DC": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_ELO": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_ML": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      }
+    },
+    "value": {
+      "n": 0,
+      "hits": 0,
+      "hit_rate": null,
+      "pnl_unit": 0,
+      "pnl_pct": 0,
+      "staked_pct": 0,
+      "roi": null
+    }
+  },
+  {
+    "date": "2026-10-19",
+    "total": 20,
+    "predicted": 12,
+    "settled": 0,
+    "pending": 12,
+    "skipped": 8,
+    "post_kickoff": 9,
+    "value_bets": 19,
+    "markets": {
+      "HAD": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HHAD": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "SCORE_TOP1": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "SCORE_TOP3": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "TOTAL_GOALS": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HALF_FULL": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_DC": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_ELO": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_ML": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      }
+    },
+    "value": {
+      "n": 0,
+      "hits": 0,
+      "hit_rate": null,
+      "pnl_unit": 0,
+      "pnl_pct": 0,
+      "staked_pct": 0,
+      "roi": null
+    }
+  },
+  {
+    "date": "2026-10-20",
+    "total": 20,
+    "predicted": 12,
+    "settled": 0,
+    "pending": 12,
+    "skipped": 8,
+    "post_kickoff": 12,
+    "value_bets": 19,
+    "markets": {
+      "HAD": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HHAD": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "SCORE_TOP1": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "SCORE_TOP3": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "TOTAL_GOALS": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HALF_FULL": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_DC": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_ELO": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_ML": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      }
+    },
+    "value": {
+      "n": 0,
+      "hits": 0,
+      "hit_rate": null,
+      "pnl_unit": 0,
+      "pnl_pct": 0,
+      "staked_pct": 0,
+      "roi": null
+    }
+  },
+  {
+    "date": "2026-10-21",
+    "total": 10,
+    "predicted": 5,
+    "settled": 0,
+    "pending": 5,
+    "skipped": 5,
+    "post_kickoff": 0,
+    "value_bets": 7,
+    "markets": {
+      "HAD": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HHAD": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "SCORE_TOP1": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "SCORE_TOP3": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "TOTAL_GOALS": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HALF_FULL": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_DC": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_ELO": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_ML": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      }
+    },
+    "value": {
+      "n": 0,
+      "hits": 0,
+      "hit_rate": null,
+      "pnl_unit": 0,
+      "pnl_pct": 0,
+      "staked_pct": 0,
+      "roi": null
+    }
+  },
+  {
+    "date": "2026-10-22",
+    "total": 13,
+    "predicted": 0,
+    "settled": 0,
+    "pending": 0,
+    "skipped": 13,
+    "post_kickoff": 0,
+    "value_bets": 0,
+    "markets": {
+      "HAD": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HHAD": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "SCORE_TOP1": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "SCORE_TOP3": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "TOTAL_GOALS": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HALF_FULL": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_DC": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_ELO": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_ML": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      }
+    },
+    "value": {
+      "n": 0,
+      "hits": 0,
+      "hit_rate": null,
+      "pnl_unit": 0,
+      "pnl_pct": 0,
+      "staked_pct": 0,
+      "roi": null
+    }
+  },
+  {
+    "date": "2026-10-23",
+    "total": 12,
+    "predicted": 4,
+    "settled": 0,
+    "pending": 4,
+    "skipped": 8,
+    "post_kickoff": 0,
+    "value_bets": 5,
+    "markets": {
+      "HAD": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HHAD": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "SCORE_TOP1": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "SCORE_TOP3": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "TOTAL_GOALS": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HALF_FULL": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_DC": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_ELO": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_ML": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      }
+    },
+    "value": {
+      "n": 0,
+      "hits": 0,
+      "hit_rate": null,
+      "pnl_unit": 0,
+      "pnl_pct": 0,
+      "staked_pct": 0,
+      "roi": null
+    }
+  },
+  {
+    "date": "2026-10-24",
+    "total": 15,
+    "predicted": 5,
+    "settled": 0,
+    "pending": 5,
+    "skipped": 10,
+    "post_kickoff": 0,
+    "value_bets": 4,
+    "markets": {
+      "HAD": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HHAD": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "SCORE_TOP1": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "SCORE_TOP3": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "TOTAL_GOALS": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HALF_FULL": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_DC": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_ELO": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_ML": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      }
+    },
+    "value": {
+      "n": 0,
+      "hits": 0,
+      "hit_rate": null,
+      "pnl_unit": 0,
+      "pnl_pct": 0,
+      "staked_pct": 0,
+      "roi": null
+    }
+  },
+  {
+    "date": "2026-10-25",
+    "total": 23,
+    "predicted": 19,
+    "settled": 0,
+    "pending": 19,
+    "skipped": 4,
+    "post_kickoff": 0,
+    "value_bets": 12,
+    "markets": {
+      "HAD": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HHAD": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "SCORE_TOP1": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "SCORE_TOP3": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "TOTAL_GOALS": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HALF_FULL": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_DC": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_ELO": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      },
+      "HAD_ML": {
+        "n": 0,
+        "hits": 0,
+        "accuracy": null
+      }
+    },
+    "value": {
+      "n": 0,
+      "hits": 0,
+      "hit_rate": null,
+      "pnl_unit": 0,
+      "pnl_pct": 0,
+      "staked_pct": 0,
+      "roi": null
+    }
+  }
+]

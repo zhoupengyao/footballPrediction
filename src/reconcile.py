@@ -294,7 +294,7 @@ def bet_won(market: str, option: str, ft_home: int, ft_away: int,
 # --------------------------------------------------------------------------- #
 def _market_predictions(p: dict[str, Any]) -> dict[str, Any]:
     """从预测记录里抽出各玩法 Top1，供赛前展示和赛后命中对比。"""
-    scores = _score_list(p.get("score_top"))
+    scores = _score_list(p.get("score_top") or p.get("crs_top"))
     score_top1 = p.get("score_most_likely") or (scores[0] if scores else None)
     layer_preds = {
         "HAD_DC": _top_key(p.get("had_dc")),

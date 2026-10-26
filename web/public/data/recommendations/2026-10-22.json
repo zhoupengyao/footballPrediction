@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-22",
+  "generated_at": "2026-10-26T20:32:29+08:00",
+  "source": "derived",
+  "risks": {
+    "conservative": {
+      "risk": "conservative",
+      "recommendations": [],
+      "observations": [],
+      "total_stake_pct": 0,
+      "bankroll": null
+    },
+    "balanced": {
+      "risk": "balanced",
+      "recommendations": [],
+      "observations": [],
+      "total_stake_pct": 0,
+      "bankroll": null
+    },
+    "aggressive": {
+      "risk": "aggressive",
+      "recommendations": [],
+      "observations": [],
+      "total_stake_pct": 0,
+      "bankroll": null
+    }
+  }
+}
