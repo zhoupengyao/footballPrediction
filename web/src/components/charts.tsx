@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef } from 'react'
 import * as echarts from 'echarts/core'
-import { BarChart, LineChart } from 'echarts/charts'
+import { BarChart, LineChart, ScatterChart } from 'echarts/charts'
 import {
   AxisPointerComponent,
   GridComponent,
@@ -9,12 +9,13 @@ import {
 } from 'echarts/components'
 import { CanvasRenderer } from 'echarts/renderers'
 import type { EChartsOption } from 'echarts'
-import type { CalibrationPoint, EquityPoint, Probs } from '../data/types'
+import type { AnalysisBin, CalibrationPoint, EquityPoint, Probs } from '../data/types'
 import { pct } from '../lib/format'
 
 echarts.use([
   BarChart,
   LineChart,
+  ScatterChart,
   GridComponent,
   TooltipComponent,
   LegendComponent,
@@ -285,6 +286,98 @@ export function ValueCumulativeChart({
       itemStyle: { color: '#F59E0B' },
       areaStyle: { color: 'rgba(245,158,11,.08)' },
     }],
+  }), [data])
+  return <EChart option={option} height={240} />
+}
+
+export function ReliabilityChart({ bins }: { bins: AnalysisBin[] }) {
+  const points = bins.filter((b) => b.n > 0 && b.accuracy !== null && b.avg_pred !== null)
+  const option = useMemo<EChartsOption>(() => ({
+    tooltip: {
+      ...TOOLTIP,
+      trigger: 'item',
+      formatter: (params: any) => {
+        const p = params.data as [number, number, number, string]
+        return `${p[3]}<br/>平均预测：${pct(p[0])}<br/>实际命中：${pct(p[1])}<br/>样本：${p[2]}`
+      },
+    },
+    grid: { left: 48, right: 20, top: 24, bottom: 30 },
+    xAxis: {
+      type: 'value',
+      min: 0,
+      max: 1,
+      name: '预测概率',
+      nameTextStyle: { color: '#94A3B8', fontSize: 10 },
+      ...AXIS,
+      axisLabel: { ...AXIS.axisLabel, formatter: (v: number) => `${Math.round(v * 100)}%` },
+    },
+    yAxis: {
+      type: 'value',
+      min: 0,
+      max: 1,
+      name: '实际命中',
+      nameTextStyle: { color: '#94A3B8', fontSize: 10 },
+      ...AXIS,
+      axisLabel: { ...AXIS.axisLabel, formatter: (v: number) => `${Math.round(v * 100)}%` },
+    },
+    series: [
+      {
+        name: '区间',
+        type: 'scatter',
+        data: points.map((b) => [b.avg_pred, b.accuracy, b.n, b.label]),
+        symbolSize: (val: any) => 8 + Math.sqrt(Number(val[2] || 1)) * 2.2,
+        itemStyle: { color: '#22C55E', opacity: 0.85 },
+        label: {
+          show: true,
+          position: 'top',
+          color: '#94A3B8',
+          fontSize: 9,
+          formatter: (p: any) => p.data[2],
+        },
+      },
+      {
+        name: '完美校准',
+        type: 'line',
+        data: [[0, 0], [1, 1]],
+        symbol: 'none',
+        lineStyle: { color: '#475569', type: 'dashed', width: 1 },
+      },
+    ],
+  }), [points])
+  return <EChart option={option} height={280} />
+}
+
+export function CorrectWrongChart({ bins }: { bins: AnalysisBin[] }) {
+  const data = bins.filter((b) => b.n > 0)
+  const option = useMemo<EChartsOption>(() => ({
+    tooltip: { ...TOOLTIP, trigger: 'axis', axisPointer: { type: 'shadow' } },
+    legend: {
+      top: 0,
+      textStyle: { color: '#94A3B8', fontSize: 11 },
+      itemWidth: 10,
+      itemHeight: 10,
+    },
+    grid: { left: 38, right: 16, top: 32, bottom: 28 },
+    xAxis: { type: 'category', data: data.map((b) => b.label), ...AXIS, splitLine: { show: false } },
+    yAxis: { type: 'value', ...AXIS },
+    series: [
+      {
+        name: '命中',
+        type: 'bar',
+        stack: 'total',
+        data: data.map((b) => b.hits),
+        itemStyle: { color: '#22C55E' },
+        barMaxWidth: 32,
+      },
+      {
+        name: '未命中',
+        type: 'bar',
+        stack: 'total',
+        data: data.map((b) => b.misses),
+        itemStyle: { color: '#EF4444', borderRadius: [4, 4, 0, 0] },
+        barMaxWidth: 32,
+      },
+    ],
   }), [data])
   return <EChart option={option} height={240} />
 }

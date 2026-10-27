@@ -37,6 +37,8 @@ jobs:
         run: |
           python tests/test_reconcile.py
           python tests/test_export_web.py
+          python tests/test_analysis.py
+          python tests/test_jingcai_results.py
 
       - name: Check committed site JSON
         run: |

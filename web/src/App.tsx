@@ -5,6 +5,7 @@ import { Matches } from './pages/Matches'
 import { MatchDetail } from './pages/MatchDetail'
 import { Recommend } from './pages/Recommend'
 import { Performance } from './pages/Performance'
+import { Analysis } from './pages/Analysis'
 import { About } from './pages/About'
 
 function NotFound() {
@@ -28,6 +29,7 @@ export default function App() {
         <Route path="matches" element={<Matches />} />
         <Route path="matches/:date/:id" element={<MatchDetail />} />
         <Route path="recommend" element={<Recommend />} />
+        <Route path="analysis" element={<Analysis />} />
         <Route path="performance" element={<Performance />} />
         <Route path="about" element={<About />} />
         <Route path="*" element={<NotFound />} />

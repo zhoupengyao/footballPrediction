@@ -31,6 +31,7 @@ from typing import Any
 import pandas as pd
 
 from src.config import PROJECT_ROOT, get_leagues, get_settings
+from src.analysis import analyze_records
 from src.jingcai.team_names import _norm
 from src.recommend import run_recommend
 from src.reconcile import (had_result, half_full_result, hhad_result,
@@ -964,6 +965,9 @@ def build_site_data(out_dir: str | Path,
                   "matches": len(d["matches"])} for d in diffs])
 
     backtest_index = _export_backtests(reports, out) if include_backtests else []
+    analysis = analyze_records(all_records)
+    analysis["generated_at"] = _now_iso()
+    _write_json(out / "analysis.json", analysis)
     performance = _aggregate(all_records, daily,
                              processed / "bet_ledger.parquet")
     _write_json(out / "performance.json", performance)
@@ -977,6 +981,7 @@ def build_site_data(out_dir: str | Path,
         "dates": len(dates),
         "matches": len(all_records),
         "settled": manifest["counts"]["settled"],
+        "analysis_sample": analysis["sample"]["pre_match_settled"],
         "recommendations": sum(r["risks"]["conservative"]["recommendations"]
                                for r in rec_index),
         "backtests": len(backtest_index),

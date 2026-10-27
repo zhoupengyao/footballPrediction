@@ -13,6 +13,7 @@
 仓库里包含一个 React + TypeScript + ECharts 的静态数据面板：
 
 - 今日/历史比赛：HAD、让球、比分、总进球、半全场预测 + 实际结果 + 命中
+- 命中分析：概率分箱校准、可靠性曲线、混淆矩阵、实际排名、价值注 edge/赔率分析
 - 纸面候选与台账：三档风险、Kelly 仓位、累计 ROI
 - 回测与模型：校准曲线、资金曲线、分联赛指标
 - 早盘/临场赔率对比
@@ -128,6 +129,7 @@ scripts/         探索/诊断脚本（probe_*、diag_*、validate_*）
 ```powershell
 python tests/test_backtest.py
 python tests/test_cli.py
+python tests/test_analysis.py
 python tests/test_europa.py
 python tests/test_export_web.py
 python tests/test_jingcai_results.py

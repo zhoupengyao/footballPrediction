@@ -351,3 +351,109 @@ export interface OddsDiffIndexItem {
   snapshots: number
   matches: number
 }
+
+export type AnalysisMarketKey = 'HAD' | 'HHAD' | 'SCORE' | 'TOTAL_GOALS' | 'HALF_FULL'
+
+export interface AnalysisBin {
+  label: string
+  lo: number
+  hi: number
+  n: number
+  hits: number
+  misses: number
+  accuracy: number | null
+  avg_pred: number | null
+  avg_actual_prob: number | null
+  gap: number | null
+  ci_low: number | null
+  ci_high: number | null
+}
+
+export interface AnalysisCase {
+  date: string
+  match_num: string
+  league: string | null
+  home: string
+  away: string
+  result: string | null
+  predicted: string
+  actual: string
+  confidence: number
+  actual_prob: number | null
+  hit: boolean
+}
+
+export interface AnalysisMarket {
+  key: string
+  label: string
+  n: number
+  hits: number
+  accuracy: number | null
+  avg_confidence: number | null
+  avg_actual_prob: number | null
+  ece: number | null
+  brier: number | null
+  log_loss: number | null
+  bins: AnalysisBin[]
+  actual_rank: Record<string, number> | null
+  confusion: Record<string, Record<string, number>> | null
+  high_conf_threshold: number
+  low_conf_threshold: number
+  high_conf_wrong: AnalysisCase[]
+  low_conf_hit: AnalysisCase[]
+}
+
+export interface AnalysisValueBin {
+  label: string
+  n: number
+  hits: number
+  hit_rate: number | null
+  pnl_unit: number
+  roi: number | null
+}
+
+export interface AnalysisValue {
+  n: number
+  hits: number
+  hit_rate: number | null
+  pnl_unit: number
+  roi: number | null
+  by_edge: AnalysisValueBin[]
+  by_odds: AnalysisValueBin[]
+}
+
+export interface AnalysisLeague {
+  div: string
+  name: string
+  n: number
+  hits: number
+  accuracy: number | null
+  avg_confidence: number | null
+}
+
+export interface AnalysisDaily {
+  date: string
+  n: number
+  hits: number
+  accuracy: number | null
+  avg_confidence: number | null
+  value_n: number
+  value_hits: number
+  value_roi: number | null
+}
+
+export interface AnalysisData {
+  generated_at: string
+  sample: {
+    pre_match_settled: number
+    dates: number
+    total_history: number
+    excluded_post_kickoff: number
+  }
+  markets: Record<AnalysisMarketKey, AnalysisMarket>
+  layers: Record<string, AnalysisMarket>
+  value: AnalysisValue
+  by_league: AnalysisLeague[]
+  daily: AnalysisDaily[]
+  note: string
+}

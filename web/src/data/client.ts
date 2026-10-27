@@ -1,4 +1,5 @@
 import type {
+  AnalysisData,
   BacktestDetail,
   BacktestIndexItem,
   DateSummary,
@@ -57,6 +58,10 @@ export function getRecommendations(date: string): Promise<RecommendationPayload>
 
 export function getPerformance(): Promise<Performance> {
   return getJson<Performance>('performance.json')
+}
+
+export function getAnalysis(): Promise<AnalysisData> {
+  return getJson<AnalysisData>('analysis.json')
 }
 
 export function getBacktests(): Promise<BacktestIndexItem[]> {

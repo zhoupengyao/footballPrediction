@@ -29,9 +29,11 @@ packages = ["src", "src.ingest", "src.models", "src.features",
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-python_files = ["test_backtest.py", "test_cli.py", "test_europa.py",
+python_files = ["test_analysis.py", "test_backtest.py", "test_cli.py",
+                "test_europa.py", "test_export_web.py", "test_jingcai_results.py",
                 "test_jingcai_snapshot.py", "test_ml.py", "test_model_enhance.py",
-                "test_reconcile.py", "test_ucl.py", "test_value_filter.py"]
+                "test_recommend.py", "test_reconcile.py", "test_ucl.py",
+                "test_value_filter.py"]
 
 [tool.ruff]
 line-length = 100

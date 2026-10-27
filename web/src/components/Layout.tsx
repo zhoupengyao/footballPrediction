@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import {
+  Activity,
   BarChart3,
   CalendarDays,
   Home,
@@ -14,6 +15,7 @@ const NAV = [
   { to: '/', label: '总览', icon: Home, end: true },
   { to: '/matches', label: '比赛', icon: CalendarDays },
   { to: '/recommend', label: '推荐', icon: Sparkles },
+  { to: '/analysis', label: '分析', icon: Activity },
   { to: '/performance', label: '回测', icon: BarChart3 },
   { to: '/about', label: '关于', icon: Info },
 ]
