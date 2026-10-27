@@ -99,6 +99,15 @@ def _write_json(path: Path, payload: Any) -> None:
     path.write_text(text, encoding="utf-8")
 
 
+def _clean_stale_json(directory: Path, keep: set[str]) -> None:
+    """删除按日期生成的旧文件（例如已去重的 10-19 history）。"""
+    if not directory.exists():
+        return
+    for path in directory.glob("*.json"):
+        if path.name not in keep:
+            path.unlink()
+
+
 def _read_json(path: Path) -> dict[str, Any] | None:
     try:
         return json.loads(path.read_text(encoding="utf-8"))
@@ -273,9 +282,8 @@ def _load_prediction_files(reports_dir: Path) -> list[dict[str, Any]]:
     return files
 
 
-def _select_for_date(files: list[dict[str, Any]],
-                     date_tag: str) -> list[dict[str, Any]]:
-    """为每场比赛选一个预测版本。
+def _select_predictions(files: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """为每场比赛选一个预测版本（跨全部报告，按比赛而不是报告日期去重）。
 
     优先级：
         1. 开赛前生成的版本中，取最新的一份；
@@ -284,8 +292,6 @@ def _select_for_date(files: list[dict[str, Any]],
     """
     chosen: dict[str, dict[str, Any]] = {}
     for f in files:
-        if f["date_tag"] != date_tag:
-            continue
         for p in f["predictions"]:
             key = _match_key(p)
             if not key:
@@ -919,16 +925,30 @@ def build_site_data(out_dir: str | Path,
     if not files:
         raise RuntimeError(f"没有找到预测报告: {reports}/predict_*.json")
 
-    dates = sorted({f["date_tag"] for f in files if f["date_tag"]})
+    # 按「比赛日期」归档，而不是按报告生成日期。
+    # 这样 10-26 报告里的 10-27 比赛会进 10-27，10-19/20 的重复报告也会被去重。
+    selected_all = _select_predictions(files)
+    groups: dict[str, list[dict[str, Any]]] = {}
+    for item in selected_all:
+        date = str(item["p"].get("match_date") or "")[:10]
+        if date:
+            groups.setdefault(date, []).append(item)
+    dates = sorted(groups)
+    if not dates:
+        raise RuntimeError("预测报告里没有任何可用比赛日期")
+
+    _clean_stale_json(out / "history",
+                      {f"{d}.json" for d in dates} | {"index.json"})
+    _clean_stale_json(out / "recommendations",
+                      {f"{d}.json" for d in dates} | {"index.json"})
+
     all_records: list[dict[str, Any]] = []
     daily: list[dict[str, Any]] = []
     rec_index: list[dict[str, Any]] = []
     sources: list[str] = []
 
-    for date_tag in dates:
-        selected = _select_for_date(files, date_tag)
-        if not selected:
-            continue
+    for date in dates:
+        selected = groups[date]
         preds = [item["p"] for item in selected if not item["p"].get("skipped")]
         settled = {r["match_num"]: r for r in reconcile_predictions(preds, index, manual)}
         records = []
@@ -940,14 +960,14 @@ def build_site_data(out_dir: str | Path,
             skipped_result = _find_result_for_skipped(p, manual, index) if p.get("skipped") else None
             records.append(_match_record(item, settlement, skipped_result, leagues))
 
-        date = f"{date_tag[:4]}-{date_tag[4:6]}-{date_tag[6:]}"
         _write_json(out / "history" / f"{date}.json", records)
         summary = _date_summary(date, records)
         daily.append(summary)
         all_records.extend(records)
 
         rec_payload = _recommendations(
-            selected, date, settings, reports / f"recommend_{date_tag}.json")
+            selected, date, settings,
+            reports / f"recommend_{date.replace('-', '')}.json")
         _write_json(out / "recommendations" / f"{date}.json", rec_payload)
         rec_index.append(_recommendation_index(date, rec_payload))
 

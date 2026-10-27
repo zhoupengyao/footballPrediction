@@ -183,11 +183,49 @@ def test_post_kickoff_excluded_from_stats() -> None:
     print("  ✓ 赛后补跑不计入命中率")
 
 
+def test_group_by_match_date() -> None:
+    """报告日期和比赛日期不同时，history 应按比赛日期归档。"""
+    with tempfile.TemporaryDirectory() as d:
+        tmp = Path(d)
+        reports = tmp / "reports"
+        reports.mkdir()
+        data = _prediction("2026-10-24T18:00:00")
+        for item in data["predictions"]:
+            item["match_date"] = "2026-10-25"
+            item["business_date"] = "2026-10-24"
+        (reports / "predict_20261024.json").write_text(
+            json.dumps(data, ensure_ascii=False), encoding="utf-8")
+
+        manual = tmp / "results.csv"
+        manual.write_text(
+            "date,match_num,league,home_cn,away_cn,ft_home,ft_away,ht_home,ht_away\n"
+            "2026-10-25,周日001,英超,曼城,阿森纳,2,1,1,0\n",
+            encoding="utf-8")
+        out = tmp / "site"
+        W.build_site_data(
+            out_dir=out,
+            reports_dir=reports,
+            odds_dir=tmp / "odds",
+            processed_dir=tmp / "processed",
+            models_dir=tmp / "models",
+            manual_path=manual,
+            include_backtests=False,
+            result_index={},
+        )
+        assert (out / "history" / "2026-10-25.json").exists()
+        assert not (out / "history" / "2026-10-24.json").exists()
+        manifest = json.loads((out / "manifest.json").read_text(encoding="utf-8"))
+        assert manifest["latest_match_date"] == "2026-10-25", manifest
+        assert "2026-10-24" not in [d["date"] for d in manifest["dates"]], manifest
+    print("  ✓ 按比赛日期归档，而不是报告日期")
+
+
 def main() -> int:
     print("== 测试：站点导出 ==")
     test_export_and_settlement()
     test_archive_pre_match_wins()
     test_post_kickoff_excluded_from_stats()
+    test_group_by_match_date()
     print("\n全部通过 ✓")
     return 0
 

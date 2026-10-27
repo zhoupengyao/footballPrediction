@@ -243,8 +243,12 @@ def load_manual_results(path: str | Path) -> dict[tuple, dict[str, int | None]]:
         }
         date = _norm_date(getattr(r, "date", ""))
         if date:
+            # 有日期的行只按 (date, match_num) 存；不要再写 (match_num,)，
+            # 否则 2026-10-27 的“周一003”会错误命中 2026-10-20 的同编号场次。
             out[(date, num)] = payload
-        out[(num,)] = payload
+        else:
+            # 兼容旧版无 date 列的 CSV：只在这种情况下允许按编号回退。
+            out[(num,)] = payload
     return out
 
 
@@ -558,7 +562,8 @@ def append_ledger(rows: list[dict[str, Any]], ledger_path: Path | None = None) -
         if all(c in old.columns for c in key_cols):
             old_key = old[key_cols].astype(str).agg("|".join, axis=1)
             new_key = new[key_cols].astype(str).agg("|".join, axis=1)
-            new = new[~new_key.isin(set(old_key))]
+            # 同键覆盖：修正赛果后重新对账时，旧的错误盈亏不能继续留在台账里。
+            old = old[~old_key.isin(set(new_key))]
         merged = pd.concat([old, new], ignore_index=True)
     else:
         merged = new

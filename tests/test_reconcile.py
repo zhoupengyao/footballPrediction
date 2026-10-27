@@ -1,7 +1,9 @@
 """对账逻辑的离线单元测试（合成数据，不联网、不依赖磁盘数据）。"""
 from __future__ import annotations
 
+import copy
 import sys
+import tempfile
 from pathlib import Path
 
 import pandas as pd
@@ -186,6 +188,65 @@ def test_missing_ht_marks_pending_half_full() -> None:
     print("  ✓ 缺半场比分时半全场不参与统计")
 
 
+def test_manual_no_cross_date_fallback() -> None:
+    """有日期的 CSV 不能再按 match_num 跨日期串场。"""
+    with tempfile.TemporaryDirectory() as d:
+        path = Path(d) / "results.csv"
+        path.write_text(
+            "date,match_num,league,home_cn,away_cn,ft_home,ft_away,ht_home,ht_away\n"
+            "2026-10-20,周一003,意甲,A,B,0,3,0,2\n",
+            encoding="utf-8",
+        )
+        manual = R.load_manual_results(path)
+        assert ("周一003",) not in manual, manual
+
+        p_wrong_date = _pred("周一003", "A", "B")
+        p_wrong_date["match_date"] = "2026-10-27"
+        rows = R.reconcile_predictions([p_wrong_date], {}, manual)
+        assert rows[0]["resolved"] is False, rows[0]
+
+        p_exact = _pred("周一003", "A", "B")
+        p_exact["match_date"] = "2026-10-20"
+        rows2 = R.reconcile_predictions([p_exact], {}, manual)
+        assert rows2[0]["resolved"] is True, rows2[0]
+        assert rows2[0]["ft_home"] == 0 and rows2[0]["ft_away"] == 3, rows2[0]
+    print("  ✓ 手动赛果不跨日期串场")
+
+
+def test_ledger_upsert() -> None:
+    """同一 date+match_num+market+option 重新对账时应覆盖旧台账行。"""
+    with tempfile.TemporaryDirectory() as d:
+        path = Path(d) / "bet_ledger.parquet"
+        base = {
+            "date": "2026-10-27",
+            "match_num": "周一003",
+            "league": "西甲",
+            "div": "SP1",
+            "home_cn": "A",
+            "away_cn": "B",
+            "resolved": True,
+            "value_bets": [{
+                "market": "HAD", "option": "胜", "odds": 2.0,
+                "model_prob": 0.5, "implied_prob": 0.4,
+                "edge": 0.1, "ev": 0.2, "stake_pct": 0.02,
+                "hit": False, "pnl_unit": -1.0, "pnl_pct": -0.02,
+            }],
+        }
+        R.append_ledger([base], path)
+        old = pd.read_parquet(path)
+        assert len(old) == 1 and bool(old.iloc[0]["hit"]) is False
+
+        fixed = copy.deepcopy(base)
+        fixed["value_bets"][0].update(
+            {"hit": True, "pnl_unit": 1.0, "pnl_pct": 0.02})
+        R.append_ledger([fixed], path)
+        new = pd.read_parquet(path)
+        assert len(new) == 1, new
+        assert bool(new.iloc[0]["hit"]) is True, new
+        assert abs(float(new.iloc[0]["pnl_unit"]) - 1.0) < 1e-9, new
+    print("  ✓ 台账同键覆盖更新")
+
+
 def main() -> int:
     print("== 测试：对账 HAD/比分 ==")
     test_had_and_score()
@@ -195,10 +256,13 @@ def main() -> int:
     print("== 测试：五种玩法/手动赛果 ==")
     test_all_markets()
     test_manual_csv_with_ht_and_date()
+    test_manual_no_cross_date_fallback()
     test_missing_ht_marks_pending_half_full()
-    print("== 测试：无赛果/台账 ==")
-    test_unresolved()
+    print("== 测试：台账 ==")
     test_ledger_dedup()
+    test_ledger_upsert()
+    print("== 测试：无赛果 ==")
+    test_unresolved()
     print("\n全部通过 ✓")
     return 0
 
