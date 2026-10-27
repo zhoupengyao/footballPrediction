@@ -383,6 +383,47 @@ export interface AnalysisCase {
   hit: boolean
 }
 
+export interface ScoreProbBin {
+  label: string
+  n: number
+}
+
+export interface ScoreRankStat {
+  rank: number
+  n: number
+  avg_actual_prob: number | null
+  min_actual_prob: number | null
+  max_actual_prob: number | null
+}
+
+export interface ScoreHitCase {
+  date: string
+  match_num: string
+  league: string | null
+  home: string
+  away: string
+  result: string | null
+  top3: string[]
+  actual: string
+  p_actual: number
+  rank: number
+  coverage: number
+  ratio: number | null
+}
+
+export interface ScoreHitDetail {
+  n: number
+  avg_actual_prob: number | null
+  median_actual_prob: number | null
+  min_actual_prob: number | null
+  max_actual_prob: number | null
+  prob_bins: ScoreProbBin[]
+  by_rank: ScoreRankStat[]
+  ratio: { avg: number | null; min: number | null; max: number | null }
+  coverage: { total: number; top1: number; top2: number; top3: number }
+  cases: ScoreHitCase[]
+}
+
 export interface AnalysisMarket {
   key: string
   label: string
@@ -401,6 +442,7 @@ export interface AnalysisMarket {
   low_conf_threshold: number
   high_conf_wrong: AnalysisCase[]
   low_conf_hit: AnalysisCase[]
+  hit_detail?: ScoreHitDetail | null
 }
 
 export interface AnalysisValueBin {

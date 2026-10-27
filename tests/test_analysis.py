@@ -131,9 +131,61 @@ def test_post_kickoff_excluded() -> None:
     print("  ✓ 开赛后补跑排除")
 
 
+def test_score_hit_detail() -> None:
+    """比分 Top3 组合：Top1 未中但 Top3 中也要算命中，并分析命中比分概率。"""
+    a = _record("001", 0.35, "away", False)
+    a["result"]["ft"] = "2:1"
+    a["prediction"]["markets"]["SCORE"] = {
+        "top": [{"score": "1:0", "prob": 0.20},
+                {"score": "2:1", "prob": 0.12},
+                {"score": "0:0", "prob": 0.08}],
+        "predicted": "1:0", "actual": "2:1",
+        "top1_hit": False, "top3_hit": True,
+    }
+
+    b = _record("002", 0.45, "home", True)
+    b["result"]["ft"] = "2:1"
+    b["prediction"]["markets"]["SCORE"] = {
+        "top": [{"score": "2:1", "prob": 0.14},
+                {"score": "1:0", "prob": 0.10},
+                {"score": "0:1", "prob": 0.08}],
+        "predicted": "2:1", "actual": "2:1",
+        "top1_hit": True, "top3_hit": True,
+    }
+
+    c = _record("003", 0.55, "draw", False)
+    c["result"]["ft"] = "3:0"
+    c["prediction"]["markets"]["SCORE"] = {
+        "top": [{"score": "1:0", "prob": 0.20},
+                {"score": "2:0", "prob": 0.12},
+                {"score": "0:1", "prob": 0.08}],
+        "predicted": "1:0", "actual": "3:0",
+        "top1_hit": False, "top3_hit": False,
+    }
+
+    score = A.analyze_records([a, b, c])["markets"]["SCORE"]
+    assert score["label"] == "比分 Top3", score
+    assert score["n"] == 3 and score["hits"] == 2, score
+    assert abs(score["accuracy"] - 2 / 3) < 1e-9, score
+
+    detail = score["hit_detail"]
+    assert detail["n"] == 2, detail
+    assert abs(detail["avg_actual_prob"] - 0.13) < 1e-9, detail
+    bins = {x["label"]: x["n"] for x in detail["prob_bins"]}
+    assert bins["10–15%"] == 2, bins
+    ranks = {x["rank"]: x for x in detail["by_rank"]}
+    assert ranks[1]["n"] == 1 and ranks[2]["n"] == 1, ranks
+    assert abs(ranks[1]["avg_actual_prob"] - 0.14) < 1e-9, ranks
+    assert abs(ranks[2]["avg_actual_prob"] - 0.12) < 1e-9, ranks
+    assert detail["coverage"] == {"total": 3, "top1": 1, "top2": 2, "top3": 2}, detail
+    assert len(detail["cases"]) == 2, detail
+    print("  ✓ 比分 Top3 组合、命中比分概率、排名与覆盖漏斗")
+
+
 def main() -> int:
     print("== 测试：命中分析/概率校准 ==")
     test_overall_and_bins()
+    test_score_hit_detail()
     test_value_bins()
     test_actual_rank_and_empty()
     test_post_kickoff_excluded()

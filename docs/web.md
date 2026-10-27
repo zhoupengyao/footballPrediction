@@ -40,7 +40,7 @@
 | `web/public/data/history/YYYY-MM-DD.json` | 每场比赛的预测 + 实际结果 + 五种玩法命中 |
 | `web/public/data/recommendations/YYYY-MM-DD.json` | 三档风险候选/观察清单 |
 | `web/public/data/performance.json` | 累计命中率、价值注 ROI、分联赛、台账 |
-| `web/public/data/analysis.json` | 概率分箱校准、混淆矩阵、实际排名、价值注 edge/赔率分析 |
+| `web/public/data/analysis.json` | 概率分箱校准、命中比分概率、混淆矩阵、价值注 edge/赔率分析 |
 | `web/public/data/backtests/index.json` | 回测索引 |
 | `web/public/data/backtests/{id}.json` | 回测汇总 + 校准 + 资金曲线 |
 | `web/public/data/odds-diff/YYYY-MM-DD.json` | 同日多份快照的赔率变化 |
@@ -187,6 +187,11 @@ python scripts/export_web.py --check
 
 - 各玩法命中数/命中率
 - Top-pick 概率分箱：区间、样本、命中、未命中、命中率、平均预测、偏差、95% Wilson CI
+- 比分 Top3 组合：
+  - 命中 = 三个预测比分中任意一个命中；
+  - 组合概率 = 三个比分概率之和；
+  - 命中比分概率 = 实际比分自己的概率；
+  - 另附排名分布、命中明细和 Top1/Top2/Top3 覆盖漏斗。
 - 可靠性曲线
 - 正确 vs 错误预测的概率分布
 - 实际结果在预测中的排名（第 1/2/3 选择）
@@ -201,6 +206,7 @@ python scripts/export_web.py --check
 - 排除开赛后补跑；
 - 每个区间显示样本量，n 很小的区间不要单独下结论；
 - Brier / 对数损失只对拥有完整概率分布的玩法计算；
+- 比分和半全场只有 Top3，不计算 Brier；比分用 Top3 组合概率校准；
 - 当前样本量在页面顶部显示，低于 100 场会提示“仅作探索”。
 
 ## 6. GitHub Pages 部署

@@ -17,7 +17,7 @@ OPTION_LABELS = {"home": "主胜", "draw": "平", "away": "客胜"}
 MARKET_LABELS = {
     "HAD": "胜平负",
     "HHAD": "让球胜平负",
-    "SCORE": "比分 Top1",
+    "SCORE": "比分 Top3",
     "TOTAL_GOALS": "总进球",
     "HALF_FULL": "半全场",
 }
@@ -29,17 +29,17 @@ BIN_EDGES: dict[str, list[float]] = {
     "HHAD": [0.0, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 1.0],
     "TOTAL_GOALS": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 1.0],
     "HALF_FULL": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 1.0],
-    "SCORE": [0.0, 0.05, 0.1, 0.15, 0.2, 0.3, 1.0],
+    "SCORE": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.7, 1.0],
     "LAYER": [0.0, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 1.0],
 }
 
 HIGH_CONF = {
     "HAD": 0.6, "HHAD": 0.6, "TOTAL_GOALS": 0.3,
-    "HALF_FULL": 0.3, "SCORE": 0.15, "LAYER": 0.6,
+    "HALF_FULL": 0.3, "SCORE": 0.4, "LAYER": 0.6,
 }
 LOW_CONF = {
     "HAD": 0.4, "HHAD": 0.4, "TOTAL_GOALS": 0.2,
-    "HALF_FULL": 0.2, "SCORE": 0.1, "LAYER": 0.4,
+    "HALF_FULL": 0.2, "SCORE": 0.3, "LAYER": 0.4,
 }
 
 
@@ -340,21 +340,124 @@ def _half_full_extractor(record: dict[str, Any]) -> dict[str, Any] | None:
 def _score_extractor(record: dict[str, Any]) -> dict[str, Any] | None:
     m = (record.get("prediction") or {}).get("markets", {}).get("SCORE") or {}
     top = m.get("top") or []
-    predicted = m.get("predicted")
     actual = m.get("actual") or (record.get("result") or {}).get("ft")
-    if not predicted or not top or m.get("top1_hit") is None:
+    scores = [str(x.get("score")) for x in top if x.get("score")]
+    probs = [float(x.get("prob") or 0.0) for x in top if x.get("score")]
+    if not scores or not actual:
         return None
-    conf = next((float(x.get("prob")) for x in top if x.get("score") == predicted), None)
-    if conf is None:
-        conf = float(top[0].get("prob") or 0.0)
-    actual_prob = next((float(x.get("prob")) for x in top if x.get("score") == actual), None)
+    # 以实际比分是否落在三个预测比分中为准，不依赖上游缓存字段。
+    hit = actual in scores
+    # 三个比分是一个组合预测：组合概率 = 三个比分概率之和。
+    confidence = min(1.0, sum(probs))
+    actual_prob = None
+    rank = None
+    if actual in scores:
+        idx = scores.index(actual)
+        actual_prob = probs[idx]
+        rank = idx + 1
     return {
-        "confidence": conf,
-        "hit": m.get("top1_hit"),
-        "predicted": predicted,
+        "confidence": confidence,
+        "hit": bool(hit),
+        "predicted": " / ".join(scores),
         "actual": actual,
         "probs": None,
         "actual_prob": actual_prob,
+        "rank": rank,
+    }
+
+
+def _median(values: list[float]) -> float | None:
+    if not values:
+        return None
+    ordered = sorted(values)
+    mid = len(ordered) // 2
+    if len(ordered) % 2:
+        return ordered[mid]
+    return (ordered[mid - 1] + ordered[mid]) / 2
+
+
+def _score_hit_detail(records: list[dict[str, Any]]) -> dict[str, Any]:
+    """比分 Top3 组合的补充分析。
+
+    重点回答：三个比分里中了一个时，命中的那个比分本身被模型给了多少概率？
+    """
+    hits: list[dict[str, Any]] = []
+    coverage = {1: 0, 2: 0, 3: 0}
+    total = 0
+    for record in records:
+        m = (record.get("prediction") or {}).get("markets", {}).get("SCORE") or {}
+        top = m.get("top") or []
+        actual = m.get("actual") or (record.get("result") or {}).get("ft")
+        scores = [str(x.get("score")) for x in top if x.get("score")]
+        probs = [float(x.get("prob") or 0.0) for x in top if x.get("score")]
+        if not scores or not actual:
+            continue
+        total += 1
+        for k in (1, 2, 3):
+            if actual in scores[:k]:
+                coverage[k] += 1
+        if actual not in scores:
+            continue
+        idx = scores.index(actual)
+        p_actual = probs[idx]
+        combo = min(1.0, sum(probs))
+        item = {
+            **_record_base(record),
+            "top3": scores,
+            "actual": actual,
+            "p_actual": p_actual,
+            "rank": idx + 1,
+            "coverage": combo,
+            "ratio": (p_actual / combo) if combo else None,
+        }
+        hits.append(item)
+
+    actual_probs = [h["p_actual"] for h in hits]
+    ratios = [h["ratio"] for h in hits if h["ratio"] is not None]
+    prob_bins = []
+    for lo, hi, label in (
+        (0.0, 0.05, "<5%"),
+        (0.05, 0.10, "5–10%"),
+        (0.10, 0.15, "10–15%"),
+        (0.15, 0.20, "15–20%"),
+        (0.20, 1.01, "20%+"),
+    ):
+        subset = [h for h in hits if lo <= h["p_actual"] < hi]
+        prob_bins.append({"label": label, "n": len(subset)})
+
+    by_rank = []
+    for rank in (1, 2, 3):
+        subset = [h for h in hits if h["rank"] == rank]
+        vals = [h["p_actual"] for h in subset]
+        by_rank.append({
+            "rank": rank,
+            "n": len(subset),
+            "avg_actual_prob": _mean(vals),
+            "min_actual_prob": min(vals) if vals else None,
+            "max_actual_prob": max(vals) if vals else None,
+        })
+
+    return {
+        "n": len(hits),
+        "avg_actual_prob": _mean(actual_probs),
+        "median_actual_prob": _median(actual_probs),
+        "min_actual_prob": min(actual_probs) if actual_probs else None,
+        "max_actual_prob": max(actual_probs) if actual_probs else None,
+        "prob_bins": prob_bins,
+        "by_rank": by_rank,
+        "ratio": {
+            "avg": _mean(ratios),
+            "min": min(ratios) if ratios else None,
+            "max": max(ratios) if ratios else None,
+        },
+        "coverage": {
+            "total": total,
+            "top1": coverage[1],
+            "top2": coverage[2],
+            "top3": coverage[3],
+        },
+        "cases": sorted(hits, key=lambda x: (str(x.get("date") or ""),
+                                             str(x.get("match_num") or ""))),
     }
 
 
@@ -470,6 +573,7 @@ def analyze_records(records: list[dict[str, Any]]) -> dict[str, Any]:
             labels_for_scores=["0", "1", "2", "3", "4", "5", "6", "7+"]),
         "HALF_FULL": _analyze_market(valid, "HALF_FULL", _half_full_extractor),
     }
+    markets["SCORE"]["hit_detail"] = _score_hit_detail(valid)
 
     layers: dict[str, Any] = {}
     for name in ("DC", "Elo", "ML"):
