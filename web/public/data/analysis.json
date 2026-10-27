@@ -470,218 +470,24 @@
     },
     "SCORE": {
       "key": "SCORE",
-      "label": "比分 Top3",
+      "label": "比分",
       "n": 47,
       "hits": 13,
       "accuracy": 0.2766,
-      "avg_confidence": 0.3256,
+      "avg_confidence": null,
       "avg_actual_prob": 0.1132,
-      "ece": 0.0673,
+      "ece": null,
       "brier": null,
       "log_loss": null,
-      "bins": [
-        {
-          "label": "0–10%",
-          "lo": 0.0,
-          "hi": 0.1,
-          "n": 0,
-          "hits": 0,
-          "misses": 0,
-          "accuracy": null,
-          "avg_pred": null,
-          "avg_actual_prob": null,
-          "gap": null,
-          "ci_low": null,
-          "ci_high": null
-        },
-        {
-          "label": "10–20%",
-          "lo": 0.1,
-          "hi": 0.2,
-          "n": 0,
-          "hits": 0,
-          "misses": 0,
-          "accuracy": null,
-          "avg_pred": null,
-          "avg_actual_prob": null,
-          "gap": null,
-          "ci_low": null,
-          "ci_high": null
-        },
-        {
-          "label": "20–30%",
-          "lo": 0.2,
-          "hi": 0.3,
-          "n": 15,
-          "hits": 4,
-          "misses": 11,
-          "accuracy": 0.2667,
-          "avg_pred": 0.2592,
-          "avg_actual_prob": 0.0884,
-          "gap": 0.0075,
-          "ci_low": 0.109,
-          "ci_high": 0.5195
-        },
-        {
-          "label": "30–40%",
-          "lo": 0.3,
-          "hi": 0.4,
-          "n": 27,
-          "hits": 7,
-          "misses": 20,
-          "accuracy": 0.2593,
-          "avg_pred": 0.3415,
-          "avg_actual_prob": 0.1231,
-          "gap": -0.0822,
-          "ci_low": 0.1317,
-          "ci_high": 0.4468
-        },
-        {
-          "label": "40–50%",
-          "lo": 0.4,
-          "hi": 0.5,
-          "n": 4,
-          "hits": 2,
-          "misses": 2,
-          "accuracy": 0.5,
-          "avg_pred": 0.4206,
-          "avg_actual_prob": 0.1279,
-          "gap": 0.0794,
-          "ci_low": 0.15,
-          "ci_high": 0.85
-        },
-        {
-          "label": "50–70%",
-          "lo": 0.5,
-          "hi": 0.7,
-          "n": 1,
-          "hits": 0,
-          "misses": 1,
-          "accuracy": 0.0,
-          "avg_pred": 0.5129,
-          "avg_actual_prob": null,
-          "gap": -0.5129,
-          "ci_low": 0.0,
-          "ci_high": 0.7935
-        },
-        {
-          "label": "70–100%",
-          "lo": 0.7,
-          "hi": 1.0,
-          "n": 0,
-          "hits": 0,
-          "misses": 0,
-          "accuracy": null,
-          "avg_pred": null,
-          "avg_actual_prob": null,
-          "gap": null,
-          "ci_low": null,
-          "ci_high": null
-        }
-      ],
+      "bins": [],
       "actual_rank": null,
       "confusion": null,
       "high_conf_threshold": 0.4,
       "low_conf_threshold": 0.3,
-      "high_conf_wrong": [
-        {
-          "date": "2026-10-25",
-          "match_num": "周日007",
-          "league": "西甲",
-          "home": "毕尔巴鄂",
-          "away": "赫塔费",
-          "result": "4:0",
-          "predicted": "1:0 / 0:0 / 0:1",
-          "actual": "4:0",
-          "confidence": 0.5129,
-          "actual_prob": null,
-          "hit": false
-        },
-        {
-          "date": "2026-10-25",
-          "match_num": "周六026",
-          "league": "意甲",
-          "home": "拉齐奥",
-          "away": "帕尔马",
-          "result": "2:1",
-          "predicted": "1:0 / 0:0 / 0:1",
-          "actual": "2:1",
-          "confidence": 0.439,
-          "actual_prob": null,
-          "hit": false
-        },
-        {
-          "date": "2026-10-25",
-          "match_num": "周日009",
-          "league": "芬超",
-          "home": "赫尔辛基",
-          "away": "库奥皮奥",
-          "result": "2:2",
-          "predicted": "1:0 / 0:1 / 1:1",
-          "actual": "2:2",
-          "confidence": 0.4067,
-          "actual_prob": null,
-          "hit": false
-        }
-      ],
-      "low_conf_hit": [
-        {
-          "date": "2026-10-26",
-          "match_num": "周日022",
-          "league": "德甲",
-          "home": "弗赖堡",
-          "away": "拜仁",
-          "result": "1:3",
-          "predicted": "1:2 / 1:3 / 1:1",
-          "actual": "1:3",
-          "confidence": 0.229,
-          "actual_prob": 0.0764,
-          "hit": true
-        },
-        {
-          "date": "2026-10-26",
-          "match_num": "周日024",
-          "league": "西甲",
-          "home": "皇家社会",
-          "away": "莱万特",
-          "result": "2:1",
-          "predicted": "2:1 / 1:1 / 1:0",
-          "actual": "2:1",
-          "confidence": 0.2529,
-          "actual_prob": 0.0941,
-          "hit": true
-        },
-        {
-          "date": "2026-10-18",
-          "match_num": "周日019",
-          "league": "德甲",
-          "home": "门兴",
-          "away": "霍芬海姆",
-          "result": "1:2",
-          "predicted": "1:1 / 1:2 / 2:1",
-          "actual": "1:2",
-          "confidence": 0.2633,
-          "actual_prob": 0.0861,
-          "hit": true
-        },
-        {
-          "date": "2026-10-18",
-          "match_num": "周日014",
-          "league": "德甲",
-          "home": "勒沃库森",
-          "away": "弗赖堡",
-          "result": "2:1",
-          "predicted": "2:1 / 2:0 / 1:1",
-          "actual": "2:1",
-          "confidence": 0.2668,
-          "actual_prob": 0.0971,
-          "hit": true
-        }
-      ],
+      "high_conf_wrong": [],
+      "low_conf_hit": [],
       "hit_detail": {
         "n": 13,
-        "prediction_total": 141,
-        "prediction_hits": 13,
         "avg_actual_prob": 0.1132,
         "median_actual_prob": 0.1164,
         "min_actual_prob": 0.0764,
@@ -708,102 +514,6 @@
             "n": 0
           }
         ],
-        "prediction_bins": [
-          {
-            "label": "<5%",
-            "n": 0,
-            "hits": 0,
-            "hit_rate": null,
-            "share_of_hits": 0.0,
-            "avg_pred": null,
-            "expected_hits": 0,
-            "gap": 0,
-            "ci_low": null,
-            "ci_high": null
-          },
-          {
-            "label": "5–10%",
-            "n": 65,
-            "hits": 6,
-            "hit_rate": 0.0923,
-            "share_of_hits": 0.4615,
-            "avg_pred": 0.0884,
-            "expected_hits": 5.7476,
-            "gap": 0.2524,
-            "ci_low": 0.043,
-            "ci_high": 0.1871
-          },
-          {
-            "label": "10–15%",
-            "n": 69,
-            "hits": 7,
-            "hit_rate": 0.1014,
-            "share_of_hits": 0.5385,
-            "avg_pred": 0.1197,
-            "expected_hits": 8.2624,
-            "gap": -1.2624,
-            "ci_low": 0.05,
-            "ci_high": 0.1949
-          },
-          {
-            "label": "15–20%",
-            "n": 6,
-            "hits": 0,
-            "hit_rate": 0.0,
-            "share_of_hits": 0.0,
-            "avg_pred": 0.1797,
-            "expected_hits": 1.078,
-            "gap": -1.078,
-            "ci_low": 0.0,
-            "ci_high": 0.3903
-          },
-          {
-            "label": "20%+",
-            "n": 1,
-            "hits": 0,
-            "hit_rate": 0.0,
-            "share_of_hits": 0.0,
-            "avg_pred": 0.2156,
-            "expected_hits": 0.2156,
-            "gap": -0.2156,
-            "ci_low": 0.0,
-            "ci_high": 0.7935
-          }
-        ],
-        "by_rank": [
-          {
-            "rank": 1,
-            "n": 5,
-            "avg_actual_prob": 0.1196,
-            "min_actual_prob": 0.0941,
-            "max_actual_prob": 0.1413
-          },
-          {
-            "rank": 2,
-            "n": 6,
-            "avg_actual_prob": 0.1136,
-            "min_actual_prob": 0.0764,
-            "max_actual_prob": 0.144
-          },
-          {
-            "rank": 3,
-            "n": 2,
-            "avg_actual_prob": 0.0958,
-            "min_actual_prob": 0.0923,
-            "max_actual_prob": 0.0993
-          }
-        ],
-        "ratio": {
-          "avg": 0.3465,
-          "min": 0.2743,
-          "max": 0.4096
-        },
-        "coverage": {
-          "total": 47,
-          "top1": 5,
-          "top2": 11,
-          "top3": 13
-        },
         "cases": [
           {
             "date": "2026-10-18",
@@ -818,10 +528,7 @@
               "1:1"
             ],
             "actual": "2:1",
-            "p_actual": 0.0971,
-            "rank": 1,
-            "coverage": 0.2668,
-            "ratio": 0.3641
+            "p_actual": 0.0971
           },
           {
             "date": "2026-10-18",
@@ -836,10 +543,7 @@
               "2:1"
             ],
             "actual": "2:1",
-            "p_actual": 0.0923,
-            "rank": 3,
-            "coverage": 0.3363,
-            "ratio": 0.2743
+            "p_actual": 0.0923
           },
           {
             "date": "2026-10-18",
@@ -854,10 +558,7 @@
               "0:2"
             ],
             "actual": "0:1",
-            "p_actual": 0.1371,
-            "rank": 1,
-            "coverage": 0.3678,
-            "ratio": 0.3726
+            "p_actual": 0.1371
           },
           {
             "date": "2026-10-18",
@@ -872,10 +573,7 @@
               "2:1"
             ],
             "actual": "1:2",
-            "p_actual": 0.0861,
-            "rank": 2,
-            "coverage": 0.2633,
-            "ratio": 0.327
+            "p_actual": 0.0861
           },
           {
             "date": "2026-10-19",
@@ -890,10 +588,7 @@
               "2:1"
             ],
             "actual": "2:1",
-            "p_actual": 0.0993,
-            "rank": 3,
-            "coverage": 0.3084,
-            "ratio": 0.3221
+            "p_actual": 0.0993
           },
           {
             "date": "2026-10-24",
@@ -908,10 +603,7 @@
               "1:1"
             ],
             "actual": "2:0",
-            "p_actual": 0.144,
-            "rank": 2,
-            "coverage": 0.3924,
-            "ratio": 0.3671
+            "p_actual": 0.144
           },
           {
             "date": "2026-10-25",
@@ -926,10 +618,7 @@
               "0:0"
             ],
             "actual": "1:1",
-            "p_actual": 0.1164,
-            "rank": 2,
-            "coverage": 0.4083,
-            "ratio": 0.2852
+            "p_actual": 0.1164
           },
           {
             "date": "2026-10-25",
@@ -944,10 +633,7 @@
               "1:0"
             ],
             "actual": "1:1",
-            "p_actual": 0.1286,
-            "rank": 1,
-            "coverage": 0.3184,
-            "ratio": 0.4037
+            "p_actual": 0.1286
           },
           {
             "date": "2026-10-25",
@@ -962,10 +648,7 @@
               "2:1"
             ],
             "actual": "1:0",
-            "p_actual": 0.1413,
-            "rank": 1,
-            "coverage": 0.345,
-            "ratio": 0.4096
+            "p_actual": 0.1413
           },
           {
             "date": "2026-10-25",
@@ -980,10 +663,7 @@
               "0:1"
             ],
             "actual": "1:1",
-            "p_actual": 0.1193,
-            "rank": 2,
-            "coverage": 0.3432,
-            "ratio": 0.3475
+            "p_actual": 0.1193
           },
           {
             "date": "2026-10-26",
@@ -998,10 +678,7 @@
               "1:1"
             ],
             "actual": "1:3",
-            "p_actual": 0.0764,
-            "rank": 2,
-            "coverage": 0.229,
-            "ratio": 0.3335
+            "p_actual": 0.0764
           },
           {
             "date": "2026-10-26",
@@ -1016,10 +693,7 @@
               "1:1"
             ],
             "actual": "0:2",
-            "p_actual": 0.1393,
-            "rank": 2,
-            "coverage": 0.4285,
-            "ratio": 0.3251
+            "p_actual": 0.1393
           },
           {
             "date": "2026-10-26",
@@ -1034,10 +708,7 @@
               "1:0"
             ],
             "actual": "2:1",
-            "p_actual": 0.0941,
-            "rank": 1,
-            "coverage": 0.2529,
-            "ratio": 0.3721
+            "p_actual": 0.0941
           }
         ]
       }
@@ -2183,5 +1854,5 @@
     }
   ],
   "note": "只统计赛前预测且已结算的场次。样本量较小时，概率区间结论仅作探索，不要据此优化阈值或重仓。",
-  "generated_at": "2026-10-27T15:56:51+08:00"
+  "generated_at": "2026-10-27T21:11:58+08:00"
 }

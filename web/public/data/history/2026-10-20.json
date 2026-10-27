@@ -23,9 +23,9 @@
     "prediction_timing": "pre_match",
     "prediction": {
       "model": null,
-      "generated_at": "2026-10-19T23:50:45",
+      "generated_at": "2026-10-18T21:22:33",
       "timing": "pre_match",
-      "source": "reports/predict_20261019.json",
+      "source": "reports/predict_20261018.json",
       "xg": {
         "home": 0.9335,
         "away": 1.4943
@@ -233,9 +233,9 @@
     "prediction_timing": "pre_match",
     "prediction": {
       "model": null,
-      "generated_at": "2026-10-19T23:50:45",
+      "generated_at": "2026-10-18T21:22:33",
       "timing": "pre_match",
-      "source": "reports/predict_20261019.json",
+      "source": "reports/predict_20261018.json",
       "xg": {
         "home": 1.0726,
         "away": 1.0838
@@ -429,9 +429,9 @@
     "prediction_timing": "pre_match",
     "prediction": {
       "model": null,
-      "generated_at": "2026-10-19T23:50:45",
+      "generated_at": "2026-10-18T21:22:33",
       "timing": "pre_match",
-      "source": "reports/predict_20261019.json",
+      "source": "reports/predict_20261018.json",
       "xg": {
         "home": 1.4362,
         "away": 1.3294

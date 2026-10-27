@@ -164,30 +164,20 @@ def test_score_hit_detail() -> None:
     }
 
     score = A.analyze_records([a, b, c])["markets"]["SCORE"]
-    assert score["label"] == "比分 Top3", score
+    assert score["label"] == "比分", score
     assert score["n"] == 3 and score["hits"] == 2, score
     assert abs(score["accuracy"] - 2 / 3) < 1e-9, score
 
     detail = score["hit_detail"]
     assert detail["n"] == 2, detail
-    assert detail["prediction_total"] == 9 and detail["prediction_hits"] == 2, detail
     assert abs(detail["avg_actual_prob"] - 0.13) < 1e-9, detail
+    assert abs(detail["median_actual_prob"] - 0.13) < 1e-9, detail
     bins = {x["label"]: x["n"] for x in detail["prob_bins"]}
     assert bins["10–15%"] == 2, bins
-    pred_bins = {x["label"]: x for x in detail["prediction_bins"]}
-    assert pred_bins["5–10%"]["n"] == 3 and pred_bins["5–10%"]["hits"] == 0, pred_bins
-    assert pred_bins["10–15%"]["n"] == 4 and pred_bins["10–15%"]["hits"] == 2, pred_bins
-    assert pred_bins["15–20%"]["n"] == 0, pred_bins
-    assert pred_bins["20%+"]["n"] == 2 and pred_bins["20%+"]["hits"] == 0, pred_bins
-    assert abs(pred_bins["10–15%"]["expected_hits"] - 0.48) < 1e-9, pred_bins
-    assert abs(pred_bins["10–15%"]["share_of_hits"] - 1.0) < 1e-9, pred_bins
-    ranks = {x["rank"]: x for x in detail["by_rank"]}
-    assert ranks[1]["n"] == 1 and ranks[2]["n"] == 1, ranks
-    assert abs(ranks[1]["avg_actual_prob"] - 0.14) < 1e-9, ranks
-    assert abs(ranks[2]["avg_actual_prob"] - 0.12) < 1e-9, ranks
-    assert detail["coverage"] == {"total": 3, "top1": 1, "top2": 2, "top3": 2}, detail
     assert len(detail["cases"]) == 2, detail
-    print("  ✓ 比分 Top3 组合、逐条命中率、命中比分概率、排名与覆盖漏斗")
+    assert score["bins"] == [] and score["avg_confidence"] is None, score
+    assert score["accuracy"] == 2 / 3, score
+    print("  ✓ 比分组合只按“任意一个命中”统计，并分析命中比分概率")
 
 
 def main() -> int:

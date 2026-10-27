@@ -17,7 +17,7 @@ OPTION_LABELS = {"home": "主胜", "draw": "平", "away": "客胜"}
 MARKET_LABELS = {
     "HAD": "胜平负",
     "HHAD": "让球胜平负",
-    "SCORE": "比分 Top3",
+    "SCORE": "比分",
     "TOTAL_GOALS": "总进球",
     "HALF_FULL": "半全场",
 }
@@ -350,11 +350,9 @@ def _score_extractor(record: dict[str, Any]) -> dict[str, Any] | None:
     # 三个比分是一个组合预测：组合概率 = 三个比分概率之和。
     confidence = min(1.0, sum(probs))
     actual_prob = None
-    rank = None
     if actual in scores:
         idx = scores.index(actual)
         actual_prob = probs[idx]
-        rank = idx + 1
     return {
         "confidence": confidence,
         "hit": bool(hit),
@@ -362,7 +360,6 @@ def _score_extractor(record: dict[str, Any]) -> dict[str, Any] | None:
         "actual": actual,
         "probs": None,
         "actual_prob": actual_prob,
-        "rank": rank,
     }
 
 
@@ -377,48 +374,30 @@ def _median(values: list[float]) -> float | None:
 
 
 def _score_hit_detail(records: list[dict[str, Any]]) -> dict[str, Any]:
-    """比分 Top3 组合的补充分析。
+    """比分组合的补充分析。
 
-    重点回答：三个比分里中了一个时，命中的那个比分本身被模型给了多少概率？
+    一场比赛只要三个预测比分中任意一个命中，就算这场命中；
+    这里只分析命中场次里，命中的那个比分本身被模型给了多少概率。
     """
     hits: list[dict[str, Any]] = []
-    predictions: list[dict[str, Any]] = []
-    coverage = {1: 0, 2: 0, 3: 0}
-    total = 0
     for record in records:
         m = (record.get("prediction") or {}).get("markets", {}).get("SCORE") or {}
         top = m.get("top") or []
         actual = m.get("actual") or (record.get("result") or {}).get("ft")
         scores = [str(x.get("score")) for x in top if x.get("score")]
         probs = [float(x.get("prob") or 0.0) for x in top if x.get("score")]
-        if not scores or not actual:
-            continue
-        total += 1
-        for k in (1, 2, 3):
-            if actual in scores[:k]:
-                coverage[k] += 1
-        for score, prob in zip(scores, probs):
-            predictions.append({"prob": prob, "hit": score == actual})
-        if actual not in scores:
+        if not scores or not actual or actual not in scores:
             continue
         idx = scores.index(actual)
-        p_actual = probs[idx]
-        combo = min(1.0, sum(probs))
-        item = {
+        hits.append({
             **_record_base(record),
             "top3": scores,
             "actual": actual,
-            "p_actual": p_actual,
-            "rank": idx + 1,
-            "coverage": combo,
-            "ratio": (p_actual / combo) if combo else None,
-        }
-        hits.append(item)
+            "p_actual": probs[idx],
+        })
 
     actual_probs = [h["p_actual"] for h in hits]
-    ratios = [h["ratio"] for h in hits if h["ratio"] is not None]
     prob_bins = []
-    prediction_bins = []
     for lo, hi, label in (
         (0.0, 0.05, "<5%"),
         (0.05, 0.10, "5–10%"),
@@ -426,61 +405,18 @@ def _score_hit_detail(records: list[dict[str, Any]]) -> dict[str, Any]:
         (0.15, 0.20, "15–20%"),
         (0.20, 1.01, "20%+"),
     ):
-        subset = [h for h in hits if lo <= h["p_actual"] < hi]
-        prob_bins.append({"label": label, "n": len(subset)})
-
-        pred_subset = [x for x in predictions if lo <= x["prob"] < hi]
-        n_pred = len(pred_subset)
-        n_hits = sum(1 for x in pred_subset if x["hit"])
-        expected = sum(x["prob"] for x in pred_subset)
-        ci_low, ci_high = wilson_ci(n_hits, n_pred)
-        prediction_bins.append({
+        prob_bins.append({
             "label": label,
-            "n": n_pred,
-            "hits": n_hits,
-            "hit_rate": (n_hits / n_pred) if n_pred else None,
-            "share_of_hits": (n_hits / len(hits)) if hits else None,
-            "avg_pred": (expected / n_pred) if n_pred else None,
-            "expected_hits": expected,
-            "gap": n_hits - expected,
-            "ci_low": ci_low,
-            "ci_high": ci_high,
-        })
-
-    by_rank = []
-    for rank in (1, 2, 3):
-        subset = [h for h in hits if h["rank"] == rank]
-        vals = [h["p_actual"] for h in subset]
-        by_rank.append({
-            "rank": rank,
-            "n": len(subset),
-            "avg_actual_prob": _mean(vals),
-            "min_actual_prob": min(vals) if vals else None,
-            "max_actual_prob": max(vals) if vals else None,
+            "n": sum(1 for h in hits if lo <= h["p_actual"] < hi),
         })
 
     return {
         "n": len(hits),
-        "prediction_total": len(predictions),
-        "prediction_hits": sum(1 for x in predictions if x["hit"]),
         "avg_actual_prob": _mean(actual_probs),
         "median_actual_prob": _median(actual_probs),
         "min_actual_prob": min(actual_probs) if actual_probs else None,
         "max_actual_prob": max(actual_probs) if actual_probs else None,
         "prob_bins": prob_bins,
-        "prediction_bins": prediction_bins,
-        "by_rank": by_rank,
-        "ratio": {
-            "avg": _mean(ratios),
-            "min": min(ratios) if ratios else None,
-            "max": max(ratios) if ratios else None,
-        },
-        "coverage": {
-            "total": total,
-            "top1": coverage[1],
-            "top2": coverage[2],
-            "top3": coverage[3],
-        },
         "cases": sorted(hits, key=lambda x: (str(x.get("date") or ""),
                                              str(x.get("match_num") or ""))),
     }
@@ -599,6 +535,17 @@ def analyze_records(records: list[dict[str, Any]]) -> dict[str, Any]:
         "HALF_FULL": _analyze_market(valid, "HALF_FULL", _half_full_extractor),
     }
     markets["SCORE"]["hit_detail"] = _score_hit_detail(valid)
+    # 比分只做「一场任意一个比分命中」这一个口径；不保留 Top1/Top2/Top3
+    # 拆分和组合概率校准，避免和命中比分概率混在一起。
+    markets["SCORE"].update({
+        "bins": [],
+        "avg_confidence": None,
+        "ece": None,
+        "brier": None,
+        "log_loss": None,
+        "high_conf_wrong": [],
+        "low_conf_hit": [],
+    })
 
     layers: dict[str, Any] = {}
     for name in ("DC", "Elo", "ML"):

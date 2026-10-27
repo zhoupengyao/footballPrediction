@@ -388,27 +388,6 @@ export interface ScoreProbBin {
   n: number
 }
 
-export interface ScorePredictionBin {
-  label: string
-  n: number
-  hits: number
-  hit_rate: number | null
-  share_of_hits: number | null
-  avg_pred: number | null
-  expected_hits: number
-  gap: number
-  ci_low: number | null
-  ci_high: number | null
-}
-
-export interface ScoreRankStat {
-  rank: number
-  n: number
-  avg_actual_prob: number | null
-  min_actual_prob: number | null
-  max_actual_prob: number | null
-}
-
 export interface ScoreHitCase {
   date: string
   match_num: string
@@ -419,24 +398,15 @@ export interface ScoreHitCase {
   top3: string[]
   actual: string
   p_actual: number
-  rank: number
-  coverage: number
-  ratio: number | null
 }
 
 export interface ScoreHitDetail {
   n: number
-  prediction_total: number
-  prediction_hits: number
   avg_actual_prob: number | null
   median_actual_prob: number | null
   min_actual_prob: number | null
   max_actual_prob: number | null
   prob_bins: ScoreProbBin[]
-  prediction_bins: ScorePredictionBin[]
-  by_rank: ScoreRankStat[]
-  ratio: { avg: number | null; min: number | null; max: number | null }
-  coverage: { total: number; top1: number; top2: number; top3: number }
   cases: ScoreHitCase[]
 }
 

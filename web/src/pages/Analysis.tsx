@@ -32,7 +32,7 @@ import {
 const TABS: Array<{ key: AnalysisMarketKey; label: string }> = [
   { key: 'HAD', label: '胜平负' },
   { key: 'HHAD', label: '让球' },
-  { key: 'SCORE', label: '比分 Top3' },
+  { key: 'SCORE', label: '比分' },
   { key: 'TOTAL_GOALS', label: '总进球' },
   { key: 'HALF_FULL', label: '半全场' },
 ]
@@ -250,90 +250,27 @@ function ValueBinTable({
   )
 }
 
-function ScoreHitPanel({ detail }: { detail: ScoreHitDetail }) {
+function ScoreHitPanel({ detail, matchTotal }: { detail: ScoreHitDetail; matchTotal: number }) {
   const maxBin = Math.max(1, ...detail.prob_bins.map((b) => b.n))
-  const cov = detail.coverage
-  const covRows = [
-    { label: 'Top1', n: cov.top1, tone: 'bg-pitch' },
-    { label: 'Top2', n: cov.top2, tone: 'bg-amber' },
-    { label: 'Top3', n: cov.top3, tone: 'bg-sky-500' },
-  ]
-  const activeBins = detail.prediction_bins.filter((b) => b.n > 0)
-  const maxHitBin = activeBins.length
-    ? [...activeBins].sort((a, b) => b.hits - a.hits)[0]
-    : null
-  const maxRateBin = activeBins.length
-    ? [...activeBins]
-      .filter((b) => b.hit_rate !== null)
-      .sort((a, b) => (b.hit_rate ?? 0) - (a.hit_rate ?? 0))[0]
-    : null
   return (
     <Panel className="mt-5">
       <SectionTitle
-        title="三个比分逐条命中率"
-        hint="把每场 3 个比分都当成独立预测，按概率区间统计命中率和命中次数"
-        action={<Badge tone="amber">命中 {detail.prediction_hits} 条</Badge>}
+        title="比分命中分析"
+        hint="3 个预测比分作为一个组合：实际比分命中任意一个，这场就算命中"
+        action={<Badge tone="green">命中 {detail.n}/{matchTotal} 场</Badge>}
       />
-      <div className="mb-5">
-        <div className="mb-2 text-[11px] text-muted">
-          共 {detail.prediction_total} 条比分预测（{cov.total} 场 × 3）
-        </div>
-        <div className="overflow-x-auto rounded-xl border border-line">
-          <table className="w-full text-left text-xs">
-            <thead className="bg-raised/70 text-[11px] text-muted">
-              <tr>
-                <th className="px-3 py-2 font-medium">概率区间</th>
-                <th className="px-3 py-2 font-medium">预测次数</th>
-                <th className="px-3 py-2 font-medium">命中</th>
-                <th className="px-3 py-2 font-medium">命中率</th>
-                <th className="px-3 py-2 font-medium">占全部命中</th>
-                <th className="px-3 py-2 font-medium">期望命中</th>
-                <th className="px-3 py-2 font-medium">偏差</th>
-                <th className="px-3 py-2 font-medium">95% CI</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-line/70">
-              {detail.prediction_bins.map((b) => (
-                <tr
-                  key={b.label}
-                  className={`${b.n === 0 ? 'opacity-45' : ''} ${maxHitBin?.label === b.label ? 'bg-pitch/5' : ''}`}
-                >
-                  <td className="px-3 py-2 font-mono text-slate-300">{b.label}</td>
-                  <td className="px-3 py-2 font-mono">{b.n}</td>
-                  <td className="px-3 py-2 font-mono text-pitch">{b.hits}</td>
-                  <td className="px-3 py-2 font-mono">{pct(b.hit_rate)}</td>
-                  <td className="px-3 py-2 font-mono">{pct(b.share_of_hits)}</td>
-                  <td className="px-3 py-2 font-mono text-muted">{b.expected_hits.toFixed(2)}</td>
-                  <td className={`px-3 py-2 font-mono ${b.gap > 0 ? 'text-pitch' : b.gap < 0 ? 'text-danger' : 'text-muted'}`}>
-                    {b.gap > 0 ? '+' : ''}{b.gap.toFixed(2)}
-                  </td>
-                  <td className="px-3 py-2 font-mono text-muted">{fmtCi(b.ci_low, b.ci_high)}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <div className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-[11px] text-muted">
-          {maxHitBin ? (
-            <span>命中次数最多：<span className="text-pitch">{maxHitBin.label}（{maxHitBin.hits} 次）</span></span>
-          ) : null}
-          {maxRateBin ? (
-            <span>命中率最高：<span className="text-amber">{maxRateBin.label}（{pct(maxRateBin.hit_rate)}）</span></span>
-          ) : null}
-        </div>
-        <div className="mt-1 text-[10px] text-muted">
-          偏差 = 命中次数 − 期望命中次数。5–10% 与 10–15% 这类相邻区间的差距可能只是样本波动，不要单独据此设阈值。
-        </div>
-      </div>
-
       {detail.n === 0 ? (
         <EmptyState title="暂无命中比分" hint="当前样本里还没有三个预测比分命中实际的场次。" />
       ) : (
         <>
-          <div className="mb-2 text-xs font-medium text-slate-200">命中比分概率分析（只看命中的场次）</div>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-            <StatCard label="命中次数" value={detail.n} tone="green" />
-            <StatCard label="平均命中比分概率" value={pct(detail.avg_actual_prob, 2)} hint="实际比分自己的概率" />
+            <StatCard
+              label="命中场次"
+              value={`${detail.n}/${matchTotal}`}
+              tone="green"
+              hint={`命中率 ${pct(detail.n / Math.max(matchTotal, 1))}`}
+            />
+            <StatCard label="平均命中比分概率" value={pct(detail.avg_actual_prob, 2)} hint="命中比分自己的概率" />
             <StatCard label="中位数" value={pct(detail.median_actual_prob, 2)} />
             <StatCard
               label="概率范围"
@@ -341,73 +278,21 @@ function ScoreHitPanel({ detail }: { detail: ScoreHitDetail }) {
             />
           </div>
 
-          <div className="mt-5 grid gap-5 lg:grid-cols-2">
-            <div>
-              <div className="mb-2 text-xs font-medium text-slate-200">命中比分概率分布</div>
-              <div className="space-y-2">
-                {detail.prob_bins.map((b) => (
-                  <div key={b.label} className="flex items-center gap-3">
-                    <span className="w-16 text-right font-mono text-[11px] text-muted">{b.label}</span>
-                    <div className="h-2 flex-1 overflow-hidden rounded-full bg-line">
-                      <div className="h-full bg-pitch" style={{ width: `${(b.n / maxBin) * 100}%` }} />
-                    </div>
-                    <span className="w-8 font-mono text-[11px] text-slate-300">{b.n}</span>
+          <div className="mt-5">
+            <div className="mb-2 text-xs font-medium text-slate-200">命中比分概率分布</div>
+            <div className="space-y-2">
+              {detail.prob_bins.map((b) => (
+                <div key={b.label} className="flex items-center gap-3">
+                  <span className="w-16 text-right font-mono text-[11px] text-muted">{b.label}</span>
+                  <div className="h-2 flex-1 overflow-hidden rounded-full bg-line">
+                    <div className="h-full bg-pitch" style={{ width: `${(b.n / maxBin) * 100}%` }} />
                   </div>
-                ))}
-              </div>
-              <div className="mt-3 rounded-xl border border-line bg-raised/40 p-3 text-[11px] leading-relaxed text-muted">
-                命中比分概率 / 组合概率：平均 <span className="font-mono text-slate-200">{pct(detail.ratio.avg)}</span>
-                （范围 {pct(detail.ratio.min)}–{pct(detail.ratio.max)}）。
-                表示命中的那个精确比分，通常只占 Top3 组合概率的约三分之一。
-              </div>
+                  <span className="w-8 font-mono text-[11px] text-slate-300">{b.n}</span>
+                </div>
+              ))}
             </div>
-
-            <div>
-              <div className="mb-2 text-xs font-medium text-slate-200">按预测排名</div>
-              <div className="overflow-hidden rounded-xl border border-line">
-                <table className="w-full text-left text-xs">
-                  <thead className="bg-raised/70 text-[11px] text-muted">
-                    <tr>
-                      <th className="px-3 py-2 font-medium">实际比分是第几个预测</th>
-                      <th className="px-3 py-2 font-medium">命中</th>
-                      <th className="px-3 py-2 font-medium">平均概率</th>
-                      <th className="px-3 py-2 font-medium">范围</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-line/70">
-                    {detail.by_rank.map((row) => (
-                      <tr key={row.rank}>
-                        <td className="px-3 py-2 text-slate-200">第 {row.rank} 个</td>
-                        <td className="px-3 py-2 font-mono">{row.n}</td>
-                        <td className="px-3 py-2 font-mono">{pct(row.avg_actual_prob, 2)}</td>
-                        <td className="px-3 py-2 font-mono text-muted">
-                          {pct(row.min_actual_prob, 1)}–{pct(row.max_actual_prob, 1)}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-
-              <div className="mt-4 rounded-xl border border-line bg-raised/40 p-3">
-                <div className="mb-2 flex items-center justify-between text-[11px] text-muted">
-                  <span>覆盖漏斗</span>
-                  <span>{cov.total} 场有比分预测</span>
-                </div>
-                <div className="space-y-2">
-                  {covRows.map((row) => (
-                    <div key={row.label}>
-                      <div className="flex items-center justify-between text-[11px]">
-                        <span className="text-muted">{row.label}</span>
-                        <span className="font-mono text-slate-300">{row.n} 场 · {pct(row.n / Math.max(cov.total, 1), 0)}</span>
-                      </div>
-                      <div className="mt-1 h-2 overflow-hidden rounded-full bg-line">
-                        <div className={`h-full ${row.tone}`} style={{ width: `${(row.n / Math.max(cov.total, 1)) * 100}%` }} />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
+            <div className="mt-2 text-[11px] text-muted">
+              只统计命中的 {detail.n} 场；概率是命中那个比分自己的模型概率，不拆分第几个预测。
             </div>
           </div>
 
@@ -419,11 +304,9 @@ function ScoreHitPanel({ detail }: { detail: ScoreHitDetail }) {
                   <tr>
                     <th className="px-3 py-2 font-medium">日期 / 编号</th>
                     <th className="px-3 py-2 font-medium">对阵</th>
-                    <th className="px-3 py-2 font-medium">Top3 比分</th>
-                    <th className="px-3 py-2 font-medium">实际</th>
+                    <th className="px-3 py-2 font-medium">三个预测比分</th>
+                    <th className="px-3 py-2 font-medium">实际比分</th>
                     <th className="px-3 py-2 font-medium">命中比分概率</th>
-                    <th className="px-3 py-2 font-medium">排名</th>
-                    <th className="px-3 py-2 font-medium">组合概率</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-line/70">
@@ -434,8 +317,6 @@ function ScoreHitPanel({ detail }: { detail: ScoreHitDetail }) {
                       <td className="px-3 py-2 font-mono text-slate-300">{item.top3.join(' / ')}</td>
                       <td className="px-3 py-2 font-mono text-pitch">{item.actual}</td>
                       <td className="px-3 py-2 font-mono text-slate-100">{pct(item.p_actual, 2)}</td>
-                      <td className="px-3 py-2 font-mono">{item.rank}</td>
-                      <td className="px-3 py-2 font-mono text-muted">{pct(item.coverage, 1)}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -462,6 +343,10 @@ export function Analysis() {
   }
   const analysis = state.data
   const market = analysis?.markets[marketKey]
+  const scoreDetail = marketKey === 'SCORE' ? market?.hit_detail : null
+  const topScoreBin = scoreDetail && scoreDetail.n > 0
+    ? [...scoreDetail.prob_bins].sort((a, b) => b.n - a.n)[0]
+    : null
 
   const dailyHAD = useMemo(
     () => (analysis?.daily ?? [])
@@ -504,16 +389,38 @@ export function Analysis() {
       ) : null}
 
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-        <StatCard label="样本场次" value={market.n} hint={`${market.label} 已结算`} />
-        <StatCard label="命中" value={`${market.hits}/${market.n}`} tone="green" hint={`命中率 ${pct(market.accuracy)}`} />
-        <StatCard
-          label={marketKey === 'SCORE' ? '平均组合概率' : '平均置信度'}
-          value={pct(market.avg_confidence)}
-          hint={marketKey === 'SCORE' ? 'Top3 三个比分概率之和' : 'Top-pick 概率均值'}
-        />
-        <StatCard label="校准误差 ECE" value={pct(market.ece)} tone={(market.ece ?? 0) > 0.1 ? 'red' : 'green'} hint="越小越好" />
-        <StatCard label="Brier" value={num(market.brier, 3)} hint="多分类；越低越好" />
-        <StatCard label="对数损失" value={num(market.log_loss, 3)} hint="越低越好" />
+        {scoreDetail ? (
+          <>
+            <StatCard
+              label="比分命中"
+              value={`${market.hits}/${market.n}`}
+              tone="green"
+              hint={`命中率 ${pct(market.accuracy)}；任意一个比分中即算`}
+            />
+            <StatCard label="平均命中比分概率" value={pct(scoreDetail.avg_actual_prob, 2)} hint="命中比分自己的概率" />
+            <StatCard label="中位数" value={pct(scoreDetail.median_actual_prob, 2)} />
+            <StatCard
+              label="概率范围"
+              value={`${pct(scoreDetail.min_actual_prob, 1)}–${pct(scoreDetail.max_actual_prob, 1)}`}
+            />
+            <StatCard
+              label="命中最多区间"
+              value={topScoreBin?.label ?? '—'}
+              tone="amber"
+              hint={topScoreBin ? `${topScoreBin.n} 场` : ''}
+            />
+            <StatCard label="样本场次" value={market.n} hint="每场 3 个预测比分" />
+          </>
+        ) : (
+          <>
+            <StatCard label="样本场次" value={market.n} hint={`${market.label} 已结算`} />
+            <StatCard label="命中" value={`${market.hits}/${market.n}`} tone="green" hint={`命中率 ${pct(market.accuracy)}`} />
+            <StatCard label="平均置信度" value={pct(market.avg_confidence)} hint="Top-pick 概率均值" />
+            <StatCard label="校准误差 ECE" value={pct(market.ece)} tone={(market.ece ?? 0) > 0.1 ? 'red' : 'green'} hint="越小越好" />
+            <StatCard label="Brier" value={num(market.brier, 3)} hint="多分类；越低越好" />
+            <StatCard label="对数损失" value={num(market.log_loss, 3)} hint="越低越好" />
+          </>
+        )}
       </div>
 
       <div className="mt-5 flex flex-wrap gap-2">
@@ -533,22 +440,20 @@ export function Analysis() {
       </div>
 
       {marketKey === 'SCORE' && market.hit_detail ? (
-        <ScoreHitPanel detail={market.hit_detail} />
+        <ScoreHitPanel detail={market.hit_detail} matchTotal={market.n} />
       ) : null}
 
+      {marketKey !== 'SCORE' ? (
+        <>
       <Panel className="mt-5">
         <SectionTitle
-          title={marketKey === 'SCORE' ? 'Top3 组合概率校准（次要）' : '概率区间校准'}
-          hint={marketKey === 'SCORE'
-            ? '按 p1+p2+p3 分箱，回答“Top3 这个集合是否过度自信”，不是命中比分的概率'
-            : '偏差 = 实际命中率 − 平均预测概率；负值代表模型过度自信'}
+          title="概率区间校准"
+          hint="偏差 = 实际命中率 − 平均预测概率；负值代表模型过度自信"
           action={<Badge tone="neutral">n={market.n}</Badge>}
         />
         <CalibrationTable bins={market.bins} />
         <div className="mt-3 text-[11px] leading-relaxed text-muted">
-          {marketKey === 'SCORE'
-            ? '比分主分析请看上面的“三个比分逐条命中率”：它把每场 3 个比分都当成独立预测，按概率区间统计命中率。'
-            : '解释：如果 50–60% 区间的实际命中率明显低于 50–60%，说明模型在这一档过度自信；如果高于区间，则偏保守。样本量小的区间不要单独下结论。'}
+          解释：如果 50–60% 区间的实际命中率明显低于 50–60%，说明模型在这一档过度自信；如果高于区间，则偏保守。样本量小的区间不要单独下结论。
         </div>
       </Panel>
 
@@ -594,6 +499,8 @@ export function Analysis() {
           />
         </Panel>
       </div>
+        </>
+      ) : null}
 
       <Panel className="mt-5">
         <SectionTitle title="模型层对比" hint="DC / Elo / LightGBM 各自只统计有该层预测的场次" />
@@ -696,11 +603,11 @@ export function Analysis() {
         <SectionTitle title="口径与限制" />
         <div className="space-y-2 text-xs leading-relaxed text-muted">
           <div>· 只统计 `settled` 且 `prediction_timing=pre_match`；开赛后补跑不计入。</div>
-          <div>· Top-pick 置信度 = 模型最终选择那个选项的概率；命中率 = 该选择实际发生的比例。</div>
-          <div>· 比分 Top3：命中 = 三个预测比分中任意一个命中；组合概率 = p1+p2+p3；命中比分概率 = 实际比分自己的概率。</div>
-          <div>· 比分逐条命中率：把每场 3 个比分拆成 3 条独立预测，按概率区间统计预测次数、命中次数和命中率，这是“哪个概率区间命中的多”的主表。</div>
+          <div>· 除比分外，Top-pick 置信度 = 模型最终选择那个选项的概率；命中率 = 该选择实际发生的比例。</div>
+          <div>· 比分：3 个预测比分作为一个整体，实际比分命中任意一个，这场就算命中（一场只算 1 次）；不做逐条拆分，也不做组合概率校准。</div>
+          <div>· 命中比分概率 = 命中场次里，实际比分自己的模型概率；用来看命中的比分集中在哪个概率区间。</div>
           <div>· 偏差为负表示“过度自信”；ECE 是所有区间偏差的加权平均。</div>
-          <div>· Brier / 对数损失只对拥有完整概率分布的玩法计算（HAD/HHAD/总进球/模型层）；比分和半全场只有 Top3，不计算 Brier。</div>
+          <div>· Brier / 对数损失只对拥有完整概率分布的玩法计算（HAD/HHAD/总进球/模型层）；比分和半全场不计算 Brier。</div>
           <div>· 样本量小的区间已标注 n 和 95% Wilson 置信区间；不要用 50 场样本反推稳定策略。</div>
           <div>· {analysis.note}</div>
         </div>
