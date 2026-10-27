@@ -22,7 +22,15 @@
     "skip_reason": "未收录联赛: 欧罗巴",
     "prediction_timing": "skipped",
     "prediction": null,
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "1:0",
+      "ht": "1:0",
+      "had": "home",
+      "hhad": null,
+      "total_goals": "1",
+      "half_full": "胜/胜"
+    }
   },
   {
     "id": "2042120",
@@ -47,7 +55,15 @@
     "skip_reason": "未收录联赛: 欧罗巴",
     "prediction_timing": "skipped",
     "prediction": null,
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "1:1",
+      "ht": "0:1",
+      "had": "draw",
+      "hhad": null,
+      "total_goals": "2",
+      "half_full": "负/平"
+    }
   },
   {
     "id": "2042121",
@@ -72,7 +88,15 @@
     "skip_reason": "未收录联赛: 欧罗巴",
     "prediction_timing": "skipped",
     "prediction": null,
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "2:4",
+      "ht": "2:2",
+      "had": "away",
+      "hhad": null,
+      "total_goals": "6",
+      "half_full": "平/负"
+    }
   },
   {
     "id": "2042122",
@@ -97,7 +121,15 @@
     "skip_reason": "未收录联赛: 欧罗巴",
     "prediction_timing": "skipped",
     "prediction": null,
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "2:2",
+      "ht": "1:2",
+      "had": "draw",
+      "hhad": null,
+      "total_goals": "4",
+      "half_full": "负/平"
+    }
   },
   {
     "id": "2042123",
@@ -122,7 +154,15 @@
     "skip_reason": "未收录联赛: 欧罗巴",
     "prediction_timing": "skipped",
     "prediction": null,
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "0:2",
+      "ht": "0:2",
+      "had": "away",
+      "hhad": null,
+      "total_goals": "2",
+      "half_full": "负/负"
+    }
   },
   {
     "id": "2042124",
@@ -147,7 +187,15 @@
     "skip_reason": "未收录联赛: 欧罗巴",
     "prediction_timing": "skipped",
     "prediction": null,
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "3:0",
+      "ht": "2:0",
+      "had": "home",
+      "hhad": null,
+      "total_goals": "3",
+      "half_full": "胜/胜"
+    }
   },
   {
     "id": "2042125",
@@ -172,7 +220,15 @@
     "skip_reason": "未收录联赛: 欧罗巴",
     "prediction_timing": "skipped",
     "prediction": null,
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "1:2",
+      "ht": "0:0",
+      "had": "away",
+      "hhad": null,
+      "total_goals": "3",
+      "half_full": "平/负"
+    }
   },
   {
     "id": "2042126",
@@ -197,7 +253,15 @@
     "skip_reason": "未收录联赛: 欧罗巴",
     "prediction_timing": "skipped",
     "prediction": null,
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "2:2",
+      "ht": "1:0",
+      "had": "draw",
+      "hhad": null,
+      "total_goals": "4",
+      "half_full": "胜/平"
+    }
   },
   {
     "id": "2042127",
@@ -222,7 +286,15 @@
     "skip_reason": "未收录联赛: 欧罗巴",
     "prediction_timing": "skipped",
     "prediction": null,
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "3:0",
+      "ht": "1:0",
+      "had": "home",
+      "hhad": null,
+      "total_goals": "3",
+      "half_full": "胜/胜"
+    }
   },
   {
     "id": "2042128",
@@ -247,7 +319,15 @@
     "skip_reason": "未收录联赛: 欧罗巴",
     "prediction_timing": "skipped",
     "prediction": null,
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "0:6",
+      "ht": "0:3",
+      "had": "away",
+      "hhad": null,
+      "total_goals": "6",
+      "half_full": "负/负"
+    }
   },
   {
     "id": "2042130",
@@ -272,7 +352,15 @@
     "skip_reason": "未收录联赛: 欧协联",
     "prediction_timing": "skipped",
     "prediction": null,
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "2:0",
+      "ht": "0:0",
+      "had": "home",
+      "hhad": null,
+      "total_goals": "2",
+      "half_full": "平/胜"
+    }
   },
   {
     "id": "2042131",
@@ -297,7 +385,15 @@
     "skip_reason": "未收录联赛: 欧协联",
     "prediction_timing": "skipped",
     "prediction": null,
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "3:0",
+      "ht": "1:0",
+      "had": "home",
+      "hhad": null,
+      "total_goals": "3",
+      "half_full": "胜/胜"
+    }
   },
   {
     "id": "2042129",
@@ -322,6 +418,14 @@
     "skip_reason": "未收录联赛: 解放者杯",
     "prediction_timing": "skipped",
     "prediction": null,
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "0:0",
+      "ht": "0:0",
+      "had": "draw",
+      "hhad": null,
+      "total_goals": "0",
+      "half_full": "平/平"
+    }
   }
 ]

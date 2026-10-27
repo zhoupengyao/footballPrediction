@@ -22,7 +22,15 @@
     "skip_reason": "球队无历史数据: Como",
     "prediction_timing": "skipped",
     "prediction": null,
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "4:1",
+      "ht": "1:0",
+      "had": "home",
+      "hhad": null,
+      "total_goals": "5",
+      "half_full": "胜/胜"
+    }
   },
   {
     "id": "2042110",
@@ -43,7 +51,7 @@
       "cn": "加拉塔萨",
       "matched": "Galatasaray"
     },
-    "status": "pending",
+    "status": "settled",
     "skip_reason": null,
     "prediction_timing": "pre_match",
     "prediction": {
@@ -79,8 +87,8 @@
           },
           "blended": null,
           "predicted": "home",
-          "actual": null,
-          "hit": null
+          "actual": "away",
+          "hit": false
         },
         "HHAD": {
           "available": true,
@@ -98,8 +106,8 @@
           "implied": null,
           "blended": null,
           "predicted": "home",
-          "actual": null,
-          "hit": null
+          "actual": "away",
+          "hit": false
         },
         "SCORE": {
           "available": true,
@@ -118,9 +126,9 @@
             }
           ],
           "predicted": "1:0",
-          "actual": null,
-          "top1_hit": null,
-          "top3_hit": null
+          "actual": "2:4",
+          "top1_hit": false,
+          "top3_hit": false
         },
         "TOTAL_GOALS": {
           "available": true,
@@ -135,8 +143,8 @@
             "7+": 0.0383
           },
           "predicted": "3",
-          "actual": null,
-          "hit": null
+          "actual": "6",
+          "hit": false
         },
         "HALF_FULL": {
           "available": true,
@@ -155,8 +163,8 @@
             }
           ],
           "predicted": "胜/胜",
-          "actual": null,
-          "hit": null
+          "actual": "平/负",
+          "hit": false
         }
       },
       "model_layers": {},
@@ -171,9 +179,9 @@
           "edge": 0.1371,
           "ev": 0.1334,
           "stake_pct": 0.02,
-          "hit": null,
-          "pnl_unit": null,
-          "pnl_pct": null
+          "hit": false,
+          "pnl_unit": -1.0,
+          "pnl_pct": -0.02
         },
         {
           "market": "HHAD",
@@ -185,13 +193,21 @@
           "edge": 0.1195,
           "ev": 0.3015,
           "stake_pct": 0.02,
-          "hit": null,
-          "pnl_unit": null,
-          "pnl_pct": null
+          "hit": false,
+          "pnl_unit": -1.0,
+          "pnl_pct": -0.02
         }
       ]
     },
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "2:4",
+      "ht": "2:2",
+      "had": "away",
+      "hhad": "away",
+      "total_goals": "6",
+      "half_full": "平/负"
+    }
   },
   {
     "id": "2042111",
@@ -212,7 +228,7 @@
       "cn": "毕尔巴鄂",
       "matched": "Ath Bilbao"
     },
-    "status": "pending",
+    "status": "settled",
     "skip_reason": null,
     "prediction_timing": "pre_match",
     "prediction": {
@@ -248,8 +264,8 @@
           },
           "blended": null,
           "predicted": "home",
-          "actual": null,
-          "hit": null
+          "actual": "home",
+          "hit": true
         },
         "HHAD": {
           "available": true,
@@ -267,8 +283,8 @@
           "implied": null,
           "blended": null,
           "predicted": "home",
-          "actual": null,
-          "hit": null
+          "actual": "home",
+          "hit": true
         },
         "SCORE": {
           "available": true,
@@ -287,9 +303,9 @@
             }
           ],
           "predicted": "1:0",
-          "actual": null,
-          "top1_hit": null,
-          "top3_hit": null
+          "actual": "3:1",
+          "top1_hit": false,
+          "top3_hit": false
         },
         "TOTAL_GOALS": {
           "available": true,
@@ -304,8 +320,8 @@
             "7+": 0.0208
           },
           "predicted": "2",
-          "actual": null,
-          "hit": null
+          "actual": "4",
+          "hit": false
         },
         "HALF_FULL": {
           "available": true,
@@ -324,8 +340,8 @@
             }
           ],
           "predicted": "胜/胜",
-          "actual": null,
-          "hit": null
+          "actual": "胜/胜",
+          "hit": true
         }
       },
       "model_layers": {},
@@ -340,9 +356,9 @@
           "edge": 0.236,
           "ev": 0.782,
           "stake_pct": 0.02,
-          "hit": null,
-          "pnl_unit": null,
-          "pnl_pct": null
+          "hit": true,
+          "pnl_unit": 2.8,
+          "pnl_pct": 0.056
         },
         {
           "market": "HHAD",
@@ -354,13 +370,21 @@
           "edge": 0.1997,
           "ev": 0.241,
           "stake_pct": 0.02,
-          "hit": null,
-          "pnl_unit": null,
-          "pnl_pct": null
+          "hit": true,
+          "pnl_unit": 0.78,
+          "pnl_pct": 0.0156
         }
       ]
     },
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "3:1",
+      "ht": "2:0",
+      "had": "home",
+      "hhad": "home",
+      "total_goals": "4",
+      "half_full": "胜/胜"
+    }
   },
   {
     "id": "2042112",
@@ -381,7 +405,7 @@
       "cn": "莱红牛",
       "matched": "RB Leipzig"
     },
-    "status": "pending",
+    "status": "settled",
     "skip_reason": null,
     "prediction_timing": "pre_match",
     "prediction": {
@@ -417,8 +441,8 @@
           },
           "blended": null,
           "predicted": "home",
-          "actual": null,
-          "hit": null
+          "actual": "home",
+          "hit": true
         },
         "HHAD": {
           "available": true,
@@ -436,8 +460,8 @@
           "implied": null,
           "blended": null,
           "predicted": "away",
-          "actual": null,
-          "hit": null
+          "actual": "home",
+          "hit": false
         },
         "SCORE": {
           "available": true,
@@ -456,9 +480,9 @@
             }
           ],
           "predicted": "3:1",
-          "actual": null,
-          "top1_hit": null,
-          "top3_hit": null
+          "actual": "4:1",
+          "top1_hit": false,
+          "top3_hit": false
         },
         "TOTAL_GOALS": {
           "available": true,
@@ -473,8 +497,8 @@
             "7+": 0.1269
           },
           "predicted": "4",
-          "actual": null,
-          "hit": null
+          "actual": "5",
+          "hit": false
         },
         "HALF_FULL": {
           "available": true,
@@ -493,8 +517,8 @@
             }
           ],
           "predicted": "胜/胜",
-          "actual": null,
-          "hit": null
+          "actual": "胜/胜",
+          "hit": true
         }
       },
       "model_layers": {},
@@ -509,13 +533,21 @@
           "edge": 0.0675,
           "ev": 0.0499,
           "stake_pct": 0.0087,
-          "hit": null,
-          "pnl_unit": null,
-          "pnl_pct": null
+          "hit": false,
+          "pnl_unit": -1.0,
+          "pnl_pct": -0.0087
         }
       ]
     },
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "4:1",
+      "ht": "1:0",
+      "had": "home",
+      "hhad": "home",
+      "total_goals": "5",
+      "half_full": "胜/胜"
+    }
   },
   {
     "id": "2042113",
@@ -540,7 +572,15 @@
     "skip_reason": "球队无历史数据: Viking",
     "prediction_timing": "skipped",
     "prediction": null,
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "3:1",
+      "ht": "2:0",
+      "had": "home",
+      "hhad": null,
+      "total_goals": "4",
+      "half_full": "胜/胜"
+    }
   },
   {
     "id": "2042114",
@@ -565,7 +605,15 @@
     "skip_reason": "球队无历史数据: Betis",
     "prediction_timing": "skipped",
     "prediction": null,
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "1:0",
+      "ht": "0:0",
+      "had": "home",
+      "hhad": null,
+      "total_goals": "1",
+      "half_full": "平/胜"
+    }
   },
   {
     "id": "2042115",
@@ -586,7 +634,7 @@
       "cn": "阿森纳",
       "matched": "Arsenal"
     },
-    "status": "pending",
+    "status": "settled",
     "skip_reason": null,
     "prediction_timing": "pre_match",
     "prediction": {
@@ -622,8 +670,8 @@
           },
           "blended": null,
           "predicted": "away",
-          "actual": null,
-          "hit": null
+          "actual": "draw",
+          "hit": false
         },
         "HHAD": {
           "available": true,
@@ -641,8 +689,8 @@
           "implied": null,
           "blended": null,
           "predicted": "away",
-          "actual": null,
-          "hit": null
+          "actual": "away",
+          "hit": true
         },
         "SCORE": {
           "available": true,
@@ -661,9 +709,9 @@
             }
           ],
           "predicted": "0:1",
-          "actual": null,
-          "top1_hit": null,
-          "top3_hit": null
+          "actual": "2:2",
+          "top1_hit": false,
+          "top3_hit": false
         },
         "TOTAL_GOALS": {
           "available": true,
@@ -678,8 +726,8 @@
             "7+": 0.0102
           },
           "predicted": "2",
-          "actual": null,
-          "hit": null
+          "actual": "4",
+          "hit": false
         },
         "HALF_FULL": {
           "available": true,
@@ -698,8 +746,8 @@
             }
           ],
           "predicted": "负/负",
-          "actual": null,
-          "hit": null
+          "actual": "平/平",
+          "hit": false
         }
       },
       "model_layers": {},
@@ -714,9 +762,9 @@
           "edge": 0.1179,
           "ev": 0.0737,
           "stake_pct": 0.02,
-          "hit": null,
-          "pnl_unit": null,
-          "pnl_pct": null
+          "hit": true,
+          "pnl_unit": 0.6,
+          "pnl_pct": 0.012
         },
         {
           "market": "HAD",
@@ -728,13 +776,21 @@
           "edge": 0.1133,
           "ev": 0.2163,
           "stake_pct": 0.02,
-          "hit": null,
-          "pnl_unit": null,
-          "pnl_pct": null
+          "hit": false,
+          "pnl_unit": -1.0,
+          "pnl_pct": -0.02
         }
       ]
     },
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "2:2",
+      "ht": "1:1",
+      "had": "draw",
+      "hhad": "away",
+      "total_goals": "4",
+      "half_full": "平/平"
+    }
   },
   {
     "id": "2042116",
@@ -759,7 +815,15 @@
     "skip_reason": "球队无历史数据: LASK",
     "prediction_timing": "skipped",
     "prediction": null,
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "2:3",
+      "ht": "1:1",
+      "had": "away",
+      "hhad": null,
+      "total_goals": "5",
+      "half_full": "平/负"
+    }
   },
   {
     "id": "2042117",
@@ -780,7 +844,7 @@
       "cn": "朗斯",
       "matched": "Lens"
     },
-    "status": "pending",
+    "status": "settled",
     "skip_reason": null,
     "prediction_timing": "pre_match",
     "prediction": {
@@ -816,8 +880,8 @@
           },
           "blended": null,
           "predicted": "home",
-          "actual": null,
-          "hit": null
+          "actual": "home",
+          "hit": true
         },
         "HHAD": {
           "available": true,
@@ -835,8 +899,8 @@
           "implied": null,
           "blended": null,
           "predicted": "away",
-          "actual": null,
-          "hit": null
+          "actual": "home",
+          "hit": false
         },
         "SCORE": {
           "available": true,
@@ -855,9 +919,9 @@
             }
           ],
           "predicted": "1:0",
-          "actual": null,
-          "top1_hit": null,
-          "top3_hit": null
+          "actual": "3:0",
+          "top1_hit": false,
+          "top3_hit": false
         },
         "TOTAL_GOALS": {
           "available": true,
@@ -872,8 +936,8 @@
             "7+": 0.0339
           },
           "predicted": "3",
-          "actual": null,
-          "hit": null
+          "actual": "3",
+          "hit": true
         },
         "HALF_FULL": {
           "available": true,
@@ -892,14 +956,22 @@
             }
           ],
           "predicted": "胜/胜",
-          "actual": null,
-          "hit": null
+          "actual": "胜/胜",
+          "hit": true
         }
       },
       "model_layers": {},
       "value_bets": []
     },
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "3:0",
+      "ht": "1:0",
+      "had": "home",
+      "hhad": "home",
+      "total_goals": "3",
+      "half_full": "胜/胜"
+    }
   },
   {
     "id": "2042118",
@@ -924,6 +996,14 @@
     "skip_reason": "未收录联赛: 解放者杯",
     "prediction_timing": "skipped",
     "prediction": null,
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "0:1",
+      "ht": "0:0",
+      "had": "away",
+      "hhad": null,
+      "total_goals": "1",
+      "half_full": "平/负"
+    }
   }
 ]

@@ -1,0 +1,197 @@
+{
+ "generated_at": "2026-10-27T12:33:10",
+ "stats": {
+  "total": 2,
+  "resolved": 2,
+  "unresolved": 0,
+  "had_accuracy": 0.0,
+  "score_accuracy": 0.0,
+  "log_loss": 1.66814850377259,
+  "markets": {
+   "HAD": {
+    "n": 2,
+    "hits": 0,
+    "accuracy": 0.0
+   },
+   "HHAD": {
+    "n": 2,
+    "hits": 2,
+    "accuracy": 1.0
+   },
+   "SCORE_TOP1": {
+    "n": 2,
+    "hits": 0,
+    "accuracy": 0.0
+   },
+   "SCORE_TOP3": {
+    "n": 2,
+    "hits": 0,
+    "accuracy": 0.0
+   },
+   "TOTAL_GOALS": {
+    "n": 2,
+    "hits": 0,
+    "accuracy": 0.0
+   },
+   "HALF_FULL": {
+    "n": 2,
+    "hits": 0,
+    "accuracy": 0.0
+   },
+   "HAD_DC": {
+    "n": 2,
+    "hits": 0,
+    "accuracy": 0.0
+   },
+   "HAD_ELO": {
+    "n": 2,
+    "hits": 0,
+    "accuracy": 0.0
+   },
+   "HAD_ML": {
+    "n": 2,
+    "hits": 0,
+    "accuracy": 0.0
+   }
+  },
+  "n_bets": 2,
+  "bet_hit_rate": 0.5,
+  "pnl_unit": 1.9,
+  "pnl_pct": 0.03799999999999999,
+  "roi_unit": 0.95,
+  "staked_pct": 0.04
+ },
+ "matches": [
+  {
+   "match_num": "周一003",
+   "match_date": "2026-10-27",
+   "league": "西甲",
+   "div": "SP1",
+   "home_cn": "塞维利亚",
+   "away_cn": "奥萨苏纳",
+   "home_matched": "Sevilla",
+   "away_matched": "Osasuna",
+   "resolved": true,
+   "ft_home": 0,
+   "ft_away": 3,
+   "ht_home": 0,
+   "ht_away": 2,
+   "actual": "负",
+   "had": {
+    "胜": 0.5381286484621597,
+    "平": 0.2361769114804045,
+    "负": 0.2256944400574358
+   },
+   "had_pred": "胜",
+   "had_hit": false,
+   "score_pred": "1:0",
+   "score_hit": false,
+   "score_top": [
+    "1:0",
+    "1:1",
+    "2:1"
+   ],
+   "score_top3_hit": false,
+   "hhad_goal_line": -1.0,
+   "hhad_pred": "负",
+   "hhad_actual": "负",
+   "hhad_hit": true,
+   "ttg_pred": "2",
+   "ttg_actual": "3",
+   "ttg_hit": false,
+   "half_full_pred": "胜/胜",
+   "half_full_actual": "负/负",
+   "half_full_hit": false,
+   "layer_preds": {
+    "HAD_DC": "胜",
+    "HAD_ELO": "胜",
+    "HAD_ML": "胜"
+   },
+   "layer_hits": {
+    "HAD_DC": false,
+    "HAD_ELO": false,
+    "HAD_ML": false
+   },
+   "value_bets": []
+  },
+  {
+   "match_num": "周一004",
+   "match_date": "2026-10-27",
+   "league": "巴甲",
+   "div": "BRA1",
+   "home_cn": "弗拉门戈",
+   "away_cn": "米竞技",
+   "home_matched": "Flamengo",
+   "away_matched": "Atletico-MG",
+   "resolved": true,
+   "ft_home": 0,
+   "ft_away": 3,
+   "ht_home": 0,
+   "ht_away": 0,
+   "actual": "负",
+   "had": {
+    "胜": 0.5247530609935563,
+    "平": 0.3176514583278941,
+    "负": 0.15759548067854953
+   },
+   "had_pred": "胜",
+   "had_hit": false,
+   "score_pred": "1:0",
+   "score_hit": false,
+   "score_top": [
+    "1:0",
+    "2:0",
+    "1:1"
+   ],
+   "score_top3_hit": false,
+   "hhad_goal_line": -1.0,
+   "hhad_pred": "负",
+   "hhad_actual": "负",
+   "hhad_hit": true,
+   "ttg_pred": "2",
+   "ttg_actual": "3",
+   "ttg_hit": false,
+   "half_full_pred": "胜/胜",
+   "half_full_actual": "平/负",
+   "half_full_hit": false,
+   "layer_preds": {
+    "HAD_DC": "胜",
+    "HAD_ELO": "胜",
+    "HAD_ML": "平"
+   },
+   "layer_hits": {
+    "HAD_DC": false,
+    "HAD_ELO": false,
+    "HAD_ML": false
+   },
+   "value_bets": [
+    {
+     "option": "负",
+     "odds": 3.9,
+     "model_prob": 0.33104188989605426,
+     "implied_prob": 0.22710393620763794,
+     "edge": 0.10393795368841632,
+     "ev": 0.2910633705946115,
+     "stake_pct": 0.02,
+     "market": "HHAD",
+     "hit": true,
+     "pnl_unit": 2.9,
+     "pnl_pct": 0.057999999999999996
+    },
+    {
+     "option": "平",
+     "odds": 5.8,
+     "model_prob": 0.25166795378009554,
+     "implied_prob": 0.1526926969583977,
+     "edge": 0.09897525682169783,
+     "ev": 0.4596741319245541,
+     "stake_pct": 0.02,
+     "market": "HAD",
+     "hit": false,
+     "pnl_unit": -1.0,
+     "pnl_pct": -0.02
+    }
+   ]
+  }
+ ]
+}

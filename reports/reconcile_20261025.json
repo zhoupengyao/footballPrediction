@@ -1,65 +1,65 @@
 {
- "generated_at": "2026-10-26T20:43:42",
+ "generated_at": "2026-10-27T12:33:06",
  "stats": {
   "total": 19,
-  "resolved": 0,
-  "unresolved": 19,
-  "had_accuracy": NaN,
-  "score_accuracy": NaN,
-  "log_loss": NaN,
+  "resolved": 19,
+  "unresolved": 0,
+  "had_accuracy": 0.42105263157894735,
+  "score_accuracy": 0.15789473684210525,
+  "log_loss": 1.0427738014752694,
   "markets": {
    "HAD": {
-    "n": 0,
-    "hits": 0,
-    "accuracy": NaN
+    "n": 19,
+    "hits": 8,
+    "accuracy": 0.42105263157894735
    },
    "HHAD": {
-    "n": 0,
-    "hits": 0,
-    "accuracy": NaN
+    "n": 19,
+    "hits": 11,
+    "accuracy": 0.5789473684210527
    },
    "SCORE_TOP1": {
-    "n": 0,
-    "hits": 0,
-    "accuracy": NaN
+    "n": 19,
+    "hits": 3,
+    "accuracy": 0.15789473684210525
    },
    "SCORE_TOP3": {
-    "n": 0,
-    "hits": 0,
-    "accuracy": NaN
+    "n": 19,
+    "hits": 7,
+    "accuracy": 0.3684210526315789
    },
    "TOTAL_GOALS": {
-    "n": 0,
-    "hits": 0,
-    "accuracy": NaN
+    "n": 19,
+    "hits": 8,
+    "accuracy": 0.42105263157894735
    },
    "HALF_FULL": {
-    "n": 0,
-    "hits": 0,
-    "accuracy": NaN
+    "n": 19,
+    "hits": 8,
+    "accuracy": 0.42105263157894735
    },
    "HAD_DC": {
-    "n": 0,
-    "hits": 0,
-    "accuracy": NaN
+    "n": 19,
+    "hits": 8,
+    "accuracy": 0.42105263157894735
    },
    "HAD_ELO": {
-    "n": 0,
-    "hits": 0,
-    "accuracy": NaN
+    "n": 19,
+    "hits": 8,
+    "accuracy": 0.42105263157894735
    },
    "HAD_ML": {
-    "n": 0,
-    "hits": 0,
-    "accuracy": NaN
+    "n": 19,
+    "hits": 7,
+    "accuracy": 0.3684210526315789
    }
   },
-  "n_bets": 0,
-  "bet_hit_rate": NaN,
-  "pnl_unit": 0,
-  "pnl_pct": 0,
-  "roi_unit": NaN,
-  "staked_pct": 0
+  "n_bets": 12,
+  "bet_hit_rate": 0.4166666666666667,
+  "pnl_unit": -0.27000000000000024,
+  "pnl_pct": -0.031069663034200966,
+  "roi_unit": -0.02250000000000002,
+  "staked_pct": 0.1556979096544545
  },
  "matches": [
   {
@@ -71,48 +71,62 @@
    "away_cn": "赫塔费",
    "home_matched": "Ath Bilbao",
    "away_matched": "Getafe",
-   "resolved": false,
-   "ft_home": null,
-   "ft_away": null,
-   "ht_home": null,
-   "ht_away": null,
-   "actual": null,
+   "resolved": true,
+   "ft_home": 4,
+   "ft_away": 0,
+   "ht_home": 2,
+   "ht_away": 0,
+   "actual": "胜",
    "had": {
     "胜": 0.5651527223715255,
     "平": 0.2462484465119781,
     "负": 0.1885988311164964
    },
    "had_pred": "胜",
-   "had_hit": null,
+   "had_hit": true,
    "score_pred": "1:0",
-   "score_hit": null,
+   "score_hit": false,
    "score_top": [
     "1:0",
     "0:0",
     "0:1"
    ],
-   "score_top3_hit": null,
+   "score_top3_hit": false,
    "hhad_goal_line": -1.0,
    "hhad_pred": "负",
-   "hhad_actual": null,
-   "hhad_hit": null,
+   "hhad_actual": "胜",
+   "hhad_hit": false,
    "ttg_pred": "1",
-   "ttg_actual": null,
-   "ttg_hit": null,
+   "ttg_actual": "4",
+   "ttg_hit": false,
    "half_full_pred": "胜/胜",
-   "half_full_actual": null,
-   "half_full_hit": null,
+   "half_full_actual": "胜/胜",
+   "half_full_hit": true,
    "layer_preds": {
     "HAD_DC": "胜",
     "HAD_ELO": "胜",
     "HAD_ML": "胜"
    },
    "layer_hits": {
-    "HAD_DC": null,
-    "HAD_ELO": null,
-    "HAD_ML": null
+    "HAD_DC": true,
+    "HAD_ELO": true,
+    "HAD_ML": true
    },
-   "value_bets": []
+   "value_bets": [
+    {
+     "option": "负",
+     "odds": 2.45,
+     "model_prob": 0.45579837565641484,
+     "implied_prob": 0.3615028103737304,
+     "edge": 0.09429556528268446,
+     "ev": 0.11670602035821642,
+     "stake_pct": 0.02,
+     "market": "HHAD",
+     "hit": false,
+     "pnl_unit": -1.0,
+     "pnl_pct": -0.02
+    }
+   ]
   },
   {
    "match_num": "周日008",
@@ -123,48 +137,62 @@
    "away_cn": "哥德堡",
    "home_matched": "Gais",
    "away_matched": "IFK Goteborg",
-   "resolved": false,
-   "ft_home": null,
-   "ft_away": null,
-   "ht_home": null,
-   "ht_away": null,
-   "actual": null,
+   "resolved": true,
+   "ft_home": 1,
+   "ft_away": 1,
+   "ht_home": 1,
+   "ht_away": 0,
+   "actual": "平",
    "had": {
     "胜": 0.5521740697019256,
     "平": 0.23535051578669755,
     "负": 0.2124754145113768
    },
    "had_pred": "胜",
-   "had_hit": null,
+   "had_hit": false,
    "score_pred": "1:0",
-   "score_hit": null,
+   "score_hit": false,
    "score_top": [
     "1:0",
     "1:1",
     "0:0"
    ],
-   "score_top3_hit": null,
+   "score_top3_hit": true,
    "hhad_goal_line": -1.0,
    "hhad_pred": "负",
-   "hhad_actual": null,
-   "hhad_hit": null,
+   "hhad_actual": "负",
+   "hhad_hit": true,
    "ttg_pred": "1",
-   "ttg_actual": null,
-   "ttg_hit": null,
+   "ttg_actual": "2",
+   "ttg_hit": false,
    "half_full_pred": "胜/胜",
-   "half_full_actual": null,
-   "half_full_hit": null,
+   "half_full_actual": "胜/平",
+   "half_full_hit": false,
    "layer_preds": {
     "HAD_DC": "胜",
     "HAD_ELO": "胜",
     "HAD_ML": "胜"
    },
    "layer_hits": {
-    "HAD_DC": null,
-    "HAD_ELO": null,
-    "HAD_ML": null
+    "HAD_DC": false,
+    "HAD_ELO": false,
+    "HAD_ML": false
    },
-   "value_bets": []
+   "value_bets": [
+    {
+     "option": "胜",
+     "odds": 2.38,
+     "model_prob": 0.48010320183148864,
+     "implied_prob": 0.37199690002583313,
+     "edge": 0.1081063018056555,
+     "ev": 0.1426456203589428,
+     "stake_pct": 0.02,
+     "market": "HAD",
+     "hit": false,
+     "pnl_unit": -1.0,
+     "pnl_pct": -0.02
+    }
+   ]
   },
   {
    "match_num": "周日009",
@@ -175,48 +203,62 @@
    "away_cn": "库奥皮奥",
    "home_matched": "HJK Helsinki",
    "away_matched": "KuPS",
-   "resolved": false,
-   "ft_home": null,
-   "ft_away": null,
-   "ht_home": null,
-   "ht_away": null,
-   "actual": null,
+   "resolved": true,
+   "ft_home": 2,
+   "ft_away": 2,
+   "ht_home": 0,
+   "ht_away": 0,
+   "actual": "平",
    "had": {
     "胜": 0.43537803798018726,
     "平": 0.24742363156698238,
     "负": 0.3171983304528303
    },
    "had_pred": "胜",
-   "had_hit": null,
+   "had_hit": false,
    "score_pred": "1:0",
-   "score_hit": null,
+   "score_hit": false,
    "score_top": [
     "1:0",
     "0:1",
     "1:1"
    ],
-   "score_top3_hit": null,
+   "score_top3_hit": false,
    "hhad_goal_line": -1.0,
    "hhad_pred": "负",
-   "hhad_actual": null,
-   "hhad_hit": null,
+   "hhad_actual": "负",
+   "hhad_hit": true,
    "ttg_pred": "1",
-   "ttg_actual": null,
-   "ttg_hit": null,
+   "ttg_actual": "4",
+   "ttg_hit": false,
    "half_full_pred": "胜/胜",
-   "half_full_actual": null,
-   "half_full_hit": null,
+   "half_full_actual": "平/平",
+   "half_full_hit": false,
    "layer_preds": {
     "HAD_DC": "胜",
     "HAD_ELO": "胜",
     "HAD_ML": "胜"
    },
    "layer_hits": {
-    "HAD_DC": null,
-    "HAD_ELO": null,
-    "HAD_ML": null
+    "HAD_DC": false,
+    "HAD_ELO": false,
+    "HAD_ML": false
    },
-   "value_bets": []
+   "value_bets": [
+    {
+     "option": "负",
+     "odds": 1.85,
+     "model_prob": 0.5677805052824227,
+     "implied_prob": 0.4786572731040199,
+     "edge": 0.08912323217840284,
+     "ev": 0.05039393477248222,
+     "stake_pct": 0.014821745521318265,
+     "market": "HHAD",
+     "hit": true,
+     "pnl_unit": 0.8500000000000001,
+     "pnl_pct": 0.012598483693120527
+    }
+   ]
   },
   {
    "match_num": "周日011",
@@ -227,46 +269,46 @@
    "away_cn": "特罗姆瑟",
    "home_matched": "Viking",
    "away_matched": "Tromso",
-   "resolved": false,
-   "ft_home": null,
-   "ft_away": null,
-   "ht_home": null,
-   "ht_away": null,
-   "actual": null,
+   "resolved": true,
+   "ft_home": 3,
+   "ft_away": 1,
+   "ht_home": 3,
+   "ht_away": 0,
+   "actual": "胜",
    "had": {
     "胜": 0.6863954051721077,
     "平": 0.14334339426294937,
     "负": 0.17026120056494293
    },
    "had_pred": "胜",
-   "had_hit": null,
+   "had_hit": true,
    "score_pred": "1:0",
-   "score_hit": null,
+   "score_hit": false,
    "score_top": [
     "1:0",
     "2:1",
     "2:0"
    ],
-   "score_top3_hit": null,
+   "score_top3_hit": false,
    "hhad_goal_line": -1.0,
    "hhad_pred": "负",
-   "hhad_actual": null,
-   "hhad_hit": null,
+   "hhad_actual": "胜",
+   "hhad_hit": false,
    "ttg_pred": "3",
-   "ttg_actual": null,
-   "ttg_hit": null,
+   "ttg_actual": "4",
+   "ttg_hit": false,
    "half_full_pred": "胜/胜",
-   "half_full_actual": null,
-   "half_full_hit": null,
+   "half_full_actual": "胜/胜",
+   "half_full_hit": true,
    "layer_preds": {
     "HAD_DC": "胜",
     "HAD_ELO": "胜",
     "HAD_ML": "胜"
    },
    "layer_hits": {
-    "HAD_DC": null,
-    "HAD_ELO": null,
-    "HAD_ML": null
+    "HAD_DC": true,
+    "HAD_ELO": true,
+    "HAD_ML": true
    },
    "value_bets": []
   },
@@ -279,48 +321,88 @@
    "away_cn": "布伦特",
    "home_matched": "Hull",
    "away_matched": "Brentford",
-   "resolved": false,
-   "ft_home": null,
-   "ft_away": null,
-   "ht_home": null,
-   "ht_away": null,
-   "actual": null,
+   "resolved": true,
+   "ft_home": 1,
+   "ft_away": 1,
+   "ht_home": 1,
+   "ht_away": 0,
+   "actual": "平",
    "had": {
     "胜": 0.34525909634983043,
     "平": 0.3136500928096229,
     "负": 0.3410908108405467
    },
    "had_pred": "胜",
-   "had_hit": null,
+   "had_hit": false,
    "score_pred": "1:1",
-   "score_hit": null,
+   "score_hit": true,
    "score_top": [
     "1:1",
     "0:1",
     "1:0"
    ],
-   "score_top3_hit": null,
+   "score_top3_hit": true,
    "hhad_goal_line": 1.0,
    "hhad_pred": "胜",
-   "hhad_actual": null,
-   "hhad_hit": null,
+   "hhad_actual": "胜",
+   "hhad_hit": true,
    "ttg_pred": "2",
-   "ttg_actual": null,
-   "ttg_hit": null,
+   "ttg_actual": "2",
+   "ttg_hit": true,
    "half_full_pred": "胜/胜",
-   "half_full_actual": null,
-   "half_full_hit": null,
+   "half_full_actual": "胜/平",
+   "half_full_hit": false,
    "layer_preds": {
     "HAD_DC": "负",
     "HAD_ELO": "负",
     "HAD_ML": "平"
    },
    "layer_hits": {
-    "HAD_DC": null,
-    "HAD_ELO": null,
-    "HAD_ML": null
+    "HAD_DC": false,
+    "HAD_ELO": false,
+    "HAD_ML": true
    },
-   "value_bets": []
+   "value_bets": [
+    {
+     "option": "胜",
+     "odds": 2.3,
+     "model_prob": 0.5341907507950888,
+     "implied_prob": 0.38511713367018835,
+     "edge": 0.14907361712490047,
+     "ev": 0.22863872682870423,
+     "stake_pct": 0.02,
+     "market": "HHAD",
+     "hit": true,
+     "pnl_unit": 1.2999999999999998,
+     "pnl_pct": 0.025999999999999995
+    },
+    {
+     "option": "胜",
+     "odds": 5.2,
+     "model_prob": 0.2752967298383267,
+     "implied_prob": 0.17035318007107111,
+     "edge": 0.10494354976725559,
+     "ev": 0.43154299515929884,
+     "stake_pct": 0.02,
+     "market": "HAD",
+     "hit": false,
+     "pnl_unit": -1.0,
+     "pnl_pct": -0.02
+    },
+    {
+     "option": "平",
+     "odds": 4.05,
+     "model_prob": 0.2756800839691881,
+     "implied_prob": 0.2187250707085358,
+     "edge": 0.056955013260652276,
+     "ev": 0.11650434007521171,
+     "stake_pct": 0.009549536071738664,
+     "market": "HAD",
+     "hit": true,
+     "pnl_unit": 3.05,
+     "pnl_pct": 0.029126085018802924
+    }
+   ]
   },
   {
    "match_num": "周日013",
@@ -331,46 +413,46 @@
    "away_cn": "纽卡斯尔",
    "home_matched": "Crystal Palace",
    "away_matched": "Newcastle",
-   "resolved": false,
-   "ft_home": null,
-   "ft_away": null,
-   "ht_home": null,
-   "ht_away": null,
-   "actual": null,
+   "resolved": true,
+   "ft_home": 0,
+   "ft_away": 2,
+   "ht_home": 0,
+   "ht_away": 0,
+   "actual": "负",
    "had": {
     "胜": 0.4010120870270662,
     "平": 0.27367853195899816,
     "负": 0.32530938101393575
    },
    "had_pred": "胜",
-   "had_hit": null,
+   "had_hit": false,
    "score_pred": "1:1",
-   "score_hit": null,
+   "score_hit": false,
    "score_top": [
     "1:1",
     "2:1",
     "1:2"
    ],
-   "score_top3_hit": null,
+   "score_top3_hit": false,
    "hhad_goal_line": 1.0,
    "hhad_pred": "胜",
-   "hhad_actual": null,
-   "hhad_hit": null,
+   "hhad_actual": "负",
+   "hhad_hit": false,
    "ttg_pred": "3",
-   "ttg_actual": null,
-   "ttg_hit": null,
+   "ttg_actual": "2",
+   "ttg_hit": false,
    "half_full_pred": "胜/胜",
-   "half_full_actual": null,
-   "half_full_hit": null,
+   "half_full_actual": "平/负",
+   "half_full_hit": false,
    "layer_preds": {
     "HAD_DC": "胜",
     "HAD_ELO": "胜",
     "HAD_ML": "胜"
    },
    "layer_hits": {
-    "HAD_DC": null,
-    "HAD_ELO": null,
-    "HAD_ML": null
+    "HAD_DC": false,
+    "HAD_ELO": false,
+    "HAD_ML": false
    },
    "value_bets": []
   },
@@ -383,48 +465,62 @@
    "away_cn": "伯恩茅斯",
    "home_matched": "Man United",
    "away_matched": "Bournemouth",
-   "resolved": false,
-   "ft_home": null,
-   "ft_away": null,
-   "ht_home": null,
-   "ht_away": null,
-   "actual": null,
+   "resolved": true,
+   "ft_home": 0,
+   "ft_away": 3,
+   "ht_home": 0,
+   "ht_away": 2,
+   "actual": "负",
    "had": {
     "胜": 0.5337006382203904,
     "平": 0.2017406143051477,
     "负": 0.26455874747446184
    },
    "had_pred": "胜",
-   "had_hit": null,
+   "had_hit": false,
    "score_pred": "1:1",
-   "score_hit": null,
+   "score_hit": false,
    "score_top": [
     "1:1",
     "2:1",
     "1:0"
    ],
-   "score_top3_hit": null,
+   "score_top3_hit": false,
    "hhad_goal_line": -1.0,
    "hhad_pred": "负",
-   "hhad_actual": null,
-   "hhad_hit": null,
+   "hhad_actual": "负",
+   "hhad_hit": true,
    "ttg_pred": "3",
-   "ttg_actual": null,
-   "ttg_hit": null,
+   "ttg_actual": "3",
+   "ttg_hit": true,
    "half_full_pred": "胜/胜",
-   "half_full_actual": null,
-   "half_full_hit": null,
+   "half_full_actual": "负/负",
+   "half_full_hit": false,
    "layer_preds": {
     "HAD_DC": "胜",
     "HAD_ELO": "胜",
     "HAD_ML": "胜"
    },
    "layer_hits": {
-    "HAD_DC": null,
-    "HAD_ELO": null,
-    "HAD_ML": null
+    "HAD_DC": false,
+    "HAD_ELO": false,
+    "HAD_ML": false
    },
-   "value_bets": []
+   "value_bets": [
+    {
+     "option": "胜",
+     "odds": 2.08,
+     "model_prob": 0.4904859575164983,
+     "implied_prob": 0.4256639364606602,
+     "edge": 0.06482202105583812,
+     "ev": 0.020210791634316605,
+     "stake_pct": 0.00467842398942514,
+     "market": "HAD",
+     "hit": false,
+     "pnl_unit": -1.0,
+     "pnl_pct": -0.00467842398942514
+    }
+   ]
   },
   {
    "match_num": "周日015",
@@ -435,48 +531,62 @@
    "away_cn": "威尼斯",
    "home_matched": "Genoa",
    "away_matched": "Venezia",
-   "resolved": false,
-   "ft_home": null,
-   "ft_away": null,
-   "ht_home": null,
-   "ht_away": null,
-   "actual": null,
+   "resolved": true,
+   "ft_home": 1,
+   "ft_away": 0,
+   "ht_home": 1,
+   "ht_away": 0,
+   "actual": "胜",
    "had": {
     "胜": 0.512406053755828,
     "平": 0.3074920661043713,
     "负": 0.1801018801398006
    },
    "had_pred": "胜",
-   "had_hit": null,
+   "had_hit": true,
    "score_pred": "1:0",
-   "score_hit": null,
+   "score_hit": true,
    "score_top": [
     "1:0",
     "2:0",
     "2:1"
    ],
-   "score_top3_hit": null,
+   "score_top3_hit": true,
    "hhad_goal_line": -1.0,
    "hhad_pred": "负",
-   "hhad_actual": null,
-   "hhad_hit": null,
+   "hhad_actual": "平",
+   "hhad_hit": false,
    "ttg_pred": "2",
-   "ttg_actual": null,
-   "ttg_hit": null,
+   "ttg_actual": "1",
+   "ttg_hit": false,
    "half_full_pred": "胜/胜",
-   "half_full_actual": null,
-   "half_full_hit": null,
+   "half_full_actual": "胜/胜",
+   "half_full_hit": true,
    "layer_preds": {
     "HAD_DC": "胜",
     "HAD_ELO": "胜",
     "HAD_ML": "平"
    },
    "layer_hits": {
-    "HAD_DC": null,
-    "HAD_ELO": null,
-    "HAD_ML": null
+    "HAD_DC": true,
+    "HAD_ELO": true,
+    "HAD_ML": false
    },
-   "value_bets": []
+   "value_bets": [
+    {
+     "option": "胜",
+     "odds": 4.0,
+     "model_prob": 0.28792155994315444,
+     "implied_prob": 0.22142071894342122,
+     "edge": 0.06650084099973322,
+     "ev": 0.15168623977261775,
+     "stake_pct": 0.012640519981051479,
+     "market": "HHAD",
+     "hit": false,
+     "pnl_unit": -1.0,
+     "pnl_pct": -0.012640519981051479
+    }
+   ]
   },
   {
    "match_num": "周日016",
@@ -487,46 +597,46 @@
    "away_cn": "弗洛西诺",
    "home_matched": "Atalanta",
    "away_matched": "Frosinone",
-   "resolved": false,
-   "ft_home": null,
-   "ft_away": null,
-   "ht_home": null,
-   "ht_away": null,
-   "actual": null,
+   "resolved": true,
+   "ft_home": 4,
+   "ft_away": 4,
+   "ht_home": 3,
+   "ht_away": 2,
+   "actual": "平",
    "had": {
     "胜": 0.5988636710270145,
     "平": 0.18313727039491923,
     "负": 0.21799905857806623
    },
    "had_pred": "胜",
-   "had_hit": null,
+   "had_hit": false,
    "score_pred": "1:0",
-   "score_hit": null,
+   "score_hit": false,
    "score_top": [
     "1:0",
     "1:1",
     "2:1"
    ],
-   "score_top3_hit": null,
+   "score_top3_hit": false,
    "hhad_goal_line": -1.0,
    "hhad_pred": "负",
-   "hhad_actual": null,
-   "hhad_hit": null,
+   "hhad_actual": "负",
+   "hhad_hit": true,
    "ttg_pred": "2",
-   "ttg_actual": null,
-   "ttg_hit": null,
+   "ttg_actual": "7+",
+   "ttg_hit": false,
    "half_full_pred": "胜/胜",
-   "half_full_actual": null,
-   "half_full_hit": null,
+   "half_full_actual": "胜/平",
+   "half_full_hit": false,
    "layer_preds": {
     "HAD_DC": "胜",
     "HAD_ELO": "胜",
     "HAD_ML": "胜"
    },
    "layer_hits": {
-    "HAD_DC": null,
-    "HAD_ELO": null,
-    "HAD_ML": null
+    "HAD_DC": false,
+    "HAD_ELO": false,
+    "HAD_ML": false
    },
    "value_bets": []
   },
@@ -539,48 +649,75 @@
    "away_cn": "里尔",
    "home_matched": "Monaco",
    "away_matched": "Lille",
-   "resolved": false,
-   "ft_home": null,
-   "ft_away": null,
-   "ht_home": null,
-   "ht_away": null,
-   "actual": null,
+   "resolved": true,
+   "ft_home": 1,
+   "ft_away": 1,
+   "ht_home": 0,
+   "ht_away": 1,
+   "actual": "平",
    "had": {
     "胜": 0.36947377789569746,
     "平": 0.23759506585014917,
     "负": 0.3929311562541533
    },
    "had_pred": "负",
-   "had_hit": null,
+   "had_hit": false,
    "score_pred": "1:0",
-   "score_hit": null,
+   "score_hit": false,
    "score_top": [
     "1:0",
     "1:1",
     "0:1"
    ],
-   "score_top3_hit": null,
+   "score_top3_hit": true,
    "hhad_goal_line": -1.0,
    "hhad_pred": "负",
-   "hhad_actual": null,
-   "hhad_hit": null,
+   "hhad_actual": "负",
+   "hhad_hit": true,
    "ttg_pred": "2",
-   "ttg_actual": null,
-   "ttg_hit": null,
+   "ttg_actual": "2",
+   "ttg_hit": true,
    "half_full_pred": "胜/胜",
-   "half_full_actual": null,
-   "half_full_hit": null,
+   "half_full_actual": "负/平",
+   "half_full_hit": false,
    "layer_preds": {
     "HAD_DC": "胜",
     "HAD_ELO": "胜",
     "HAD_ML": "负"
    },
    "layer_hits": {
-    "HAD_DC": null,
-    "HAD_ELO": null,
-    "HAD_ML": null
+    "HAD_DC": false,
+    "HAD_ELO": false,
+    "HAD_ML": false
    },
-   "value_bets": []
+   "value_bets": [
+    {
+     "option": "负",
+     "odds": 3.9,
+     "model_prob": 0.32671167685399793,
+     "implied_prob": 0.2273824577537648,
+     "edge": 0.09932921910023312,
+     "ev": 0.27417553973059183,
+     "stake_pct": 0.02,
+     "market": "HAD",
+     "hit": false,
+     "pnl_unit": -1.0,
+     "pnl_pct": -0.02
+    },
+    {
+     "option": "负",
+     "odds": 1.85,
+     "model_prob": 0.5360498864156391,
+     "implied_prob": 0.47881926462972546,
+     "edge": 0.05723062178591365,
+     "ev": -0.00830771013106757,
+     "stake_pct": 0.0,
+     "market": "HHAD",
+     "hit": true,
+     "pnl_unit": 0.8500000000000001,
+     "pnl_pct": 0.0
+    }
+   ]
   },
   {
    "match_num": "周日018",
@@ -591,46 +728,46 @@
    "away_cn": "勒沃库森",
    "home_matched": "Hoffenheim",
    "away_matched": "Leverkusen",
-   "resolved": false,
-   "ft_home": null,
-   "ft_away": null,
-   "ht_home": null,
-   "ht_away": null,
-   "actual": null,
+   "resolved": true,
+   "ft_home": 3,
+   "ft_away": 0,
+   "ht_home": 0,
+   "ht_away": 0,
+   "actual": "胜",
    "had": {
     "胜": 0.2460177060591693,
     "平": 0.17465817948081133,
     "负": 0.5793241144600194
    },
    "had_pred": "负",
-   "had_hit": null,
+   "had_hit": false,
    "score_pred": "1:2",
-   "score_hit": null,
+   "score_hit": false,
    "score_top": [
     "1:2",
     "1:1",
     "2:2"
    ],
-   "score_top3_hit": null,
+   "score_top3_hit": false,
    "hhad_goal_line": 1.0,
    "hhad_pred": "胜",
-   "hhad_actual": null,
-   "hhad_hit": null,
+   "hhad_actual": "胜",
+   "hhad_hit": true,
    "ttg_pred": "3",
-   "ttg_actual": null,
-   "ttg_hit": null,
+   "ttg_actual": "3",
+   "ttg_hit": true,
    "half_full_pred": "负/负",
-   "half_full_actual": null,
-   "half_full_hit": null,
+   "half_full_actual": "平/胜",
+   "half_full_hit": false,
    "layer_preds": {
     "HAD_DC": "负",
     "HAD_ELO": "负",
     "HAD_ML": "负"
    },
    "layer_hits": {
-    "HAD_DC": null,
-    "HAD_ELO": null,
-    "HAD_ML": null
+    "HAD_DC": false,
+    "HAD_ELO": false,
+    "HAD_ML": false
    },
    "value_bets": []
   },
@@ -643,48 +780,62 @@
    "away_cn": "贝蒂斯",
    "home_matched": "Celta",
    "away_matched": "Betis",
-   "resolved": false,
-   "ft_home": null,
-   "ft_away": null,
-   "ht_home": null,
-   "ht_away": null,
-   "actual": null,
+   "resolved": true,
+   "ft_home": 0,
+   "ft_away": 0,
+   "ht_home": 0,
+   "ht_away": 0,
+   "actual": "平",
    "had": {
     "胜": 0.3191388431765677,
     "平": 0.22049477190289749,
     "负": 0.46036638492053483
    },
    "had_pred": "负",
-   "had_hit": null,
+   "had_hit": false,
    "score_pred": "1:1",
-   "score_hit": null,
+   "score_hit": false,
    "score_top": [
     "1:1",
     "1:0",
     "0:1"
    ],
-   "score_top3_hit": null,
+   "score_top3_hit": false,
    "hhad_goal_line": 1.0,
    "hhad_pred": "胜",
-   "hhad_actual": null,
-   "hhad_hit": null,
+   "hhad_actual": "胜",
+   "hhad_hit": true,
    "ttg_pred": "2",
-   "ttg_actual": null,
-   "ttg_hit": null,
+   "ttg_actual": "0",
+   "ttg_hit": false,
    "half_full_pred": "胜/胜",
-   "half_full_actual": null,
-   "half_full_hit": null,
+   "half_full_actual": "平/平",
+   "half_full_hit": false,
    "layer_preds": {
     "HAD_DC": "胜",
     "HAD_ELO": "负",
     "HAD_ML": "负"
    },
    "layer_hits": {
-    "HAD_DC": null,
-    "HAD_ELO": null,
-    "HAD_ML": null
+    "HAD_DC": false,
+    "HAD_ELO": false,
+    "HAD_ML": false
    },
-   "value_bets": []
+   "value_bets": [
+    {
+     "option": "胜",
+     "odds": 1.68,
+     "model_prob": 0.6073158014376215,
+     "implied_prob": 0.5270270270270271,
+     "edge": 0.08028877441059445,
+     "ev": 0.020290546415204114,
+     "stake_pct": 0.0074597597114721215,
+     "market": "HHAD",
+     "hit": true,
+     "pnl_unit": 0.6799999999999999,
+     "pnl_pct": 0.005072636603801042
+    }
+   ]
   },
   {
    "match_num": "周日020",
@@ -695,46 +846,46 @@
    "away_cn": "斯特拉斯",
    "home_matched": "Rennes",
    "away_matched": "Strasbourg",
-   "resolved": false,
-   "ft_home": null,
-   "ft_away": null,
-   "ht_home": null,
-   "ht_away": null,
-   "actual": null,
+   "resolved": true,
+   "ft_home": 3,
+   "ft_away": 0,
+   "ht_home": 2,
+   "ht_away": 0,
+   "actual": "胜",
    "had": {
     "胜": 0.6035992807014224,
     "平": 0.16636160626959304,
     "负": 0.23003911302898455
    },
    "had_pred": "胜",
-   "had_hit": null,
+   "had_hit": true,
    "score_pred": "2:1",
-   "score_hit": null,
+   "score_hit": false,
    "score_top": [
     "2:1",
     "1:1",
     "2:2"
    ],
-   "score_top3_hit": null,
+   "score_top3_hit": false,
    "hhad_goal_line": -1.0,
    "hhad_pred": "负",
-   "hhad_actual": null,
-   "hhad_hit": null,
+   "hhad_actual": "胜",
+   "hhad_hit": false,
    "ttg_pred": "3",
-   "ttg_actual": null,
-   "ttg_hit": null,
+   "ttg_actual": "3",
+   "ttg_hit": true,
    "half_full_pred": "胜/胜",
-   "half_full_actual": null,
-   "half_full_hit": null,
+   "half_full_actual": "胜/胜",
+   "half_full_hit": true,
    "layer_preds": {
     "HAD_DC": "胜",
     "HAD_ELO": "胜",
     "HAD_ML": "胜"
    },
    "layer_hits": {
-    "HAD_DC": null,
-    "HAD_ELO": null,
-    "HAD_ML": null
+    "HAD_DC": true,
+    "HAD_ELO": true,
+    "HAD_ML": true
    },
    "value_bets": []
   },
@@ -747,46 +898,46 @@
    "away_cn": "利兹联",
    "home_matched": "Sunderland",
    "away_matched": "Leeds",
-   "resolved": false,
-   "ft_home": null,
-   "ft_away": null,
-   "ht_home": null,
-   "ht_away": null,
-   "actual": null,
+   "resolved": true,
+   "ft_home": 0,
+   "ft_away": 0,
+   "ht_home": 0,
+   "ht_away": 0,
+   "actual": "平",
    "had": {
     "胜": 0.3479125667638413,
     "平": 0.25767108429527047,
     "负": 0.3944163489408883
    },
    "had_pred": "负",
-   "had_hit": null,
+   "had_hit": false,
    "score_pred": "1:1",
-   "score_hit": null,
+   "score_hit": false,
    "score_top": [
     "1:1",
     "0:1",
     "1:0"
    ],
-   "score_top3_hit": null,
+   "score_top3_hit": false,
    "hhad_goal_line": 1.0,
    "hhad_pred": "胜",
-   "hhad_actual": null,
-   "hhad_hit": null,
+   "hhad_actual": "胜",
+   "hhad_hit": true,
    "ttg_pred": "2",
-   "ttg_actual": null,
-   "ttg_hit": null,
+   "ttg_actual": "0",
+   "ttg_hit": false,
    "half_full_pred": "负/负",
-   "half_full_actual": null,
-   "half_full_hit": null,
+   "half_full_actual": "平/平",
+   "half_full_hit": false,
    "layer_preds": {
     "HAD_DC": "负",
     "HAD_ELO": "胜",
     "HAD_ML": "负"
    },
    "layer_hits": {
-    "HAD_DC": null,
-    "HAD_ELO": null,
-    "HAD_ML": null
+    "HAD_DC": false,
+    "HAD_ELO": false,
+    "HAD_ML": false
    },
    "value_bets": []
   },
@@ -799,46 +950,46 @@
    "away_cn": "拜仁",
    "home_matched": "Freiburg",
    "away_matched": "Bayern Munich",
-   "resolved": false,
-   "ft_home": null,
-   "ft_away": null,
-   "ht_home": null,
-   "ht_away": null,
-   "actual": null,
+   "resolved": true,
+   "ft_home": 1,
+   "ft_away": 3,
+   "ht_home": 0,
+   "ht_away": 2,
+   "actual": "负",
    "had": {
     "胜": 0.14301526971933784,
     "平": 0.17485837236315907,
     "负": 0.6821263579175031
    },
    "had_pred": "负",
-   "had_hit": null,
+   "had_hit": true,
    "score_pred": "1:2",
-   "score_hit": null,
+   "score_hit": false,
    "score_top": [
     "1:2",
     "1:3",
     "1:1"
    ],
-   "score_top3_hit": null,
+   "score_top3_hit": true,
    "hhad_goal_line": 2.0,
    "hhad_pred": "胜",
-   "hhad_actual": null,
-   "hhad_hit": null,
+   "hhad_actual": "平",
+   "hhad_hit": false,
    "ttg_pred": "3",
-   "ttg_actual": null,
-   "ttg_hit": null,
+   "ttg_actual": "4",
+   "ttg_hit": false,
    "half_full_pred": "负/负",
-   "half_full_actual": null,
-   "half_full_hit": null,
+   "half_full_actual": "负/负",
+   "half_full_hit": true,
    "layer_preds": {
     "HAD_DC": "负",
     "HAD_ELO": "负",
     "HAD_ML": "负"
    },
    "layer_hits": {
-    "HAD_DC": null,
-    "HAD_ELO": null,
-    "HAD_ML": null
+    "HAD_DC": true,
+    "HAD_ELO": true,
+    "HAD_ML": true
    },
    "value_bets": []
   },
@@ -851,46 +1002,46 @@
    "away_cn": "尤文图斯",
    "home_matched": "Lecce",
    "away_matched": "Juventus",
-   "resolved": false,
-   "ft_home": null,
-   "ft_away": null,
-   "ht_home": null,
-   "ht_away": null,
-   "actual": null,
+   "resolved": true,
+   "ft_home": 0,
+   "ft_away": 2,
+   "ht_home": 0,
+   "ht_away": 2,
+   "actual": "负",
    "had": {
     "胜": 0.13863622186474905,
     "平": 0.2824761283773593,
     "负": 0.5788876497578918
    },
    "had_pred": "负",
-   "had_hit": null,
+   "had_hit": true,
    "score_pred": "0:1",
-   "score_hit": null,
+   "score_hit": false,
    "score_top": [
     "0:1",
     "0:2",
     "1:1"
    ],
-   "score_top3_hit": null,
+   "score_top3_hit": true,
    "hhad_goal_line": 1.0,
    "hhad_pred": "负",
-   "hhad_actual": null,
-   "hhad_hit": null,
+   "hhad_actual": "负",
+   "hhad_hit": true,
    "ttg_pred": "1",
-   "ttg_actual": null,
-   "ttg_hit": null,
+   "ttg_actual": "2",
+   "ttg_hit": false,
    "half_full_pred": "负/负",
-   "half_full_actual": null,
-   "half_full_hit": null,
+   "half_full_actual": "负/负",
+   "half_full_hit": true,
    "layer_preds": {
     "HAD_DC": "负",
     "HAD_ELO": "负",
     "HAD_ML": "平"
    },
    "layer_hits": {
-    "HAD_DC": null,
-    "HAD_ELO": null,
-    "HAD_ML": null
+    "HAD_DC": true,
+    "HAD_ELO": true,
+    "HAD_ML": false
    },
    "value_bets": []
   },
@@ -903,48 +1054,62 @@
    "away_cn": "莱万特",
    "home_matched": "Sociedad",
    "away_matched": "Levante",
-   "resolved": false,
-   "ft_home": null,
-   "ft_away": null,
-   "ht_home": null,
-   "ht_away": null,
-   "actual": null,
+   "resolved": true,
+   "ft_home": 2,
+   "ft_away": 1,
+   "ht_home": 2,
+   "ht_away": 1,
+   "actual": "胜",
    "had": {
     "胜": 0.5795493526429252,
     "平": 0.20959010168031508,
     "负": 0.2108605456767597
    },
    "had_pred": "胜",
-   "had_hit": null,
+   "had_hit": true,
    "score_pred": "2:1",
-   "score_hit": null,
+   "score_hit": true,
    "score_top": [
     "2:1",
     "1:1",
     "1:0"
    ],
-   "score_top3_hit": null,
+   "score_top3_hit": true,
    "hhad_goal_line": -1.0,
    "hhad_pred": "负",
-   "hhad_actual": null,
-   "hhad_hit": null,
+   "hhad_actual": "平",
+   "hhad_hit": false,
    "ttg_pred": "3",
-   "ttg_actual": null,
-   "ttg_hit": null,
+   "ttg_actual": "3",
+   "ttg_hit": true,
    "half_full_pred": "胜/胜",
-   "half_full_actual": null,
-   "half_full_hit": null,
+   "half_full_actual": "胜/胜",
+   "half_full_hit": true,
    "layer_preds": {
     "HAD_DC": "胜",
     "HAD_ELO": "胜",
     "HAD_ML": "胜"
    },
    "layer_hits": {
-    "HAD_DC": null,
-    "HAD_ELO": null,
-    "HAD_ML": null
+    "HAD_DC": true,
+    "HAD_ELO": true,
+    "HAD_ML": true
    },
-   "value_bets": []
+   "value_bets": [
+    {
+     "option": "负",
+     "odds": 2.54,
+     "model_prob": 0.40958079298323025,
+     "implied_prob": 0.34850393413293895,
+     "edge": 0.06107685885029129,
+     "ev": 0.04033521417740493,
+     "stake_pct": 0.0065479243794488344,
+     "market": "HHAD",
+     "hit": false,
+     "pnl_unit": -1.0,
+     "pnl_pct": -0.0065479243794488344
+    }
+   ]
   },
   {
    "match_num": "周日026",
@@ -955,46 +1120,46 @@
    "away_cn": "AC米兰",
    "home_matched": "Udinese",
    "away_matched": "Milan",
-   "resolved": false,
-   "ft_home": null,
-   "ft_away": null,
-   "ht_home": null,
-   "ht_away": null,
-   "actual": null,
+   "resolved": true,
+   "ft_home": 0,
+   "ft_away": 2,
+   "ht_home": 0,
+   "ht_away": 1,
+   "actual": "负",
    "had": {
     "胜": 0.22940355887297875,
     "平": 0.25996677895931364,
     "负": 0.5106296621677077
    },
    "had_pred": "负",
-   "had_hit": null,
+   "had_hit": true,
    "score_pred": "0:1",
-   "score_hit": null,
+   "score_hit": false,
    "score_top": [
     "0:1",
     "1:1",
     "1:2"
    ],
-   "score_top3_hit": null,
+   "score_top3_hit": false,
    "hhad_goal_line": 1.0,
    "hhad_pred": "胜",
-   "hhad_actual": null,
-   "hhad_hit": null,
+   "hhad_actual": "负",
+   "hhad_hit": false,
    "ttg_pred": "2",
-   "ttg_actual": null,
-   "ttg_hit": null,
+   "ttg_actual": "2",
+   "ttg_hit": true,
    "half_full_pred": "负/负",
-   "half_full_actual": null,
-   "half_full_hit": null,
+   "half_full_actual": "负/负",
+   "half_full_hit": true,
    "layer_preds": {
     "HAD_DC": "负",
     "HAD_ELO": "负",
     "HAD_ML": "负"
    },
    "layer_hits": {
-    "HAD_DC": null,
-    "HAD_ELO": null,
-    "HAD_ML": null
+    "HAD_DC": true,
+    "HAD_ELO": true,
+    "HAD_ML": true
    },
    "value_bets": []
   },
@@ -1007,46 +1172,46 @@
    "away_cn": "皇马",
    "home_matched": "Barcelona",
    "away_matched": "Real Madrid",
-   "resolved": false,
-   "ft_home": null,
-   "ft_away": null,
-   "ht_home": null,
-   "ht_away": null,
-   "actual": null,
+   "resolved": true,
+   "ft_home": 1,
+   "ft_away": 2,
+   "ht_home": 0,
+   "ht_away": 1,
+   "actual": "负",
    "had": {
     "胜": 0.6520511432822769,
     "平": 0.16249791263571386,
     "负": 0.18545094408200932
    },
    "had_pred": "胜",
-   "had_hit": null,
+   "had_hit": false,
    "score_pred": "2:1",
-   "score_hit": null,
+   "score_hit": false,
    "score_top": [
     "2:1",
     "1:1",
     "1:0"
    ],
-   "score_top3_hit": null,
+   "score_top3_hit": false,
    "hhad_goal_line": -1.0,
    "hhad_pred": "负",
-   "hhad_actual": null,
-   "hhad_hit": null,
+   "hhad_actual": "负",
+   "hhad_hit": true,
    "ttg_pred": "3",
-   "ttg_actual": null,
-   "ttg_hit": null,
+   "ttg_actual": "3",
+   "ttg_hit": true,
    "half_full_pred": "胜/胜",
-   "half_full_actual": null,
-   "half_full_hit": null,
+   "half_full_actual": "负/负",
+   "half_full_hit": false,
    "layer_preds": {
     "HAD_DC": "胜",
     "HAD_ELO": "胜",
     "HAD_ML": "胜"
    },
    "layer_hits": {
-    "HAD_DC": null,
-    "HAD_ELO": null,
-    "HAD_ML": null
+    "HAD_DC": false,
+    "HAD_ELO": false,
+    "HAD_ML": false
    },
    "value_bets": []
   }

@@ -1,0 +1,381 @@
+{
+ "generated_at": "2026-10-27T12:32:55",
+ "stats": {
+  "total": 5,
+  "resolved": 5,
+  "unresolved": 0,
+  "had_accuracy": 0.6,
+  "score_accuracy": 0.0,
+  "log_loss": 0.9264617256970615,
+  "markets": {
+   "HAD": {
+    "n": 5,
+    "hits": 3,
+    "accuracy": 0.6
+   },
+   "HHAD": {
+    "n": 5,
+    "hits": 2,
+    "accuracy": 0.4
+   },
+   "SCORE_TOP1": {
+    "n": 5,
+    "hits": 0,
+    "accuracy": 0.0
+   },
+   "SCORE_TOP3": {
+    "n": 5,
+    "hits": 0,
+    "accuracy": 0.0
+   },
+   "TOTAL_GOALS": {
+    "n": 5,
+    "hits": 1,
+    "accuracy": 0.2
+   },
+   "HALF_FULL": {
+    "n": 5,
+    "hits": 3,
+    "accuracy": 0.6
+   },
+   "HAD_DC": {
+    "n": 0,
+    "hits": 0,
+    "accuracy": NaN
+   },
+   "HAD_ELO": {
+    "n": 0,
+    "hits": 0,
+    "accuracy": NaN
+   },
+   "HAD_ML": {
+    "n": 0,
+    "hits": 0,
+    "accuracy": NaN
+   }
+  },
+  "n_bets": 7,
+  "bet_hit_rate": 0.42857142857142855,
+  "pnl_unit": 0.17999999999999994,
+  "pnl_pct": 0.014936048554423681,
+  "roi_unit": 0.025714285714285707,
+  "staked_pct": 0.12866395144557632
+ },
+ "matches": [
+  {
+   "match_num": "周三005",
+   "match_date": "2026-10-22",
+   "league": "欧冠",
+   "div": "UCL",
+   "home_cn": "里尔",
+   "away_cn": "加拉塔萨",
+   "home_matched": "Lille",
+   "away_matched": "Galatasaray",
+   "resolved": true,
+   "ft_home": 2,
+   "ft_away": 4,
+   "ht_home": 2,
+   "ht_away": 2,
+   "actual": "负",
+   "had": {
+    "胜": 0.6262105731785731,
+    "平": 0.1878477980114475,
+    "负": 0.1859416288099795
+   },
+   "had_pred": "胜",
+   "had_hit": false,
+   "score_pred": "1:0",
+   "score_hit": false,
+   "score_top": [
+    "1:0",
+    "2:1",
+    "2:0"
+   ],
+   "score_top3_hit": false,
+   "hhad_goal_line": -1.0,
+   "hhad_pred": "胜",
+   "hhad_actual": "负",
+   "hhad_hit": false,
+   "ttg_pred": "3",
+   "ttg_actual": "6",
+   "ttg_hit": false,
+   "half_full_pred": "胜/胜",
+   "half_full_actual": "平/负",
+   "half_full_hit": false,
+   "layer_preds": {},
+   "layer_hits": {},
+   "value_bets": [
+    {
+     "option": "胜",
+     "odds": 1.81,
+     "model_prob": 0.6262105731785731,
+     "implied_prob": 0.48914698775609655,
+     "edge": 0.13706358542247654,
+     "ev": 0.1334411374532174,
+     "stake_pct": 0.02,
+     "market": "HAD",
+     "hit": false,
+     "pnl_unit": -1.0,
+     "pnl_pct": -0.02
+    },
+    {
+     "option": "胜",
+     "odds": 3.48,
+     "model_prob": 0.37398301099639375,
+     "implied_prob": 0.2545104359105381,
+     "edge": 0.11947257508585563,
+     "ev": 0.30146087826745016,
+     "stake_pct": 0.02,
+     "market": "HHAD",
+     "hit": false,
+     "pnl_unit": -1.0,
+     "pnl_pct": -0.02
+    }
+   ]
+  },
+  {
+   "match_num": "周三006",
+   "match_date": "2026-10-22",
+   "league": "西甲",
+   "div": "SP1",
+   "home_cn": "莱万特",
+   "away_cn": "毕尔巴鄂",
+   "home_matched": "Levante",
+   "away_matched": "Ath Bilbao",
+   "resolved": true,
+   "ft_home": 3,
+   "ft_away": 1,
+   "ht_home": 2,
+   "ht_away": 0,
+   "actual": "胜",
+   "had": {
+    "胜": 0.46894320541609447,
+    "平": 0.2282339324613037,
+    "负": 0.302822862122602
+   },
+   "had_pred": "胜",
+   "had_hit": true,
+   "score_pred": "1:0",
+   "score_hit": false,
+   "score_top": [
+    "1:0",
+    "1:1",
+    "2:1"
+   ],
+   "score_top3_hit": false,
+   "hhad_goal_line": 1.0,
+   "hhad_pred": "胜",
+   "hhad_actual": "胜",
+   "hhad_hit": true,
+   "ttg_pred": "2",
+   "ttg_actual": "4",
+   "ttg_hit": false,
+   "half_full_pred": "胜/胜",
+   "half_full_actual": "胜/胜",
+   "half_full_hit": true,
+   "layer_preds": {},
+   "layer_hits": {},
+   "value_bets": [
+    {
+     "option": "胜",
+     "odds": 3.8,
+     "model_prob": 0.46894320541609447,
+     "implied_prob": 0.23298424077374394,
+     "edge": 0.23595896464235053,
+     "ev": 0.7819841805811589,
+     "stake_pct": 0.02,
+     "market": "HAD",
+     "hit": true,
+     "pnl_unit": 2.8,
+     "pnl_pct": 0.055999999999999994
+    },
+    {
+     "option": "胜",
+     "odds": 1.78,
+     "model_prob": 0.6971771378773984,
+     "implied_prob": 0.4974398238981672,
+     "edge": 0.19973731397923122,
+     "ev": 0.24097530542176915,
+     "stake_pct": 0.02,
+     "market": "HHAD",
+     "hit": true,
+     "pnl_unit": 0.78,
+     "pnl_pct": 0.015600000000000001
+    }
+   ]
+  },
+  {
+   "match_num": "周三007",
+   "match_date": "2026-10-22",
+   "league": "欧冠",
+   "div": "UCL",
+   "home_cn": "皇马",
+   "away_cn": "莱红牛",
+   "home_matched": "Real Madrid",
+   "away_matched": "RB Leipzig",
+   "resolved": true,
+   "ft_home": 4,
+   "ft_away": 1,
+   "ht_home": 1,
+   "ht_away": 0,
+   "actual": "胜",
+   "had": {
+    "胜": 0.771213218852862,
+    "平": 0.12303893217382018,
+    "负": 0.10574784897331771
+   },
+   "had_pred": "胜",
+   "had_hit": true,
+   "score_pred": "3:1",
+   "score_hit": false,
+   "score_top": [
+    "3:1",
+    "2:1",
+    "3:0"
+   ],
+   "score_top3_hit": false,
+   "hhad_goal_line": -2.0,
+   "hhad_pred": "负",
+   "hhad_actual": "胜",
+   "hhad_hit": false,
+   "ttg_pred": "4",
+   "ttg_actual": "5",
+   "ttg_hit": false,
+   "half_full_pred": "胜/胜",
+   "half_full_actual": "胜/胜",
+   "half_full_hit": true,
+   "layer_preds": {},
+   "layer_hits": {},
+   "value_bets": [
+    {
+     "option": "负",
+     "odds": 2.44,
+     "model_prob": 0.4302886722649671,
+     "implied_prob": 0.3628137133816063,
+     "edge": 0.0674749588833608,
+     "ev": 0.04990436032651968,
+     "stake_pct": 0.008663951445576315,
+     "market": "HHAD",
+     "hit": false,
+     "pnl_unit": -1.0,
+     "pnl_pct": -0.008663951445576315
+    }
+   ]
+  },
+  {
+   "match_num": "周三010",
+   "match_date": "2026-10-22",
+   "league": "欧冠",
+   "div": "UCL",
+   "home_cn": "拜仁",
+   "away_cn": "阿森纳",
+   "home_matched": "Bayern Munich",
+   "away_matched": "Arsenal",
+   "resolved": true,
+   "ft_home": 2,
+   "ft_away": 2,
+   "ht_home": 1,
+   "ht_away": 1,
+   "actual": "平",
+   "had": {
+    "胜": 0.32891566154375274,
+    "平": 0.25454993295411654,
+    "负": 0.41653440550213067
+   },
+   "had_pred": "负",
+   "had_hit": false,
+   "score_pred": "0:1",
+   "score_hit": false,
+   "score_top": [
+    "0:1",
+    "1:1",
+    "1:0"
+   ],
+   "score_top3_hit": false,
+   "hhad_goal_line": -1.0,
+   "hhad_pred": "负",
+   "hhad_actual": "负",
+   "hhad_hit": true,
+   "ttg_pred": "2",
+   "ttg_actual": "4",
+   "ttg_hit": false,
+   "half_full_pred": "负/负",
+   "half_full_actual": "平/平",
+   "half_full_hit": false,
+   "layer_preds": {},
+   "layer_hits": {},
+   "value_bets": [
+    {
+     "option": "负",
+     "odds": 1.6,
+     "model_prob": 0.6710843384562475,
+     "implied_prob": 0.553213909378293,
+     "edge": 0.11787042907795453,
+     "ev": 0.07373494152999593,
+     "stake_pct": 0.02,
+     "market": "HHAD",
+     "hit": true,
+     "pnl_unit": 0.6000000000000001,
+     "pnl_pct": 0.012000000000000002
+    },
+    {
+     "option": "负",
+     "odds": 2.92,
+     "model_prob": 0.41653440550213067,
+     "implied_prob": 0.3032832987661264,
+     "edge": 0.11325110673600425,
+     "ev": 0.21628046406622148,
+     "stake_pct": 0.02,
+     "market": "HAD",
+     "hit": false,
+     "pnl_unit": -1.0,
+     "pnl_pct": -0.02
+    }
+   ]
+  },
+  {
+   "match_num": "周三012",
+   "match_date": "2026-10-22",
+   "league": "欧冠",
+   "div": "UCL",
+   "home_cn": "布鲁日",
+   "away_cn": "朗斯",
+   "home_matched": "Club Brugge",
+   "away_matched": "Lens",
+   "resolved": true,
+   "ft_home": 3,
+   "ft_away": 0,
+   "ht_home": 1,
+   "ht_away": 0,
+   "actual": "胜",
+   "had": {
+    "胜": 0.5685512171761257,
+    "平": 0.20334485791960308,
+    "负": 0.22810392490427134
+   },
+   "had_pred": "胜",
+   "had_hit": true,
+   "score_pred": "1:0",
+   "score_hit": false,
+   "score_top": [
+    "1:0",
+    "2:1",
+    "1:1"
+   ],
+   "score_top3_hit": false,
+   "hhad_goal_line": -1.0,
+   "hhad_pred": "负",
+   "hhad_actual": "胜",
+   "hhad_hit": false,
+   "ttg_pred": "3",
+   "ttg_actual": "3",
+   "ttg_hit": true,
+   "half_full_pred": "胜/胜",
+   "half_full_actual": "胜/胜",
+   "half_full_hit": true,
+   "layer_preds": {},
+   "layer_hits": {},
+   "value_bets": []
+  }
+ ]
+}

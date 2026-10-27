@@ -93,8 +93,9 @@ git push
 
 ### 赛后 / 次日
 
-1. 编辑 `data/manual_results/results.csv`，填全场 + 半场比分；
-2. 对账并导出：
+1. 优先自动抓取竞彩官方赛果（见 5.1）：`python scripts/fetch_results.py --date 20261027`；
+2. 自动源缺失的场次再手动编辑 `data/manual_results/results.csv`，填全场 + 半场比分；
+3. 对账并导出：
 
 ```powershell
 python -m src.cli reconcile --date 20261027 --manual data/manual_results/results.csv
@@ -134,6 +135,42 @@ date,match_num,league,home_cn,away_cn,ft_home,ft_away,ht_home,ht_away
 - `ht_home/ht_away`：半全场；缺失时半全场显示“无法结算”，不判负。
 - 唯一键：`date + match_num`，不要只用 `match_num`（每周都会重复）。
 - 只有 `predicted` 场次进入命中率；被跳过的比赛即使有赛果也不统计。
+
+## 5.1 自动抓取竞彩官方赛果
+
+`scripts/fetch_results.py` 会调用竞彩官方 JSON 接口，把全场/半场比分写入
+`data/manual_results/results.csv`：
+
+```powershell
+# 单日
+python scripts/fetch_results.py --date 20261025
+
+# 日期区间
+python scripts/fetch_results.py --start 20261018 --end 20261025
+
+# 所有已有预测报告的日期
+python scripts/fetch_results.py --from-reports
+
+# 只看会改什么，不写文件
+python scripts/fetch_results.py --date 20261025 --dry-run
+```
+
+默认行为：
+
+- 只补缺失场次；已有手动比分不覆盖；
+- 需要覆盖时加 `--overwrite`；
+- 接口返回的原始 JSON 保存到 `data/raw/jingcai_results/`（不提交）；
+- 未开赛/延期/取消的场次会跳过；
+- 半场比分缺失时留空，半全场显示“无法结算”。
+
+抓完后仍然走对账：
+
+```powershell
+python -m src.cli reconcile --date 20261025 --manual data/manual_results/results.csv
+python scripts/export_web.py --check
+```
+
+`settle_results.ps1` 已经内置这一步；不想联网抓赛果时加 `-SkipResultsFetch`。
 
 ## 6. GitHub Pages 部署
 

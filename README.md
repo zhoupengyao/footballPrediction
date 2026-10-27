@@ -130,6 +130,7 @@ python tests/test_backtest.py
 python tests/test_cli.py
 python tests/test_europa.py
 python tests/test_export_web.py
+python tests/test_jingcai_results.py
 python tests/test_jingcai_snapshot.py
 python tests/test_ml.py
 python tests/test_model_enhance.py

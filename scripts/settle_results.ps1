@@ -1,6 +1,7 @@
 ﻿param(
     [string]$Date = "",
     [switch]$SkipFetch,
+    [switch]$SkipResultsFetch,
     [switch]$NoPush,
     [string]$Message = ""
 )
@@ -14,6 +15,14 @@ if (-not $Date) {
     if (-not $latest) { throw "没有预测报告，请先运行 predict" }
     $Date = $latest.BaseName -replace "^predict_", ""
     Write-Host "未指定 -Date，使用最新预测日期：$Date" -ForegroundColor Yellow
+}
+
+if (-not $SkipResultsFetch) {
+    Write-Host "==> 抓取竞彩官方赛果" -ForegroundColor Cyan
+    python scripts/fetch_results.py --date $Date
+    if ($LASTEXITCODE -ne 0) {
+        Write-Warning "竞彩赛果抓取失败，继续使用本地/手动赛果。"
+    }
 }
 
 if (-not $SkipFetch) {

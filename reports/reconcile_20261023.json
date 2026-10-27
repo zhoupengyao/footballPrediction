@@ -1,0 +1,310 @@
+{
+ "generated_at": "2026-10-27T12:33:00",
+ "stats": {
+  "total": 4,
+  "resolved": 4,
+  "unresolved": 0,
+  "had_accuracy": 0.25,
+  "score_accuracy": 0.0,
+  "log_loss": 1.2377711040159998,
+  "markets": {
+   "HAD": {
+    "n": 4,
+    "hits": 1,
+    "accuracy": 0.25
+   },
+   "HHAD": {
+    "n": 4,
+    "hits": 1,
+    "accuracy": 0.25
+   },
+   "SCORE_TOP1": {
+    "n": 4,
+    "hits": 0,
+    "accuracy": 0.0
+   },
+   "SCORE_TOP3": {
+    "n": 4,
+    "hits": 0,
+    "accuracy": 0.0
+   },
+   "TOTAL_GOALS": {
+    "n": 4,
+    "hits": 1,
+    "accuracy": 0.25
+   },
+   "HALF_FULL": {
+    "n": 4,
+    "hits": 1,
+    "accuracy": 0.25
+   },
+   "HAD_DC": {
+    "n": 0,
+    "hits": 0,
+    "accuracy": NaN
+   },
+   "HAD_ELO": {
+    "n": 0,
+    "hits": 0,
+    "accuracy": NaN
+   },
+   "HAD_ML": {
+    "n": 0,
+    "hits": 0,
+    "accuracy": NaN
+   }
+  },
+  "n_bets": 5,
+  "bet_hit_rate": 0.4,
+  "pnl_unit": -0.2100000000000002,
+  "pnl_pct": -0.020772213633917833,
+  "roi_unit": -0.04200000000000004,
+  "staked_pct": 0.09127778229793798
+ },
+ "matches": [
+  {
+   "match_num": "周五006",
+   "match_date": "2026-10-24",
+   "league": "德甲",
+   "div": "D1",
+   "home_cn": "斯图加特",
+   "away_cn": "门兴",
+   "home_matched": "Stuttgart",
+   "away_matched": "M'gladbach",
+   "resolved": true,
+   "ft_home": 2,
+   "ft_away": 3,
+   "ht_home": 1,
+   "ht_away": 1,
+   "actual": "负",
+   "had": {
+    "胜": 0.6256168463916112,
+    "平": 0.1920825025582129,
+    "负": 0.1823006510501763
+   },
+   "had_pred": "胜",
+   "had_hit": false,
+   "score_pred": "2:1",
+   "score_hit": false,
+   "score_top": [
+    "2:1",
+    "2:0",
+    "1:1"
+   ],
+   "score_top3_hit": false,
+   "hhad_goal_line": -1.0,
+   "hhad_pred": "胜",
+   "hhad_actual": "负",
+   "hhad_hit": false,
+   "ttg_pred": "3",
+   "ttg_actual": "5",
+   "ttg_hit": false,
+   "half_full_pred": "胜/胜",
+   "half_full_actual": "平/负",
+   "half_full_hit": false,
+   "layer_preds": {},
+   "layer_hits": {},
+   "value_bets": [
+    {
+     "option": "负",
+     "odds": 2.9,
+     "model_prob": 0.3743831536083892,
+     "implied_prob": 0.3052687426029466,
+     "edge": 0.06911441100544258,
+     "ev": 0.08571114546432868,
+     "stake_pct": 0.011277782297937983,
+     "market": "HHAD",
+     "hit": true,
+     "pnl_unit": 1.9,
+     "pnl_pct": 0.02142778636608217
+    }
+   ]
+  },
+  {
+   "match_num": "周五007",
+   "match_date": "2026-10-24",
+   "league": "意甲",
+   "div": "I1",
+   "home_cn": "都灵",
+   "away_cn": "蒙扎",
+   "home_matched": "Torino",
+   "away_matched": "Monza",
+   "resolved": true,
+   "ft_home": 3,
+   "ft_away": 2,
+   "ht_home": 1,
+   "ht_away": 0,
+   "actual": "胜",
+   "had": {
+    "胜": 0.6048059139706039,
+    "平": 0.20361375612766952,
+    "负": 0.19158032990172646
+   },
+   "had_pred": "胜",
+   "had_hit": true,
+   "score_pred": "1:0",
+   "score_hit": false,
+   "score_top": [
+    "1:0",
+    "2:0",
+    "2:1"
+   ],
+   "score_top3_hit": false,
+   "hhad_goal_line": -1.0,
+   "hhad_pred": "负",
+   "hhad_actual": "平",
+   "hhad_hit": false,
+   "ttg_pred": "2",
+   "ttg_actual": "5",
+   "ttg_hit": false,
+   "half_full_pred": "胜/胜",
+   "half_full_actual": "胜/胜",
+   "half_full_hit": true,
+   "layer_preds": {},
+   "layer_hits": {},
+   "value_bets": [
+    {
+     "option": "胜",
+     "odds": 1.89,
+     "model_prob": 0.6048059139706039,
+     "implied_prob": 0.4687230016478214,
+     "edge": 0.13608291232278252,
+     "ev": 0.1430831774044412,
+     "stake_pct": 0.02,
+     "market": "HAD",
+     "hit": true,
+     "pnl_unit": 0.8899999999999999,
+     "pnl_pct": 0.0178
+    },
+    {
+     "option": "胜",
+     "odds": 3.8,
+     "model_prob": 0.3329544792625799,
+     "implied_prob": 0.23305407463823305,
+     "edge": 0.09990040462434688,
+     "ev": 0.2652270211978036,
+     "stake_pct": 0.02,
+     "market": "HHAD",
+     "hit": false,
+     "pnl_unit": -1.0,
+     "pnl_pct": -0.02
+    }
+   ]
+  },
+  {
+   "match_num": "周五008",
+   "match_date": "2026-10-24",
+   "league": "法甲",
+   "div": "F1",
+   "home_cn": "布雷斯特",
+   "away_cn": "尼斯",
+   "home_matched": "Brest",
+   "away_matched": "Nice",
+   "resolved": true,
+   "ft_home": 1,
+   "ft_away": 2,
+   "ht_home": 1,
+   "ht_away": 0,
+   "actual": "负",
+   "had": {
+    "胜": 0.45522316991979417,
+    "平": 0.2378297181775023,
+    "负": 0.30694711190270363
+   },
+   "had_pred": "胜",
+   "had_hit": false,
+   "score_pred": "1:1",
+   "score_hit": false,
+   "score_top": [
+    "1:1",
+    "1:0",
+    "2:1"
+   ],
+   "score_top3_hit": false,
+   "hhad_goal_line": -1.0,
+   "hhad_pred": "负",
+   "hhad_actual": "负",
+   "hhad_hit": true,
+   "ttg_pred": "2",
+   "ttg_actual": "3",
+   "ttg_hit": false,
+   "half_full_pred": "胜/胜",
+   "half_full_actual": "胜/负",
+   "half_full_hit": false,
+   "layer_preds": {},
+   "layer_hits": {},
+   "value_bets": []
+  },
+  {
+   "match_num": "周五009",
+   "match_date": "2026-10-24",
+   "league": "英超",
+   "div": "E0",
+   "home_cn": "伊普斯",
+   "away_cn": "诺丁汉",
+   "home_matched": "Ipswich",
+   "away_matched": "Nott'm Forest",
+   "resolved": true,
+   "ft_home": 1,
+   "ft_away": 1,
+   "ht_home": 1,
+   "ht_away": 1,
+   "actual": "平",
+   "had": {
+    "胜": 0.16101875041616798,
+    "平": 0.20907569947933,
+    "负": 0.6299055501045019
+   },
+   "had_pred": "负",
+   "had_hit": false,
+   "score_pred": "0:2",
+   "score_hit": false,
+   "score_top": [
+    "0:2",
+    "0:1",
+    "1:2"
+   ],
+   "score_top3_hit": false,
+   "hhad_goal_line": 1.0,
+   "hhad_pred": "负",
+   "hhad_actual": "胜",
+   "hhad_hit": false,
+   "ttg_pred": "2",
+   "ttg_actual": "2",
+   "ttg_hit": true,
+   "half_full_pred": "负/负",
+   "half_full_actual": "平/平",
+   "half_full_hit": false,
+   "layer_preds": {},
+   "layer_hits": {},
+   "value_bets": [
+    {
+     "option": "负",
+     "odds": 2.17,
+     "model_prob": 0.6299055501045019,
+     "implied_prob": 0.40938434892142966,
+     "edge": 0.22052120118307222,
+     "ev": 0.36689504372676907,
+     "stake_pct": 0.02,
+     "market": "HAD",
+     "hit": false,
+     "pnl_unit": -1.0,
+     "pnl_pct": -0.02
+    },
+    {
+     "option": "负",
+     "odds": 4.7,
+     "model_prob": 0.3936134284033745,
+     "implied_prob": 0.18877778485446786,
+     "edge": 0.20483564354890663,
+     "ev": 0.8499831134958602,
+     "stake_pct": 0.02,
+     "market": "HHAD",
+     "hit": false,
+     "pnl_unit": -1.0,
+     "pnl_pct": -0.02
+    }
+   ]
+  }
+ ]
+}

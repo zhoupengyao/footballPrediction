@@ -158,5 +158,25 @@
         "total_stake_pct": 0
       }
     }
+  },
+  {
+    "date": "2026-10-26",
+    "risks": {
+      "conservative": {
+        "recommendations": 0,
+        "observations": 2,
+        "total_stake_pct": 0
+      },
+      "balanced": {
+        "recommendations": 0,
+        "observations": 2,
+        "total_stake_pct": 0
+      },
+      "aggressive": {
+        "recommendations": 0,
+        "observations": 2,
+        "total_stake_pct": 0
+      }
+    }
   }
 ]
