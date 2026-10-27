@@ -258,17 +258,79 @@ function ScoreHitPanel({ detail }: { detail: ScoreHitDetail }) {
     { label: 'Top2', n: cov.top2, tone: 'bg-amber' },
     { label: 'Top3', n: cov.top3, tone: 'bg-sky-500' },
   ]
+  const activeBins = detail.prediction_bins.filter((b) => b.n > 0)
+  const maxHitBin = activeBins.length
+    ? [...activeBins].sort((a, b) => b.hits - a.hits)[0]
+    : null
+  const maxRateBin = activeBins.length
+    ? [...activeBins]
+      .filter((b) => b.hit_rate !== null)
+      .sort((a, b) => (b.hit_rate ?? 0) - (a.hit_rate ?? 0))[0]
+    : null
   return (
     <Panel className="mt-5">
       <SectionTitle
-        title="命中比分概率分析"
-        hint="只看三个比分中命中的场次：命中的那个精确比分，模型当时给了多少概率"
-        action={<Badge tone="neutral">命中 {detail.n} 场</Badge>}
+        title="三个比分逐条命中率"
+        hint="把每场 3 个比分都当成独立预测，按概率区间统计命中率和命中次数"
+        action={<Badge tone="amber">命中 {detail.prediction_hits} 条</Badge>}
       />
+      <div className="mb-5">
+        <div className="mb-2 text-[11px] text-muted">
+          共 {detail.prediction_total} 条比分预测（{cov.total} 场 × 3）
+        </div>
+        <div className="overflow-x-auto rounded-xl border border-line">
+          <table className="w-full text-left text-xs">
+            <thead className="bg-raised/70 text-[11px] text-muted">
+              <tr>
+                <th className="px-3 py-2 font-medium">概率区间</th>
+                <th className="px-3 py-2 font-medium">预测次数</th>
+                <th className="px-3 py-2 font-medium">命中</th>
+                <th className="px-3 py-2 font-medium">命中率</th>
+                <th className="px-3 py-2 font-medium">占全部命中</th>
+                <th className="px-3 py-2 font-medium">期望命中</th>
+                <th className="px-3 py-2 font-medium">偏差</th>
+                <th className="px-3 py-2 font-medium">95% CI</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-line/70">
+              {detail.prediction_bins.map((b) => (
+                <tr
+                  key={b.label}
+                  className={`${b.n === 0 ? 'opacity-45' : ''} ${maxHitBin?.label === b.label ? 'bg-pitch/5' : ''}`}
+                >
+                  <td className="px-3 py-2 font-mono text-slate-300">{b.label}</td>
+                  <td className="px-3 py-2 font-mono">{b.n}</td>
+                  <td className="px-3 py-2 font-mono text-pitch">{b.hits}</td>
+                  <td className="px-3 py-2 font-mono">{pct(b.hit_rate)}</td>
+                  <td className="px-3 py-2 font-mono">{pct(b.share_of_hits)}</td>
+                  <td className="px-3 py-2 font-mono text-muted">{b.expected_hits.toFixed(2)}</td>
+                  <td className={`px-3 py-2 font-mono ${b.gap > 0 ? 'text-pitch' : b.gap < 0 ? 'text-danger' : 'text-muted'}`}>
+                    {b.gap > 0 ? '+' : ''}{b.gap.toFixed(2)}
+                  </td>
+                  <td className="px-3 py-2 font-mono text-muted">{fmtCi(b.ci_low, b.ci_high)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-[11px] text-muted">
+          {maxHitBin ? (
+            <span>命中次数最多：<span className="text-pitch">{maxHitBin.label}（{maxHitBin.hits} 次）</span></span>
+          ) : null}
+          {maxRateBin ? (
+            <span>命中率最高：<span className="text-amber">{maxRateBin.label}（{pct(maxRateBin.hit_rate)}）</span></span>
+          ) : null}
+        </div>
+        <div className="mt-1 text-[10px] text-muted">
+          偏差 = 命中次数 − 期望命中次数。5–10% 与 10–15% 这类相邻区间的差距可能只是样本波动，不要单独据此设阈值。
+        </div>
+      </div>
+
       {detail.n === 0 ? (
         <EmptyState title="暂无命中比分" hint="当前样本里还没有三个预测比分命中实际的场次。" />
       ) : (
         <>
+          <div className="mb-2 text-xs font-medium text-slate-200">命中比分概率分析（只看命中的场次）</div>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             <StatCard label="命中次数" value={detail.n} tone="green" />
             <StatCard label="平均命中比分概率" value={pct(detail.avg_actual_prob, 2)} hint="实际比分自己的概率" />
@@ -476,14 +538,17 @@ export function Analysis() {
 
       <Panel className="mt-5">
         <SectionTitle
-          title="概率区间校准"
-          hint="偏差 = 实际命中率 − 平均预测概率；负值代表模型过度自信"
+          title={marketKey === 'SCORE' ? 'Top3 组合概率校准（次要）' : '概率区间校准'}
+          hint={marketKey === 'SCORE'
+            ? '按 p1+p2+p3 分箱，回答“Top3 这个集合是否过度自信”，不是命中比分的概率'
+            : '偏差 = 实际命中率 − 平均预测概率；负值代表模型过度自信'}
           action={<Badge tone="neutral">n={market.n}</Badge>}
         />
         <CalibrationTable bins={market.bins} />
         <div className="mt-3 text-[11px] leading-relaxed text-muted">
-          解释：如果 50–60% 区间的实际命中率明显低于 50–60%，说明模型在这一档过度自信；
-          如果高于区间，则偏保守。样本量小的区间不要单独下结论。
+          {marketKey === 'SCORE'
+            ? '比分主分析请看上面的“三个比分逐条命中率”：它把每场 3 个比分都当成独立预测，按概率区间统计命中率。'
+            : '解释：如果 50–60% 区间的实际命中率明显低于 50–60%，说明模型在这一档过度自信；如果高于区间，则偏保守。样本量小的区间不要单独下结论。'}
         </div>
       </Panel>
 
@@ -633,6 +698,7 @@ export function Analysis() {
           <div>· 只统计 `settled` 且 `prediction_timing=pre_match`；开赛后补跑不计入。</div>
           <div>· Top-pick 置信度 = 模型最终选择那个选项的概率；命中率 = 该选择实际发生的比例。</div>
           <div>· 比分 Top3：命中 = 三个预测比分中任意一个命中；组合概率 = p1+p2+p3；命中比分概率 = 实际比分自己的概率。</div>
+          <div>· 比分逐条命中率：把每场 3 个比分拆成 3 条独立预测，按概率区间统计预测次数、命中次数和命中率，这是“哪个概率区间命中的多”的主表。</div>
           <div>· 偏差为负表示“过度自信”；ECE 是所有区间偏差的加权平均。</div>
           <div>· Brier / 对数损失只对拥有完整概率分布的玩法计算（HAD/HHAD/总进球/模型层）；比分和半全场只有 Top3，不计算 Brier。</div>
           <div>· 样本量小的区间已标注 n 和 95% Wilson 置信区间；不要用 50 场样本反推稳定策略。</div>

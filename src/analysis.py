@@ -382,6 +382,7 @@ def _score_hit_detail(records: list[dict[str, Any]]) -> dict[str, Any]:
     重点回答：三个比分里中了一个时，命中的那个比分本身被模型给了多少概率？
     """
     hits: list[dict[str, Any]] = []
+    predictions: list[dict[str, Any]] = []
     coverage = {1: 0, 2: 0, 3: 0}
     total = 0
     for record in records:
@@ -396,6 +397,8 @@ def _score_hit_detail(records: list[dict[str, Any]]) -> dict[str, Any]:
         for k in (1, 2, 3):
             if actual in scores[:k]:
                 coverage[k] += 1
+        for score, prob in zip(scores, probs):
+            predictions.append({"prob": prob, "hit": score == actual})
         if actual not in scores:
             continue
         idx = scores.index(actual)
@@ -415,6 +418,7 @@ def _score_hit_detail(records: list[dict[str, Any]]) -> dict[str, Any]:
     actual_probs = [h["p_actual"] for h in hits]
     ratios = [h["ratio"] for h in hits if h["ratio"] is not None]
     prob_bins = []
+    prediction_bins = []
     for lo, hi, label in (
         (0.0, 0.05, "<5%"),
         (0.05, 0.10, "5–10%"),
@@ -424,6 +428,24 @@ def _score_hit_detail(records: list[dict[str, Any]]) -> dict[str, Any]:
     ):
         subset = [h for h in hits if lo <= h["p_actual"] < hi]
         prob_bins.append({"label": label, "n": len(subset)})
+
+        pred_subset = [x for x in predictions if lo <= x["prob"] < hi]
+        n_pred = len(pred_subset)
+        n_hits = sum(1 for x in pred_subset if x["hit"])
+        expected = sum(x["prob"] for x in pred_subset)
+        ci_low, ci_high = wilson_ci(n_hits, n_pred)
+        prediction_bins.append({
+            "label": label,
+            "n": n_pred,
+            "hits": n_hits,
+            "hit_rate": (n_hits / n_pred) if n_pred else None,
+            "share_of_hits": (n_hits / len(hits)) if hits else None,
+            "avg_pred": (expected / n_pred) if n_pred else None,
+            "expected_hits": expected,
+            "gap": n_hits - expected,
+            "ci_low": ci_low,
+            "ci_high": ci_high,
+        })
 
     by_rank = []
     for rank in (1, 2, 3):
@@ -439,11 +461,14 @@ def _score_hit_detail(records: list[dict[str, Any]]) -> dict[str, Any]:
 
     return {
         "n": len(hits),
+        "prediction_total": len(predictions),
+        "prediction_hits": sum(1 for x in predictions if x["hit"]),
         "avg_actual_prob": _mean(actual_probs),
         "median_actual_prob": _median(actual_probs),
         "min_actual_prob": min(actual_probs) if actual_probs else None,
         "max_actual_prob": max(actual_probs) if actual_probs else None,
         "prob_bins": prob_bins,
+        "prediction_bins": prediction_bins,
         "by_rank": by_rank,
         "ratio": {
             "avg": _mean(ratios),
