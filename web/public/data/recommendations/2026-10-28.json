@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-28",
+  "generated_at": "2026-10-28T20:25:30+08:00",
+  "source": "derived",
+  "risks": {
+    "conservative": {
+      "risk": "conservative",
+      "recommendations": [],
+      "observations": [
+        {
+          "match_num": "周二008",
+          "league": "德国杯",
+          "div": "DFB",
+          "home_cn": "科隆",
+          "away_cn": "柏林联合",
+          "market": "HAD",
+          "option": "平",
+          "odds": 3.5,
+          "model_prob": 0.3441,
+          "implied_prob": 0.2529,
+          "edge": 0.0912,
+          "ev": 0.2045,
+          "tier": 1,
+          "reason": "联赛 DFB 回测未明显超基准，仅观察"
+        },
+        {
+          "match_num": "周二009",
+          "league": "意甲",
+          "div": "I1",
+          "home_cn": "罗马",
+          "away_cn": "卡利亚里",
+          "market": "HHAD",
+          "option": "负",
+          "odds": 3.85,
+          "model_prob": 0.2913,
+          "implied_prob": 0.2299,
+          "edge": 0.0614,
+          "ev": 0.1216,
+          "tier": 1,
+          "reason": "玩法 HHAD 未纳入候选（仅 HAD），仅观察"
+        }
+      ],
+      "total_stake_pct": 0,
+      "bankroll": null
+    },
+    "balanced": {
+      "risk": "balanced",
+      "recommendations": [],
+      "observations": [
+        {
+          "match_num": "周二008",
+          "league": "德国杯",
+          "div": "DFB",
+          "home_cn": "科隆",
+          "away_cn": "柏林联合",
+          "market": "HAD",
+          "option": "平",
+          "odds": 3.5,
+          "model_prob": 0.3441,
+          "implied_prob": 0.2529,
+          "edge": 0.0912,
+          "ev": 0.2045,
+          "tier": 1,
+          "reason": "联赛 DFB 回测未明显超基准，仅观察"
+        },
+        {
+          "match_num": "周二009",
+          "league": "意甲",
+          "div": "I1",
+          "home_cn": "罗马",
+          "away_cn": "卡利亚里",
+          "market": "HHAD",
+          "option": "负",
+          "odds": 3.85,
+          "model_prob": 0.2913,
+          "implied_prob": 0.2299,
+          "edge": 0.0614,
+          "ev": 0.1216,
+          "tier": 1,
+          "reason": "玩法 HHAD 未纳入候选（仅 HAD），仅观察"
+        },
+        {
+          "match_num": "周二008",
+          "league": "德国杯",
+          "div": "DFB",
+          "home_cn": "科隆",
+          "away_cn": "柏林联合",
+          "market": "HHAD",
+          "option": "负",
+          "odds": 1.89,
+          "model_prob": 0.5263,
+          "implied_prob": 0.4686,
+          "edge": 0.0577,
+          "ev": -0.0053,
+          "tier": 1,
+          "reason": "玩法 HHAD 未纳入候选（仅 HAD），仅观察"
+        }
+      ],
+      "total_stake_pct": 0,
+      "bankroll": null
+    },
+    "aggressive": {
+      "risk": "aggressive",
+      "recommendations": [],
+      "observations": [
+        {
+          "match_num": "周二008",
+          "league": "德国杯",
+          "div": "DFB",
+          "home_cn": "科隆",
+          "away_cn": "柏林联合",
+          "market": "HAD",
+          "option": "平",
+          "odds": 3.5,
+          "model_prob": 0.3441,
+          "implied_prob": 0.2529,
+          "edge": 0.0912,
+          "ev": 0.2045,
+          "tier": 1,
+          "reason": "联赛 DFB 回测未明显超基准，仅观察"
+        },
+        {
+          "match_num": "周二009",
+          "league": "意甲",
+          "div": "I1",
+          "home_cn": "罗马",
+          "away_cn": "卡利亚里",
+          "market": "HHAD",
+          "option": "负",
+          "odds": 3.85,
+          "model_prob": 0.2913,
+          "implied_prob": 0.2299,
+          "edge": 0.0614,
+          "ev": 0.1216,
+          "tier": 1,
+          "reason": "玩法 HHAD 未纳入候选（仅 HAD），仅观察"
+        },
+        {
+          "match_num": "周二008",
+          "league": "德国杯",
+          "div": "DFB",
+          "home_cn": "科隆",
+          "away_cn": "柏林联合",
+          "market": "HHAD",
+          "option": "负",
+          "odds": 1.89,
+          "model_prob": 0.5263,
+          "implied_prob": 0.4686,
+          "edge": 0.0577,
+          "ev": -0.0053,
+          "tier": 1,
+          "reason": "玩法 HHAD 未纳入候选（仅 HAD），仅观察"
+        }
+      ],
+      "total_stake_pct": 0,
+      "bankroll": null
+    }
+  }
+}

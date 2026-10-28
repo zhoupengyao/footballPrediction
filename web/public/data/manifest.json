@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-27T21:11:58+08:00",
+  "generated_at": "2026-10-28T20:25:31+08:00",
   "site": {
     "name": "竞彩预测实验室",
     "tagline": "用数据看球 · 研究用途 · 不构成投注建议"
   },
-  "latest_match_date": "2026-10-27",
-  "latest_prediction_date": "2026-10-27",
+  "latest_match_date": "2026-10-29",
+  "latest_prediction_date": "2026-10-29",
   "counts": {
-    "matches": 97,
-    "predicted": 47,
+    "matches": 115,
+    "predicted": 56,
     "settled": 47,
-    "pending": 0,
-    "skipped": 50,
-    "value_bets": 49,
-    "dates": 9
+    "pending": 9,
+    "skipped": 59,
+    "value_bets": 59,
+    "dates": 11
   },
   "dates": [
     {
@@ -610,6 +610,138 @@
         "staked_pct": 0.04,
         "roi": -1.0
       }
+    },
+    {
+      "date": "2026-10-28",
+      "total": 4,
+      "predicted": 3,
+      "settled": 0,
+      "pending": 3,
+      "skipped": 1,
+      "post_kickoff": 0,
+      "value_bets": 3,
+      "markets": {
+        "HAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HHAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP1": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP3": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "TOTAL_GOALS": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HALF_FULL": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_DC": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ELO": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ML": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        }
+      },
+      "value": {
+        "n": 0,
+        "hits": 0,
+        "hit_rate": null,
+        "pnl_unit": 0,
+        "pnl_pct": 0,
+        "staked_pct": 0,
+        "roi": null
+      }
+    },
+    {
+      "date": "2026-10-29",
+      "total": 14,
+      "predicted": 6,
+      "settled": 0,
+      "pending": 6,
+      "skipped": 8,
+      "post_kickoff": 0,
+      "value_bets": 7,
+      "markets": {
+        "HAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HHAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP1": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP3": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "TOTAL_GOALS": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HALF_FULL": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_DC": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ELO": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ML": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        }
+      },
+      "value": {
+        "n": 0,
+        "hits": 0,
+        "hit_rate": null,
+        "pnl_unit": 0,
+        "pnl_pct": 0,
+        "staked_pct": 0,
+        "roi": null
+      }
     }
   ],
   "leagues": [
@@ -619,6 +751,20 @@
       "country": "国际",
       "tier": 1,
       "has_model": false
+    },
+    {
+      "div": "AFCEL",
+      "name": "亚洲精英",
+      "country": "亚足联",
+      "tier": 2,
+      "has_model": true
+    },
+    {
+      "div": "AFCTWO",
+      "name": "亚联赛杯",
+      "country": "亚足联",
+      "tier": 2,
+      "has_model": true
     },
     {
       "div": "T1",
@@ -647,6 +793,13 @@
       "country": "德国",
       "tier": 1,
       "has_model": false
+    },
+    {
+      "div": "DFB",
+      "name": "德国杯",
+      "country": "德国",
+      "tier": 2,
+      "has_model": true
     },
     {
       "div": "D1",
@@ -740,6 +893,13 @@
       "has_model": true
     },
     {
+      "div": "MLS",
+      "name": "美职联 MLS",
+      "country": "美国",
+      "tier": 2,
+      "has_model": true
+    },
+    {
       "div": "FIN1",
       "name": "芬超",
       "country": "芬兰",
@@ -803,6 +963,13 @@
       "has_model": true
     },
     {
+      "div": "KNVB",
+      "name": "荷兰杯",
+      "country": "荷兰",
+      "tier": 2,
+      "has_model": true
+    },
+    {
       "div": "N1",
       "name": "荷甲",
       "country": "荷兰",
@@ -833,6 +1000,8 @@
   ],
   "sources": [
     "reports/archive/predict_20261026_215158.json",
+    "reports/archive/predict_20261027_020535.json",
+    "reports/archive/predict_20261028_201732.json",
     "reports/predict_20261018.json",
     "reports/predict_20261021.json",
     "reports/predict_20261022.json",

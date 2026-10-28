@@ -1,0 +1,220 @@
+{
+ "generated_at": "2026-10-28T20:15:58",
+ "stats": {
+  "total": 3,
+  "resolved": 0,
+  "unresolved": 3,
+  "had_accuracy": NaN,
+  "score_accuracy": NaN,
+  "log_loss": NaN,
+  "markets": {
+   "HAD": {
+    "n": 0,
+    "hits": 0,
+    "accuracy": NaN
+   },
+   "HHAD": {
+    "n": 0,
+    "hits": 0,
+    "accuracy": NaN
+   },
+   "SCORE_TOP1": {
+    "n": 0,
+    "hits": 0,
+    "accuracy": NaN
+   },
+   "SCORE_TOP3": {
+    "n": 0,
+    "hits": 0,
+    "accuracy": NaN
+   },
+   "TOTAL_GOALS": {
+    "n": 0,
+    "hits": 0,
+    "accuracy": NaN
+   },
+   "HALF_FULL": {
+    "n": 0,
+    "hits": 0,
+    "accuracy": NaN
+   },
+   "HAD_DC": {
+    "n": 0,
+    "hits": 0,
+    "accuracy": NaN
+   },
+   "HAD_ELO": {
+    "n": 0,
+    "hits": 0,
+    "accuracy": NaN
+   },
+   "HAD_ML": {
+    "n": 0,
+    "hits": 0,
+    "accuracy": NaN
+   }
+  },
+  "n_bets": 0,
+  "bet_hit_rate": NaN,
+  "pnl_unit": 0,
+  "pnl_pct": 0,
+  "roi_unit": NaN,
+  "staked_pct": 0
+ },
+ "matches": [
+  {
+   "match_num": "周二008",
+   "match_date": "2026-10-28",
+   "league": "德国杯",
+   "div": "DFB",
+   "home_cn": "科隆",
+   "away_cn": "柏林联合",
+   "home_matched": "FC Koln",
+   "away_matched": "Union Berlin",
+   "resolved": false,
+   "ft_home": null,
+   "ft_away": null,
+   "ht_home": null,
+   "ht_away": null,
+   "actual": null,
+   "had": {
+    "胜": 0.4329187588008507,
+    "平": 0.4049428743046774,
+    "负": 0.1621383668944719
+   },
+   "had_pred": "胜",
+   "had_hit": null,
+   "score_pred": "0:0",
+   "score_hit": null,
+   "score_top": [
+    "0:0",
+    "1:0",
+    "0:1"
+   ],
+   "score_top3_hit": null,
+   "hhad_goal_line": -1.0,
+   "hhad_pred": "负",
+   "hhad_actual": null,
+   "hhad_hit": null,
+   "ttg_pred": "1",
+   "ttg_actual": null,
+   "ttg_hit": null,
+   "half_full_pred": "胜/胜",
+   "half_full_actual": null,
+   "half_full_hit": null,
+   "layer_preds": {
+    "HAD_DC": "平",
+    "HAD_ELO": "胜"
+   },
+   "layer_hits": {
+    "HAD_DC": null,
+    "HAD_ELO": null
+   },
+   "value_bets": []
+  },
+  {
+   "match_num": "周二009",
+   "match_date": "2026-10-28",
+   "league": "意甲",
+   "div": "I1",
+   "home_cn": "罗马",
+   "away_cn": "卡利亚里",
+   "home_matched": "Roma",
+   "away_matched": "Cagliari",
+   "resolved": false,
+   "ft_home": null,
+   "ft_away": null,
+   "ht_home": null,
+   "ht_away": null,
+   "actual": null,
+   "had": {
+    "胜": 0.7427716849061228,
+    "平": 0.1512280319226458,
+    "负": 0.10600028317123145
+   },
+   "had_pred": "胜",
+   "had_hit": null,
+   "score_pred": "1:0",
+   "score_hit": null,
+   "score_top": [
+    "1:0",
+    "2:0",
+    "1:1"
+   ],
+   "score_top3_hit": null,
+   "hhad_goal_line": -1.0,
+   "hhad_pred": "胜",
+   "hhad_actual": null,
+   "hhad_hit": null,
+   "ttg_pred": "1",
+   "ttg_actual": null,
+   "ttg_hit": null,
+   "half_full_pred": "胜/胜",
+   "half_full_actual": null,
+   "half_full_hit": null,
+   "layer_preds": {
+    "HAD_DC": "胜",
+    "HAD_ELO": "胜",
+    "HAD_ML": "胜"
+   },
+   "layer_hits": {
+    "HAD_DC": null,
+    "HAD_ELO": null,
+    "HAD_ML": null
+   },
+   "value_bets": []
+  },
+  {
+   "match_num": "周二010",
+   "match_date": "2026-10-28",
+   "league": "意甲",
+   "div": "I1",
+   "home_cn": "都灵",
+   "away_cn": "科莫",
+   "home_matched": "Torino",
+   "away_matched": "Como",
+   "resolved": false,
+   "ft_home": null,
+   "ft_away": null,
+   "ht_home": null,
+   "ht_away": null,
+   "actual": null,
+   "had": {
+    "胜": 0.18602969239799275,
+    "平": 0.18481220299958204,
+    "负": 0.6291581046024253
+   },
+   "had_pred": "负",
+   "had_hit": null,
+   "score_pred": "0:1",
+   "score_hit": null,
+   "score_top": [
+    "0:1",
+    "0:2",
+    "1:1"
+   ],
+   "score_top3_hit": null,
+   "hhad_goal_line": 1.0,
+   "hhad_pred": "胜",
+   "hhad_actual": null,
+   "hhad_hit": null,
+   "ttg_pred": "2",
+   "ttg_actual": null,
+   "ttg_hit": null,
+   "half_full_pred": "负/负",
+   "half_full_actual": null,
+   "half_full_hit": null,
+   "layer_preds": {
+    "HAD_DC": "负",
+    "HAD_ELO": "负",
+    "HAD_ML": "负"
+   },
+   "layer_hits": {
+    "HAD_DC": null,
+    "HAD_ELO": null,
+    "HAD_ML": null
+   },
+   "value_bets": []
+  }
+ ]
+}
