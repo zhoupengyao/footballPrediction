@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-30",
+  "generated_at": "2026-10-29T19:53:22+08:00",
+  "source": "derived",
+  "risks": {
+    "conservative": {
+      "risk": "conservative",
+      "recommendations": [],
+      "observations": [
+        {
+          "match_num": "周四006",
+          "league": "意甲",
+          "div": "I1",
+          "home_cn": "佛罗伦萨",
+          "away_cn": "亚特兰大",
+          "market": "HHAD",
+          "option": "负",
+          "odds": 1.51,
+          "model_prob": 0.6704,
+          "implied_prob": 0.581,
+          "edge": 0.0893,
+          "ev": 0.0122,
+          "tier": 1,
+          "reason": "玩法 HHAD 未纳入候选（仅 HAD），仅观察"
+        }
+      ],
+      "total_stake_pct": 0,
+      "bankroll": null
+    },
+    "balanced": {
+      "risk": "balanced",
+      "recommendations": [],
+      "observations": [
+        {
+          "match_num": "周四006",
+          "league": "意甲",
+          "div": "I1",
+          "home_cn": "佛罗伦萨",
+          "away_cn": "亚特兰大",
+          "market": "HHAD",
+          "option": "负",
+          "odds": 1.51,
+          "model_prob": 0.6704,
+          "implied_prob": 0.581,
+          "edge": 0.0893,
+          "ev": 0.0122,
+          "tier": 1,
+          "reason": "玩法 HHAD 未纳入候选（仅 HAD），仅观察"
+        },
+        {
+          "match_num": "周四006",
+          "league": "意甲",
+          "div": "I1",
+          "home_cn": "佛罗伦萨",
+          "away_cn": "亚特兰大",
+          "market": "HAD",
+          "option": "负",
+          "odds": 2.74,
+          "model_prob": 0.3744,
+          "implied_prob": 0.3202,
+          "edge": 0.0542,
+          "ev": 0.0258,
+          "tier": 1,
+          "reason": "联赛 I1 回测未明显超基准，仅观察"
+        }
+      ],
+      "total_stake_pct": 0,
+      "bankroll": null
+    },
+    "aggressive": {
+      "risk": "aggressive",
+      "recommendations": [],
+      "observations": [
+        {
+          "match_num": "周四006",
+          "league": "意甲",
+          "div": "I1",
+          "home_cn": "佛罗伦萨",
+          "away_cn": "亚特兰大",
+          "market": "HHAD",
+          "option": "负",
+          "odds": 1.51,
+          "model_prob": 0.6704,
+          "implied_prob": 0.581,
+          "edge": 0.0893,
+          "ev": 0.0122,
+          "tier": 1,
+          "reason": "玩法 HHAD 未纳入候选（仅 HAD），仅观察"
+        },
+        {
+          "match_num": "周四006",
+          "league": "意甲",
+          "div": "I1",
+          "home_cn": "佛罗伦萨",
+          "away_cn": "亚特兰大",
+          "market": "HAD",
+          "option": "负",
+          "odds": 2.74,
+          "model_prob": 0.3744,
+          "implied_prob": 0.3202,
+          "edge": 0.0542,
+          "ev": 0.0258,
+          "tier": 1,
+          "reason": "联赛 I1 回测未明显超基准，仅观察"
+        }
+      ],
+      "total_stake_pct": 0,
+      "bankroll": null
+    }
+  }
+}
