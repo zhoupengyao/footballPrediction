@@ -1,6 +1,6 @@
 {
   "date": "2026-10-30",
-  "generated_at": "2026-10-29T19:53:22+08:00",
+  "generated_at": "2026-10-29T20:26:40+08:00",
   "source": "derived",
   "risks": {
     "conservative": {
@@ -48,6 +48,22 @@
           "reason": "玩法 HHAD 未纳入候选（仅 HAD），仅观察"
         },
         {
+          "match_num": "周四007",
+          "league": "巴甲",
+          "div": "BRA1",
+          "home_cn": "格雷米奥",
+          "away_cn": "巴竞技",
+          "market": "HHAD",
+          "option": "胜",
+          "odds": 1.37,
+          "model_prob": 0.6961,
+          "implied_prob": 0.6409,
+          "edge": 0.0553,
+          "ev": -0.0463,
+          "tier": 1,
+          "reason": "玩法 HHAD 未纳入候选（仅 HAD），仅观察"
+        },
+        {
           "match_num": "周四006",
           "league": "意甲",
           "div": "I1",
@@ -84,6 +100,22 @@
           "implied_prob": 0.581,
           "edge": 0.0893,
           "ev": 0.0122,
+          "tier": 1,
+          "reason": "玩法 HHAD 未纳入候选（仅 HAD），仅观察"
+        },
+        {
+          "match_num": "周四007",
+          "league": "巴甲",
+          "div": "BRA1",
+          "home_cn": "格雷米奥",
+          "away_cn": "巴竞技",
+          "market": "HHAD",
+          "option": "胜",
+          "odds": 1.37,
+          "model_prob": 0.6961,
+          "implied_prob": 0.6409,
+          "edge": 0.0553,
+          "ev": -0.0463,
           "tier": 1,
           "reason": "玩法 HHAD 未纳入候选（仅 HAD），仅观察"
         },

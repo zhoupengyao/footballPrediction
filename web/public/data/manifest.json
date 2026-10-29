@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-29T19:53:22+08:00",
+  "generated_at": "2026-10-29T20:26:41+08:00",
   "site": {
     "name": "竞彩预测实验室",
     "tagline": "用数据看球 · 研究用途 · 不构成投注建议"
   },
-  "latest_match_date": "2026-10-30",
-  "latest_prediction_date": "2026-10-30",
+  "latest_match_date": "2026-10-31",
+  "latest_prediction_date": "2026-10-31",
   "counts": {
-    "matches": 122,
-    "predicted": 59,
+    "matches": 134,
+    "predicted": 67,
     "settled": 56,
-    "pending": 3,
-    "skipped": 63,
-    "value_bets": 61,
-    "dates": 12
+    "pending": 11,
+    "skipped": 67,
+    "value_bets": 65,
+    "dates": 13
   },
   "dates": [
     {
@@ -745,13 +745,79 @@
     },
     {
       "date": "2026-10-30",
-      "total": 6,
-      "predicted": 3,
+      "total": 7,
+      "predicted": 5,
       "settled": 0,
-      "pending": 3,
-      "skipped": 3,
+      "pending": 5,
+      "skipped": 2,
       "post_kickoff": 0,
-      "value_bets": 2,
+      "value_bets": 3,
+      "markets": {
+        "HAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HHAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP1": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP3": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "TOTAL_GOALS": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HALF_FULL": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_DC": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ELO": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ML": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        }
+      },
+      "value": {
+        "n": 0,
+        "hits": 0,
+        "hit_rate": null,
+        "pnl_unit": 0,
+        "pnl_pct": 0,
+        "staked_pct": 0,
+        "roi": null
+      }
+    },
+    {
+      "date": "2026-10-31",
+      "total": 11,
+      "predicted": 6,
+      "settled": 0,
+      "pending": 6,
+      "skipped": 5,
+      "post_kickoff": 0,
+      "value_bets": 3,
       "markets": {
         "HAD": {
           "n": 0,
@@ -1068,7 +1134,7 @@
     "reports/archive/predict_20261026_215158.json",
     "reports/archive/predict_20261027_020535.json",
     "reports/archive/predict_20261028_201732.json",
-    "reports/archive/predict_20261029_194043.json",
+    "reports/archive/predict_20261029_202315.json",
     "reports/predict_20261018.json",
     "reports/predict_20261021.json",
     "reports/predict_20261022.json",
