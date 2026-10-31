@@ -2,7 +2,7 @@
   "sample": {
     "pre_match_settled": 67,
     "dates": 12,
-    "total_history": 157,
+    "total_history": 191,
     "excluded_post_kickoff": 0
   },
   "markets": {
@@ -2065,5 +2065,5 @@
     }
   ],
   "note": "只统计赛前预测且已结算的场次。样本量较小时，概率区间结论仅作探索，不要据此优化阈值或重仓。",
-  "generated_at": "2026-10-31T19:22:11+08:00"
+  "generated_at": "2026-10-31T20:33:44+08:00"
 }

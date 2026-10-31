@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-31T19:22:11+08:00",
+  "generated_at": "2026-10-31T20:33:44+08:00",
   "overall": {
-    "total": 157,
-    "predicted": 82,
+    "total": 191,
+    "predicted": 110,
     "settled": 67,
-    "pending": 15,
-    "skipped": 75,
+    "pending": 43,
+    "skipped": 81,
     "post_kickoff": 0,
     "stats_settled": 67,
     "markets": {
@@ -69,8 +69,8 @@
     {
       "div": "BRA1",
       "name": "巴甲",
-      "total": 4,
-      "predicted": 3,
+      "total": 5,
+      "predicted": 4,
       "settled": 3,
       "markets": {
         "HAD": {
@@ -132,8 +132,8 @@
     {
       "div": "D1",
       "name": "德甲",
-      "total": 13,
-      "predicted": 10,
+      "total": 15,
+      "predicted": 15,
       "settled": 7,
       "markets": {
         "HAD": {
@@ -321,8 +321,8 @@
     {
       "div": "E0",
       "name": "英超",
-      "total": 17,
-      "predicted": 16,
+      "total": 19,
+      "predicted": 18,
       "settled": 9,
       "markets": {
         "HAD": {
@@ -384,7 +384,7 @@
     {
       "div": "E1",
       "name": "英冠",
-      "total": 3,
+      "total": 2,
       "predicted": 0,
       "settled": 0,
       "markets": {
@@ -447,8 +447,8 @@
     {
       "div": "F1",
       "name": "法甲",
-      "total": 9,
-      "predicted": 8,
+      "total": 10,
+      "predicted": 9,
       "settled": 8,
       "markets": {
         "HAD": {
@@ -510,7 +510,7 @@
     {
       "div": "F2",
       "name": "法乙",
-      "total": 2,
+      "total": 3,
       "predicted": 0,
       "settled": 0,
       "markets": {
@@ -573,8 +573,8 @@
     {
       "div": "FIN1",
       "name": "芬超",
-      "total": 2,
-      "predicted": 2,
+      "total": 3,
+      "predicted": 3,
       "settled": 2,
       "markets": {
         "HAD": {
@@ -636,8 +636,8 @@
     {
       "div": "I1",
       "name": "意甲",
-      "total": 23,
-      "predicted": 23,
+      "total": 30,
+      "predicted": 30,
       "settled": 20,
       "markets": {
         "HAD": {
@@ -762,8 +762,8 @@
     {
       "div": "MLS",
       "name": "美职",
-      "total": 1,
-      "predicted": 0,
+      "total": 2,
+      "predicted": 1,
       "settled": 0,
       "markets": {
         "HAD": {
@@ -825,7 +825,7 @@
     {
       "div": "N1",
       "name": "荷甲",
-      "total": 6,
+      "total": 9,
       "predicted": 0,
       "settled": 0,
       "markets": {
@@ -888,8 +888,8 @@
     {
       "div": "NOR1",
       "name": "挪超",
-      "total": 3,
-      "predicted": 2,
+      "total": 4,
+      "predicted": 4,
       "settled": 2,
       "markets": {
         "HAD": {
@@ -951,7 +951,7 @@
     {
       "div": "OTHER",
       "name": "巴甲",
-      "total": 31,
+      "total": 38,
       "predicted": 0,
       "settled": 0,
       "markets": {
@@ -1014,7 +1014,7 @@
     {
       "div": "P1",
       "name": "葡超",
-      "total": 7,
+      "total": 9,
       "predicted": 0,
       "settled": 0,
       "markets": {
@@ -1077,8 +1077,8 @@
     {
       "div": "SP1",
       "name": "西甲",
-      "total": 19,
-      "predicted": 11,
+      "total": 23,
+      "predicted": 17,
       "settled": 9,
       "markets": {
         "HAD": {
@@ -1140,8 +1140,8 @@
     {
       "div": "SWE1",
       "name": "瑞超",
-      "total": 3,
-      "predicted": 2,
+      "total": 5,
+      "predicted": 4,
       "settled": 2,
       "markets": {
         "HAD": {
@@ -2060,12 +2060,12 @@
     {
       "date": "2026-10-31",
       "total": 26,
-      "predicted": 15,
+      "predicted": 20,
       "settled": 6,
-      "pending": 9,
-      "skipped": 11,
+      "pending": 14,
+      "skipped": 6,
       "post_kickoff": 0,
-      "value_bets": 13,
+      "value_bets": 17,
       "markets": {
         "HAD": {
           "n": 6,
@@ -2125,10 +2125,142 @@
     },
     {
       "date": "2026-11-01",
-      "total": 8,
-      "predicted": 6,
+      "total": 23,
+      "predicted": 14,
       "settled": 0,
-      "pending": 6,
+      "pending": 14,
+      "skipped": 9,
+      "post_kickoff": 0,
+      "value_bets": 9,
+      "markets": {
+        "HAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HHAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP1": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP3": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "TOTAL_GOALS": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HALF_FULL": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_DC": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ELO": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ML": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        }
+      },
+      "value": {
+        "n": 0,
+        "hits": 0,
+        "hit_rate": null,
+        "pnl_unit": 0,
+        "pnl_pct": 0,
+        "staked_pct": 0,
+        "roi": null
+      }
+    },
+    {
+      "date": "2026-11-02",
+      "total": 10,
+      "predicted": 8,
+      "settled": 0,
+      "pending": 8,
+      "skipped": 2,
+      "post_kickoff": 0,
+      "value_bets": 5,
+      "markets": {
+        "HAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HHAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP1": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP3": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "TOTAL_GOALS": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HALF_FULL": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_DC": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ELO": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ML": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        }
+      },
+      "value": {
+        "n": 0,
+        "hits": 0,
+        "hit_rate": null,
+        "pnl_unit": 0,
+        "pnl_pct": 0,
+        "staked_pct": 0,
+        "roi": null
+      }
+    },
+    {
+      "date": "2026-11-03",
+      "total": 9,
+      "predicted": 7,
+      "settled": 0,
+      "pending": 7,
       "skipped": 2,
       "post_kickoff": 0,
       "value_bets": 5,

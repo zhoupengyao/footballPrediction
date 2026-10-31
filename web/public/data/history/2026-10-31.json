@@ -1361,9 +1361,9 @@
     "prediction_timing": "pre_match",
     "prediction": {
       "model": "E0",
-      "generated_at": "2026-10-31T19:20:23",
+      "generated_at": "2026-10-31T20:29:50",
       "timing": "pre_match",
-      "source": "reports/archive/predict_20261031_192023.json",
+      "source": "reports/archive/predict_20261031_202950.json",
       "xg": {
         "home": 1.8574,
         "away": 1.625
@@ -1524,7 +1524,7 @@
     "time": "20:30:00",
     "kickoff": "2026-10-31T20:30:00+08:00",
     "league": {
-      "div": "E1",
+      "div": null,
       "name": "英冠",
       "code": "ED1"
     },
@@ -1537,7 +1537,7 @@
       "matched": null
     },
     "status": "skipped",
-    "skip_reason": "无模型: E1",
+    "skip_reason": "已开赛/结束: 2026-10-31 20:30:00",
     "prediction_timing": "skipped",
     "prediction": null,
     "result": null
@@ -1566,9 +1566,9 @@
     "prediction_timing": "pre_match",
     "prediction": {
       "model": "SP1",
-      "generated_at": "2026-10-31T19:20:23",
+      "generated_at": "2026-10-31T20:31:26",
       "timing": "pre_match",
-      "source": "reports/archive/predict_20261031_192023.json",
+      "source": "reports/archive/predict_20261031_203126.json",
       "xg": {
         "home": 1.3223,
         "away": 1.8129
@@ -1775,9 +1775,9 @@
     "prediction_timing": "pre_match",
     "prediction": {
       "model": "I1",
-      "generated_at": "2026-10-31T19:20:23",
+      "generated_at": "2026-10-31T20:31:26",
       "timing": "pre_match",
-      "source": "reports/archive/predict_20261031_192023.json",
+      "source": "reports/archive/predict_20261031_203126.json",
       "xg": {
         "home": 2.1078,
         "away": 1.0724
@@ -1970,9 +1970,9 @@
     "prediction_timing": "pre_match",
     "prediction": {
       "model": "D1",
-      "generated_at": "2026-10-31T19:20:23",
+      "generated_at": "2026-10-31T20:31:26",
       "timing": "pre_match",
-      "source": "reports/archive/predict_20261031_192023.json",
+      "source": "reports/archive/predict_20261031_203126.json",
       "xg": {
         "home": 2.1764,
         "away": 1.481
@@ -2154,16 +2154,186 @@
     },
     "home": {
       "cn": "沙尔克04",
-      "matched": null
+      "matched": "Schalke 04"
     },
     "away": {
       "cn": "莱红牛",
       "matched": "RB Leipzig"
     },
-    "status": "skipped",
-    "skip_reason": "队名未匹配: 沙尔克04(none)/莱红牛(alias)",
-    "prediction_timing": "skipped",
-    "prediction": null,
+    "status": "pending",
+    "skip_reason": null,
+    "prediction_timing": "pre_match",
+    "prediction": {
+      "model": "D1",
+      "generated_at": "2026-10-31T20:31:26",
+      "timing": "pre_match",
+      "source": "reports/archive/predict_20261031_203126.json",
+      "xg": {
+        "home": 0.9056,
+        "away": 1.2186
+      },
+      "confidence": {
+        "home": "alias",
+        "away": "alias"
+      },
+      "markets": {
+        "HAD": {
+          "available": true,
+          "probs": {
+            "home": 0.2459,
+            "draw": 0.2497,
+            "away": 0.5045
+          },
+          "odds": {
+            "home": 4.15,
+            "draw": 4.1,
+            "away": 1.53
+          },
+          "implied": {
+            "home": 0.2117,
+            "draw": 0.2142,
+            "away": 0.5741
+          },
+          "blended": {
+            "home": 0.2322,
+            "draw": 0.2355,
+            "away": 0.5323
+          },
+          "predicted": "away",
+          "actual": null,
+          "hit": null
+        },
+        "HHAD": {
+          "available": true,
+          "line": 1.0,
+          "probs": {
+            "home": 0.5641,
+            "draw": 0.245,
+            "away": 0.191
+          },
+          "odds": {
+            "home": 2.08,
+            "draw": 3.75,
+            "away": 2.55
+          },
+          "implied": {
+            "home": 0.4219,
+            "draw": 0.234,
+            "away": 0.3441
+          },
+          "blended": {
+            "home": 0.5072,
+            "draw": 0.2406,
+            "away": 0.2522
+          },
+          "predicted": "home",
+          "actual": null,
+          "hit": null
+        },
+        "SCORE": {
+          "available": true,
+          "top": [
+            {
+              "score": "0:1",
+              "prob": 0.1484
+            },
+            {
+              "score": "1:1",
+              "prob": 0.1298
+            },
+            {
+              "score": "0:0",
+              "prob": 0.1175
+            }
+          ],
+          "predicted": "0:1",
+          "actual": null,
+          "top1_hit": null,
+          "top3_hit": null
+        },
+        "TOTAL_GOALS": {
+          "available": true,
+          "probs": {
+            "0": 0.1175,
+            "1": 0.2581,
+            "2": 0.2676,
+            "3": 0.1909,
+            "4": 0.1014,
+            "5": 0.0431,
+            "6": 0.0152,
+            "7+": 0.0062
+          },
+          "predicted": "2",
+          "actual": null,
+          "hit": null
+        },
+        "HALF_FULL": {
+          "available": true,
+          "top": [
+            {
+              "label": "负/负",
+              "prob": 0.2328
+            },
+            {
+              "label": "胜/胜",
+              "prob": 0.1763
+            },
+            {
+              "label": "平/平",
+              "prob": 0.1676
+            }
+          ],
+          "predicted": "负/负",
+          "actual": null,
+          "hit": null
+        }
+      },
+      "model_layers": {
+        "DC": {
+          "probs": {
+            "home": 0.2756,
+            "draw": 0.2885,
+            "away": 0.4359
+          },
+          "predicted": "away",
+          "hit": null
+        },
+        "Elo": {
+          "probs": {
+            "home": 0.2421,
+            "draw": 0.2339,
+            "away": 0.524
+          },
+          "predicted": "away",
+          "hit": null
+        },
+        "ML": {
+          "probs": {
+            "home": 0.1537,
+            "draw": 0.1381,
+            "away": 0.7081
+          },
+          "predicted": "away",
+          "hit": null
+        }
+      },
+      "value_bets": [
+        {
+          "market": "HHAD",
+          "option": "home",
+          "option_cn": "胜",
+          "odds": 2.08,
+          "model_prob": 0.5072,
+          "implied_prob": 0.4219,
+          "edge": 0.0853,
+          "ev": 0.0549,
+          "stake_pct": 0.0127,
+          "hit": null,
+          "pnl_unit": null,
+          "pnl_pct": null
+        }
+      ]
+    },
     "result": null
   },
   {
@@ -2190,9 +2360,9 @@
     "prediction_timing": "pre_match",
     "prediction": {
       "model": "D1",
-      "generated_at": "2026-10-31T19:20:23",
+      "generated_at": "2026-10-31T20:31:26",
       "timing": "pre_match",
-      "source": "reports/archive/predict_20261031_192023.json",
+      "source": "reports/archive/predict_20261031_203126.json",
       "xg": {
         "home": 1.6837,
         "away": 1.4906
@@ -2378,12 +2548,182 @@
     },
     "away": {
       "cn": "帕德博恩",
-      "matched": null
+      "matched": "Paderborn"
     },
-    "status": "skipped",
-    "skip_reason": "队名未匹配: 门兴(alias)/帕德博恩(none)",
-    "prediction_timing": "skipped",
-    "prediction": null,
+    "status": "pending",
+    "skip_reason": null,
+    "prediction_timing": "pre_match",
+    "prediction": {
+      "model": "D1",
+      "generated_at": "2026-10-31T20:31:26",
+      "timing": "pre_match",
+      "source": "reports/archive/predict_20261031_203126.json",
+      "xg": {
+        "home": 1.4321,
+        "away": 1.0263
+      },
+      "confidence": {
+        "home": "alias",
+        "away": "alias"
+      },
+      "markets": {
+        "HAD": {
+          "available": true,
+          "probs": {
+            "home": 0.425,
+            "draw": 0.3444,
+            "away": 0.2306
+          },
+          "odds": {
+            "home": 1.83,
+            "draw": 3.65,
+            "away": 3.13
+          },
+          "implied": {
+            "home": 0.4794,
+            "draw": 0.2403,
+            "away": 0.2803
+          },
+          "blended": {
+            "home": 0.4468,
+            "draw": 0.3027,
+            "away": 0.2505
+          },
+          "predicted": "home",
+          "actual": null,
+          "hit": null
+        },
+        "HHAD": {
+          "available": true,
+          "line": -1.0,
+          "probs": {
+            "home": 0.2262,
+            "draw": 0.2402,
+            "away": 0.5336
+          },
+          "odds": {
+            "home": 3.32,
+            "draw": 4.0,
+            "away": 1.7
+          },
+          "implied": {
+            "home": 0.2643,
+            "draw": 0.2194,
+            "away": 0.5162
+          },
+          "blended": {
+            "home": 0.2414,
+            "draw": 0.2319,
+            "away": 0.5267
+          },
+          "predicted": "away",
+          "actual": null,
+          "hit": null
+        },
+        "SCORE": {
+          "available": true,
+          "top": [
+            {
+              "score": "1:0",
+              "prob": 0.1252
+            },
+            {
+              "score": "1:1",
+              "prob": 0.1238
+            },
+            {
+              "score": "2:1",
+              "prob": 0.09
+            }
+          ],
+          "predicted": "1:0",
+          "actual": null,
+          "top1_hit": null,
+          "top3_hit": null
+        },
+        "TOTAL_GOALS": {
+          "available": true,
+          "probs": {
+            "0": 0.0836,
+            "1": 0.2144,
+            "2": 0.2566,
+            "3": 0.2119,
+            "4": 0.1302,
+            "5": 0.064,
+            "6": 0.0262,
+            "7+": 0.0131
+          },
+          "predicted": "2",
+          "actual": null,
+          "hit": null
+        },
+        "HALF_FULL": {
+          "available": true,
+          "top": [
+            {
+              "label": "胜/胜",
+              "prob": 0.2842
+            },
+            {
+              "label": "负/负",
+              "prob": 0.1641
+            },
+            {
+              "label": "平/平",
+              "prob": 0.1548
+            }
+          ],
+          "predicted": "胜/胜",
+          "actual": null,
+          "hit": null
+        }
+      },
+      "model_layers": {
+        "DC": {
+          "probs": {
+            "home": 0.4664,
+            "draw": 0.2619,
+            "away": 0.2717
+          },
+          "predicted": "home",
+          "hit": null
+        },
+        "Elo": {
+          "probs": {
+            "home": 0.3785,
+            "draw": 0.2791,
+            "away": 0.3423
+          },
+          "predicted": "home",
+          "hit": null
+        },
+        "ML": {
+          "probs": {
+            "home": 0.3298,
+            "draw": 0.6605,
+            "away": 0.0097
+          },
+          "predicted": "draw",
+          "hit": null
+        }
+      },
+      "value_bets": [
+        {
+          "market": "HAD",
+          "option": "draw",
+          "option_cn": "平",
+          "odds": 3.65,
+          "model_prob": 0.3027,
+          "implied_prob": 0.2403,
+          "edge": 0.0624,
+          "ev": 0.105,
+          "stake_pct": 0.0099,
+          "hit": null,
+          "pnl_unit": null,
+          "pnl_pct": null
+        }
+      ]
+    },
     "result": null
   },
   {
@@ -2399,16 +2739,171 @@
     },
     "home": {
       "cn": "不来梅",
-      "matched": null
+      "matched": "Werder Bremen"
     },
     "away": {
       "cn": "霍芬海姆",
       "matched": "Hoffenheim"
     },
-    "status": "skipped",
-    "skip_reason": "队名未匹配: 不来梅(none)/霍芬海姆(cache)",
-    "prediction_timing": "skipped",
-    "prediction": null,
+    "status": "pending",
+    "skip_reason": null,
+    "prediction_timing": "pre_match",
+    "prediction": {
+      "model": "D1",
+      "generated_at": "2026-10-31T20:31:26",
+      "timing": "pre_match",
+      "source": "reports/archive/predict_20261031_203126.json",
+      "xg": {
+        "home": 1.8227,
+        "away": 1.5857
+      },
+      "confidence": {
+        "home": "alias",
+        "away": "cache"
+      },
+      "markets": {
+        "HAD": {
+          "available": true,
+          "probs": {
+            "home": 0.3889,
+            "draw": 0.2305,
+            "away": 0.3805
+          },
+          "odds": {
+            "home": 2.39,
+            "draw": 3.75,
+            "away": 2.2
+          },
+          "implied": {
+            "home": 0.3671,
+            "draw": 0.234,
+            "away": 0.3989
+          },
+          "blended": {
+            "home": 0.3802,
+            "draw": 0.2319,
+            "away": 0.3879
+          },
+          "predicted": "home",
+          "actual": null,
+          "hit": null
+        },
+        "HHAD": {
+          "available": true,
+          "line": 1.0,
+          "probs": {
+            "home": 0.6601,
+            "draw": 0.1763,
+            "away": 0.1636
+          },
+          "odds": {
+            "home": 1.47,
+            "draw": 4.45,
+            "away": 4.26
+          },
+          "implied": {
+            "home": 0.5969,
+            "draw": 0.1972,
+            "away": 0.206
+          },
+          "blended": {
+            "home": 0.6348,
+            "draw": 0.1847,
+            "away": 0.1805
+          },
+          "predicted": "home",
+          "actual": null,
+          "hit": null
+        },
+        "SCORE": {
+          "available": true,
+          "top": [
+            {
+              "score": "1:1",
+              "prob": 0.0942
+            },
+            {
+              "score": "2:1",
+              "prob": 0.0872
+            },
+            {
+              "score": "1:2",
+              "prob": 0.0758
+            }
+          ],
+          "predicted": "1:1",
+          "actual": null,
+          "top1_hit": null,
+          "top3_hit": null
+        },
+        "TOTAL_GOALS": {
+          "available": true,
+          "probs": {
+            "0": 0.0316,
+            "1": 0.1158,
+            "2": 0.1907,
+            "3": 0.2184,
+            "4": 0.1861,
+            "5": 0.1269,
+            "6": 0.0721,
+            "7+": 0.0585
+          },
+          "predicted": "3",
+          "actual": null,
+          "hit": null
+        },
+        "HALF_FULL": {
+          "available": true,
+          "top": [
+            {
+              "label": "胜/胜",
+              "prob": 0.2844
+            },
+            {
+              "label": "负/负",
+              "prob": 0.2105
+            },
+            {
+              "label": "平/平",
+              "prob": 0.1276
+            }
+          ],
+          "predicted": "胜/胜",
+          "actual": null,
+          "hit": null
+        }
+      },
+      "model_layers": {
+        "DC": {
+          "probs": {
+            "home": 0.4385,
+            "draw": 0.2216,
+            "away": 0.3399
+          },
+          "predicted": "home",
+          "hit": null
+        },
+        "Elo": {
+          "probs": {
+            "home": 0.3659,
+            "draw": 0.2799,
+            "away": 0.3542
+          },
+          "predicted": "home",
+          "hit": null
+        },
+        "ML": {
+          "probs": {
+            "home": 0.2488,
+            "draw": 0.2197,
+            "away": 0.5316
+          },
+          "predicted": "away",
+          "hit": null
+        }
+      },
+      "value_bets": []
+    },
     "result": null
   },
   {
@@ -2435,9 +2930,9 @@
     "prediction_timing": "pre_match",
     "prediction": {
       "model": "E0",
-      "generated_at": "2026-10-31T19:20:23",
+      "generated_at": "2026-10-31T20:31:26",
       "timing": "pre_match",
-      "source": "reports/archive/predict_20261031_192023.json",
+      "source": "reports/archive/predict_20261031_203126.json",
       "xg": {
         "home": 1.3322,
         "away": 1.1354
@@ -2644,9 +3139,9 @@
     "prediction_timing": "pre_match",
     "prediction": {
       "model": "E0",
-      "generated_at": "2026-10-31T19:20:23",
+      "generated_at": "2026-10-31T20:31:26",
       "timing": "pre_match",
-      "source": "reports/archive/predict_20261031_192023.json",
+      "source": "reports/archive/predict_20261031_203126.json",
       "xg": {
         "home": 1.3687,
         "away": 1.2491
@@ -2839,9 +3334,9 @@
     "prediction_timing": "pre_match",
     "prediction": {
       "model": "E0",
-      "generated_at": "2026-10-31T19:20:23",
+      "generated_at": "2026-10-31T20:31:26",
       "timing": "pre_match",
-      "source": "reports/archive/predict_20261031_192023.json",
+      "source": "reports/archive/predict_20261031_203126.json",
       "xg": {
         "home": 1.9958,
         "away": 1.054
@@ -3048,9 +3543,9 @@
     "prediction_timing": "pre_match",
     "prediction": {
       "model": "E0",
-      "generated_at": "2026-10-31T19:20:23",
+      "generated_at": "2026-10-31T20:31:26",
       "timing": "pre_match",
-      "source": "reports/archive/predict_20261031_192023.json",
+      "source": "reports/archive/predict_20261031_203126.json",
       "xg": {
         "home": 1.6164,
         "away": 1.0633
@@ -3217,16 +3712,200 @@
     },
     "home": {
       "cn": "腓特烈",
-      "matched": null
+      "matched": "Fredrikstad"
     },
     "away": {
       "cn": "罗森博格",
       "matched": "Rosenborg"
     },
-    "status": "skipped",
-    "skip_reason": "队名未匹配: 腓特烈(none)/罗森博格(alias)",
-    "prediction_timing": "skipped",
-    "prediction": null,
+    "status": "pending",
+    "skip_reason": null,
+    "prediction_timing": "pre_match",
+    "prediction": {
+      "model": "NOR1",
+      "generated_at": "2026-10-31T20:31:26",
+      "timing": "pre_match",
+      "source": "reports/archive/predict_20261031_203126.json",
+      "xg": {
+        "home": 1.2019,
+        "away": 1.3072
+      },
+      "confidence": {
+        "home": "alias",
+        "away": "alias"
+      },
+      "markets": {
+        "HAD": {
+          "available": true,
+          "probs": {
+            "home": 0.3802,
+            "draw": 0.2184,
+            "away": 0.4015
+          },
+          "odds": {
+            "home": 4.2,
+            "draw": 4.1,
+            "away": 1.52
+          },
+          "implied": {
+            "home": 0.2089,
+            "draw": 0.214,
+            "away": 0.5772
+          },
+          "blended": {
+            "home": 0.3116,
+            "draw": 0.2166,
+            "away": 0.4717
+          },
+          "predicted": "away",
+          "actual": null,
+          "hit": null
+        },
+        "HHAD": {
+          "available": true,
+          "line": 1.0,
+          "probs": {
+            "home": 0.5841,
+            "draw": 0.2403,
+            "away": 0.1757
+          },
+          "odds": {
+            "home": 2.1,
+            "draw": 3.5,
+            "away": 2.65
+          },
+          "implied": {
+            "home": 0.418,
+            "draw": 0.2508,
+            "away": 0.3312
+          },
+          "blended": {
+            "home": 0.5176,
+            "draw": 0.2445,
+            "away": 0.2379
+          },
+          "predicted": "home",
+          "actual": null,
+          "hit": null
+        },
+        "SCORE": {
+          "available": true,
+          "top": [
+            {
+              "score": "0:1",
+              "prob": 0.1318
+            },
+            {
+              "score": "1:0",
+              "prob": 0.1193
+            },
+            {
+              "score": "1:1",
+              "prob": 0.1044
+            }
+          ],
+          "predicted": "0:1",
+          "actual": null,
+          "top1_hit": null,
+          "top3_hit": null
+        },
+        "TOTAL_GOALS": {
+          "available": true,
+          "probs": {
+            "0": 0.0579,
+            "1": 0.2511,
+            "2": 0.2326,
+            "3": 0.2141,
+            "4": 0.1343,
+            "5": 0.0674,
+            "6": 0.0282,
+            "7+": 0.0144
+          },
+          "predicted": "1",
+          "actual": null,
+          "hit": null
+        },
+        "HALF_FULL": {
+          "available": true,
+          "top": [
+            {
+              "label": "负/负",
+              "prob": 0.2492
+            },
+            {
+              "label": "胜/胜",
+              "prob": 0.247
+            },
+            {
+              "label": "平/胜",
+              "prob": 0.133
+            }
+          ],
+          "predicted": "负/负",
+          "actual": null,
+          "hit": null
+        }
+      },
+      "model_layers": {
+        "DC": {
+          "probs": {
+            "home": 0.362,
+            "draw": 0.2221,
+            "away": 0.4159
+          },
+          "predicted": "away",
+          "hit": null
+        },
+        "Elo": {
+          "probs": {
+            "home": 0.3702,
+            "draw": 0.2797,
+            "away": 0.35
+          },
+          "predicted": "home",
+          "hit": null
+        },
+        "ML": {
+          "probs": {
+            "home": 0.4592,
+            "draw": 0.0942,
+            "away": 0.4466
+          },
+          "predicted": "home",
+          "hit": null
+        }
+      },
+      "value_bets": [
+        {
+          "market": "HAD",
+          "option": "home",
+          "option_cn": "胜",
+          "odds": 4.2,
+          "model_prob": 0.3116,
+          "implied_prob": 0.2089,
+          "edge": 0.1028,
+          "ev": 0.3089,
+          "stake_pct": 0.02,
+          "hit": null,
+          "pnl_unit": null,
+          "pnl_pct": null
+        },
+        {
+          "market": "HHAD",
+          "option": "home",
+          "option_cn": "胜",
+          "odds": 2.1,
+          "model_prob": 0.5176,
+          "implied_prob": 0.418,
+          "edge": 0.0997,
+          "ev": 0.087,
+          "stake_pct": 0.0198,
+          "hit": null,
+          "pnl_unit": null,
+          "pnl_pct": null
+        }
+      ]
+    },
     "result": null
   },
   {
@@ -3242,16 +3921,171 @@
     },
     "home": {
       "cn": "巴列卡诺",
-      "matched": null
+      "matched": "Vallecano"
     },
     "away": {
       "cn": "塞尔塔",
       "matched": "Celta"
     },
-    "status": "skipped",
-    "skip_reason": "队名未匹配: 巴列卡诺(none)/塞尔塔(cache)",
-    "prediction_timing": "skipped",
-    "prediction": null,
+    "status": "pending",
+    "skip_reason": null,
+    "prediction_timing": "pre_match",
+    "prediction": {
+      "model": "SP1",
+      "generated_at": "2026-10-31T20:31:26",
+      "timing": "pre_match",
+      "source": "reports/archive/predict_20261031_203126.json",
+      "xg": {
+        "home": 1.2086,
+        "away": 1.0424
+      },
+      "confidence": {
+        "home": "alias",
+        "away": "cache"
+      },
+      "markets": {
+        "HAD": {
+          "available": true,
+          "probs": {
+            "home": 0.3558,
+            "draw": 0.3106,
+            "away": 0.3336
+          },
+          "odds": {
+            "home": 2.45,
+            "draw": 2.6,
+            "away": 2.89
+          },
+          "implied": {
+            "home": 0.3584,
+            "draw": 0.3377,
+            "away": 0.3038
+          },
+          "blended": {
+            "home": 0.3568,
+            "draw": 0.3215,
+            "away": 0.3217
+          },
+          "predicted": "home",
+          "actual": null,
+          "hit": null
+        },
+        "HHAD": {
+          "available": true,
+          "line": -1.0,
+          "probs": {
+            "home": 0.1722,
+            "draw": 0.235,
+            "away": 0.5928
+          },
+          "odds": {
+            "home": 5.95,
+            "draw": 3.9,
+            "away": 1.4
+          },
+          "implied": {
+            "home": 0.1476,
+            "draw": 0.2252,
+            "away": 0.6272
+          },
+          "blended": {
+            "home": 0.1623,
+            "draw": 0.2311,
+            "away": 0.6066
+          },
+          "predicted": "away",
+          "actual": null,
+          "hit": null
+        },
+        "SCORE": {
+          "available": true,
+          "top": [
+            {
+              "score": "1:0",
+              "prob": 0.1361
+            },
+            {
+              "score": "1:1",
+              "prob": 0.125
+            },
+            {
+              "score": "0:1",
+              "prob": 0.1164
+            }
+          ],
+          "predicted": "1:0",
+          "actual": null,
+          "top1_hit": null,
+          "top3_hit": null
+        },
+        "TOTAL_GOALS": {
+          "available": true,
+          "probs": {
+            "0": 0.0976,
+            "1": 0.2525,
+            "2": 0.2591,
+            "3": 0.2001,
+            "4": 0.1126,
+            "5": 0.0507,
+            "6": 0.019,
+            "7+": 0.0084
+          },
+          "predicted": "2",
+          "actual": null,
+          "hit": null
+        },
+        "HALF_FULL": {
+          "available": true,
+          "top": [
+            {
+              "label": "胜/胜",
+              "prob": 0.2313
+            },
+            {
+              "label": "平/胜",
+              "prob": 0.1776
+            },
+            {
+              "label": "平/平",
+              "prob": 0.1621
+            }
+          ],
+          "predicted": "胜/胜",
+          "actual": null,
+          "hit": null
+        }
+      },
+      "model_layers": {
+        "DC": {
+          "probs": {
+            "home": 0.4072,
+            "draw": 0.2707,
+            "away": 0.3221
+          },
+          "predicted": "home",
+          "hit": null
+        },
+        "Elo": {
+          "probs": {
+            "home": 0.4376,
+            "draw": 0.2672,
+            "away": 0.2952
+          },
+          "predicted": "home",
+          "hit": null
+        },
+        "ML": {
+          "probs": {
+            "home": 0.1258,
+            "draw": 0.4732,
+            "away": 0.4011
+          },
+          "predicted": "draw",
+          "hit": null
+        }
+      },
+      "value_bets": []
+    },
     "result": null
   }
 ]

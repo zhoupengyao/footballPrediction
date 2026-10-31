@@ -244,23 +244,63 @@
     "risks": {
       "conservative": {
         "recommendations": 2,
-        "observations": 6,
+        "observations": 10,
         "total_stake_pct": 0.0315
       },
       "balanced": {
         "recommendations": 2,
-        "observations": 11,
+        "observations": 15,
         "total_stake_pct": 0.0315
       },
       "aggressive": {
         "recommendations": 2,
-        "observations": 11,
+        "observations": 15,
         "total_stake_pct": 0.0315
       }
     }
   },
   {
     "date": "2026-11-01",
+    "risks": {
+      "conservative": {
+        "recommendations": 0,
+        "observations": 8,
+        "total_stake_pct": 0
+      },
+      "balanced": {
+        "recommendations": 0,
+        "observations": 9,
+        "total_stake_pct": 0
+      },
+      "aggressive": {
+        "recommendations": 0,
+        "observations": 9,
+        "total_stake_pct": 0
+      }
+    }
+  },
+  {
+    "date": "2026-11-02",
+    "risks": {
+      "conservative": {
+        "recommendations": 0,
+        "observations": 3,
+        "total_stake_pct": 0
+      },
+      "balanced": {
+        "recommendations": 0,
+        "observations": 5,
+        "total_stake_pct": 0
+      },
+      "aggressive": {
+        "recommendations": 0,
+        "observations": 5,
+        "total_stake_pct": 0
+      }
+    }
+  },
+  {
+    "date": "2026-11-03",
     "risks": {
       "conservative": {
         "recommendations": 0,

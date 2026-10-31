@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-31T19:22:11+08:00",
+  "generated_at": "2026-10-31T20:33:44+08:00",
   "site": {
     "name": "竞彩预测实验室",
     "tagline": "用数据看球 · 研究用途 · 不构成投注建议"
   },
-  "latest_match_date": "2026-11-01",
-  "latest_prediction_date": "2026-11-01",
+  "latest_match_date": "2026-11-03",
+  "latest_prediction_date": "2026-11-03",
   "counts": {
-    "matches": 157,
-    "predicted": 82,
+    "matches": 191,
+    "predicted": 110,
     "settled": 67,
-    "pending": 15,
-    "skipped": 75,
-    "value_bets": 80,
-    "dates": 14
+    "pending": 43,
+    "skipped": 81,
+    "value_bets": 98,
+    "dates": 16
   },
   "dates": [
     {
@@ -812,12 +812,12 @@
     {
       "date": "2026-10-31",
       "total": 26,
-      "predicted": 15,
+      "predicted": 20,
       "settled": 6,
-      "pending": 9,
-      "skipped": 11,
+      "pending": 14,
+      "skipped": 6,
       "post_kickoff": 0,
-      "value_bets": 13,
+      "value_bets": 17,
       "markets": {
         "HAD": {
           "n": 6,
@@ -877,10 +877,142 @@
     },
     {
       "date": "2026-11-01",
-      "total": 8,
-      "predicted": 6,
+      "total": 23,
+      "predicted": 14,
       "settled": 0,
-      "pending": 6,
+      "pending": 14,
+      "skipped": 9,
+      "post_kickoff": 0,
+      "value_bets": 9,
+      "markets": {
+        "HAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HHAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP1": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP3": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "TOTAL_GOALS": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HALF_FULL": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_DC": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ELO": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ML": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        }
+      },
+      "value": {
+        "n": 0,
+        "hits": 0,
+        "hit_rate": null,
+        "pnl_unit": 0,
+        "pnl_pct": 0,
+        "staked_pct": 0,
+        "roi": null
+      }
+    },
+    {
+      "date": "2026-11-02",
+      "total": 10,
+      "predicted": 8,
+      "settled": 0,
+      "pending": 8,
+      "skipped": 2,
+      "post_kickoff": 0,
+      "value_bets": 5,
+      "markets": {
+        "HAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HHAD": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP1": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "SCORE_TOP3": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "TOTAL_GOALS": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HALF_FULL": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_DC": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ELO": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        },
+        "HAD_ML": {
+          "n": 0,
+          "hits": 0,
+          "accuracy": null
+        }
+      },
+      "value": {
+        "n": 0,
+        "hits": 0,
+        "hit_rate": null,
+        "pnl_unit": 0,
+        "pnl_pct": 0,
+        "staked_pct": 0,
+        "roi": null
+      }
+    },
+    {
+      "date": "2026-11-03",
+      "total": 9,
+      "predicted": 7,
+      "settled": 0,
+      "pending": 7,
       "skipped": 2,
       "post_kickoff": 0,
       "value_bets": 5,
@@ -1201,7 +1333,8 @@
     "reports/archive/predict_20261027_020535.json",
     "reports/archive/predict_20261028_201732.json",
     "reports/archive/predict_20261029_202315.json",
-    "reports/archive/predict_20261031_192023.json",
+    "reports/archive/predict_20261031_202950.json",
+    "reports/archive/predict_20261031_203126.json",
     "reports/predict_20261018.json",
     "reports/predict_20261021.json",
     "reports/predict_20261022.json",
