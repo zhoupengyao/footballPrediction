@@ -1,22 +1,22 @@
 {
   "sample": {
-    "pre_match_settled": 56,
-    "dates": 10,
-    "total_history": 134,
+    "pre_match_settled": 67,
+    "dates": 12,
+    "total_history": 157,
     "excluded_post_kickoff": 0
   },
   "markets": {
     "HAD": {
       "key": "HAD",
       "label": "胜平负",
-      "n": 56,
-      "hits": 31,
-      "accuracy": 0.5536,
-      "avg_confidence": 0.5454,
-      "avg_actual_prob": 0.433,
-      "ece": 0.0556,
-      "brier": 0.5599,
-      "log_loss": 0.9463,
+      "n": 67,
+      "hits": 37,
+      "accuracy": 0.5522,
+      "avg_confidence": 0.5427,
+      "avg_actual_prob": 0.4343,
+      "ece": 0.0505,
+      "brier": 0.5552,
+      "log_loss": 0.9399,
       "bins": [
         {
           "label": "0–30%",
@@ -36,57 +36,57 @@
           "label": "30–40%",
           "lo": 0.3,
           "hi": 0.4,
-          "n": 9,
-          "hits": 3,
-          "misses": 6,
-          "accuracy": 0.3333,
-          "avg_pred": 0.3833,
-          "avg_actual_prob": 0.3244,
-          "gap": -0.05,
-          "ci_low": 0.1206,
-          "ci_high": 0.6458
+          "n": 11,
+          "hits": 4,
+          "misses": 7,
+          "accuracy": 0.3636,
+          "avg_pred": 0.3839,
+          "avg_actual_prob": 0.3344,
+          "gap": -0.0202,
+          "ci_low": 0.1517,
+          "ci_high": 0.6462
         },
         {
           "label": "40–50%",
           "lo": 0.4,
           "hi": 0.5,
-          "n": 11,
-          "hits": 5,
-          "misses": 6,
-          "accuracy": 0.4545,
-          "avg_pred": 0.4471,
-          "avg_actual_prob": 0.3541,
-          "gap": 0.0074,
-          "ci_low": 0.2127,
-          "ci_high": 0.7199
+          "n": 15,
+          "hits": 6,
+          "misses": 9,
+          "accuracy": 0.4,
+          "avg_pred": 0.4492,
+          "avg_actual_prob": 0.3522,
+          "gap": -0.0492,
+          "ci_low": 0.1982,
+          "ci_high": 0.6425
         },
         {
           "label": "50–60%",
           "lo": 0.5,
           "hi": 0.6,
-          "n": 18,
-          "hits": 9,
+          "n": 19,
+          "hits": 10,
           "misses": 9,
-          "accuracy": 0.5,
-          "avg_pred": 0.5488,
-          "avg_actual_prob": 0.3838,
-          "gap": -0.0488,
-          "ci_low": 0.2903,
-          "ci_high": 0.7097
+          "accuracy": 0.5263,
+          "avg_pred": 0.548,
+          "avg_actual_prob": 0.3917,
+          "gap": -0.0217,
+          "ci_low": 0.3171,
+          "ci_high": 0.7267
         },
         {
           "label": "60–70%",
           "lo": 0.6,
           "hi": 0.7,
-          "n": 13,
-          "hits": 9,
-          "misses": 4,
-          "accuracy": 0.6923,
-          "avg_pred": 0.6397,
-          "avg_actual_prob": 0.5034,
-          "gap": 0.0527,
-          "ci_low": 0.4237,
-          "ci_high": 0.8732
+          "n": 17,
+          "hits": 12,
+          "misses": 5,
+          "accuracy": 0.7059,
+          "avg_pred": 0.6475,
+          "avg_actual_prob": 0.5128,
+          "gap": 0.0584,
+          "ci_low": 0.4687,
+          "ci_high": 0.8672
         },
         {
           "label": "70–80%",
@@ -118,15 +118,15 @@
         }
       ],
       "actual_rank": {
-        "1": 31,
-        "2": 11,
-        "3": 14
+        "1": 37,
+        "2": 15,
+        "3": 15
       },
       "confusion": {
         "home": {
-          "home": 22,
+          "home": 27,
           "draw": 5,
-          "away": 9
+          "away": 11
         },
         "draw": {
           "home": 0,
@@ -134,14 +134,27 @@
           "away": 0
         },
         "away": {
-          "home": 5,
-          "draw": 6,
-          "away": 9
+          "home": 7,
+          "draw": 7,
+          "away": 10
         }
       },
       "high_conf_threshold": 0.6,
       "low_conf_threshold": 0.4,
       "high_conf_wrong": [
+        {
+          "date": "2026-10-31",
+          "match_num": "周五009",
+          "league": "西甲",
+          "home": "比利亚雷",
+          "away": "西班牙人",
+          "result": "0:1",
+          "predicted": "主胜",
+          "actual": "客胜",
+          "confidence": 0.6631,
+          "actual_prob": 0.143,
+          "hit": false
+        },
         {
           "date": "2026-10-26",
           "match_num": "周日027",
@@ -210,6 +223,19 @@
           "hit": true
         },
         {
+          "date": "2026-10-30",
+          "match_num": "周四007",
+          "league": "巴甲",
+          "home": "格雷米奥",
+          "away": "巴竞技",
+          "result": "2:0",
+          "predicted": "主胜",
+          "actual": "主胜",
+          "confidence": 0.3783,
+          "actual_prob": 0.3783,
+          "hit": true
+        },
+        {
           "date": "2026-10-20",
           "match_num": "周一005",
           "league": "英超",
@@ -240,14 +266,14 @@
     "HHAD": {
       "key": "HHAD",
       "label": "让球胜平负",
-      "n": 56,
-      "hits": 25,
-      "accuracy": 0.4464,
-      "avg_confidence": 0.5107,
-      "avg_actual_prob": 0.3807,
-      "ece": 0.0643,
-      "brier": 0.6387,
-      "log_loss": 1.0733,
+      "n": 67,
+      "hits": 30,
+      "accuracy": 0.4478,
+      "avg_confidence": 0.5184,
+      "avg_actual_prob": 0.3929,
+      "ece": 0.0721,
+      "brier": 0.6206,
+      "log_loss": 1.0458,
       "bins": [
         {
           "label": "0–30%",
@@ -267,15 +293,15 @@
           "label": "30–40%",
           "lo": 0.3,
           "hi": 0.4,
-          "n": 11,
+          "n": 15,
           "hits": 3,
-          "misses": 8,
-          "accuracy": 0.2727,
-          "avg_pred": 0.3863,
-          "avg_actual_prob": 0.3291,
-          "gap": -0.1136,
-          "ci_low": 0.0975,
-          "ci_high": 0.5657
+          "misses": 12,
+          "accuracy": 0.2,
+          "avg_pred": 0.3882,
+          "avg_actual_prob": 0.3238,
+          "gap": -0.1882,
+          "ci_low": 0.0705,
+          "ci_high": 0.4519
         },
         {
           "label": "40–50%",
@@ -295,43 +321,43 @@
           "label": "50–60%",
           "lo": 0.5,
           "hi": 0.6,
-          "n": 12,
-          "hits": 6,
-          "misses": 6,
+          "n": 14,
+          "hits": 7,
+          "misses": 7,
           "accuracy": 0.5,
-          "avg_pred": 0.5388,
-          "avg_actual_prob": 0.3708,
-          "gap": -0.0388,
-          "ci_low": 0.2538,
-          "ci_high": 0.7462
+          "avg_pred": 0.5414,
+          "avg_actual_prob": 0.3742,
+          "gap": -0.0414,
+          "ci_low": 0.268,
+          "ci_high": 0.732
         },
         {
           "label": "60–70%",
           "lo": 0.6,
           "hi": 0.7,
-          "n": 13,
-          "hits": 8,
-          "misses": 5,
-          "accuracy": 0.6154,
-          "avg_pred": 0.6366,
-          "avg_actual_prob": 0.4679,
-          "gap": -0.0212,
-          "ci_low": 0.3552,
-          "ci_high": 0.8229
+          "n": 16,
+          "hits": 10,
+          "misses": 6,
+          "accuracy": 0.625,
+          "avg_pred": 0.641,
+          "avg_actual_prob": 0.4749,
+          "gap": -0.016,
+          "ci_low": 0.3864,
+          "ci_high": 0.8152
         },
         {
           "label": "70–80%",
           "lo": 0.7,
           "hi": 0.8,
-          "n": 2,
-          "hits": 1,
+          "n": 4,
+          "hits": 3,
           "misses": 1,
-          "accuracy": 0.5,
-          "avg_pred": 0.7435,
-          "avg_actual_prob": 0.4057,
-          "gap": -0.2435,
-          "ci_low": 0.0945,
-          "ci_high": 0.9055
+          "accuracy": 0.75,
+          "avg_pred": 0.7375,
+          "avg_actual_prob": 0.5686,
+          "gap": 0.0125,
+          "ci_low": 0.3006,
+          "ci_high": 0.9544
         },
         {
           "label": "80–100%",
@@ -349,15 +375,15 @@
         }
       ],
       "actual_rank": {
-        "3": 17,
-        "2": 14,
-        "1": 25
+        "3": 19,
+        "2": 18,
+        "1": 30
       },
       "confusion": {
         "home": {
-          "home": 11,
-          "draw": 5,
-          "away": 6
+          "home": 14,
+          "draw": 6,
+          "away": 8
         },
         "draw": {
           "home": 0,
@@ -365,9 +391,9 @@
           "away": 0
         },
         "away": {
-          "home": 11,
-          "draw": 9,
-          "away": 14
+          "home": 13,
+          "draw": 10,
+          "away": 16
         }
       },
       "high_conf_threshold": 0.6,
@@ -397,6 +423,19 @@
           "actual": "平",
           "confidence": 0.6518,
           "actual_prob": 0.2229,
+          "hit": false
+        },
+        {
+          "date": "2026-10-31",
+          "match_num": "周五004",
+          "league": "法甲",
+          "home": "勒阿弗尔",
+          "away": "巴黎圣曼",
+          "result": "1:5",
+          "predicted": "主胜",
+          "actual": "客胜",
+          "confidence": 0.637,
+          "actual_prob": 0.1719,
           "hit": false
         },
         {
@@ -497,11 +536,11 @@
     "SCORE": {
       "key": "SCORE",
       "label": "比分",
-      "n": 56,
-      "hits": 14,
-      "accuracy": 0.25,
+      "n": 67,
+      "hits": 16,
+      "accuracy": 0.2388,
       "avg_confidence": null,
-      "avg_actual_prob": 0.1105,
+      "avg_actual_prob": 0.1117,
       "ece": null,
       "brier": null,
       "log_loss": null,
@@ -513,9 +552,9 @@
       "high_conf_wrong": [],
       "low_conf_hit": [],
       "hit_detail": {
-        "n": 14,
-        "avg_actual_prob": 0.1105,
-        "median_actual_prob": 0.1079,
+        "n": 16,
+        "avg_actual_prob": 0.1117,
+        "median_actual_prob": 0.1131,
         "min_actual_prob": 0.0761,
         "max_actual_prob": 0.144,
         "prob_bins": [
@@ -529,7 +568,7 @@
           },
           {
             "label": "10–15%",
-            "n": 7
+            "n": 9
           },
           {
             "label": "15–20%",
@@ -750,6 +789,36 @@
             ],
             "actual": "0:2",
             "p_actual": 0.0761
+          },
+          {
+            "date": "2026-10-30",
+            "match_num": "周四004",
+            "league": "瑞超",
+            "home": "哈马比",
+            "away": "天狼星",
+            "result": "2:0",
+            "top3": [
+              "1:0",
+              "2:0",
+              "1:1"
+            ],
+            "actual": "2:0",
+            "p_actual": 0.1098
+          },
+          {
+            "date": "2026-10-31",
+            "match_num": "周五010",
+            "league": "法甲",
+            "home": "里尔",
+            "away": "朗斯",
+            "result": "1:0",
+            "top3": [
+              "1:0",
+              "1:1",
+              "0:1"
+            ],
+            "actual": "1:0",
+            "p_actual": 0.1294
           }
         ]
       }
@@ -757,14 +826,14 @@
     "TOTAL_GOALS": {
       "key": "TOTAL_GOALS",
       "label": "总进球",
-      "n": 56,
-      "hits": 15,
-      "accuracy": 0.2679,
-      "avg_confidence": 0.2432,
-      "avg_actual_prob": 0.1594,
-      "ece": 0.0627,
-      "brier": 0.8626,
-      "log_loss": 2.0586,
+      "n": 67,
+      "hits": 17,
+      "accuracy": 0.2537,
+      "avg_confidence": 0.2416,
+      "avg_actual_prob": 0.1539,
+      "ece": 0.0439,
+      "brier": 0.8728,
+      "log_loss": 2.1151,
       "bins": [
         {
           "label": "0–10%",
@@ -784,29 +853,29 @@
           "label": "10–20%",
           "lo": 0.1,
           "hi": 0.2,
-          "n": 4,
+          "n": 5,
           "hits": 1,
-          "misses": 3,
-          "accuracy": 0.25,
+          "misses": 4,
+          "accuracy": 0.2,
           "avg_pred": 0.1946,
-          "avg_actual_prob": 0.1663,
-          "gap": 0.0554,
-          "ci_low": 0.0456,
-          "ci_high": 0.6994
+          "avg_actual_prob": 0.1645,
+          "gap": 0.0054,
+          "ci_low": 0.0362,
+          "ci_high": 0.6245
         },
         {
           "label": "20–30%",
           "lo": 0.2,
           "hi": 0.3,
-          "n": 49,
-          "hits": 14,
-          "misses": 35,
-          "accuracy": 0.2857,
-          "avg_pred": 0.2403,
-          "avg_actual_prob": 0.1638,
-          "gap": 0.0454,
-          "ci_low": 0.1785,
-          "ci_high": 0.4241
+          "n": 59,
+          "hits": 16,
+          "misses": 43,
+          "accuracy": 0.2712,
+          "avg_pred": 0.2398,
+          "avg_actual_prob": 0.1569,
+          "gap": 0.0314,
+          "ci_low": 0.1744,
+          "ci_high": 0.396
         },
         {
           "label": "30–40%",
@@ -852,10 +921,10 @@
         }
       ],
       "actual_rank": {
-        "1": 15,
-        "3": 8,
-        "other": 25,
-        "2": 8
+        "1": 17,
+        "3": 9,
+        "other": 32,
+        "2": 9
       },
       "confusion": null,
       "high_conf_threshold": 0.3,
@@ -920,12 +989,12 @@
     "HALF_FULL": {
       "key": "HALF_FULL",
       "label": "半全场",
-      "n": 56,
-      "hits": 21,
-      "accuracy": 0.375,
-      "avg_confidence": 0.4014,
-      "avg_actual_prob": 0.3425,
-      "ece": 0.1081,
+      "n": 67,
+      "hits": 28,
+      "accuracy": 0.4179,
+      "avg_confidence": 0.4015,
+      "avg_actual_prob": 0.3471,
+      "ece": 0.1029,
       "brier": null,
       "log_loss": null,
       "bins": [
@@ -961,57 +1030,57 @@
           "label": "20–30%",
           "lo": 0.2,
           "hi": 0.3,
-          "n": 9,
-          "hits": 1,
+          "n": 10,
+          "hits": 2,
           "misses": 8,
-          "accuracy": 0.1111,
-          "avg_pred": 0.2795,
-          "avg_actual_prob": 0.1851,
-          "gap": -0.1684,
-          "ci_low": 0.0199,
-          "ci_high": 0.435
+          "accuracy": 0.2,
+          "avg_pred": 0.2803,
+          "avg_actual_prob": 0.1997,
+          "gap": -0.0803,
+          "ci_low": 0.0567,
+          "ci_high": 0.5098
         },
         {
           "label": "30–40%",
           "lo": 0.3,
           "hi": 0.4,
-          "n": 22,
-          "hits": 6,
-          "misses": 16,
-          "accuracy": 0.2727,
-          "avg_pred": 0.3503,
-          "avg_actual_prob": 0.2766,
-          "gap": -0.0776,
-          "ci_low": 0.1315,
-          "ci_high": 0.4815
+          "n": 26,
+          "hits": 7,
+          "misses": 19,
+          "accuracy": 0.2692,
+          "avg_pred": 0.3474,
+          "avg_actual_prob": 0.2648,
+          "gap": -0.0782,
+          "ci_low": 0.137,
+          "ci_high": 0.4608
         },
         {
           "label": "40–50%",
           "lo": 0.4,
           "hi": 0.5,
-          "n": 15,
-          "hits": 9,
+          "n": 18,
+          "hits": 12,
           "misses": 6,
-          "accuracy": 0.6,
-          "avg_pred": 0.4476,
-          "avg_actual_prob": 0.3787,
-          "gap": 0.1524,
-          "ci_low": 0.3575,
-          "ci_high": 0.8018
+          "accuracy": 0.6667,
+          "avg_pred": 0.4445,
+          "avg_actual_prob": 0.3887,
+          "gap": 0.2222,
+          "ci_low": 0.4375,
+          "ci_high": 0.8372
         },
         {
           "label": "50–100%",
           "lo": 0.5,
           "hi": 1.0,
-          "n": 10,
-          "hits": 5,
-          "misses": 5,
-          "accuracy": 0.5,
-          "avg_pred": 0.5544,
-          "avg_actual_prob": 0.5635,
-          "gap": -0.0544,
-          "ci_low": 0.2366,
-          "ci_high": 0.7634
+          "n": 13,
+          "hits": 7,
+          "misses": 6,
+          "accuracy": 0.5385,
+          "avg_pred": 0.5433,
+          "avg_actual_prob": 0.5467,
+          "gap": -0.0048,
+          "ci_low": 0.2914,
+          "ci_high": 0.7679
         }
       ],
       "actual_rank": null,
@@ -1085,6 +1154,19 @@
           "hit": false
         },
         {
+          "date": "2026-10-31",
+          "match_num": "周五009",
+          "league": "西甲",
+          "home": "比利亚雷",
+          "away": "西班牙人",
+          "result": "0:1",
+          "predicted": "胜/胜",
+          "actual": "平/负",
+          "confidence": 0.5089,
+          "actual_prob": null,
+          "hit": false
+        },
+        {
           "date": "2026-10-29",
           "match_num": "周三013",
           "league": "意甲",
@@ -1135,19 +1217,6 @@
           "confidence": 0.4169,
           "actual_prob": null,
           "hit": false
-        },
-        {
-          "date": "2026-10-19",
-          "match_num": "周日022",
-          "league": "意甲",
-          "home": "尤文图斯",
-          "away": "拉齐奥",
-          "result": "0:3",
-          "predicted": "胜/胜",
-          "actual": "负/负",
-          "confidence": 0.4027,
-          "actual_prob": 0.1405,
-          "hit": false
         }
       ],
       "low_conf_hit": []
@@ -1157,14 +1226,14 @@
     "DC": {
       "key": "LAYER",
       "label": "DC",
-      "n": 30,
-      "hits": 14,
-      "accuracy": 0.4667,
-      "avg_confidence": 0.529,
-      "avg_actual_prob": 0.4357,
-      "ece": 0.2396,
-      "brier": 0.5435,
-      "log_loss": 0.9243,
+      "n": 41,
+      "hits": 22,
+      "accuracy": 0.5366,
+      "avg_confidence": 0.5299,
+      "avg_actual_prob": 0.4401,
+      "ece": 0.1418,
+      "brier": 0.5323,
+      "log_loss": 0.9098,
       "bins": [
         {
           "label": "0–30%",
@@ -1198,43 +1267,43 @@
           "label": "40–50%",
           "lo": 0.4,
           "hi": 0.5,
-          "n": 8,
-          "hits": 1,
-          "misses": 7,
-          "accuracy": 0.125,
-          "avg_pred": 0.4549,
-          "avg_actual_prob": 0.3105,
-          "gap": -0.3299,
-          "ci_low": 0.0224,
-          "ci_high": 0.4709
+          "n": 13,
+          "hits": 5,
+          "misses": 8,
+          "accuracy": 0.3846,
+          "avg_pred": 0.4522,
+          "avg_actual_prob": 0.3535,
+          "gap": -0.0676,
+          "ci_low": 0.1771,
+          "ci_high": 0.6448
         },
         {
           "label": "50–60%",
           "lo": 0.5,
           "hi": 0.6,
-          "n": 9,
+          "n": 10,
           "hits": 6,
-          "misses": 3,
-          "accuracy": 0.6667,
-          "avg_pred": 0.5485,
-          "avg_actual_prob": 0.4458,
-          "gap": 0.1182,
-          "ci_low": 0.3542,
-          "ci_high": 0.8794
+          "misses": 4,
+          "accuracy": 0.6,
+          "avg_pred": 0.5438,
+          "avg_actual_prob": 0.424,
+          "gap": 0.0562,
+          "ci_low": 0.3127,
+          "ci_high": 0.8318
         },
         {
           "label": "60–70%",
           "lo": 0.6,
           "hi": 0.7,
-          "n": 6,
-          "hits": 5,
-          "misses": 1,
-          "accuracy": 0.8333,
-          "avg_pred": 0.6327,
-          "avg_actual_prob": 0.5675,
-          "gap": 0.2007,
-          "ci_low": 0.4365,
-          "ci_high": 0.9699
+          "n": 11,
+          "hits": 9,
+          "misses": 2,
+          "accuracy": 0.8182,
+          "avg_pred": 0.628,
+          "avg_actual_prob": 0.5488,
+          "gap": 0.1901,
+          "ci_low": 0.523,
+          "ci_high": 0.9486
         },
         {
           "label": "70–80%",
@@ -1271,6 +1340,19 @@
       "low_conf_threshold": 0.4,
       "high_conf_wrong": [
         {
+          "date": "2026-10-31",
+          "match_num": "周五009",
+          "league": "西甲",
+          "home": "比利亚雷",
+          "away": "西班牙人",
+          "result": "0:1",
+          "predicted": "主胜",
+          "actual": "客胜",
+          "confidence": 0.6457,
+          "actual_prob": 0.1652,
+          "hit": false
+        },
+        {
           "date": "2026-10-26",
           "match_num": "周日027",
           "league": "西甲",
@@ -1289,14 +1371,14 @@
     "Elo": {
       "key": "LAYER",
       "label": "Elo",
-      "n": 30,
-      "hits": 15,
-      "accuracy": 0.5,
-      "avg_confidence": 0.5273,
-      "avg_actual_prob": 0.4256,
-      "ece": 0.187,
-      "brier": 0.5632,
-      "log_loss": 0.9527,
+      "n": 41,
+      "hits": 23,
+      "accuracy": 0.561,
+      "avg_confidence": 0.5242,
+      "avg_actual_prob": 0.4305,
+      "ece": 0.1185,
+      "brier": 0.5501,
+      "log_loss": 0.9341,
       "bins": [
         {
           "label": "0–30%",
@@ -1316,70 +1398,70 @@
           "label": "30–40%",
           "lo": 0.3,
           "hi": 0.4,
-          "n": 5,
-          "hits": 0,
+          "n": 6,
+          "hits": 1,
           "misses": 5,
-          "accuracy": 0.0,
-          "avg_pred": 0.3804,
-          "avg_actual_prob": 0.3001,
-          "gap": -0.3804,
-          "ci_low": 0.0,
-          "ci_high": 0.4345
+          "accuracy": 0.1667,
+          "avg_pred": 0.3827,
+          "avg_actual_prob": 0.3158,
+          "gap": -0.2161,
+          "ci_low": 0.0301,
+          "ci_high": 0.5635
         },
         {
           "label": "40–50%",
           "lo": 0.4,
           "hi": 0.5,
-          "n": 11,
-          "hits": 6,
-          "misses": 5,
-          "accuracy": 0.5455,
-          "avg_pred": 0.4577,
-          "avg_actual_prob": 0.3794,
-          "gap": 0.0877,
-          "ci_low": 0.2801,
-          "ci_high": 0.7873
+          "n": 16,
+          "hits": 9,
+          "misses": 7,
+          "accuracy": 0.5625,
+          "avg_pred": 0.4517,
+          "avg_actual_prob": 0.379,
+          "gap": 0.1108,
+          "ci_low": 0.3318,
+          "ci_high": 0.769
         },
         {
           "label": "50–60%",
           "lo": 0.5,
           "hi": 0.6,
-          "n": 6,
-          "hits": 2,
+          "n": 8,
+          "hits": 4,
           "misses": 4,
-          "accuracy": 0.3333,
-          "avg_pred": 0.5521,
-          "avg_actual_prob": 0.3329,
-          "gap": -0.2187,
-          "ci_low": 0.0968,
-          "ci_high": 0.7
+          "accuracy": 0.5,
+          "avg_pred": 0.5475,
+          "avg_actual_prob": 0.3832,
+          "gap": -0.0475,
+          "ci_low": 0.2152,
+          "ci_high": 0.7848
         },
         {
           "label": "60–70%",
           "lo": 0.6,
           "hi": 0.7,
-          "n": 5,
-          "hits": 4,
-          "misses": 1,
-          "accuracy": 0.8,
-          "avg_pred": 0.6303,
-          "avg_actual_prob": 0.5356,
-          "gap": 0.1697,
-          "ci_low": 0.3755,
-          "ci_high": 0.9638
+          "n": 7,
+          "hits": 5,
+          "misses": 2,
+          "accuracy": 0.7143,
+          "avg_pred": 0.6319,
+          "avg_actual_prob": 0.4942,
+          "gap": 0.0824,
+          "ci_low": 0.3589,
+          "ci_high": 0.9178
         },
         {
           "label": "70–80%",
           "lo": 0.7,
           "hi": 0.8,
-          "n": 2,
-          "hits": 2,
+          "n": 3,
+          "hits": 3,
           "misses": 0,
           "accuracy": 1.0,
-          "avg_pred": 0.7657,
-          "avg_actual_prob": 0.7657,
-          "gap": 0.2343,
-          "ci_low": 0.3424,
+          "avg_pred": 0.76,
+          "avg_actual_prob": 0.76,
+          "gap": 0.24,
+          "ci_low": 0.4385,
           "ci_high": 1.0
         },
         {
@@ -1403,6 +1485,19 @@
       "low_conf_threshold": 0.4,
       "high_conf_wrong": [
         {
+          "date": "2026-10-31",
+          "match_num": "周五009",
+          "league": "西甲",
+          "home": "比利亚雷",
+          "away": "西班牙人",
+          "result": "0:1",
+          "predicted": "主胜",
+          "actual": "客胜",
+          "confidence": 0.6637,
+          "actual_prob": 0.1736,
+          "hit": false
+        },
+        {
           "date": "2026-10-25",
           "match_num": "周日016",
           "league": "意甲",
@@ -1416,19 +1511,33 @@
           "hit": false
         }
       ],
-      "low_conf_hit": []
+      "low_conf_hit": [
+        {
+          "date": "2026-10-31",
+          "match_num": "周五007",
+          "league": "德甲",
+          "home": "埃沃斯堡",
+          "away": "美因茨",
+          "result": "4:1",
+          "predicted": "主胜",
+          "actual": "主胜",
+          "confidence": 0.3946,
+          "actual_prob": 0.3946,
+          "hit": true
+        }
+      ]
     },
     "ML": {
       "key": "LAYER",
       "label": "ML",
-      "n": 29,
-      "hits": 12,
-      "accuracy": 0.4138,
-      "avg_confidence": 0.7501,
-      "avg_actual_prob": 0.4216,
-      "ece": 0.3363,
-      "brier": 0.8043,
-      "log_loss": 1.3068,
+      "n": 40,
+      "hits": 17,
+      "accuracy": 0.425,
+      "avg_confidence": 0.7497,
+      "avg_actual_prob": 0.4317,
+      "ece": 0.3247,
+      "brier": 0.7845,
+      "log_loss": 1.3358,
       "bins": [
         {
           "label": "0–30%",
@@ -1462,71 +1571,71 @@
           "label": "40–50%",
           "lo": 0.4,
           "hi": 0.5,
-          "n": 3,
+          "n": 4,
           "hits": 1,
-          "misses": 2,
-          "accuracy": 0.3333,
-          "avg_pred": 0.4573,
-          "avg_actual_prob": 0.2724,
-          "gap": -0.1239,
-          "ci_low": 0.0615,
-          "ci_high": 0.7923
+          "misses": 3,
+          "accuracy": 0.25,
+          "avg_pred": 0.4528,
+          "avg_actual_prob": 0.3113,
+          "gap": -0.2028,
+          "ci_low": 0.0456,
+          "ci_high": 0.6994
         },
         {
           "label": "50–60%",
           "lo": 0.5,
           "hi": 0.6,
-          "n": 5,
-          "hits": 2,
-          "misses": 3,
-          "accuracy": 0.4,
-          "avg_pred": 0.5466,
-          "avg_actual_prob": 0.3702,
-          "gap": -0.1466,
-          "ci_low": 0.1176,
-          "ci_high": 0.7693
+          "n": 7,
+          "hits": 3,
+          "misses": 4,
+          "accuracy": 0.4286,
+          "avg_pred": 0.5469,
+          "avg_actual_prob": 0.3626,
+          "gap": -0.1183,
+          "ci_low": 0.1582,
+          "ci_high": 0.7495
         },
         {
           "label": "60–70%",
           "lo": 0.6,
           "hi": 0.7,
-          "n": 3,
+          "n": 4,
           "hits": 0,
-          "misses": 3,
+          "misses": 4,
           "accuracy": 0.0,
-          "avg_pred": 0.673,
-          "avg_actual_prob": 0.1858,
-          "gap": -0.673,
+          "avg_pred": 0.6775,
+          "avg_actual_prob": 0.1867,
+          "gap": -0.6775,
           "ci_low": 0.0,
-          "ci_high": 0.5615
+          "ci_high": 0.4899
         },
         {
           "label": "70–80%",
           "lo": 0.7,
           "hi": 0.8,
-          "n": 5,
-          "hits": 2,
-          "misses": 3,
-          "accuracy": 0.4,
-          "avg_pred": 0.7522,
-          "avg_actual_prob": 0.4022,
-          "gap": -0.3522,
-          "ci_low": 0.1176,
-          "ci_high": 0.7693
+          "n": 8,
+          "hits": 3,
+          "misses": 5,
+          "accuracy": 0.375,
+          "avg_pred": 0.746,
+          "avg_actual_prob": 0.3599,
+          "gap": -0.371,
+          "ci_low": 0.1368,
+          "ci_high": 0.6943
         },
         {
           "label": "80–100%",
           "lo": 0.8,
           "hi": 1.0,
-          "n": 13,
-          "hits": 7,
-          "misses": 6,
-          "accuracy": 0.5385,
-          "avg_pred": 0.913,
-          "avg_actual_prob": 0.5378,
-          "gap": -0.3745,
-          "ci_low": 0.2914,
-          "ci_high": 0.7679
+          "n": 17,
+          "hits": 10,
+          "misses": 7,
+          "accuracy": 0.5882,
+          "avg_pred": 0.9217,
+          "avg_actual_prob": 0.58,
+          "gap": -0.3335,
+          "ci_low": 0.3601,
+          "ci_high": 0.7839
         }
       ],
       "actual_rank": null,
@@ -1534,6 +1643,19 @@
       "high_conf_threshold": 0.6,
       "low_conf_threshold": 0.4,
       "high_conf_wrong": [
+        {
+          "date": "2026-10-30",
+          "match_num": "周四002",
+          "league": "芬超",
+          "home": "国际图尔",
+          "away": "赫尔辛基",
+          "result": "2:4",
+          "predicted": "主胜",
+          "actual": "客胜",
+          "confidence": 0.9597,
+          "actual_prob": 0.0281,
+          "hit": false
+        },
         {
           "date": "2026-10-25",
           "match_num": "周日018",
@@ -1613,6 +1735,19 @@
           "hit": false
         },
         {
+          "date": "2026-10-31",
+          "match_num": "周五009",
+          "league": "西甲",
+          "home": "比利亚雷",
+          "away": "西班牙人",
+          "result": "0:1",
+          "predicted": "主胜",
+          "actual": "客胜",
+          "confidence": 0.7829,
+          "actual_prob": 0.0144,
+          "hit": false
+        },
+        {
           "date": "2026-10-27",
           "match_num": "周一004",
           "league": "巴甲",
@@ -1637,43 +1772,17 @@
           "confidence": 0.7358,
           "actual_prob": 0.1434,
           "hit": false
-        },
-        {
-          "date": "2026-10-29",
-          "match_num": "周三006",
-          "league": "意甲",
-          "home": "AC米兰",
-          "away": "博洛尼亚",
-          "result": "2:4",
-          "predicted": "主胜",
-          "actual": "客胜",
-          "confidence": 0.7078,
-          "actual_prob": 0.0914,
-          "hit": false
-        },
-        {
-          "date": "2026-10-25",
-          "match_num": "周日017",
-          "league": "法甲",
-          "home": "摩纳哥",
-          "away": "里尔",
-          "result": "1:1",
-          "predicted": "客胜",
-          "actual": "平",
-          "confidence": 0.6973,
-          "actual_prob": 0.1667,
-          "hit": false
         }
       ],
       "low_conf_hit": []
     }
   },
   "value": {
-    "n": 59,
-    "hits": 20,
-    "hit_rate": 0.339,
-    "pnl_unit": -10.27,
-    "roi": -0.1741,
+    "n": 65,
+    "hits": 23,
+    "hit_rate": 0.3538,
+    "pnl_unit": -11.74,
+    "roi": -0.1806,
     "by_edge": [
       {
         "label": "<5%",
@@ -1685,19 +1794,19 @@
       },
       {
         "label": "5–10%",
-        "n": 31,
-        "hits": 11,
-        "hit_rate": 0.3548,
-        "pnl_unit": -2.31,
-        "roi": -0.0745
+        "n": 36,
+        "hits": 14,
+        "hit_rate": 0.3889,
+        "pnl_unit": -2.78,
+        "roi": -0.0772
       },
       {
         "label": "10–15%",
-        "n": 17,
+        "n": 18,
         "hits": 6,
-        "hit_rate": 0.3529,
-        "pnl_unit": -6.29,
-        "roi": -0.37
+        "hit_rate": 0.3333,
+        "pnl_unit": -7.29,
+        "roi": -0.405
       },
       {
         "label": "15%+",
@@ -1711,19 +1820,19 @@
     "by_odds": [
       {
         "label": "<2.0",
-        "n": 14,
-        "hits": 10,
-        "hit_rate": 0.7143,
-        "pnl_unit": 3.16,
-        "roi": 0.2257
+        "n": 17,
+        "hits": 13,
+        "hit_rate": 0.7647,
+        "pnl_unit": 4.69,
+        "roi": 0.2759
       },
       {
         "label": "2.0–3.0",
-        "n": 20,
+        "n": 23,
         "hits": 6,
-        "hit_rate": 0.3,
-        "pnl_unit": -5.48,
-        "roi": -0.274
+        "hit_rate": 0.2609,
+        "pnl_unit": -8.48,
+        "roi": -0.3687
       },
       {
         "label": "3.0–4.0",
@@ -1747,10 +1856,10 @@
     {
       "div": "I1",
       "name": "意甲",
-      "n": 18,
-      "hits": 10,
-      "accuracy": 0.5556,
-      "avg_confidence": 0.5626
+      "n": 20,
+      "hits": 11,
+      "accuracy": 0.55,
+      "avg_confidence": 0.5598
     },
     {
       "div": "E0",
@@ -1763,26 +1872,26 @@
     {
       "div": "SP1",
       "name": "西甲",
-      "n": 8,
+      "n": 9,
       "hits": 6,
-      "accuracy": 0.75,
-      "avg_confidence": 0.5691
-    },
-    {
-      "div": "D1",
-      "name": "德甲",
-      "n": 6,
-      "hits": 4,
       "accuracy": 0.6667,
-      "avg_confidence": 0.601
+      "avg_confidence": 0.5795
     },
     {
       "div": "F1",
       "name": "法甲",
-      "n": 5,
-      "hits": 3,
-      "accuracy": 0.6,
-      "avg_confidence": 0.4913
+      "n": 8,
+      "hits": 5,
+      "accuracy": 0.625,
+      "avg_confidence": 0.5131
+    },
+    {
+      "div": "D1",
+      "name": "德甲",
+      "n": 7,
+      "hits": 4,
+      "accuracy": 0.5714,
+      "avg_confidence": 0.5715
     },
     {
       "div": "UCL",
@@ -1795,10 +1904,34 @@
     {
       "div": "BRA1",
       "name": "巴甲",
+      "n": 3,
+      "hits": 2,
+      "accuracy": 0.6667,
+      "avg_confidence": 0.4315
+    },
+    {
+      "div": "NOR1",
+      "name": "挪超",
+      "n": 2,
+      "hits": 2,
+      "accuracy": 1.0,
+      "avg_confidence": 0.6101
+    },
+    {
+      "div": "SWE1",
+      "name": "瑞超",
       "n": 2,
       "hits": 1,
       "accuracy": 0.5,
-      "avg_confidence": 0.4582
+      "avg_confidence": 0.6107
+    },
+    {
+      "div": "FIN1",
+      "name": "芬超",
+      "n": 2,
+      "hits": 0,
+      "accuracy": 0.0,
+      "avg_confidence": 0.4482
     },
     {
       "div": "DFB",
@@ -1807,30 +1940,6 @@
       "hits": 1,
       "accuracy": 1.0,
       "avg_confidence": 0.4329
-    },
-    {
-      "div": "NOR1",
-      "name": "挪超",
-      "n": 1,
-      "hits": 1,
-      "accuracy": 1.0,
-      "avg_confidence": 0.6864
-    },
-    {
-      "div": "SWE1",
-      "name": "瑞超",
-      "n": 1,
-      "hits": 0,
-      "accuracy": 0.0,
-      "avg_confidence": 0.5522
-    },
-    {
-      "div": "FIN1",
-      "name": "芬超",
-      "n": 1,
-      "hits": 0,
-      "accuracy": 0.0,
-      "avg_confidence": 0.4354
     }
   ],
   "daily": [
@@ -1933,8 +2042,28 @@
       "value_n": 7,
       "value_hits": 4,
       "value_roi": 0.1514
+    },
+    {
+      "date": "2026-10-30",
+      "n": 5,
+      "hits": 3,
+      "accuracy": 0.6,
+      "avg_confidence": 0.5159,
+      "value_n": 3,
+      "value_hits": 2,
+      "value_roi": -0.04
+    },
+    {
+      "date": "2026-10-31",
+      "n": 6,
+      "hits": 3,
+      "accuracy": 0.5,
+      "avg_confidence": 0.5399,
+      "value_n": 3,
+      "value_hits": 1,
+      "value_roi": -0.45
     }
   ],
   "note": "只统计赛前预测且已结算的场次。样本量较小时，概率区间结论仅作探索，不要据此优化阈值或重仓。",
-  "generated_at": "2026-10-29T20:26:41+08:00"
+  "generated_at": "2026-10-31T19:22:11+08:00"
 }

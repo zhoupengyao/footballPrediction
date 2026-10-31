@@ -243,18 +243,38 @@
     "date": "2026-10-31",
     "risks": {
       "conservative": {
+        "recommendations": 2,
+        "observations": 6,
+        "total_stake_pct": 0.0315
+      },
+      "balanced": {
+        "recommendations": 2,
+        "observations": 11,
+        "total_stake_pct": 0.0315
+      },
+      "aggressive": {
+        "recommendations": 2,
+        "observations": 11,
+        "total_stake_pct": 0.0315
+      }
+    }
+  },
+  {
+    "date": "2026-11-01",
+    "risks": {
+      "conservative": {
         "recommendations": 0,
-        "observations": 2,
+        "observations": 5,
         "total_stake_pct": 0
       },
       "balanced": {
         "recommendations": 0,
-        "observations": 3,
+        "observations": 5,
         "total_stake_pct": 0
       },
       "aggressive": {
         "recommendations": 0,
-        "observations": 3,
+        "observations": 5,
         "total_stake_pct": 0
       }
     }

@@ -1517,6 +1517,14 @@
     "skip_reason": "已开赛/结束: 2026-10-29 20:15:00",
     "prediction_timing": "skipped",
     "prediction": null,
-    "result": null
+    "result": {
+      "resolved": true,
+      "ft": "0:1",
+      "ht": "0:1",
+      "had": "away",
+      "hhad": null,
+      "total_goals": "1",
+      "half_full": "负/负"
+    }
   }
 ]
