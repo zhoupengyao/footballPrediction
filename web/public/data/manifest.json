@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-31T20:33:44+08:00",
+  "generated_at": "2026-11-01T12:16:30+08:00",
   "site": {
     "name": "竞彩预测实验室",
     "tagline": "用数据看球 · 研究用途 · 不构成投注建议"
@@ -10,8 +10,8 @@
   "counts": {
     "matches": 191,
     "predicted": 110,
-    "settled": 67,
-    "pending": 43,
+    "settled": 88,
+    "pending": 22,
     "skipped": 81,
     "value_bets": 98,
     "dates": 16
@@ -813,132 +813,132 @@
       "date": "2026-10-31",
       "total": 26,
       "predicted": 20,
-      "settled": 6,
-      "pending": 14,
+      "settled": 20,
+      "pending": 0,
       "skipped": 6,
       "post_kickoff": 0,
       "value_bets": 17,
       "markets": {
         "HAD": {
-          "n": 6,
-          "hits": 3,
-          "accuracy": 0.5
+          "n": 20,
+          "hits": 14,
+          "accuracy": 0.7
         },
         "HHAD": {
-          "n": 6,
-          "hits": 2,
-          "accuracy": 0.3333
+          "n": 20,
+          "hits": 7,
+          "accuracy": 0.35
         },
         "SCORE_TOP1": {
-          "n": 6,
+          "n": 20,
           "hits": 1,
-          "accuracy": 0.1667
+          "accuracy": 0.05
         },
         "SCORE_TOP3": {
-          "n": 6,
-          "hits": 1,
-          "accuracy": 0.1667
+          "n": 20,
+          "hits": 3,
+          "accuracy": 0.15
         },
         "TOTAL_GOALS": {
-          "n": 6,
-          "hits": 0,
-          "accuracy": 0.0
+          "n": 20,
+          "hits": 5,
+          "accuracy": 0.25
         },
         "HALF_FULL": {
-          "n": 6,
-          "hits": 3,
+          "n": 20,
+          "hits": 10,
           "accuracy": 0.5
         },
         "HAD_DC": {
-          "n": 6,
-          "hits": 4,
-          "accuracy": 0.6667
+          "n": 20,
+          "hits": 14,
+          "accuracy": 0.7
         },
         "HAD_ELO": {
-          "n": 6,
-          "hits": 4,
-          "accuracy": 0.6667
+          "n": 20,
+          "hits": 13,
+          "accuracy": 0.65
         },
         "HAD_ML": {
-          "n": 6,
-          "hits": 2,
-          "accuracy": 0.3333
+          "n": 20,
+          "hits": 10,
+          "accuracy": 0.5
         }
       },
       "value": {
-        "n": 3,
-        "hits": 1,
-        "hit_rate": 0.3333,
-        "pnl_unit": -1.35,
-        "pnl_pct": -0.0136,
-        "staked_pct": 0.0321,
-        "roi": -0.45
+        "n": 17,
+        "hits": 7,
+        "hit_rate": 0.4118,
+        "pnl_unit": -1.86,
+        "pnl_pct": -0.059,
+        "staked_pct": 0.1774,
+        "roi": -0.1094
       }
     },
     {
       "date": "2026-11-01",
       "total": 23,
       "predicted": 14,
-      "settled": 0,
-      "pending": 14,
+      "settled": 7,
+      "pending": 7,
       "skipped": 9,
       "post_kickoff": 0,
       "value_bets": 9,
       "markets": {
         "HAD": {
-          "n": 0,
-          "hits": 0,
-          "accuracy": null
+          "n": 7,
+          "hits": 4,
+          "accuracy": 0.5714
         },
         "HHAD": {
-          "n": 0,
-          "hits": 0,
-          "accuracy": null
+          "n": 7,
+          "hits": 4,
+          "accuracy": 0.5714
         },
         "SCORE_TOP1": {
-          "n": 0,
-          "hits": 0,
-          "accuracy": null
+          "n": 7,
+          "hits": 1,
+          "accuracy": 0.1429
         },
         "SCORE_TOP3": {
-          "n": 0,
-          "hits": 0,
-          "accuracy": null
+          "n": 7,
+          "hits": 1,
+          "accuracy": 0.1429
         },
         "TOTAL_GOALS": {
-          "n": 0,
-          "hits": 0,
-          "accuracy": null
+          "n": 7,
+          "hits": 2,
+          "accuracy": 0.2857
         },
         "HALF_FULL": {
-          "n": 0,
-          "hits": 0,
-          "accuracy": null
+          "n": 7,
+          "hits": 4,
+          "accuracy": 0.5714
         },
         "HAD_DC": {
-          "n": 0,
-          "hits": 0,
-          "accuracy": null
+          "n": 7,
+          "hits": 4,
+          "accuracy": 0.5714
         },
         "HAD_ELO": {
-          "n": 0,
-          "hits": 0,
-          "accuracy": null
+          "n": 7,
+          "hits": 3,
+          "accuracy": 0.4286
         },
         "HAD_ML": {
-          "n": 0,
-          "hits": 0,
-          "accuracy": null
+          "n": 7,
+          "hits": 5,
+          "accuracy": 0.7143
         }
       },
       "value": {
-        "n": 0,
-        "hits": 0,
-        "hit_rate": null,
-        "pnl_unit": 0,
-        "pnl_pct": 0,
-        "staked_pct": 0,
-        "roi": null
+        "n": 5,
+        "hits": 1,
+        "hit_rate": 0.2,
+        "pnl_unit": -3.1,
+        "pnl_pct": -0.0355,
+        "staked_pct": 0.046,
+        "roi": -0.62
       }
     },
     {

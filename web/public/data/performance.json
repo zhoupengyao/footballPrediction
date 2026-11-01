@@ -1,68 +1,68 @@
 {
-  "generated_at": "2026-10-31T20:33:44+08:00",
+  "generated_at": "2026-11-01T12:16:30+08:00",
   "overall": {
     "total": 191,
     "predicted": 110,
-    "settled": 67,
-    "pending": 43,
+    "settled": 88,
+    "pending": 22,
     "skipped": 81,
     "post_kickoff": 0,
-    "stats_settled": 67,
+    "stats_settled": 88,
     "markets": {
       "HAD": {
-        "n": 67,
-        "hits": 37,
-        "accuracy": 0.5522
+        "n": 88,
+        "hits": 52,
+        "accuracy": 0.5909
       },
       "HHAD": {
-        "n": 67,
-        "hits": 30,
-        "accuracy": 0.4478
+        "n": 88,
+        "hits": 39,
+        "accuracy": 0.4432
       },
       "SCORE_TOP1": {
-        "n": 67,
-        "hits": 6,
-        "accuracy": 0.0896
+        "n": 88,
+        "hits": 7,
+        "accuracy": 0.0795
       },
       "SCORE_TOP3": {
-        "n": 67,
-        "hits": 16,
-        "accuracy": 0.2388
+        "n": 88,
+        "hits": 19,
+        "accuracy": 0.2159
       },
       "TOTAL_GOALS": {
-        "n": 67,
-        "hits": 17,
-        "accuracy": 0.2537
+        "n": 88,
+        "hits": 24,
+        "accuracy": 0.2727
       },
       "HALF_FULL": {
-        "n": 67,
-        "hits": 28,
-        "accuracy": 0.4179
+        "n": 88,
+        "hits": 39,
+        "accuracy": 0.4432
       },
       "HAD_DC": {
-        "n": 41,
-        "hits": 22,
-        "accuracy": 0.5366
+        "n": 62,
+        "hits": 36,
+        "accuracy": 0.5806
       },
       "HAD_ELO": {
-        "n": 41,
-        "hits": 23,
-        "accuracy": 0.561
+        "n": 62,
+        "hits": 35,
+        "accuracy": 0.5645
       },
       "HAD_ML": {
-        "n": 40,
-        "hits": 17,
-        "accuracy": 0.425
+        "n": 61,
+        "hits": 30,
+        "accuracy": 0.4918
       }
     },
     "value": {
-      "n": 65,
-      "hits": 23,
-      "hit_rate": 0.3538,
-      "pnl_unit": -11.74,
-      "pnl_pct": -0.2604,
-      "staked_pct": 0.9346,
-      "roi": -0.1806
+      "n": 84,
+      "hits": 30,
+      "hit_rate": 0.3571,
+      "pnl_unit": -15.35,
+      "pnl_pct": -0.3414,
+      "staked_pct": 1.126,
+      "roi": -0.1827
     }
   },
   "by_league": [
@@ -134,62 +134,62 @@
       "name": "德甲",
       "total": 15,
       "predicted": 15,
-      "settled": 7,
+      "settled": 13,
       "markets": {
         "HAD": {
-          "n": 7,
-          "hits": 4,
-          "accuracy": 0.5714
+          "n": 13,
+          "hits": 7,
+          "accuracy": 0.5385
         },
         "HHAD": {
-          "n": 7,
-          "hits": 2,
-          "accuracy": 0.2857
+          "n": 13,
+          "hits": 6,
+          "accuracy": 0.4615
         },
         "SCORE_TOP1": {
-          "n": 7,
+          "n": 13,
           "hits": 1,
-          "accuracy": 0.1429
+          "accuracy": 0.0769
         },
         "SCORE_TOP3": {
-          "n": 7,
-          "hits": 3,
-          "accuracy": 0.4286
+          "n": 13,
+          "hits": 4,
+          "accuracy": 0.3077
         },
         "TOTAL_GOALS": {
-          "n": 7,
-          "hits": 3,
-          "accuracy": 0.4286
+          "n": 13,
+          "hits": 5,
+          "accuracy": 0.3846
         },
         "HALF_FULL": {
-          "n": 7,
-          "hits": 2,
-          "accuracy": 0.2857
+          "n": 13,
+          "hits": 3,
+          "accuracy": 0.2308
         },
         "HAD_DC": {
-          "n": 3,
-          "hits": 2,
-          "accuracy": 0.6667
+          "n": 9,
+          "hits": 4,
+          "accuracy": 0.4444
         },
         "HAD_ELO": {
-          "n": 3,
-          "hits": 2,
-          "accuracy": 0.6667
+          "n": 9,
+          "hits": 4,
+          "accuracy": 0.4444
         },
         "HAD_ML": {
-          "n": 3,
-          "hits": 1,
-          "accuracy": 0.3333
+          "n": 9,
+          "hits": 4,
+          "accuracy": 0.4444
         }
       },
       "value": {
-        "n": 2,
-        "hits": 2,
-        "hit_rate": 1.0,
-        "pnl_unit": 2.55,
-        "pnl_pct": 0.0287,
-        "staked_pct": 0.0225,
-        "roi": 1.275
+        "n": 7,
+        "hits": 5,
+        "hit_rate": 0.7143,
+        "pnl_unit": 5.43,
+        "pnl_pct": 0.0472,
+        "staked_pct": 0.0506,
+        "roi": 0.7757
       }
     },
     {
@@ -323,62 +323,62 @@
       "name": "英超",
       "total": 19,
       "predicted": 18,
-      "settled": 9,
+      "settled": 16,
       "markets": {
         "HAD": {
-          "n": 9,
-          "hits": 3,
-          "accuracy": 0.3333
+          "n": 16,
+          "hits": 8,
+          "accuracy": 0.5
         },
         "HHAD": {
-          "n": 9,
-          "hits": 5,
-          "accuracy": 0.5556
+          "n": 16,
+          "hits": 8,
+          "accuracy": 0.5
         },
         "SCORE_TOP1": {
-          "n": 9,
-          "hits": 2,
-          "accuracy": 0.2222
+          "n": 16,
+          "hits": 3,
+          "accuracy": 0.1875
         },
         "SCORE_TOP3": {
-          "n": 9,
-          "hits": 3,
-          "accuracy": 0.3333
+          "n": 16,
+          "hits": 4,
+          "accuracy": 0.25
         },
         "TOTAL_GOALS": {
-          "n": 9,
-          "hits": 4,
-          "accuracy": 0.4444
+          "n": 16,
+          "hits": 8,
+          "accuracy": 0.5
         },
         "HALF_FULL": {
-          "n": 9,
-          "hits": 2,
-          "accuracy": 0.2222
+          "n": 16,
+          "hits": 6,
+          "accuracy": 0.375
         },
         "HAD_DC": {
-          "n": 4,
-          "hits": 0,
-          "accuracy": 0.0
+          "n": 11,
+          "hits": 5,
+          "accuracy": 0.4545
         },
         "HAD_ELO": {
-          "n": 4,
-          "hits": 0,
-          "accuracy": 0.0
+          "n": 11,
+          "hits": 4,
+          "accuracy": 0.3636
         },
         "HAD_ML": {
-          "n": 4,
-          "hits": 1,
-          "accuracy": 0.25
+          "n": 11,
+          "hits": 6,
+          "accuracy": 0.5455
         }
       },
       "value": {
-        "n": 13,
-        "hits": 2,
-        "hit_rate": 0.1538,
-        "pnl_unit": -6.65,
-        "pnl_pct": -0.1205,
-        "staked_pct": 0.2052,
-        "roi": -0.5115
+        "n": 20,
+        "hits": 5,
+        "hit_rate": 0.25,
+        "pnl_unit": -7.57,
+        "pnl_pct": -0.1501,
+        "staked_pct": 0.2985,
+        "roi": -0.3785
       }
     },
     {
@@ -638,62 +638,62 @@
       "name": "意甲",
       "total": 30,
       "predicted": 30,
-      "settled": 20,
+      "settled": 23,
       "markets": {
         "HAD": {
-          "n": 20,
-          "hits": 11,
-          "accuracy": 0.55
+          "n": 23,
+          "hits": 13,
+          "accuracy": 0.5652
         },
         "HHAD": {
-          "n": 20,
-          "hits": 11,
-          "accuracy": 0.55
+          "n": 23,
+          "hits": 13,
+          "accuracy": 0.5652
         },
         "SCORE_TOP1": {
-          "n": 20,
+          "n": 23,
           "hits": 1,
-          "accuracy": 0.05
+          "accuracy": 0.0435
         },
         "SCORE_TOP3": {
-          "n": 20,
-          "hits": 3,
-          "accuracy": 0.15
+          "n": 23,
+          "hits": 4,
+          "accuracy": 0.1739
         },
         "TOTAL_GOALS": {
-          "n": 20,
-          "hits": 1,
-          "accuracy": 0.05
+          "n": 23,
+          "hits": 2,
+          "accuracy": 0.087
         },
         "HALF_FULL": {
-          "n": 20,
-          "hits": 7,
-          "accuracy": 0.35
+          "n": 23,
+          "hits": 8,
+          "accuracy": 0.3478
         },
         "HAD_DC": {
-          "n": 13,
-          "hits": 8,
-          "accuracy": 0.6154
+          "n": 16,
+          "hits": 10,
+          "accuracy": 0.625
         },
         "HAD_ELO": {
-          "n": 13,
-          "hits": 8,
-          "accuracy": 0.6154
+          "n": 16,
+          "hits": 10,
+          "accuracy": 0.625
         },
         "HAD_ML": {
-          "n": 13,
-          "hits": 7,
-          "accuracy": 0.5385
+          "n": 16,
+          "hits": 9,
+          "accuracy": 0.5625
         }
       },
       "value": {
-        "n": 21,
-        "hits": 8,
-        "hit_rate": 0.381,
-        "pnl_unit": -1.87,
+        "n": 23,
+        "hits": 9,
+        "hit_rate": 0.3913,
+        "pnl_unit": -2.44,
         "pnl_pct": -0.0856,
         "staked_pct": 0.3004,
-        "roi": -0.089
+        "roi": -0.1061
       }
     },
     {
@@ -890,62 +890,62 @@
       "name": "挪超",
       "total": 4,
       "predicted": 4,
-      "settled": 2,
+      "settled": 3,
       "markets": {
         "HAD": {
-          "n": 2,
-          "hits": 2,
+          "n": 3,
+          "hits": 3,
           "accuracy": 1.0
         },
         "HHAD": {
-          "n": 2,
+          "n": 3,
           "hits": 0,
           "accuracy": 0.0
         },
         "SCORE_TOP1": {
-          "n": 2,
+          "n": 3,
           "hits": 0,
           "accuracy": 0.0
         },
         "SCORE_TOP3": {
-          "n": 2,
+          "n": 3,
           "hits": 0,
           "accuracy": 0.0
         },
         "TOTAL_GOALS": {
-          "n": 2,
+          "n": 3,
           "hits": 0,
           "accuracy": 0.0
         },
         "HALF_FULL": {
-          "n": 2,
-          "hits": 2,
+          "n": 3,
+          "hits": 3,
           "accuracy": 1.0
         },
         "HAD_DC": {
-          "n": 2,
-          "hits": 2,
+          "n": 3,
+          "hits": 3,
           "accuracy": 1.0
         },
         "HAD_ELO": {
-          "n": 2,
+          "n": 3,
           "hits": 2,
-          "accuracy": 1.0
+          "accuracy": 0.6667
         },
         "HAD_ML": {
-          "n": 2,
+          "n": 3,
           "hits": 1,
-          "accuracy": 0.5
+          "accuracy": 0.3333
         }
       },
       "value": {
-        "n": 0,
+        "n": 2,
         "hits": 0,
-        "hit_rate": null,
-        "pnl_unit": 0,
-        "pnl_pct": 0,
-        "staked_pct": 0,
-        "roi": null
+        "hit_rate": 0.0,
+        "pnl_unit": -2.0,
+        "pnl_pct": -0.0398,
+        "staked_pct": 0.0398,
+        "roi": -1.0
       }
     },
     {
@@ -1079,62 +1079,62 @@
       "name": "西甲",
       "total": 23,
       "predicted": 17,
-      "settled": 9,
+      "settled": 13,
       "markets": {
         "HAD": {
-          "n": 9,
-          "hits": 6,
-          "accuracy": 0.6667
+          "n": 13,
+          "hits": 10,
+          "accuracy": 0.7692
         },
         "HHAD": {
-          "n": 9,
+          "n": 13,
           "hits": 3,
-          "accuracy": 0.3333
+          "accuracy": 0.2308
         },
         "SCORE_TOP1": {
-          "n": 9,
+          "n": 13,
           "hits": 1,
-          "accuracy": 0.1111
+          "accuracy": 0.0769
         },
         "SCORE_TOP3": {
-          "n": 9,
+          "n": 13,
           "hits": 2,
-          "accuracy": 0.2222
+          "accuracy": 0.1538
         },
         "TOTAL_GOALS": {
-          "n": 9,
+          "n": 13,
           "hits": 3,
-          "accuracy": 0.3333
+          "accuracy": 0.2308
         },
         "HALF_FULL": {
-          "n": 9,
-          "hits": 5,
-          "accuracy": 0.5556
+          "n": 13,
+          "hits": 9,
+          "accuracy": 0.6923
         },
         "HAD_DC": {
-          "n": 6,
-          "hits": 3,
-          "accuracy": 0.5
+          "n": 10,
+          "hits": 7,
+          "accuracy": 0.7
         },
         "HAD_ELO": {
-          "n": 6,
-          "hits": 3,
-          "accuracy": 0.5
+          "n": 10,
+          "hits": 7,
+          "accuracy": 0.7
         },
         "HAD_ML": {
-          "n": 6,
-          "hits": 3,
-          "accuracy": 0.5
+          "n": 10,
+          "hits": 6,
+          "accuracy": 0.6
         }
       },
       "value": {
-        "n": 8,
+        "n": 11,
         "hits": 4,
-        "hit_rate": 0.5,
-        "pnl_unit": 1.41,
-        "pnl_pct": 0.0508,
-        "staked_pct": 0.1022,
-        "roi": 0.1762
+        "hit_rate": 0.3636,
+        "pnl_unit": -1.59,
+        "pnl_pct": 0.0207,
+        "staked_pct": 0.1323,
+        "roi": -0.1445
       }
     },
     {
@@ -2061,132 +2061,132 @@
       "date": "2026-10-31",
       "total": 26,
       "predicted": 20,
-      "settled": 6,
-      "pending": 14,
+      "settled": 20,
+      "pending": 0,
       "skipped": 6,
       "post_kickoff": 0,
       "value_bets": 17,
       "markets": {
         "HAD": {
-          "n": 6,
-          "hits": 3,
-          "accuracy": 0.5
+          "n": 20,
+          "hits": 14,
+          "accuracy": 0.7
         },
         "HHAD": {
-          "n": 6,
-          "hits": 2,
-          "accuracy": 0.3333
+          "n": 20,
+          "hits": 7,
+          "accuracy": 0.35
         },
         "SCORE_TOP1": {
-          "n": 6,
+          "n": 20,
           "hits": 1,
-          "accuracy": 0.1667
+          "accuracy": 0.05
         },
         "SCORE_TOP3": {
-          "n": 6,
-          "hits": 1,
-          "accuracy": 0.1667
+          "n": 20,
+          "hits": 3,
+          "accuracy": 0.15
         },
         "TOTAL_GOALS": {
-          "n": 6,
-          "hits": 0,
-          "accuracy": 0.0
+          "n": 20,
+          "hits": 5,
+          "accuracy": 0.25
         },
         "HALF_FULL": {
-          "n": 6,
-          "hits": 3,
+          "n": 20,
+          "hits": 10,
           "accuracy": 0.5
         },
         "HAD_DC": {
-          "n": 6,
-          "hits": 4,
-          "accuracy": 0.6667
+          "n": 20,
+          "hits": 14,
+          "accuracy": 0.7
         },
         "HAD_ELO": {
-          "n": 6,
-          "hits": 4,
-          "accuracy": 0.6667
+          "n": 20,
+          "hits": 13,
+          "accuracy": 0.65
         },
         "HAD_ML": {
-          "n": 6,
-          "hits": 2,
-          "accuracy": 0.3333
+          "n": 20,
+          "hits": 10,
+          "accuracy": 0.5
         }
       },
       "value": {
-        "n": 3,
-        "hits": 1,
-        "hit_rate": 0.3333,
-        "pnl_unit": -1.35,
-        "pnl_pct": -0.0136,
-        "staked_pct": 0.0321,
-        "roi": -0.45
+        "n": 17,
+        "hits": 7,
+        "hit_rate": 0.4118,
+        "pnl_unit": -1.86,
+        "pnl_pct": -0.059,
+        "staked_pct": 0.1774,
+        "roi": -0.1094
       }
     },
     {
       "date": "2026-11-01",
       "total": 23,
       "predicted": 14,
-      "settled": 0,
-      "pending": 14,
+      "settled": 7,
+      "pending": 7,
       "skipped": 9,
       "post_kickoff": 0,
       "value_bets": 9,
       "markets": {
         "HAD": {
-          "n": 0,
-          "hits": 0,
-          "accuracy": null
+          "n": 7,
+          "hits": 4,
+          "accuracy": 0.5714
         },
         "HHAD": {
-          "n": 0,
-          "hits": 0,
-          "accuracy": null
+          "n": 7,
+          "hits": 4,
+          "accuracy": 0.5714
         },
         "SCORE_TOP1": {
-          "n": 0,
-          "hits": 0,
-          "accuracy": null
+          "n": 7,
+          "hits": 1,
+          "accuracy": 0.1429
         },
         "SCORE_TOP3": {
-          "n": 0,
-          "hits": 0,
-          "accuracy": null
+          "n": 7,
+          "hits": 1,
+          "accuracy": 0.1429
         },
         "TOTAL_GOALS": {
-          "n": 0,
-          "hits": 0,
-          "accuracy": null
+          "n": 7,
+          "hits": 2,
+          "accuracy": 0.2857
         },
         "HALF_FULL": {
-          "n": 0,
-          "hits": 0,
-          "accuracy": null
+          "n": 7,
+          "hits": 4,
+          "accuracy": 0.5714
         },
         "HAD_DC": {
-          "n": 0,
-          "hits": 0,
-          "accuracy": null
+          "n": 7,
+          "hits": 4,
+          "accuracy": 0.5714
         },
         "HAD_ELO": {
-          "n": 0,
-          "hits": 0,
-          "accuracy": null
+          "n": 7,
+          "hits": 3,
+          "accuracy": 0.4286
         },
         "HAD_ML": {
-          "n": 0,
-          "hits": 0,
-          "accuracy": null
+          "n": 7,
+          "hits": 5,
+          "accuracy": 0.7143
         }
       },
       "value": {
-        "n": 0,
-        "hits": 0,
-        "hit_rate": null,
-        "pnl_unit": 0,
-        "pnl_pct": 0,
-        "staked_pct": 0,
-        "roi": null
+        "n": 5,
+        "hits": 1,
+        "hit_rate": 0.2,
+        "pnl_unit": -3.1,
+        "pnl_pct": -0.0355,
+        "staked_pct": 0.046,
+        "roi": -0.62
       }
     },
     {
@@ -3557,6 +3557,367 @@
       "hit": true,
       "pnl_unit": 0.65,
       "pnl_pct": 0.0073
+    },
+    {
+      "date": "2026-10-31",
+      "match_num": "周六008",
+      "league": "西甲",
+      "div": "SP1",
+      "home_cn": "莱万特",
+      "away_cn": "马竞",
+      "market": "HHAD",
+      "option": "胜",
+      "odds": 2.7,
+      "model_prob": 0.4312,
+      "implied_prob": 0.3249,
+      "edge": 0.1063,
+      "ev": 0.1642,
+      "stake_pct": 0.02,
+      "hit": false,
+      "pnl_unit": -1.0,
+      "pnl_pct": -0.02
+    },
+    {
+      "date": "2026-10-31",
+      "match_num": "周六008",
+      "league": "西甲",
+      "div": "SP1",
+      "home_cn": "莱万特",
+      "away_cn": "马竞",
+      "market": "HAD",
+      "option": "胜",
+      "odds": 6.0,
+      "model_prob": 0.1987,
+      "implied_prob": 0.1464,
+      "edge": 0.0523,
+      "ev": 0.1922,
+      "stake_pct": 0.0096,
+      "hit": false,
+      "pnl_unit": -1.0,
+      "pnl_pct": -0.0096
+    },
+    {
+      "date": "2026-10-31",
+      "match_num": "周六009",
+      "league": "意甲",
+      "div": "I1",
+      "home_cn": "博洛尼亚",
+      "away_cn": "蒙扎",
+      "market": "HAD",
+      "option": "胜",
+      "odds": 1.43,
+      "model_prob": 0.673,
+      "implied_prob": 0.6138,
+      "edge": 0.0593,
+      "ev": -0.0376,
+      "stake_pct": 0.0,
+      "hit": true,
+      "pnl_unit": 0.43,
+      "pnl_pct": 0.0
+    },
+    {
+      "date": "2026-10-31",
+      "match_num": "周六010",
+      "league": "德甲",
+      "div": "D1",
+      "home_cn": "勒沃库森",
+      "away_cn": "斯图加特",
+      "market": "HHAD",
+      "option": "负",
+      "odds": 2.33,
+      "model_prob": 0.4287,
+      "implied_prob": 0.3765,
+      "edge": 0.0522,
+      "ev": -0.0012,
+      "stake_pct": 0.0,
+      "hit": true,
+      "pnl_unit": 1.33,
+      "pnl_pct": 0.0
+    },
+    {
+      "date": "2026-10-31",
+      "match_num": "周六011",
+      "league": "德甲",
+      "div": "D1",
+      "home_cn": "沙尔克04",
+      "away_cn": "莱红牛",
+      "market": "HHAD",
+      "option": "胜",
+      "odds": 2.08,
+      "model_prob": 0.5072,
+      "implied_prob": 0.4219,
+      "edge": 0.0853,
+      "ev": 0.0549,
+      "stake_pct": 0.0127,
+      "hit": false,
+      "pnl_unit": -1.0,
+      "pnl_pct": -0.0127
+    },
+    {
+      "date": "2026-10-31",
+      "match_num": "周六012",
+      "league": "德甲",
+      "div": "D1",
+      "home_cn": "奥格斯堡",
+      "away_cn": "弗赖堡",
+      "market": "HHAD",
+      "option": "胜",
+      "odds": 1.56,
+      "model_prob": 0.6192,
+      "implied_prob": 0.5624,
+      "edge": 0.0568,
+      "ev": -0.0341,
+      "stake_pct": 0.0,
+      "hit": false,
+      "pnl_unit": -1.0,
+      "pnl_pct": -0.0
+    },
+    {
+      "date": "2026-10-31",
+      "match_num": "周六013",
+      "league": "德甲",
+      "div": "D1",
+      "home_cn": "门兴",
+      "away_cn": "帕德博恩",
+      "market": "HAD",
+      "option": "平",
+      "odds": 3.65,
+      "model_prob": 0.3027,
+      "implied_prob": 0.2403,
+      "edge": 0.0624,
+      "ev": 0.105,
+      "stake_pct": 0.0099,
+      "hit": true,
+      "pnl_unit": 2.65,
+      "pnl_pct": 0.0263
+    },
+    {
+      "date": "2026-10-31",
+      "match_num": "周六015",
+      "league": "英超",
+      "div": "E0",
+      "home_cn": "考文垂",
+      "away_cn": "桑德兰",
+      "market": "HHAD",
+      "option": "胜",
+      "odds": 1.57,
+      "model_prob": 0.6342,
+      "implied_prob": 0.5588,
+      "edge": 0.0755,
+      "ev": -0.0042,
+      "stake_pct": 0.0,
+      "hit": true,
+      "pnl_unit": 0.57,
+      "pnl_pct": 0.0
+    },
+    {
+      "date": "2026-10-31",
+      "match_num": "周六015",
+      "league": "英超",
+      "div": "E0",
+      "home_cn": "考文垂",
+      "away_cn": "桑德兰",
+      "market": "HAD",
+      "option": "胜",
+      "odds": 3.1,
+      "model_prob": 0.3537,
+      "implied_prob": 0.2832,
+      "edge": 0.0705,
+      "ev": 0.0964,
+      "stake_pct": 0.0115,
+      "hit": true,
+      "pnl_unit": 2.1,
+      "pnl_pct": 0.0241
+    },
+    {
+      "date": "2026-10-31",
+      "match_num": "周六016",
+      "league": "英超",
+      "div": "E0",
+      "home_cn": "伯恩茅斯",
+      "away_cn": "利兹联",
+      "market": "HHAD",
+      "option": "负",
+      "odds": 1.8,
+      "model_prob": 0.5588,
+      "implied_prob": 0.488,
+      "edge": 0.0708,
+      "ev": 0.0059,
+      "stake_pct": 0.0018,
+      "hit": false,
+      "pnl_unit": -1.0,
+      "pnl_pct": -0.0018
+    },
+    {
+      "date": "2026-10-31",
+      "match_num": "周六017",
+      "league": "英超",
+      "div": "E0",
+      "home_cn": "赫尔城",
+      "away_cn": "伊普斯",
+      "market": "HAD",
+      "option": "胜",
+      "odds": 2.6,
+      "model_prob": 0.485,
+      "implied_prob": 0.3374,
+      "edge": 0.1476,
+      "ev": 0.2611,
+      "stake_pct": 0.02,
+      "hit": false,
+      "pnl_unit": -1.0,
+      "pnl_pct": -0.02
+    },
+    {
+      "date": "2026-10-31",
+      "match_num": "周六017",
+      "league": "英超",
+      "div": "E0",
+      "home_cn": "赫尔城",
+      "away_cn": "伊普斯",
+      "market": "HHAD",
+      "option": "胜",
+      "odds": 1.41,
+      "model_prob": 0.733,
+      "implied_prob": 0.623,
+      "edge": 0.11,
+      "ev": 0.0336,
+      "stake_pct": 0.02,
+      "hit": true,
+      "pnl_unit": 0.41,
+      "pnl_pct": 0.0082
+    },
+    {
+      "date": "2026-10-31",
+      "match_num": "周六019",
+      "league": "挪超",
+      "div": "NOR1",
+      "home_cn": "腓特烈",
+      "away_cn": "罗森博格",
+      "market": "HAD",
+      "option": "胜",
+      "odds": 4.2,
+      "model_prob": 0.3116,
+      "implied_prob": 0.2089,
+      "edge": 0.1028,
+      "ev": 0.3089,
+      "stake_pct": 0.02,
+      "hit": false,
+      "pnl_unit": -1.0,
+      "pnl_pct": -0.02
+    },
+    {
+      "date": "2026-10-31",
+      "match_num": "周六019",
+      "league": "挪超",
+      "div": "NOR1",
+      "home_cn": "腓特烈",
+      "away_cn": "罗森博格",
+      "market": "HHAD",
+      "option": "胜",
+      "odds": 2.1,
+      "model_prob": 0.5176,
+      "implied_prob": 0.418,
+      "edge": 0.0997,
+      "ev": 0.087,
+      "stake_pct": 0.0198,
+      "hit": false,
+      "pnl_unit": -1.0,
+      "pnl_pct": -0.0198
+    },
+    {
+      "date": "2026-11-01",
+      "match_num": "周六022",
+      "league": "英超",
+      "div": "E0",
+      "home_cn": "热刺",
+      "away_cn": "水晶宫",
+      "market": "HHAD",
+      "option": "负",
+      "odds": 2.3,
+      "model_prob": 0.5172,
+      "implied_prob": 0.3814,
+      "edge": 0.1358,
+      "ev": 0.1896,
+      "stake_pct": 0.02,
+      "hit": false,
+      "pnl_unit": -1.0,
+      "pnl_pct": -0.02
+    },
+    {
+      "date": "2026-11-01",
+      "match_num": "周六022",
+      "league": "英超",
+      "div": "E0",
+      "home_cn": "热刺",
+      "away_cn": "水晶宫",
+      "market": "HAD",
+      "option": "负",
+      "odds": 4.95,
+      "model_prob": 0.2727,
+      "implied_prob": 0.1773,
+      "edge": 0.0954,
+      "ev": 0.3498,
+      "stake_pct": 0.02,
+      "hit": false,
+      "pnl_unit": -1.0,
+      "pnl_pct": -0.02
+    },
+    {
+      "date": "2026-11-01",
+      "match_num": "周六023",
+      "league": "德甲",
+      "div": "D1",
+      "home_cn": "拜仁",
+      "away_cn": "多特蒙德",
+      "market": "HHAD",
+      "option": "负",
+      "odds": 1.9,
+      "model_prob": 0.5368,
+      "implied_prob": 0.4618,
+      "edge": 0.075,
+      "ev": 0.0199,
+      "stake_pct": 0.0055,
+      "hit": true,
+      "pnl_unit": 0.9,
+      "pnl_pct": 0.005
+    },
+    {
+      "date": "2026-11-01",
+      "match_num": "周六025",
+      "league": "意甲",
+      "div": "I1",
+      "home_cn": "AC米兰",
+      "away_cn": "国际米兰",
+      "market": "HAD",
+      "option": "负",
+      "odds": 1.81,
+      "model_prob": 0.5487,
+      "implied_prob": 0.4847,
+      "edge": 0.064,
+      "ev": -0.0069,
+      "stake_pct": 0.0,
+      "hit": false,
+      "pnl_unit": -1.0,
+      "pnl_pct": -0.0
+    },
+    {
+      "date": "2026-11-01",
+      "match_num": "周六027",
+      "league": "西甲",
+      "div": "SP1",
+      "home_cn": "巴萨",
+      "away_cn": "阿拉维斯",
+      "market": "HHAD",
+      "option": "负",
+      "odds": 1.9,
+      "model_prob": 0.5273,
+      "implied_prob": 0.4621,
+      "edge": 0.0652,
+      "ev": 0.0018,
+      "stake_pct": 0.0005,
+      "hit": false,
+      "pnl_unit": -1.0,
+      "pnl_pct": -0.0005
     }
   ],
   "note": "命中率只统计赛前预测且已结算的场次；赛后补跑或已开赛预测不计入。"
