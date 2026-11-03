@@ -62,7 +62,13 @@
       "pnl_unit": 0.71,
       "pnl_pct": 0.0272,
       "staked_pct": 0.1128,
-      "roi": 0.1014
+      "roi": 0.1014,
+      "roi_ci95": [
+        -1.0,
+        1.78
+      ],
+      "n_clusters": 3,
+      "prob_positive": 0.6285
     }
   },
   {
@@ -128,7 +134,13 @@
       "pnl_unit": 3.26,
       "pnl_pct": 0.0055,
       "staked_pct": 0.0516,
-      "roi": 0.5433
+      "roi": 0.5433,
+      "roi_ci95": [
+        -1.0,
+        2.2871
+      ],
+      "n_clusters": 4,
+      "prob_positive": 0.688
     }
   },
   {
@@ -194,7 +206,13 @@
       "pnl_unit": -6.0,
       "pnl_pct": -0.1033,
       "staked_pct": 0.1033,
-      "roi": -1.0
+      "roi": -1.0,
+      "roi_ci95": [
+        -1.0,
+        -1.0
+      ],
+      "n_clusters": 3,
+      "prob_positive": 0.0
     }
   },
   {
@@ -260,7 +278,13 @@
       "pnl_unit": 0.18,
       "pnl_pct": 0.0149,
       "staked_pct": 0.1287,
-      "roi": 0.0257
+      "roi": 0.0257,
+      "roi_ci95": [
+        -1.0,
+        1.2925
+      ],
+      "n_clusters": 4,
+      "prob_positive": 0.5275
     }
   },
   {
@@ -326,7 +350,10 @@
       "pnl_unit": 0,
       "pnl_pct": 0,
       "staked_pct": 0,
-      "roi": null
+      "roi": null,
+      "roi_ci95": null,
+      "n_clusters": 0,
+      "prob_positive": null
     }
   },
   {
@@ -392,7 +419,13 @@
       "pnl_unit": -1.21,
       "pnl_pct": -0.0348,
       "staked_pct": 0.1054,
-      "roi": -0.2017
+      "roi": -0.2017,
+      "roi_ci95": [
+        -1.0,
+        1.118
+      ],
+      "n_clusters": 4,
+      "prob_positive": 0.316
     }
   },
   {
@@ -458,7 +491,13 @@
       "pnl_unit": -2.27,
       "pnl_pct": -0.0797,
       "staked_pct": 0.2044,
-      "roi": -0.1621
+      "roi": -0.1621,
+      "roi_ci95": [
+        -0.8318,
+        0.5139
+      ],
+      "n_clusters": 9,
+      "prob_positive": 0.3245
     }
   },
   {
@@ -524,7 +563,13 @@
       "pnl_unit": -1.0,
       "pnl_pct": -0.0065,
       "staked_pct": 0.0065,
-      "roi": -1.0
+      "roi": -1.0,
+      "roi_ci95": [
+        -1.0,
+        -1.0
+      ],
+      "n_clusters": 1,
+      "prob_positive": 0.0
     }
   },
   {
@@ -590,7 +635,13 @@
       "pnl_unit": -2.0,
       "pnl_pct": -0.04,
       "staked_pct": 0.04,
-      "roi": -1.0
+      "roi": -1.0,
+      "roi_ci95": [
+        -1.0,
+        -1.0
+      ],
+      "n_clusters": 1,
+      "prob_positive": 0.0
     }
   },
   {
@@ -656,7 +707,13 @@
       "pnl_unit": -3.0,
       "pnl_pct": -0.0307,
       "staked_pct": 0.0307,
-      "roi": -1.0
+      "roi": -1.0,
+      "roi_ci95": [
+        -1.0,
+        -1.0
+      ],
+      "n_clusters": 2,
+      "prob_positive": 0.0
     }
   },
   {
@@ -722,7 +779,13 @@
       "pnl_unit": 1.06,
       "pnl_pct": 0.0013,
       "staked_pct": 0.1094,
-      "roi": 0.1514
+      "roi": 0.1514,
+      "roi_ci95": [
+        -0.7317,
+        1.0729
+      ],
+      "n_clusters": 5,
+      "prob_positive": 0.623
     }
   },
   {
@@ -788,7 +851,13 @@
       "pnl_unit": -0.12,
       "pnl_pct": -0.0006,
       "staked_pct": 0.0097,
-      "roi": -0.04
+      "roi": -0.04,
+      "roi_ci95": [
+        -0.245,
+        0.37
+      ],
+      "n_clusters": 2,
+      "prob_positive": 0.249
     }
   },
   {
@@ -854,148 +923,238 @@
       "pnl_unit": -1.86,
       "pnl_pct": -0.059,
       "staked_pct": 0.1774,
-      "roi": -0.1094
+      "roi": -0.1094,
+      "roi_ci95": [
+        -0.6818,
+        0.5683
+      ],
+      "n_clusters": 13,
+      "prob_positive": 0.3655
     }
   },
   {
     "date": "2026-11-01",
     "total": 23,
     "predicted": 14,
-    "settled": 7,
-    "pending": 7,
+    "settled": 14,
+    "pending": 0,
     "skipped": 9,
     "post_kickoff": 0,
-    "value_bets": 9,
+    "value_bets": 15,
     "markets": {
       "HAD": {
-        "n": 7,
-        "hits": 4,
-        "accuracy": 0.5714
+        "n": 14,
+        "hits": 9,
+        "accuracy": 0.6429
       },
       "HHAD": {
-        "n": 7,
-        "hits": 4,
-        "accuracy": 0.5714
+        "n": 14,
+        "hits": 7,
+        "accuracy": 0.5
       },
       "SCORE_TOP1": {
-        "n": 7,
-        "hits": 1,
+        "n": 14,
+        "hits": 2,
         "accuracy": 0.1429
       },
       "SCORE_TOP3": {
-        "n": 7,
-        "hits": 1,
-        "accuracy": 0.1429
+        "n": 14,
+        "hits": 3,
+        "accuracy": 0.2143
       },
       "TOTAL_GOALS": {
-        "n": 7,
-        "hits": 2,
-        "accuracy": 0.2857
+        "n": 14,
+        "hits": 3,
+        "accuracy": 0.2143
       },
       "HALF_FULL": {
-        "n": 7,
-        "hits": 4,
-        "accuracy": 0.5714
+        "n": 14,
+        "hits": 5,
+        "accuracy": 0.3571
       },
       "HAD_DC": {
-        "n": 7,
-        "hits": 4,
-        "accuracy": 0.5714
+        "n": 14,
+        "hits": 9,
+        "accuracy": 0.6429
       },
       "HAD_ELO": {
-        "n": 7,
-        "hits": 3,
-        "accuracy": 0.4286
+        "n": 14,
+        "hits": 8,
+        "accuracy": 0.5714
       },
       "HAD_ML": {
-        "n": 7,
-        "hits": 5,
-        "accuracy": 0.7143
+        "n": 14,
+        "hits": 7,
+        "accuracy": 0.5
       }
     },
     "value": {
-      "n": 5,
-      "hits": 1,
-      "hit_rate": 0.2,
-      "pnl_unit": -3.1,
-      "pnl_pct": -0.0355,
-      "staked_pct": 0.046,
-      "roi": -0.62
+      "n": 15,
+      "hits": 5,
+      "hit_rate": 0.3333,
+      "pnl_unit": -4.07,
+      "pnl_pct": -0.0895,
+      "staked_pct": 0.1499,
+      "roi": -0.2713,
+      "roi_ci95": [
+        -1.0,
+        0.4258
+      ],
+      "n_clusters": 10,
+      "prob_positive": 0.221
     }
   },
   {
     "date": "2026-11-02",
     "total": 10,
     "predicted": 8,
-    "settled": 0,
-    "pending": 8,
+    "settled": 8,
+    "pending": 0,
     "skipped": 2,
     "post_kickoff": 0,
-    "value_bets": 5,
+    "value_bets": 6,
     "markets": {
       "HAD": {
-        "n": 0,
-        "hits": 0,
-        "accuracy": null
+        "n": 8,
+        "hits": 7,
+        "accuracy": 0.875
       },
       "HHAD": {
-        "n": 0,
-        "hits": 0,
-        "accuracy": null
+        "n": 8,
+        "hits": 1,
+        "accuracy": 0.125
       },
       "SCORE_TOP1": {
-        "n": 0,
-        "hits": 0,
-        "accuracy": null
+        "n": 8,
+        "hits": 1,
+        "accuracy": 0.125
       },
       "SCORE_TOP3": {
-        "n": 0,
-        "hits": 0,
-        "accuracy": null
+        "n": 8,
+        "hits": 3,
+        "accuracy": 0.375
       },
       "TOTAL_GOALS": {
-        "n": 0,
-        "hits": 0,
-        "accuracy": null
+        "n": 8,
+        "hits": 1,
+        "accuracy": 0.125
       },
       "HALF_FULL": {
-        "n": 0,
-        "hits": 0,
-        "accuracy": null
+        "n": 8,
+        "hits": 4,
+        "accuracy": 0.5
       },
       "HAD_DC": {
-        "n": 0,
-        "hits": 0,
-        "accuracy": null
+        "n": 8,
+        "hits": 7,
+        "accuracy": 0.875
       },
       "HAD_ELO": {
-        "n": 0,
-        "hits": 0,
-        "accuracy": null
+        "n": 8,
+        "hits": 6,
+        "accuracy": 0.75
       },
       "HAD_ML": {
-        "n": 0,
-        "hits": 0,
-        "accuracy": null
+        "n": 8,
+        "hits": 6,
+        "accuracy": 0.75
       }
     },
     "value": {
-      "n": 0,
-      "hits": 0,
-      "hit_rate": null,
-      "pnl_unit": 0,
-      "pnl_pct": 0,
-      "staked_pct": 0,
-      "roi": null
+      "n": 6,
+      "hits": 3,
+      "hit_rate": 0.5,
+      "pnl_unit": 0.13,
+      "pnl_pct": 0.0087,
+      "staked_pct": 0.0304,
+      "roi": 0.0217,
+      "roi_ci95": [
+        -0.6833,
+        0.75
+      ],
+      "n_clusters": 5,
+      "prob_positive": 0.5195
     }
   },
   {
     "date": "2026-11-03",
-    "total": 9,
+    "total": 10,
+    "predicted": 7,
+    "settled": 7,
+    "pending": 0,
+    "skipped": 3,
+    "post_kickoff": 0,
+    "value_bets": 7,
+    "markets": {
+      "HAD": {
+        "n": 7,
+        "hits": 4,
+        "accuracy": 0.5714
+      },
+      "HHAD": {
+        "n": 7,
+        "hits": 2,
+        "accuracy": 0.2857
+      },
+      "SCORE_TOP1": {
+        "n": 7,
+        "hits": 0,
+        "accuracy": 0.0
+      },
+      "SCORE_TOP3": {
+        "n": 7,
+        "hits": 1,
+        "accuracy": 0.1429
+      },
+      "TOTAL_GOALS": {
+        "n": 7,
+        "hits": 0,
+        "accuracy": 0.0
+      },
+      "HALF_FULL": {
+        "n": 7,
+        "hits": 2,
+        "accuracy": 0.2857
+      },
+      "HAD_DC": {
+        "n": 7,
+        "hits": 4,
+        "accuracy": 0.5714
+      },
+      "HAD_ELO": {
+        "n": 7,
+        "hits": 4,
+        "accuracy": 0.5714
+      },
+      "HAD_ML": {
+        "n": 7,
+        "hits": 1,
+        "accuracy": 0.1429
+      }
+    },
+    "value": {
+      "n": 7,
+      "hits": 0,
+      "hit_rate": 0.0,
+      "pnl_unit": -7.0,
+      "pnl_pct": -0.0746,
+      "staked_pct": 0.0746,
+      "roi": -1.0,
+      "roi_ci95": [
+        -1.0,
+        -1.0
+      ],
+      "n_clusters": 4,
+      "prob_positive": 0.0
+    }
+  },
+  {
+    "date": "2026-11-04",
+    "total": 8,
     "predicted": 7,
     "settled": 0,
     "pending": 7,
-    "skipped": 2,
+    "skipped": 1,
     "post_kickoff": 0,
     "value_bets": 5,
     "markets": {
@@ -1052,7 +1211,10 @@
       "pnl_unit": 0,
       "pnl_pct": 0,
       "staked_pct": 0,
-      "roi": null
+      "roi": null,
+      "roi_ci95": null,
+      "n_clusters": 0,
+      "prob_positive": null
     }
   }
 ]

@@ -1,0 +1,525 @@
+{
+ "generated_at": "2026-11-03T19:11:42",
+ "stats": {
+  "total": 7,
+  "resolved": 7,
+  "unresolved": 0,
+  "had_accuracy": 0.5714285714285714,
+  "score_accuracy": 0.0,
+  "log_loss": 1.0649345841661442,
+  "markets": {
+   "HAD": {
+    "n": 7,
+    "hits": 4,
+    "accuracy": 0.5714285714285714
+   },
+   "HHAD": {
+    "n": 7,
+    "hits": 2,
+    "accuracy": 0.2857142857142857
+   },
+   "SCORE_TOP1": {
+    "n": 7,
+    "hits": 0,
+    "accuracy": 0.0
+   },
+   "SCORE_TOP3": {
+    "n": 7,
+    "hits": 1,
+    "accuracy": 0.14285714285714285
+   },
+   "TOTAL_GOALS": {
+    "n": 7,
+    "hits": 0,
+    "accuracy": 0.0
+   },
+   "HALF_FULL": {
+    "n": 7,
+    "hits": 2,
+    "accuracy": 0.2857142857142857
+   },
+   "HAD_DC": {
+    "n": 7,
+    "hits": 4,
+    "accuracy": 0.5714285714285714
+   },
+   "HAD_ELO": {
+    "n": 7,
+    "hits": 4,
+    "accuracy": 0.5714285714285714
+   },
+   "HAD_ML": {
+    "n": 7,
+    "hits": 1,
+    "accuracy": 0.14285714285714285
+   }
+  },
+  "n_bets": 7,
+  "bet_hit_rate": 0.0,
+  "pnl_unit": -7.0,
+  "pnl_pct": -0.07461917635653985,
+  "roi_unit": -1.0,
+  "staked_pct": 0.07461917635653985
+ },
+ "matches": [
+  {
+   "match_num": "周一001",
+   "match_date": "2026-11-03",
+   "league": "芬超",
+   "div": "FIN1",
+   "home_cn": "国际图尔",
+   "away_cn": "赫尔火花",
+   "home_matched": "Inter Turku",
+   "away_matched": "Gnistan",
+   "resolved": true,
+   "ft_home": 4,
+   "ft_away": 3,
+   "ht_home": 1,
+   "ht_away": 1,
+   "actual": "胜",
+   "had": {
+    "胜": 0.5752666634820002,
+    "平": 0.2004421127454405,
+    "负": 0.22429122377255936
+   },
+   "had_pred": "胜",
+   "had_hit": true,
+   "score_pred": "1:0",
+   "score_hit": false,
+   "score_top": [
+    "1:0",
+    "1:1",
+    "2:1"
+   ],
+   "score_top3_hit": false,
+   "hhad_goal_line": -1.0,
+   "hhad_pred": "负",
+   "hhad_actual": "平",
+   "hhad_hit": false,
+   "ttg_pred": "3",
+   "ttg_actual": "7+",
+   "ttg_hit": false,
+   "half_full_pred": "胜/胜",
+   "half_full_actual": "平/胜",
+   "half_full_hit": false,
+   "layer_preds": {
+    "HAD_DC": "胜",
+    "HAD_ELO": "胜",
+    "HAD_ML": "胜"
+   },
+   "layer_hits": {
+    "HAD_DC": true,
+    "HAD_ELO": true,
+    "HAD_ML": true
+   },
+   "value_bets": [
+    {
+     "option": "负",
+     "odds": 3.3,
+     "model_prob": 0.38416395188380204,
+     "implied_prob": 0.26585730052587153,
+     "edge": 0.1183066513579305,
+     "ev": 0.2677410412165466,
+     "stake_pct": 0.02,
+     "market": "HHAD",
+     "hit": false,
+     "pnl_unit": -1.0,
+     "pnl_pct": -0.02
+    },
+    {
+     "option": "负",
+     "odds": 7.6,
+     "model_prob": 0.18074560791129168,
+     "implied_prob": 0.1154271841193902,
+     "edge": 0.06531842379190149,
+     "ev": 0.37366662012581675,
+     "stake_pct": 0.014154038641129423,
+     "market": "HAD",
+     "hit": false,
+     "pnl_unit": -1.0,
+     "pnl_pct": -0.014154038641129423
+    }
+   ]
+  },
+  {
+   "match_num": "周一002",
+   "match_date": "2026-11-03",
+   "league": "意甲",
+   "div": "I1",
+   "home_cn": "萨索洛",
+   "away_cn": "佛罗伦萨",
+   "home_matched": "Sassuolo",
+   "away_matched": "Fiorentina",
+   "resolved": true,
+   "ft_home": 2,
+   "ft_away": 4,
+   "ht_home": 1,
+   "ht_away": 1,
+   "actual": "负",
+   "had": {
+    "胜": 0.4076799021514984,
+    "平": 0.3256223886288183,
+    "负": 0.2666977092196833
+   },
+   "had_pred": "胜",
+   "had_hit": false,
+   "score_pred": "1:0",
+   "score_hit": false,
+   "score_top": [
+    "1:0",
+    "1:1",
+    "2:1"
+   ],
+   "score_top3_hit": false,
+   "hhad_goal_line": 1.0,
+   "hhad_pred": "胜",
+   "hhad_actual": "负",
+   "hhad_hit": false,
+   "ttg_pred": "3",
+   "ttg_actual": "6",
+   "ttg_hit": false,
+   "half_full_pred": "胜/胜",
+   "half_full_actual": "平/负",
+   "half_full_hit": false,
+   "layer_preds": {
+    "HAD_DC": "胜",
+    "HAD_ELO": "胜",
+    "HAD_ML": "平"
+   },
+   "layer_hits": {
+    "HAD_DC": false,
+    "HAD_ELO": false,
+    "HAD_ML": false
+   },
+   "value_bets": []
+  },
+  {
+   "match_num": "周一003",
+   "match_date": "2026-11-03",
+   "league": "瑞超",
+   "div": "SWE1",
+   "home_cn": "盖斯",
+   "away_cn": "索尔纳",
+   "home_matched": "Gais",
+   "away_matched": "AIK Stockholm",
+   "resolved": true,
+   "ft_home": 2,
+   "ft_away": 1,
+   "ht_home": 1,
+   "ht_away": 0,
+   "actual": "胜",
+   "had": {
+    "胜": 0.3697386654877315,
+    "平": 0.33752583201169745,
+    "负": 0.2927355025005711
+   },
+   "had_pred": "胜",
+   "had_hit": true,
+   "score_pred": "1:0",
+   "score_hit": false,
+   "score_top": [
+    "1:0",
+    "0:1",
+    "1:1"
+   ],
+   "score_top3_hit": false,
+   "hhad_goal_line": -1.0,
+   "hhad_pred": "负",
+   "hhad_actual": "平",
+   "hhad_hit": false,
+   "ttg_pred": "1",
+   "ttg_actual": "3",
+   "ttg_hit": false,
+   "half_full_pred": "胜/胜",
+   "half_full_actual": "胜/胜",
+   "half_full_hit": true,
+   "layer_preds": {
+    "HAD_DC": "胜",
+    "HAD_ELO": "胜",
+    "HAD_ML": "平"
+   },
+   "layer_hits": {
+    "HAD_DC": true,
+    "HAD_ELO": true,
+    "HAD_ML": false
+   },
+   "value_bets": [
+    {
+     "option": "负",
+     "odds": 1.86,
+     "model_prob": 0.5548548603237463,
+     "implied_prob": 0.4720105435682544,
+     "edge": 0.08284431675549192,
+     "ev": 0.032030040202168264,
+     "stake_pct": 0.00931105819830471,
+     "market": "HHAD",
+     "hit": false,
+     "pnl_unit": -1.0,
+     "pnl_pct": -0.00931105819830471
+    },
+    {
+     "option": "平",
+     "odds": 3.7,
+     "model_prob": 0.2973903686612404,
+     "implied_prob": 0.23718717363555483,
+     "edge": 0.06020319502568558,
+     "ev": 0.10034436404658953,
+     "stake_pct": 0.00929114481912867,
+     "market": "HAD",
+     "hit": false,
+     "pnl_unit": -1.0,
+     "pnl_pct": -0.00929114481912867
+    }
+   ]
+  },
+  {
+   "match_num": "周一004",
+   "match_date": "2026-11-03",
+   "league": "意甲",
+   "div": "I1",
+   "home_cn": "亚特兰大",
+   "away_cn": "帕尔马",
+   "home_matched": "Atalanta",
+   "away_matched": "Parma",
+   "resolved": true,
+   "ft_home": 0,
+   "ft_away": 3,
+   "ht_home": 0,
+   "ht_away": 1,
+   "actual": "负",
+   "had": {
+    "胜": 0.6493818500307134,
+    "平": 0.19181901942441978,
+    "负": 0.1587991305448669
+   },
+   "had_pred": "胜",
+   "had_hit": false,
+   "score_pred": "1:0",
+   "score_hit": false,
+   "score_top": [
+    "1:0",
+    "2:0",
+    "0:0"
+   ],
+   "score_top3_hit": false,
+   "hhad_goal_line": -1.0,
+   "hhad_pred": "负",
+   "hhad_actual": "负",
+   "hhad_hit": true,
+   "ttg_pred": "1",
+   "ttg_actual": "3",
+   "ttg_hit": false,
+   "half_full_pred": "胜/胜",
+   "half_full_actual": "负/负",
+   "half_full_hit": false,
+   "layer_preds": {
+    "HAD_DC": "胜",
+    "HAD_ELO": "胜",
+    "HAD_ML": "胜"
+   },
+   "layer_hits": {
+    "HAD_DC": false,
+    "HAD_ELO": false,
+    "HAD_ML": false
+   },
+   "value_bets": []
+  },
+  {
+   "match_num": "周一006",
+   "match_date": "2026-11-03",
+   "league": "英超",
+   "div": "E0",
+   "home_cn": "纽卡斯尔",
+   "away_cn": "埃弗顿",
+   "home_matched": "Newcastle",
+   "away_matched": "Everton",
+   "resolved": true,
+   "ft_home": 0,
+   "ft_away": 1,
+   "ht_home": 0,
+   "ht_away": 0,
+   "actual": "负",
+   "had": {
+    "胜": 0.4318771489408528,
+    "平": 0.25136662168175933,
+    "负": 0.31675622937738784
+   },
+   "had_pred": "胜",
+   "had_hit": false,
+   "score_pred": "1:1",
+   "score_hit": false,
+   "score_top": [
+    "1:1",
+    "2:1",
+    "1:0"
+   ],
+   "score_top3_hit": false,
+   "hhad_goal_line": -1.0,
+   "hhad_pred": "负",
+   "hhad_actual": "负",
+   "hhad_hit": true,
+   "ttg_pred": "2",
+   "ttg_actual": "1",
+   "ttg_hit": false,
+   "half_full_pred": "胜/胜",
+   "half_full_actual": "平/负",
+   "half_full_hit": false,
+   "layer_preds": {
+    "HAD_DC": "胜",
+    "HAD_ELO": "胜",
+    "HAD_ML": "胜"
+   },
+   "layer_hits": {
+    "HAD_DC": false,
+    "HAD_ELO": false,
+    "HAD_ML": false
+   },
+   "value_bets": []
+  },
+  {
+   "match_num": "周一007",
+   "match_date": "2026-11-03",
+   "league": "西甲",
+   "div": "SP1",
+   "home_cn": "拉科",
+   "away_cn": "奥萨苏纳",
+   "home_matched": "La Coruna",
+   "away_matched": "Osasuna",
+   "resolved": true,
+   "ft_home": 2,
+   "ft_away": 1,
+   "ht_home": 0,
+   "ht_away": 1,
+   "actual": "胜",
+   "had": {
+    "胜": 0.4656519204805274,
+    "平": 0.3317538114023201,
+    "负": 0.2025942681171525
+   },
+   "had_pred": "胜",
+   "had_hit": true,
+   "score_pred": "1:0",
+   "score_hit": false,
+   "score_top": [
+    "1:0",
+    "1:1",
+    "2:1"
+   ],
+   "score_top3_hit": true,
+   "hhad_goal_line": -1.0,
+   "hhad_pred": "负",
+   "hhad_actual": "平",
+   "hhad_hit": false,
+   "ttg_pred": "2",
+   "ttg_actual": "3",
+   "ttg_hit": false,
+   "half_full_pred": "胜/胜",
+   "half_full_actual": "负/胜",
+   "half_full_hit": false,
+   "layer_preds": {
+    "HAD_DC": "胜",
+    "HAD_ELO": "胜",
+    "HAD_ML": "平"
+   },
+   "layer_hits": {
+    "HAD_DC": true,
+    "HAD_ELO": true,
+    "HAD_ML": false
+   },
+   "value_bets": [
+    {
+     "option": "胜",
+     "odds": 4.4,
+     "model_prob": 0.2620924475517692,
+     "implied_prob": 0.1997191011235955,
+     "edge": 0.06237334642817369,
+     "ev": 0.15320676922778453,
+     "stake_pct": 0.011265203619690039,
+     "market": "HHAD",
+     "hit": false,
+     "pnl_unit": -1.0,
+     "pnl_pct": -0.011265203619690039
+    }
+   ]
+  },
+  {
+   "match_num": "周一009",
+   "match_date": "2026-11-03",
+   "league": "巴甲",
+   "div": "BRA1",
+   "home_cn": "布拉干RB",
+   "away_cn": "桑托斯",
+   "home_matched": "RB Bragantino",
+   "away_matched": "Santos",
+   "resolved": true,
+   "ft_home": 2,
+   "ft_away": 1,
+   "ht_home": 2,
+   "ht_away": 1,
+   "actual": "胜",
+   "had": {
+    "胜": 0.4356276727796953,
+    "平": 0.353429075746059,
+    "负": 0.21094325147424586
+   },
+   "had_pred": "胜",
+   "had_hit": true,
+   "score_pred": "1:0",
+   "score_hit": false,
+   "score_top": [
+    "1:0",
+    "2:0",
+    "1:1"
+   ],
+   "score_top3_hit": false,
+   "hhad_goal_line": -1.0,
+   "hhad_pred": "负",
+   "hhad_actual": "平",
+   "hhad_hit": false,
+   "ttg_pred": "2",
+   "ttg_actual": "3",
+   "ttg_hit": false,
+   "half_full_pred": "胜/胜",
+   "half_full_actual": "胜/胜",
+   "half_full_hit": true,
+   "layer_preds": {
+    "HAD_DC": "胜",
+    "HAD_ELO": "胜",
+    "HAD_ML": "平"
+   },
+   "layer_hits": {
+    "HAD_DC": true,
+    "HAD_ELO": true,
+    "HAD_ML": false
+   },
+   "value_bets": [
+    {
+     "option": "胜",
+     "odds": 3.7,
+     "model_prob": 0.2881923724822202,
+     "implied_prob": 0.23718554946094192,
+     "edge": 0.051006823021278264,
+     "ev": 0.06631177818421463,
+     "stake_pct": 0.006139979461501364,
+     "market": "HHAD",
+     "hit": false,
+     "pnl_unit": -1.0,
+     "pnl_pct": -0.006139979461501364
+    },
+    {
+     "option": "平",
+     "odds": 3.25,
+     "model_prob": 0.3200368506310987,
+     "implied_prob": 0.2699485129586583,
+     "edge": 0.05008833767244042,
+     "ev": 0.04011976455107091,
+     "stake_pct": 0.0044577516167856445,
+     "market": "HAD",
+     "hit": false,
+     "pnl_unit": -1.0,
+     "pnl_pct": -0.0044577516167856445
+    }
+   ]
+  }
+ ]
+}
